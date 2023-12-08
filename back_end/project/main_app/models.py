@@ -26,7 +26,7 @@ class CustomUser(AbstractUser):
     username = models.CharField(max_length=100, null=False, unique=True, primary_key=True)
     
     # unique but can null
-    aadhar = models.CharField(max_length=12, null=True, unique=True)
+    aadhar = models.CharField(max_length=12, null=True, unique=True, blank=True)
     email = models.EmailField(max_length=100, unique=False, null=True)
     
     # not unique and null
