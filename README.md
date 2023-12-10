@@ -7,21 +7,26 @@ This document provides instructions on how to set up and run the project.
 3. Installation
 
 ### Create a virtual environment:
+at location `./backend`
+
 ```
 python -m venv env
 ```
 
 ### Activate the virtual environment:
+at location `./backend`
 ```
 source env/bin/activate
 ```
 
 ### Install the required dependencies:
+at location `./backend`
 ``` 
-pip install -r requirements.txt 
+pip install -r requriments.txt 
 ```
 
 ### Create a .env file in the project directory with the following configuration:
+at location `./backend/project`
 `.env`
 
 ```
@@ -36,6 +41,7 @@ DATABASE_HOST='' # Database host
 DATABASE_PORT='' # Database port
 
 ```
+at location `./backend/project`
 
 ### Run the following commands:
 ```
