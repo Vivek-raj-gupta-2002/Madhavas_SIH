@@ -61,3 +61,21 @@ class CustomUser(AbstractUser):
         'email'
     ]
     
+# all dummy database defination
+class AadharInfo(models.Model):
+    aadhar_no = models.CharField(max_length=12, primary_key=True)
+    holder_name = models.CharField(max_length=45)
+    dob = models.DateField()
+    gender = models.CharField(max_length=1, choices=gender_choices)
+    phone = models.CharField(max_length=10)
+    email = models.EmailField(max_length=45)
+
+    def __str__(self) -> str:
+        return str(self.aadhar_no)
+    
+    def formatted_date(self):
+        return self.your_date_field.strftime('%m-%d-%y')
+
+
+
+
