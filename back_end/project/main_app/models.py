@@ -5,14 +5,18 @@ gender_choices = (
     ('M', 'Male'),
     ('F', 'Female'),
     ('O', 'Other'),
+)
 
+classes = (
+    ('1', '10th'),
+    ('2', '12th'),
 )
 
 cast_choice = (
     ('g', 'General'),
-    ('sc', 'Scheduled Caste'),
-    ('st', 'Scheduled Tribe'),
-    ('obc', 'Other Backward Class'),
+    ('SC', 'Scheduled Caste'),
+    ('ST', 'Scheduled Tribe'),
+    ('OBC', 'Other Backward Class'),
 )
 
 # Create your models here.
@@ -67,7 +71,7 @@ class AadharInfo(models.Model):
     holder_name = models.CharField(max_length=45)
     dob = models.DateField()
     gender = models.CharField(max_length=1, choices=gender_choices)
-    phone = models.CharField(max_length=10)
+    phone = models.CharField(max_length=50)
     email = models.EmailField(max_length=45)
 
     def __str__(self) -> str:
@@ -77,5 +81,46 @@ class AadharInfo(models.Model):
         return self.your_date_field.strftime('%m-%d-%y')
 
 
+class CasteData(models.Model):
+    aadhar_no = models.OneToOneField(AadharInfo, on_delete=models.CASCADE, unique=True)
+    name = models.CharField(max_length=100)
+    caste = models.CharField(max_length=20, choices=cast_choice)
+
+    def __str__(self) -> str:
+        return str(self.aadhar_no)
+    
+class Domicile(models.Model):
+    aadhar_no = models.OneToOneField(AadharInfo, on_delete=models.CASCADE, unique=True)
+    name = models.CharField(max_length=100)
+    city = models.CharField(max_length=100)
+    state = models.CharField(max_length=100)
+
+    def __str__(self) -> str:
+        return str(self.aadhar_no)
+    
+class Income(models.Model):
+    aadhar_no = models.OneToOneField(AadharInfo, on_delete=models.CASCADE, unique=True)
+    name = models.CharField(max_length=100)
+    income = models.CharField(max_length=100)
+    year = models.CharField(max_length=10)
+
+    def __str__(self) -> str:
+        return str(self.aadhar_no)
+    
+class Marksheet(models.Model):
+    aadhar_no = models.ForeignKey(AadharInfo, on_delete=models.CASCADE)
+    name = models.CharField(max_length=100)
+    institute = models.CharField(max_length=100)
+    year = models.CharField(max_length=10)
+    marks = models.CharField(max_length=5)
+    standard = models.CharField(max_length=1, choices=classes)
+
+
+    def __str__(self) -> str:
+        return str(self.aadhar_no)
+    
+    class Meta:
+        # Specify the unique constraint for a combination of field1 and field2
+        unique_together = ('aadhar_no', 'standard')
 
 
