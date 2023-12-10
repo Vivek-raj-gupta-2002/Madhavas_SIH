@@ -1,0 +1,489 @@
+
+html {
+	font-size:62.5%;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+ul, li {
+	list-style: none;
+}
+input {
+	border: none;
+}
+body {
+  width: 144rem;
+}.scholarship-form2-BsB {
+  box-sizing: border-box;
+  padding-top: 0.6rem;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+}
+.scholarship-form2-BsB .header-81j {
+  box-sizing: border-box;
+  padding-right: 85.9rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25), 0 0.8rem 0.4rem rgba(0, 0, 0, 0.4399999976);
+  background-color: #ffffff;
+  flex-shrink: 0;
+}
+.scholarship-form2-BsB .header-81j .bcd3b4b5d471dae27a60bd4b5f07-1-FMF {
+  margin-right: 1rem;
+  width: 9.1rem;
+  height: 9.6rem;
+  object-fit: cover;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.scholarship-form2-BsB .header-81j .national-scholarship-portal-9hX {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1.3625;
+  color: #15ab30;
+  font-family: Open Sans, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.scholarship-form2-BsB .auto-group-noq9-Cfo {
+  box-sizing: border-box;
+  padding: 0.6rem 2rem 13.3rem 16.8rem;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+.scholarship-form2-BsB .auto-group-noq9-Cfo .auto-group-qg9k-j9w {
+  margin: 0rem 60.1rem 6.3rem 44.5rem;
+  width: calc(100% - 104.6rem);
+  height: 8.9rem;
+  position: relative;
+  flex-shrink: 0;
+}
+.scholarship-form2-BsB .auto-group-noq9-Cfo .auto-group-qg9k-j9w .academic-details-phB {
+  width: 20.6rem;
+  height: 4.9rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 2.01;
+  color: #1915f1;
+  font-family: Kadwa, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.scholarship-form2-BsB .auto-group-noq9-Cfo .auto-group-qg9k-j9w .required-fields-iGm {
+  width: 16.2rem;
+  height: 4.1rem;
+  position: absolute;
+  left: 1.3rem;
+  top: 4.8rem;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 2.01;
+  color: #ff0000;
+  font-family: Kadwa, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.scholarship-form2-BsB .auto-group-noq9-Cfo .academic-detail-form-nGd {
+  margin-bottom: 19.3rem;
+  width: 100%;
+  height: 36.5rem;
+  position: relative;
+  flex-shrink: 0;
+}
+.scholarship-form2-BsB .auto-group-noq9-Cfo .academic-detail-form-nGd .auto-group-95mf-v7w {
+  width: 125.2rem;
+  height: 18.7rem;
+  position: absolute;
+  left: 0;
+  top: 13rem;
+}
+.scholarship-form2-BsB .auto-group-noq9-Cfo .academic-detail-form-nGd .highersecondary-e3w {
+  width: 125.2rem;
+  height: 5.3rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+}
+.scholarship-form2-BsB .auto-group-noq9-Cfo .academic-detail-form-nGd .highersecondary-e3w .higher-secondary-percentage-aiH {
+  margin: 1.2rem 11.1rem 0rem 0rem;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 2.01;
+  color: #ff0000;
+  font-family: Kadwa, 'Source Sans Pro';
+  white-space: nowrap;
+  display: flex;
+  align-items: baseline;
+  flex-shrink: 0;
+}
+.scholarship-form2-BsB .auto-group-noq9-Cfo .academic-detail-form-nGd .highersecondary-e3w .higher-secondary-percentage-aiH .higher-secondary-percentage-aiH-sub-0 {
+}
+.scholarship-form2-BsB .auto-group-noq9-Cfo .academic-detail-form-nGd .highersecondary-e3w .higher-secondary-percentage-aiH .higher-secondary-percentage-aiH-sub-1 {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 2.01;
+  color: #000000;
+  font-family: Kadwa, 'Source Sans Pro';
+}
+.scholarship-form2-BsB .auto-group-noq9-Cfo .academic-detail-form-nGd .highersecondary-e3w .rectangle-55-gPw {
+  margin: 0rem 5.6rem 0.2rem 0rem;
+  width: 61.3rem;
+  height: 3.7rem;
+  border: solid 0.1rem #000000;
+  box-sizing: border-box;
+  background-color: rgba(217, 217, 217, 0.4399999976);
+  border-radius: 0.4rem;
+  flex-shrink: 0;
+}
+.scholarship-form2-BsB .auto-group-noq9-Cfo .academic-detail-form-nGd .highersecondary-e3w .group-24-tW1 {
+  margin-bottom: 0.1rem;
+  width: 17.7rem;
+  height: 5.2rem;
+  position: relative;
+  flex-shrink: 0;
+}
+.scholarship-form2-BsB .auto-group-noq9-Cfo .academic-detail-form-nGd .highersecondary-e3w .group-24-tW1 .rectangle-55-S1j {
+  width: 16.9rem;
+  height: 3.3583rem;
+  position: absolute;
+  left: 0;
+  top: 0.975rem;
+  border: solid 0.1rem #000000;
+  box-sizing: border-box;
+  background-color: #d9d9d9;
+}
+.scholarship-form2-BsB .auto-group-noq9-Cfo .academic-detail-form-nGd .highersecondary-e3w .group-24-tW1 .choose-file-mJu {
+  width: 10rem;
+  height: 2.6rem;
+  position: absolute;
+  left: 1.8rem;
+  top: 1.3rem;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.3;
+  color: rgba(0, 0, 0, 0.7400000095);
+  font-family: K2D, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.scholarship-form2-BsB .auto-group-noq9-Cfo .academic-detail-form-nGd .highersecondary-e3w .group-24-tW1 .sort-down-GmT {
+  width: 6.5rem;
+  height: 5.2rem;
+  position: absolute;
+  left: 11.2rem;
+  top: 0;
+  object-fit: contain;
+  vertical-align: top;
+}
+.scholarship-form2-BsB .auto-group-noq9-Cfo .academic-detail-form-nGd .transfer-certificate-zBf {
+  width: 125.1rem;
+  height: 4.9rem;
+  position: absolute;
+  left: 0;
+  top: 15.8rem;
+  display: flex;
+  align-items: center;
+}
+.scholarship-form2-BsB .auto-group-noq9-Cfo .academic-detail-form-nGd .transfer-certificate-zBf .transfer-certificate-Kjj {
+  margin: 0.8rem 20.8rem 0rem 0rem;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.0850000381;
+  color: #ff0000;
+  font-family: JejuGothic, 'Source Sans Pro';
+  white-space: nowrap;
+  display: flex;
+  align-items: baseline;
+  flex-shrink: 0;
+}
+.scholarship-form2-BsB .auto-group-noq9-Cfo .academic-detail-form-nGd .transfer-certificate-zBf .transfer-certificate-Kjj .transfer-certificate-Kjj-sub-0 {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 2.01;
+  color: #ff0000;
+  font-family: Kadwa, 'Source Sans Pro';
+}
+.scholarship-form2-BsB .auto-group-noq9-Cfo .academic-detail-form-nGd .transfer-certificate-zBf .transfer-certificate-Kjj .transfer-certificate-Kjj-sub-1 {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 2.01;
+  color: #000000;
+  font-family: Kadwa, 'Source Sans Pro';
+}
+.scholarship-form2-BsB .auto-group-noq9-Cfo .academic-detail-form-nGd .transfer-certificate-zBf .rectangle-56-DTj {
+  margin: 0rem 5.6rem 0.2rem 0rem;
+  width: 61.3rem;
+  height: 3.7rem;
+  border: solid 0.1rem #000000;
+  box-sizing: border-box;
+  background-color: rgba(217, 217, 217, 0.4399999976);
+  border-radius: 0.4rem;
+  flex-shrink: 0;
+}
+.scholarship-form2-BsB .auto-group-noq9-Cfo .academic-detail-form-nGd .transfer-certificate-zBf .group-25-hdo {
+  margin-bottom: 0.1rem;
+  width: 17.6rem;
+  height: 4.8rem;
+  position: relative;
+  flex-shrink: 0;
+}
+.scholarship-form2-BsB .auto-group-noq9-Cfo .academic-detail-form-nGd .domicile-certificate-8sX {
+  width: 125.1rem;
+  height: 4.8rem;
+  position: absolute;
+  left: 0;
+  top: 23.6rem;
+  display: flex;
+  align-items: flex-end;
+}
+.scholarship-form2-BsB .auto-group-noq9-Cfo .academic-detail-form-nGd .domicile-certificate-8sX .group-22-3zV {
+  margin-right: 5.6rem;
+  display: flex;
+  align-items: flex-start;
+  border-radius: 0.4rem;
+  flex-shrink: 0;
+}
+.scholarship-form2-BsB .auto-group-noq9-Cfo .academic-detail-form-nGd .domicile-certificate-8sX .group-22-3zV .gap-certificate-1Ad {
+  margin: 0.2rem 24.8rem 0rem 0rem;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.0850000381;
+  color: #ff0000;
+  font-family: JejuGothic, 'Source Sans Pro';
+  white-space: nowrap;
+  display: flex;
+  align-items: baseline;
+  flex-shrink: 0;
+}
+.scholarship-form2-BsB .auto-group-noq9-Cfo .academic-detail-form-nGd .domicile-certificate-8sX .group-22-3zV .gap-certificate-1Ad .gap-certificate-1Ad-sub-0 {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 2.01;
+  color: #ff0000;
+  font-family: Kadwa, 'Source Sans Pro';
+}
+.scholarship-form2-BsB .auto-group-noq9-Cfo .academic-detail-form-nGd .domicile-certificate-8sX .group-22-3zV .gap-certificate-1Ad .gap-certificate-1Ad-sub-1 {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 2.01;
+  color: #000000;
+  font-family: Kadwa, 'Source Sans Pro';
+}
+.scholarship-form2-BsB .auto-group-noq9-Cfo .academic-detail-form-nGd .domicile-certificate-8sX .group-22-3zV .gap-certificate-1Ad .gap-certificate-1Ad-sub-2 {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 2.01;
+  color: #000000;
+  font-family: Kadwa, 'Source Sans Pro';
+}
+.scholarship-form2-BsB .auto-group-noq9-Cfo .academic-detail-form-nGd .domicile-certificate-8sX .group-22-3zV .rectangle-56-LEq {
+  width: 61.3rem;
+  height: 3.7rem;
+  border: solid 0.1rem #000000;
+  box-sizing: border-box;
+  background-color: rgba(217, 217, 217, 0.4399999976);
+  border-radius: 0.4rem;
+  flex-shrink: 0;
+}
+.scholarship-form2-BsB .auto-group-noq9-Cfo .academic-detail-form-nGd .domicile-certificate-8sX .group-24-emK {
+  width: 17.6rem;
+  height: 100%;
+  position: relative;
+  flex-shrink: 0;
+}
+.scholarship-form2-BsB .auto-group-noq9-Cfo .academic-detail-form-nGd .secondary-class-percentage-khs {
+  width: 125.2rem;
+  height: 5.3rem;
+  position: absolute;
+  left: 0;
+  top: 7.7rem;
+  display: flex;
+  align-items: center;
+}
+.scholarship-form2-BsB .auto-group-noq9-Cfo .academic-detail-form-nGd .secondary-class-percentage-khs .secondary-class-percentage-Hho {
+  margin: 1.2rem 12.4rem 0rem 0rem;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.0850000381;
+  color: #000000;
+  font-family: JejuGothic, 'Source Sans Pro';
+  white-space: nowrap;
+  display: flex;
+  align-items: baseline;
+  flex-shrink: 0;
+}
+.scholarship-form2-BsB .auto-group-noq9-Cfo .academic-detail-form-nGd .secondary-class-percentage-khs .secondary-class-percentage-Hho .secondary-class-percentage-Hho-sub-0 {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 2.01;
+  color: #ff0000;
+  font-family: Kadwa, 'Source Sans Pro';
+}
+.scholarship-form2-BsB .auto-group-noq9-Cfo .academic-detail-form-nGd .secondary-class-percentage-khs .secondary-class-percentage-Hho .secondary-class-percentage-Hho-sub-1 {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 2.01;
+  color: #000000;
+  font-family: Kadwa, 'Source Sans Pro';
+}
+.scholarship-form2-BsB .auto-group-noq9-Cfo .academic-detail-form-nGd .secondary-class-percentage-khs .secondary-class-percentage-Hho .secondary-class-percentage-Hho-sub-2 {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 2.01;
+  color: #000000;
+  font-family: Kadwa, 'Source Sans Pro';
+}
+.scholarship-form2-BsB .auto-group-noq9-Cfo .academic-detail-form-nGd .secondary-class-percentage-khs .rectangle-55-iAq {
+  margin-right: 5.6rem;
+  width: 61.3rem;
+  height: 3.7rem;
+  border: solid 0.1rem #000000;
+  box-sizing: border-box;
+  background-color: rgba(217, 217, 217, 0.4399999976);
+  border-radius: 0.4rem;
+  flex-shrink: 0;
+}
+.scholarship-form2-BsB .auto-group-noq9-Cfo .academic-detail-form-nGd .secondary-class-percentage-khs .group-23-cX7 {
+  margin-bottom: 0.1rem;
+  width: 17.7rem;
+  height: 5.2rem;
+  position: relative;
+  flex-shrink: 0;
+}
+.scholarship-form2-BsB .auto-group-noq9-Cfo .academic-detail-form-nGd .secondary-class-percentage-khs .group-23-cX7 .rectangle-55-8kM {
+  width: 16.9rem;
+  height: 3.3583rem;
+  position: absolute;
+  left: 0;
+  top: 0.975rem;
+  border: solid 0.1rem #000000;
+  box-sizing: border-box;
+  background-color: #d9d9d9;
+}
+.scholarship-form2-BsB .auto-group-noq9-Cfo .academic-detail-form-nGd .secondary-class-percentage-khs .group-23-cX7 .choose-file-FKB {
+  width: 10rem;
+  height: 2.6rem;
+  position: absolute;
+  left: 1.8rem;
+  top: 1.3rem;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.3;
+  color: rgba(0, 0, 0, 0.7400000095);
+  font-family: K2D, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.scholarship-form2-BsB .auto-group-noq9-Cfo .academic-detail-form-nGd .secondary-class-percentage-khs .group-23-cX7 .sort-down-99f {
+  width: 6.5rem;
+  height: 5.2rem;
+  position: absolute;
+  left: 11.2rem;
+  top: 0;
+  object-fit: contain;
+  vertical-align: top;
+}
+.scholarship-form2-BsB .auto-group-noq9-Cfo .academic-detail-form-nGd .last-year-marksheet-qYH {
+  width: 125.2rem;
+  height: 4.8rem;
+  position: absolute;
+  left: 0;
+  top: 31.7rem;
+  display: flex;
+  align-items: flex-start;
+}
+.scholarship-form2-BsB .auto-group-noq9-Cfo .academic-detail-form-nGd .last-year-marksheet-qYH .group-20-B6M {
+  margin: 0rem 5.6rem 0.5rem 0rem;
+  display: flex;
+  align-items: center;
+  border-radius: 0.4rem;
+  flex-shrink: 0;
+}
+.scholarship-form2-BsB .auto-group-noq9-Cfo .academic-detail-form-nGd .last-year-marksheet-qYH .group-20-B6M .last-year-marksheet-U5T {
+  margin-right: 19.8rem;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.0850000381;
+  color: #ff0000;
+  font-family: JejuGothic, 'Source Sans Pro';
+  white-space: nowrap;
+  display: flex;
+  align-items: baseline;
+  flex-shrink: 0;
+}
+.scholarship-form2-BsB .auto-group-noq9-Cfo .academic-detail-form-nGd .last-year-marksheet-qYH .group-20-B6M .last-year-marksheet-U5T .last-year-marksheet-U5T-sub-0 {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 2.01;
+  color: #ff0000;
+  font-family: Kadwa, 'Source Sans Pro';
+}
+.scholarship-form2-BsB .auto-group-noq9-Cfo .academic-detail-form-nGd .last-year-marksheet-qYH .group-20-B6M .last-year-marksheet-U5T .last-year-marksheet-U5T-sub-1 {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 2.01;
+  color: #000000;
+  font-family: Kadwa, 'Source Sans Pro';
+}
+.scholarship-form2-BsB .auto-group-noq9-Cfo .academic-detail-form-nGd .last-year-marksheet-qYH .group-20-B6M .last-year-marksheet-U5T .last-year-marksheet-U5T-sub-2 {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 2.01;
+  color: #000000;
+  font-family: Kadwa, 'Source Sans Pro';
+}
+.scholarship-form2-BsB .auto-group-noq9-Cfo .academic-detail-form-nGd .last-year-marksheet-qYH .group-20-B6M .rectangle-61-Rwj {
+  margin-top: 0.2rem;
+  width: 61.3rem;
+  height: 3.7rem;
+  border: solid 0.1rem #000000;
+  box-sizing: border-box;
+  background-color: rgba(217, 217, 217, 0.4399999976);
+  border-radius: 0.4rem;
+  flex-shrink: 0;
+}
+.scholarship-form2-BsB .auto-group-noq9-Cfo .academic-detail-form-nGd .last-year-marksheet-qYH .group-25-jxR {
+  width: 17.7rem;
+  height: 100%;
+  position: relative;
+  flex-shrink: 0;
+}
+.scholarship-form2-BsB .auto-group-noq9-Cfo .next-button-T1F {
+  margin-left: 53.6rem;
+  width: 25rem;
+  height: 7.3rem;
+  position: relative;
+  flex-shrink: 0;
+}
+.scholarship-form2-BsB .auto-group-noq9-Cfo .next-button-T1F .rectangle-68-m1w {
+  width: 25rem;
+  height: 6rem;
+  position: absolute;
+  left: 0;
+  top: 0.6rem;
+  background-color: #25a83a;
+}
+.scholarship-form2-BsB .auto-group-noq9-Cfo .next-button-T1F .next-7Lh {
+  width: 8.3rem;
+  height: 7.3rem;
+  position: absolute;
+  left: 8.3rem;
+  top: 0;
+  font-size: 3.6rem;
+  font-weight: 400;
+  line-height: 2.01;
+  color: #000000;
+  font-family: Kadwa, 'Source Sans Pro';
+  white-space: nowrap;
+}
