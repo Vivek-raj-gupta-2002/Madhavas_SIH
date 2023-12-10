@@ -57,7 +57,7 @@ class AadharInfoAdmin(admin.ModelAdmin):
                             aadhar_no=fields[0],
                             holder_name=str(fields[1]).replace('"', ""),
                             dob=fields[2],
-                            gender=fields[3],
+                            gender=fields[3].strip(),
                             phone=fields[4],
                             email=fields[5],
                         )
@@ -155,11 +155,13 @@ class CasteDataAdmin(admin.ModelAdmin):
                     continue
                 
                 try:
+                    print(fields)
                     created = CasteData.objects.update_or_create(
                             aadhar_no=AadharInfo.objects.get(aadhar_no=fields[0]),
                             name=str(fields[1]).replace('"', ""),
-                            caste=fields[2],
+                            caste=str(fields[2]).strip()
                         )
+
                 except:
                     messages.warning(request, 'Something went wrong')
                     return HttpResponseRedirect(request.path_info)
@@ -259,7 +261,7 @@ class MarksheetAdmin(admin.ModelAdmin):
                             institute=fields[2].replace('"', ""),
                             year=fields[3].replace('"', ""),
                             marks=fields[4].replace('"', ""),
-                            standard=fields[5].replace('"', ""),
+                            standard=fields[5].replace('"', "").strip(),
                         )
                 except:
                     messages.warning(request, 'data is Wrong')

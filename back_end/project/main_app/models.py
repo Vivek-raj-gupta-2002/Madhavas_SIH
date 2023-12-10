@@ -13,7 +13,7 @@ classes = (
 )
 
 cast_choice = (
-    ('g', 'General'),
+    ('G', 'General'),
     ('SC', 'Scheduled Caste'),
     ('ST', 'Scheduled Tribe'),
     ('OBC', 'Other Backward Class'),
