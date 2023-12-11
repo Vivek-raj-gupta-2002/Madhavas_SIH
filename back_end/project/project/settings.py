@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     # Apps Created by Developers
     # ...
     'main_app',
+    'user_app'
 ]
 
 MIDDLEWARE = [
@@ -151,3 +152,7 @@ EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER = config('EMAIL_USER')
 EMAIL_HOST_PASSWORD = config('EMAIL_PASSWORD')
+
+
+# otp validation time
+OTP_VALIDITY_PERIOD = 300

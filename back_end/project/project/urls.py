@@ -21,6 +21,7 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', include('user_app.urls'))
 ]
 
 # urls for static and media files if debug is 'True'
