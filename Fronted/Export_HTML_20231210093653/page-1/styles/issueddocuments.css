@@ -1,6 +1,7 @@
 
 html {
-	font-size:62.5%;
+	font-size:40.5%;
+  width: 100%;
 }
 * {
 	margin: 0;
@@ -13,10 +14,10 @@ input {
 	border: none;
 }
 body {
-  width: 144rem;
+  width: 100%;
 }.issueddocuments-Ebf {
   width: 100%;
-  height: 103.1rem;
+  min-height: 100vh;
   position: relative;
   background-color: #efefef;
 }
@@ -24,9 +25,9 @@ body {
   width: 108.8rem;
   height: 87.8rem;
   position: absolute;
-  left: 33.3rem;
+  left: 38.3rem;
   top: 11.8rem;
-  align-items: flex-end;
+  align-items: flex-start;
   display: flex;
   flex-direction: column;
 }
@@ -58,10 +59,15 @@ body {
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
+  overflow-y: scroll;
+}.issueddocuments-t3w::-webkit-scrollbar{
+  display: none;
 }
 .issueddocuments-Ebf .body-xXf .issueddocuments-t3w .personal-documement-bDF {
   box-sizing: border-box;
   padding: 0rem 0.1rem 0.8rem 0.1rem;
+
+  overflow: hidden;
   width: 100%;
   align-items: center;
   display: flex;
@@ -71,6 +77,7 @@ body {
   background-color: #ffffff;
   border-radius: 2.4rem;
   flex-shrink: 0;
+  overflow: hidden;
 }
 .issueddocuments-Ebf .body-xXf .issueddocuments-t3w .personal-documement-bDF .auto-group-8ieh-tTF {
   margin: 0rem 1.692rem 1rem 2.5rem;
@@ -78,6 +85,8 @@ body {
   display: flex;
   align-items: center;
   flex-shrink: 0;
+  position: relative;
+  
 }
 .issueddocuments-Ebf .body-xXf .issueddocuments-t3w .personal-documement-bDF .auto-group-8ieh-tTF .rectangle-34-Bx9 {
   margin: 0.3rem 3rem 0rem 0rem;
@@ -102,6 +111,8 @@ body {
   margin-top: 0.6rem;
   width: 4.9167rem;
   height: 5.1667rem;
+  position: absolute;
+  right: 1rem; /* Adjust this value based on your layout */
   object-fit: contain;
   vertical-align: top;
   flex-shrink: 0;
@@ -119,7 +130,51 @@ body {
   height: 29.5rem;
   position: relative;
   flex-shrink: 0;
+  visibility: hidden;
+  display: none; 
 }
+.issueddocuments-Ebf .body-xXf .issueddocuments-t3w .personal-documement-bDF .documents-visible {
+  display: block;
+  visibility: visible;
+  margin: 0rem 1.2rem 0rem 0.4rem;
+  width: calc(100% - 1.6rem);
+  height: 29.5rem;
+  position: relative;
+  flex-shrink: 0;
+
+}
+.issueddocuments-Ebf .body-xXf .issueddocuments-t3w .personal-documement-bDF .Otherdocuments-visible {
+  display: block;
+  visibility: visible;
+  margin: 0rem 1.2rem 0rem 0.4rem;
+  width: calc(100% - 1.6rem);
+  height: 29.5rem;
+  position: relative;
+  flex-shrink: 0;
+
+}
+
+.issueddocuments-Ebf .body-xXf .issueddocuments-t3w .personal-documement-bDF .educational1Document {
+  display: block;
+  visibility: visible;
+  margin: 0rem 1.2rem 0rem 0.4rem;
+  width: calc(100% - 1.6rem);
+  height: 29.5rem;
+  position: relative;
+  flex-shrink: 0;
+
+}
+.issueddocuments-Ebf .body-xXf .issueddocuments-t3w .personal-documement-bDF .scholarshipDocumentvisible {
+  display: block;
+  visibility: visible;
+  margin: 0rem 1.2rem 0rem 0.4rem;
+  width: calc(100% - 1.6rem);
+  height: 29.5rem;
+  position: relative;
+  flex-shrink: 0;
+
+}
+
 .issueddocuments-Ebf .body-xXf .issueddocuments-t3w .personal-documement-bDF .auto-group-acaz-rB7 .aadhar-mos {
   width: 106rem;
   height: 4.9rem;
@@ -456,1063 +511,54 @@ body {
   object-fit: contain;
   vertical-align: top;
 }
-.issueddocuments-Ebf .body-xXf .issueddocuments-t3w .educationaldocument-iSq {
+
+
+
+.issueddocuments-Ebf  .menu-Qp5 {
   box-sizing: border-box;
-  padding: 0.2rem 0.1rem 1.9rem 0.1rem;
-  width: 100%;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
-  background-color: #ffffff;
-  border-radius: 2.4rem;
-  flex-shrink: 0;
-}
-.issueddocuments-Ebf .body-xXf .issueddocuments-t3w .educationaldocument-iSq .auto-group-u5pb-e5b {
-  margin: 0rem 1.692rem 0.8rem 2.5rem;
-  width: calc(100% - 4.1916rem);
-  display: flex;
-  align-items: center;
-  flex-shrink: 0;
-}
-.issueddocuments-Ebf .body-xXf .issueddocuments-t3w .educationaldocument-iSq .auto-group-u5pb-e5b .rectangle-35-MEu {
-  margin: 0.9rem 3rem 0rem 0rem;
-  width: 2.8rem;
-  height: 2.7rem;
-  border: solid 0.2rem #92d79e;
-  box-sizing: border-box;
-  background-color: #ffffff;
-  flex-shrink: 0;
-}
-.issueddocuments-Ebf .body-xXf .issueddocuments-t3w .educationaldocument-iSq .auto-group-u5pb-e5b .educational-document-UaR {
-  margin-right: 55.6917rem;
-  font-size: 3.6rem;
-  font-weight: 400;
-  line-height: 1.6025;
-  color: #000000;
-  font-family: Jomolhari, 'Source Sans Pro';
-  white-space: nowrap;
-  flex-shrink: 0;
-}
-.issueddocuments-Ebf .body-xXf .issueddocuments-t3w .educationaldocument-iSq .auto-group-u5pb-e5b .arrow-down-drop-circle-Qiy {
-  margin-top: 0.6rem;
-  width: 4.9167rem;
-  height: 5.1667rem;
-  object-fit: contain;
-  vertical-align: top;
-  flex-shrink: 0;
-}
-.issueddocuments-Ebf .body-xXf .issueddocuments-t3w .educationaldocument-iSq .line-1-uvd {
-  margin-bottom: 1.5rem;
-  width: 100%;
-  height: 0.5rem;
-  background-color: rgba(0, 0, 0, 0.3799999952);
-  flex-shrink: 0;
-}
-.issueddocuments-Ebf .body-xXf .issueddocuments-t3w .educationaldocument-iSq .auto-group-7p9p-rqs {
-  margin: 0rem 1.2rem 0rem 0.4rem;
-  width: calc(100% - 1.6rem);
-  height: 33.1rem;
-  position: relative;
-  flex-shrink: 0;
-}
-.issueddocuments-Ebf .body-xXf .issueddocuments-t3w .educationaldocument-iSq .auto-group-7p9p-rqs .xclassmarksheet-aWy {
-  width: 106rem;
-  height: 4.9rem;
-  position: absolute;
-  left: 0;
-  top: 0;
-}
-.issueddocuments-Ebf .body-xXf .issueddocuments-t3w .educationaldocument-iSq .auto-group-7p9p-rqs .xclassmarksheet-aWy .rectangle-38-hbb {
-  width: 106rem;
-  height: 4.7rem;
-  position: absolute;
-  left: 0;
-  top: 0.1rem;
-  background-color: #fffcfc;
-}
-.issueddocuments-Ebf .body-xXf .issueddocuments-t3w .educationaldocument-iSq .auto-group-7p9p-rqs .xclassmarksheet-aWy .x-class-marksheet-qC1 {
-  width: 25.6rem;
-  height: 4.9rem;
-  position: absolute;
-  left: 10.3rem;
-  top: 0;
-  font-size: 3rem;
-  font-weight: 400;
-  line-height: 1.6025;
-  color: #000000;
-  font-family: Jomolhari, 'Source Sans Pro';
-  white-space: nowrap;
-}
-.issueddocuments-Ebf .body-xXf .issueddocuments-t3w .educationaldocument-iSq .auto-group-7p9p-rqs .xclassmarksheet-aWy .rectangle-35-XKj {
-  width: 2.8rem;
-  height: 2.7rem;
-  position: absolute;
-  left: 4.9rem;
-  top: 1.2rem;
-  border: solid 0.2rem #92d79e;
-  box-sizing: border-box;
-  background-color: #ffffff;
-}
-.issueddocuments-Ebf .body-xXf .issueddocuments-t3w .educationaldocument-iSq .auto-group-7p9p-rqs .xclassmarksheet-aWy .pencil-44m {
-  width: 1.8002rem;
-  height: 1.8003rem;
-  position: absolute;
-  left: 98.7rem;
-  top: 1.6998rem;
-  object-fit: contain;
-  vertical-align: top;
-}
-.issueddocuments-Ebf .body-xXf .issueddocuments-t3w .educationaldocument-iSq .auto-group-7p9p-rqs .xclassmarksheet-aWy .delete-bqP {
-  width: 1.4rem;
-  height: 1.8rem;
-  position: absolute;
-  left: 102.9rem;
-  top: 1.7rem;
-  object-fit: contain;
-  vertical-align: top;
-}
-.issueddocuments-Ebf .body-xXf .issueddocuments-t3w .educationaldocument-iSq .auto-group-7p9p-rqs .migration-certificate-L2H {
-  width: 106rem;
-  height: 4.9rem;
-  position: absolute;
-  left: 0;
-  top: 9.6rem;
-}
-.issueddocuments-Ebf .body-xXf .issueddocuments-t3w .educationaldocument-iSq .auto-group-7p9p-rqs .migration-certificate-L2H .rectangle-38-sH7 {
-  width: 106rem;
-  height: 4.7rem;
-  position: absolute;
-  left: 0;
-  top: 0.1rem;
-  background-color: #fffcfc;
-}
-.issueddocuments-Ebf .body-xXf .issueddocuments-t3w .educationaldocument-iSq .auto-group-7p9p-rqs .migration-certificate-L2H .migration-certificate-An1 {
-  width: 28.5rem;
-  height: 4.9rem;
-  position: absolute;
-  left: 10.3rem;
-  top: 0;
-  font-size: 3rem;
-  font-weight: 400;
-  line-height: 1.6025;
-  color: #000000;
-  font-family: Jomolhari, 'Source Sans Pro';
-  white-space: nowrap;
-}
-.issueddocuments-Ebf .body-xXf .issueddocuments-t3w .educationaldocument-iSq .auto-group-7p9p-rqs .migration-certificate-L2H .rectangle-35-H5w {
-  width: 2.8rem;
-  height: 2.7rem;
-  position: absolute;
-  left: 4.9rem;
-  top: 1.2rem;
-  border: solid 0.2rem #92d79e;
-  box-sizing: border-box;
-  background-color: #ffffff;
-}
-.issueddocuments-Ebf .body-xXf .issueddocuments-t3w .educationaldocument-iSq .auto-group-7p9p-rqs .migration-certificate-L2H .pencil-nYV {
-  width: 1.8002rem;
-  height: 1.8003rem;
-  position: absolute;
-  left: 98.7rem;
-  top: 1.6998rem;
-  object-fit: contain;
-  vertical-align: top;
-}
-.issueddocuments-Ebf .body-xXf .issueddocuments-t3w .educationaldocument-iSq .auto-group-7p9p-rqs .migration-certificate-L2H .delete-D81 {
-  width: 1.4rem;
-  height: 1.8rem;
-  position: absolute;
-  left: 102.9rem;
-  top: 1.7rem;
-  object-fit: contain;
-  vertical-align: top;
-}
-.issueddocuments-Ebf .body-xXf .issueddocuments-t3w .educationaldocument-iSq .auto-group-7p9p-rqs .migration-certificate-MV7 {
-  width: 106rem;
-  height: 4.9rem;
-  position: absolute;
-  left: 0;
-  top: 19.2rem;
-}
-.issueddocuments-Ebf .body-xXf .issueddocuments-t3w .educationaldocument-iSq .auto-group-7p9p-rqs .migration-certificate-MV7 .rectangle-38-6Sh {
-  width: 106rem;
-  height: 4.7rem;
-  position: absolute;
-  left: 0;
-  top: 0.1rem;
-  background-color: #fffcfc;
-}
-.issueddocuments-Ebf .body-xXf .issueddocuments-t3w .educationaldocument-iSq .auto-group-7p9p-rqs .migration-certificate-MV7 .last-sem-marksheet-3cq {
-  width: 27.6rem;
-  height: 4.9rem;
-  position: absolute;
-  left: 10.3rem;
-  top: 0;
-  font-size: 3rem;
-  font-weight: 400;
-  line-height: 1.6025;
-  color: #000000;
-  font-family: Jomolhari, 'Source Sans Pro';
-  white-space: nowrap;
-}
-.issueddocuments-Ebf .body-xXf .issueddocuments-t3w .educationaldocument-iSq .auto-group-7p9p-rqs .migration-certificate-MV7 .rectangle-35-AxM {
-  width: 2.8rem;
-  height: 2.7rem;
-  position: absolute;
-  left: 4.9rem;
-  top: 1.2rem;
-  border: solid 0.2rem #92d79e;
-  box-sizing: border-box;
-  background-color: #ffffff;
-}
-.issueddocuments-Ebf .body-xXf .issueddocuments-t3w .educationaldocument-iSq .auto-group-7p9p-rqs .migration-certificate-MV7 .pencil-Sey {
-  width: 1.8002rem;
-  height: 1.8003rem;
-  position: absolute;
-  left: 98.7rem;
-  top: 1.6997rem;
-  object-fit: contain;
-  vertical-align: top;
-}
-.issueddocuments-Ebf .body-xXf .issueddocuments-t3w .educationaldocument-iSq .auto-group-7p9p-rqs .migration-certificate-MV7 .delete-niq {
-  width: 1.4rem;
-  height: 1.8rem;
-  position: absolute;
-  left: 102.9rem;
-  top: 1.7rem;
-  object-fit: contain;
-  vertical-align: top;
-}
-.issueddocuments-Ebf .body-xXf .issueddocuments-t3w .educationaldocument-iSq .auto-group-7p9p-rqs .xiiclassmarksheet-w5w {
-  width: 106rem;
-  height: 4.9rem;
-  position: absolute;
-  left: 0;
-  top: 4.8rem;
-}
-.issueddocuments-Ebf .body-xXf .issueddocuments-t3w .educationaldocument-iSq .auto-group-7p9p-rqs .xiiclassmarksheet-w5w .rectangle-38-GP7 {
-  width: 106rem;
-  height: 4.7rem;
-  position: absolute;
-  left: 0;
-  top: 0.1rem;
-  background-color: #fffcfc;
-}
-.issueddocuments-Ebf .body-xXf .issueddocuments-t3w .educationaldocument-iSq .auto-group-7p9p-rqs .xiiclassmarksheet-w5w .xii-class-marksheet-RG1 {
-  width: 27.8rem;
-  height: 4.9rem;
-  position: absolute;
-  left: 10.3rem;
-  top: 0;
-  font-size: 3rem;
-  font-weight: 400;
-  line-height: 1.6025;
-  color: #000000;
-  font-family: Jomolhari, 'Source Sans Pro';
-  white-space: nowrap;
-}
-.issueddocuments-Ebf .body-xXf .issueddocuments-t3w .educationaldocument-iSq .auto-group-7p9p-rqs .xiiclassmarksheet-w5w .rectangle-35-Vmf {
-  width: 2.8rem;
-  height: 2.7rem;
-  position: absolute;
-  left: 4.9rem;
-  top: 1.2rem;
-  border: solid 0.2rem #92d79e;
-  box-sizing: border-box;
-  background-color: #ffffff;
-}
-.issueddocuments-Ebf .body-xXf .issueddocuments-t3w .educationaldocument-iSq .auto-group-7p9p-rqs .xiiclassmarksheet-w5w .pencil-1k1 {
-  width: 1.8002rem;
-  height: 1.8003rem;
-  position: absolute;
-  left: 98.7rem;
-  top: 1.6998rem;
-  object-fit: contain;
-  vertical-align: top;
-}
-.issueddocuments-Ebf .body-xXf .issueddocuments-t3w .educationaldocument-iSq .auto-group-7p9p-rqs .xiiclassmarksheet-w5w .delete-AN1 {
-  width: 1.4rem;
-  height: 1.8rem;
-  position: absolute;
-  left: 102.9rem;
-  top: 1.7rem;
-  object-fit: contain;
-  vertical-align: top;
-}
-.issueddocuments-Ebf .body-xXf .issueddocuments-t3w .educationaldocument-iSq .auto-group-7p9p-rqs .tc-uKb {
-  width: 106rem;
-  height: 4.9rem;
-  position: absolute;
-  left: 0;
-  top: 14.4rem;
-}
-.issueddocuments-Ebf .body-xXf .issueddocuments-t3w .educationaldocument-iSq .auto-group-7p9p-rqs .tc-uKb .rectangle-38-3wb {
-  width: 106rem;
-  height: 4.7rem;
-  position: absolute;
-  left: 0;
-  top: 0.1rem;
-  background-color: #fffcfc;
-}
-.issueddocuments-Ebf .body-xXf .issueddocuments-t3w .educationaldocument-iSq .auto-group-7p9p-rqs .tc-uKb .tc-z69 {
-  width: 4.3rem;
-  height: 4.9rem;
-  position: absolute;
-  left: 10.3rem;
-  top: 0;
-  font-size: 3rem;
-  font-weight: 400;
-  line-height: 1.6025;
-  color: #000000;
-  font-family: Jomolhari, 'Source Sans Pro';
-  white-space: nowrap;
-}
-.issueddocuments-Ebf .body-xXf .issueddocuments-t3w .educationaldocument-iSq .auto-group-7p9p-rqs .tc-uKb .rectangle-35-zkM {
-  width: 2.8rem;
-  height: 2.7rem;
-  position: absolute;
-  left: 4.9rem;
-  top: 1.2rem;
-  border: solid 0.2rem #92d79e;
-  box-sizing: border-box;
-  background-color: #ffffff;
-}
-.issueddocuments-Ebf .body-xXf .issueddocuments-t3w .educationaldocument-iSq .auto-group-7p9p-rqs .tc-uKb .pencil-Vx1 {
-  width: 1.8002rem;
-  height: 1.8003rem;
-  position: absolute;
-  left: 98.7rem;
-  top: 1.6997rem;
-  object-fit: contain;
-  vertical-align: top;
-}
-.issueddocuments-Ebf .body-xXf .issueddocuments-t3w .educationaldocument-iSq .auto-group-7p9p-rqs .tc-uKb .delete-dYR {
-  width: 1.4rem;
-  height: 1.8rem;
-  position: absolute;
-  left: 102.9rem;
-  top: 1.7rem;
-  object-fit: contain;
-  vertical-align: top;
-}
-.issueddocuments-Ebf .body-xXf .issueddocuments-t3w .educationaldocument-iSq .auto-group-7p9p-rqs .gapcertifcate-MUR {
-  width: 106rem;
-  height: 4.9rem;
-  position: absolute;
-  left: 0;
-  top: 24rem;
-}
-.issueddocuments-Ebf .body-xXf .issueddocuments-t3w .educationaldocument-iSq .auto-group-7p9p-rqs .gapcertifcate-MUR .rectangle-38-gFo {
-  width: 106rem;
-  height: 4.7rem;
-  position: absolute;
-  left: 0;
-  top: 0.1rem;
-  background-color: #fffcfc;
-}
-.issueddocuments-Ebf .body-xXf .issueddocuments-t3w .educationaldocument-iSq .auto-group-7p9p-rqs .gapcertifcate-MUR .gap-certificate-Czq {
-  width: 20.6rem;
-  height: 4.9rem;
-  position: absolute;
-  left: 10.3rem;
-  top: 0;
-  font-size: 3rem;
-  font-weight: 400;
-  line-height: 1.6025;
-  color: #000000;
-  font-family: Jomolhari, 'Source Sans Pro';
-  white-space: nowrap;
-}
-.issueddocuments-Ebf .body-xXf .issueddocuments-t3w .educationaldocument-iSq .auto-group-7p9p-rqs .gapcertifcate-MUR .rectangle-35-WVj {
-  width: 2.8rem;
-  height: 2.7rem;
-  position: absolute;
-  left: 4.9rem;
-  top: 1.2rem;
-  border: solid 0.2rem #92d79e;
-  box-sizing: border-box;
-  background-color: #ffffff;
-}
-.issueddocuments-Ebf .body-xXf .issueddocuments-t3w .educationaldocument-iSq .auto-group-7p9p-rqs .gapcertifcate-MUR .pencil-3Vf {
-  width: 1.8002rem;
-  height: 1.8003rem;
-  position: absolute;
-  left: 98.7rem;
-  top: 1.6997rem;
-  object-fit: contain;
-  vertical-align: top;
-}
-.issueddocuments-Ebf .body-xXf .issueddocuments-t3w .educationaldocument-iSq .auto-group-7p9p-rqs .gapcertifcate-MUR .delete-zQu {
-  width: 1.4rem;
-  height: 1.8rem;
-  position: absolute;
-  left: 102.9rem;
-  top: 1.7rem;
-  object-fit: contain;
-  vertical-align: top;
-}
-.issueddocuments-Ebf .body-xXf .issueddocuments-t3w .educationaldocument-iSq .auto-group-7p9p-rqs .gapcertifcate-g2q {
-  width: 106rem;
-  height: 4.9rem;
-  position: absolute;
-  left: 0;
-  top: 28.2rem;
-}
-.issueddocuments-Ebf .body-xXf .issueddocuments-t3w .educationaldocument-iSq .auto-group-7p9p-rqs .gapcertifcate-g2q .rectangle-38-DHf {
-  width: 106rem;
-  height: 4.7rem;
-  position: absolute;
-  left: 0;
-  top: 0.1rem;
-  background-color: #fffcfc;
-}
-.issueddocuments-Ebf .body-xXf .issueddocuments-t3w .educationaldocument-iSq .auto-group-7p9p-rqs .gapcertifcate-g2q .admission-slip-NAZ {
-  width: 20.8rem;
-  height: 4.9rem;
-  position: absolute;
-  left: 10.3rem;
-  top: 0;
-  font-size: 3rem;
-  font-weight: 400;
-  line-height: 1.6025;
-  color: #000000;
-  font-family: Jomolhari, 'Source Sans Pro';
-  white-space: nowrap;
-}
-.issueddocuments-Ebf .body-xXf .issueddocuments-t3w .educationaldocument-iSq .auto-group-7p9p-rqs .gapcertifcate-g2q .rectangle-35-hCq {
-  width: 2.8rem;
-  height: 2.7rem;
-  position: absolute;
-  left: 4.9rem;
-  top: 1.2rem;
-  border: solid 0.2rem #92d79e;
-  box-sizing: border-box;
-  background-color: #ffffff;
-}
-.issueddocuments-Ebf .body-xXf .issueddocuments-t3w .educationaldocument-iSq .auto-group-7p9p-rqs .gapcertifcate-g2q .pencil-ETf {
-  width: 1.8002rem;
-  height: 1.8003rem;
-  position: absolute;
-  left: 98.7rem;
-  top: 1.6997rem;
-  object-fit: contain;
-  vertical-align: top;
-}
-.issueddocuments-Ebf .body-xXf .issueddocuments-t3w .educationaldocument-iSq .auto-group-7p9p-rqs .gapcertifcate-g2q .delete-wcy {
-  width: 1.4rem;
-  height: 1.8rem;
-  position: absolute;
-  left: 102.9rem;
-  top: 1.7rem;
-  object-fit: contain;
-  vertical-align: top;
-}
-.issueddocuments-Ebf .body-xXf .issueddocuments-t3w .familyscholarship-document-3AD {
-  box-sizing: border-box;
-  padding: 0rem 0.1rem 9.9rem 0.1rem;
-  width: 100%;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
-  background-color: #ffffff;
-  border-radius: 2.4rem;
-  flex-shrink: 0;
-}
-.issueddocuments-Ebf .body-xXf .issueddocuments-t3w .familyscholarship-document-3AD .auto-group-ppfw-ZeM {
-  margin: 0rem 1.692rem 0.817rem 2.5rem;
-  width: calc(100% - 4.1916rem);
-  display: flex;
-  align-items: center;
-  flex-shrink: 0;
-}
-.issueddocuments-Ebf .body-xXf .issueddocuments-t3w .familyscholarship-document-3AD .auto-group-ppfw-ZeM .rectangle-36-fxH {
-  margin: 0.117rem 3rem 0rem 0rem;
-  width: 2.8rem;
-  height: 2.7rem;
-  border: solid 0.2rem #92d79e;
-  box-sizing: border-box;
-  background-color: #ffffff;
-  flex-shrink: 0;
-}
-.issueddocuments-Ebf .body-xXf .issueddocuments-t3w .familyscholarship-document-3AD .auto-group-ppfw-ZeM .family-scholarships-document-zjf {
-  margin: 0rem 37.692rem 0.183rem 0rem;
-  font-size: 3.6rem;
-  font-weight: 400;
-  line-height: 1.6025;
-  color: #000000;
-  font-family: Jomolhari, 'Source Sans Pro';
-  white-space: nowrap;
-  flex-shrink: 0;
-}
-.issueddocuments-Ebf .body-xXf .issueddocuments-t3w .familyscholarship-document-3AD .auto-group-ppfw-ZeM .arrow-down-drop-circle-uLq {
-  margin-top: 0.8167rem;
-  width: 4.9167rem;
-  height: 5.1667rem;
-  object-fit: contain;
-  vertical-align: top;
-  flex-shrink: 0;
-}
-.issueddocuments-Ebf .body-xXf .issueddocuments-t3w .familyscholarship-document-3AD .line-1-oSD {
-  margin-bottom: 1.5rem;
-  width: 100%;
-  height: 0.5rem;
-  background-color: rgba(0, 0, 0, 0.3799999952);
-  flex-shrink: 0;
-}
-.issueddocuments-Ebf .body-xXf .issueddocuments-t3w .familyscholarship-document-3AD .auto-group-nxqf-9ky {
-  margin: 0rem 1.2rem 0rem 0.4rem;
-  width: calc(100% - 1.6rem);
-  height: 24.1rem;
-  position: relative;
-  flex-shrink: 0;
-}
-.issueddocuments-Ebf .body-xXf .issueddocuments-t3w .familyscholarship-document-3AD .auto-group-nxqf-9ky .domicile-certificate-4d3 {
-  width: 106rem;
-  height: 4.9rem;
-  position: absolute;
-  left: 0;
-  top: 0;
-}
-.issueddocuments-Ebf .body-xXf .issueddocuments-t3w .familyscholarship-document-3AD .auto-group-nxqf-9ky .domicile-certificate-4d3 .rectangle-38-ZZo {
-  width: 106rem;
-  height: 4.7rem;
-  position: absolute;
-  left: 0;
-  top: 0.1rem;
-  background-color: #fffcfc;
-}
-.issueddocuments-Ebf .body-xXf .issueddocuments-t3w .familyscholarship-document-3AD .auto-group-nxqf-9ky .domicile-certificate-4d3 .domicile-certificate-WV3 {
-  width: 27.5rem;
-  height: 4.9rem;
-  position: absolute;
-  left: 10.3rem;
-  top: 0;
-  font-size: 3rem;
-  font-weight: 400;
-  line-height: 1.6025;
-  color: #000000;
-  font-family: Jomolhari, 'Source Sans Pro';
-  white-space: nowrap;
-}
-.issueddocuments-Ebf .body-xXf .issueddocuments-t3w .familyscholarship-document-3AD .auto-group-nxqf-9ky .domicile-certificate-4d3 .rectangle-35-cHB {
-  width: 2.8rem;
-  height: 2.7rem;
-  position: absolute;
-  left: 4.9rem;
-  top: 1.2rem;
-  border: solid 0.2rem #92d79e;
-  box-sizing: border-box;
-  background-color: #ffffff;
-}
-.issueddocuments-Ebf .body-xXf .issueddocuments-t3w .familyscholarship-document-3AD .auto-group-nxqf-9ky .domicile-certificate-4d3 .pencil-6i9 {
-  width: 1.8002rem;
-  height: 1.8003rem;
-  position: absolute;
-  left: 98.7rem;
-  top: 1.6997rem;
-  object-fit: contain;
-  vertical-align: top;
-}
-.issueddocuments-Ebf .body-xXf .issueddocuments-t3w .familyscholarship-document-3AD .auto-group-nxqf-9ky .domicile-certificate-4d3 .delete-Sn1 {
-  width: 1.4rem;
-  height: 1.8rem;
-  position: absolute;
-  left: 102.9rem;
-  top: 1.7rem;
-  object-fit: contain;
-  vertical-align: top;
-}
-.issueddocuments-Ebf .body-xXf .issueddocuments-t3w .familyscholarship-document-3AD .auto-group-nxqf-9ky .castecertificate-PSM {
-  width: 106rem;
-  height: 4.9rem;
-  position: absolute;
-  left: 0;
-  top: 9.6rem;
-}
-.issueddocuments-Ebf .body-xXf .issueddocuments-t3w .familyscholarship-document-3AD .auto-group-nxqf-9ky .castecertificate-PSM .rectangle-38-hxq {
-  width: 106rem;
-  height: 4.7rem;
-  position: absolute;
-  left: 0;
-  top: 0.1rem;
-  background-color: #fffcfc;
-}
-.issueddocuments-Ebf .body-xXf .issueddocuments-t3w .familyscholarship-document-3AD .auto-group-nxqf-9ky .castecertificate-PSM .caste-certificate-TSD {
-  width: 22.5rem;
-  height: 4.9rem;
-  position: absolute;
-  left: 10.3rem;
-  top: 0;
-  font-size: 3rem;
-  font-weight: 400;
-  line-height: 1.6025;
-  color: #000000;
-  font-family: Jomolhari, 'Source Sans Pro';
-  white-space: nowrap;
-}
-.issueddocuments-Ebf .body-xXf .issueddocuments-t3w .familyscholarship-document-3AD .auto-group-nxqf-9ky .castecertificate-PSM .rectangle-35-mC1 {
-  width: 2.8rem;
-  height: 2.7rem;
-  position: absolute;
-  left: 4.9rem;
-  top: 1.2rem;
-  border: solid 0.2rem #92d79e;
-  box-sizing: border-box;
-  background-color: #ffffff;
-}
-.issueddocuments-Ebf .body-xXf .issueddocuments-t3w .familyscholarship-document-3AD .auto-group-nxqf-9ky .castecertificate-PSM .pencil-Vdo {
-  width: 1.8002rem;
-  height: 1.8003rem;
-  position: absolute;
-  left: 98.7rem;
-  top: 1.6997rem;
-  object-fit: contain;
-  vertical-align: top;
-}
-.issueddocuments-Ebf .body-xXf .issueddocuments-t3w .familyscholarship-document-3AD .auto-group-nxqf-9ky .castecertificate-PSM .delete-F7B {
-  width: 1.4rem;
-  height: 1.8rem;
-  position: absolute;
-  left: 102.9rem;
-  top: 1.7rem;
-  object-fit: contain;
-  vertical-align: top;
-}
-.issueddocuments-Ebf .body-xXf .issueddocuments-t3w .familyscholarship-document-3AD .auto-group-nxqf-9ky .castecertificate-nso {
-  width: 106rem;
-  height: 4.9rem;
-  position: absolute;
-  left: 0;
-  top: 14.4rem;
-}
-.issueddocuments-Ebf .body-xXf .issueddocuments-t3w .familyscholarship-document-3AD .auto-group-nxqf-9ky .castecertificate-nso .rectangle-38-Y6H {
-  width: 106rem;
-  height: 4.7rem;
-  position: absolute;
-  left: 0;
-  top: 0.1rem;
-  background-color: #fffcfc;
-}
-.issueddocuments-Ebf .body-xXf .issueddocuments-t3w .familyscholarship-document-3AD .auto-group-nxqf-9ky .castecertificate-nso .smagra-id-GHB {
-  width: 14.7rem;
-  height: 4.9rem;
-  position: absolute;
-  left: 10.3rem;
-  top: 0;
-  font-size: 3rem;
-  font-weight: 400;
-  line-height: 1.6025;
-  color: #000000;
-  font-family: Jomolhari, 'Source Sans Pro';
-  white-space: nowrap;
-}
-.issueddocuments-Ebf .body-xXf .issueddocuments-t3w .familyscholarship-document-3AD .auto-group-nxqf-9ky .castecertificate-nso .rectangle-35-wu7 {
-  width: 2.8rem;
-  height: 2.7rem;
-  position: absolute;
-  left: 4.9rem;
-  top: 1.2rem;
-  border: solid 0.2rem #92d79e;
-  box-sizing: border-box;
-  background-color: #ffffff;
-}
-.issueddocuments-Ebf .body-xXf .issueddocuments-t3w .familyscholarship-document-3AD .auto-group-nxqf-9ky .castecertificate-nso .pencil-gbo {
-  width: 1.8002rem;
-  height: 1.8003rem;
-  position: absolute;
-  left: 98.7rem;
-  top: 1.6997rem;
-  object-fit: contain;
-  vertical-align: top;
-}
-.issueddocuments-Ebf .body-xXf .issueddocuments-t3w .familyscholarship-document-3AD .auto-group-nxqf-9ky .castecertificate-nso .delete-QXo {
-  width: 1.4rem;
-  height: 1.8rem;
-  position: absolute;
-  left: 102.9rem;
-  top: 1.7rem;
-  object-fit: contain;
-  vertical-align: top;
-}
-.issueddocuments-Ebf .body-xXf .issueddocuments-t3w .familyscholarship-document-3AD .auto-group-nxqf-9ky .castecertificate-Kem {
-  width: 106rem;
-  height: 4.9rem;
-  position: absolute;
-  left: 0;
-  top: 19.2rem;
-}
-.issueddocuments-Ebf .body-xXf .issueddocuments-t3w .familyscholarship-document-3AD .auto-group-nxqf-9ky .castecertificate-Kem .rectangle-38-F2d {
-  width: 106rem;
-  height: 4.7rem;
-  position: absolute;
-  left: 0;
-  top: 0.1rem;
-  background-color: #fffcfc;
-}
-.issueddocuments-Ebf .body-xXf .issueddocuments-t3w .familyscholarship-document-3AD .auto-group-nxqf-9ky .castecertificate-Kem .bank-passbook-bMP {
-  width: 20.6rem;
-  height: 4.9rem;
-  position: absolute;
-  left: 10.3rem;
-  top: 0;
-  font-size: 3rem;
-  font-weight: 400;
-  line-height: 1.6025;
-  color: #000000;
-  font-family: Jomolhari, 'Source Sans Pro';
-  white-space: nowrap;
-}
-.issueddocuments-Ebf .body-xXf .issueddocuments-t3w .familyscholarship-document-3AD .auto-group-nxqf-9ky .castecertificate-Kem .rectangle-35-KoB {
-  width: 2.8rem;
-  height: 2.7rem;
-  position: absolute;
-  left: 4.9rem;
-  top: 1.2rem;
-  border: solid 0.2rem #92d79e;
-  box-sizing: border-box;
-  background-color: #ffffff;
-}
-.issueddocuments-Ebf .body-xXf .issueddocuments-t3w .familyscholarship-document-3AD .auto-group-nxqf-9ky .castecertificate-Kem .pencil-GCd {
-  width: 1.8002rem;
-  height: 1.8003rem;
-  position: absolute;
-  left: 98.7rem;
-  top: 1.6997rem;
-  object-fit: contain;
-  vertical-align: top;
-}
-.issueddocuments-Ebf .body-xXf .issueddocuments-t3w .familyscholarship-document-3AD .auto-group-nxqf-9ky .castecertificate-Kem .delete-cGV {
-  width: 1.4rem;
-  height: 1.8rem;
-  position: absolute;
-  left: 102.9rem;
-  top: 1.7rem;
-  object-fit: contain;
-  vertical-align: top;
-}
-.issueddocuments-Ebf .body-xXf .issueddocuments-t3w .familyscholarship-document-3AD .auto-group-nxqf-9ky .incomecertificate-8kd {
-  width: 106rem;
-  height: 4.9rem;
-  position: absolute;
-  left: 0;
-  top: 4.8rem;
-}
-.issueddocuments-Ebf .body-xXf .issueddocuments-t3w .familyscholarship-document-3AD .auto-group-nxqf-9ky .incomecertificate-8kd .rectangle-38-eU5 {
-  width: 106rem;
-  height: 4.7rem;
-  position: absolute;
-  left: 0;
-  top: 0.1rem;
-  background-color: #fffcfc;
-}
-.issueddocuments-Ebf .body-xXf .issueddocuments-t3w .familyscholarship-document-3AD .auto-group-nxqf-9ky .incomecertificate-8kd .income-certificate-CVb {
-  width: 25.1rem;
-  height: 4.9rem;
-  position: absolute;
-  left: 10.3rem;
-  top: 0;
-  font-size: 3rem;
-  font-weight: 400;
-  line-height: 1.6025;
-  color: #000000;
-  font-family: Jomolhari, 'Source Sans Pro';
-  white-space: nowrap;
-}
-.issueddocuments-Ebf .body-xXf .issueddocuments-t3w .familyscholarship-document-3AD .auto-group-nxqf-9ky .incomecertificate-8kd .rectangle-35-Kq7 {
-  width: 2.8rem;
-  height: 2.7rem;
-  position: absolute;
-  left: 4.9rem;
-  top: 1.2rem;
-  border: solid 0.2rem #92d79e;
-  box-sizing: border-box;
-  background-color: #ffffff;
-}
-.issueddocuments-Ebf .body-xXf .issueddocuments-t3w .familyscholarship-document-3AD .auto-group-nxqf-9ky .incomecertificate-8kd .pencil-e6h {
-  width: 1.8002rem;
-  height: 1.8003rem;
-  position: absolute;
-  left: 98.7rem;
-  top: 1.6997rem;
-  object-fit: contain;
-  vertical-align: top;
-}
-.issueddocuments-Ebf .body-xXf .issueddocuments-t3w .familyscholarship-document-3AD .auto-group-nxqf-9ky .incomecertificate-8kd .delete-jP3 {
-  width: 1.4rem;
-  height: 1.8rem;
-  position: absolute;
-  left: 102.9rem;
-  top: 1.7rem;
-  object-fit: contain;
-  vertical-align: top;
-}
-.issueddocuments-Ebf .body-xXf .issueddocuments-t3w .other-document-oth {
-  width: 100%;
-  height: 36.7rem;
-  position: relative;
-  flex-shrink: 0;
-}
-.issueddocuments-Ebf .body-xXf .issueddocuments-t3w .other-document-oth .rectangle-33-jnM {
-  width: 107.8rem;
-  height: 36.6rem;
-  position: absolute;
-  left: 0;
-  top: 0.1rem;
-  box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
-  background-color: #ffffff;
-  border-radius: 2.4rem;
-}
-.issueddocuments-Ebf .body-xXf .issueddocuments-t3w .other-document-oth .other-documents-certificate-43w {
-  width: 50.7rem;
-  height: 5.8rem;
-  position: absolute;
-  left: 8.4rem;
-  top: 0;
-  font-size: 3.6rem;
-  font-weight: 400;
-  line-height: 1.6025;
-  color: #000000;
-  font-family: Jomolhari, 'Source Sans Pro';
-  white-space: nowrap;
-}
-.issueddocuments-Ebf .body-xXf .issueddocuments-t3w .other-document-oth .arrow-down-drop-circle-mj3 {
-  width: 4.9167rem;
-  height: 5.1667rem;
-  position: absolute;
-  left: 101.0917rem;
-  top: 0.8167rem;
-  object-fit: contain;
-  vertical-align: top;
-}
-.issueddocuments-Ebf .body-xXf .issueddocuments-t3w .other-document-oth .rectangle-37-tHs {
-  width: 2.8rem;
-  height: 2.7rem;
-  position: absolute;
-  left: 2.6rem;
-  top: 2.2rem;
-  border: solid 0.2rem #92d79e;
-  box-sizing: border-box;
-  background-color: #ffffff;
-}
-.issueddocuments-Ebf .body-xXf .issueddocuments-t3w .other-document-oth .domicile-certificate-29B {
-  width: 106rem;
-  height: 4.9rem;
-  position: absolute;
-  left: 0.5rem;
-  top: 8.8rem;
-}
-.issueddocuments-Ebf .body-xXf .issueddocuments-t3w .other-document-oth .domicile-certificate-29B .rectangle-38-kqs {
-  width: 106rem;
-  height: 4.7rem;
-  position: absolute;
-  left: 0;
-  top: 0.1rem;
-  background-color: #fffcfc;
-}
-.issueddocuments-Ebf .body-xXf .issueddocuments-t3w .other-document-oth .domicile-certificate-29B .electricity-bill-Hqo {
-  width: 19.9rem;
-  height: 4.9rem;
-  position: absolute;
-  left: 10.3rem;
-  top: 0;
-  font-size: 3rem;
-  font-weight: 400;
-  line-height: 1.6025;
-  color: #000000;
-  font-family: Jomolhari, 'Source Sans Pro';
-  white-space: nowrap;
-}
-.issueddocuments-Ebf .body-xXf .issueddocuments-t3w .other-document-oth .domicile-certificate-29B .rectangle-35-CSy {
-  width: 2.8rem;
-  height: 2.7rem;
-  position: absolute;
-  left: 4.9rem;
-  top: 1.2rem;
-  border: solid 0.2rem #92d79e;
-  box-sizing: border-box;
-  background-color: #ffffff;
-}
-.issueddocuments-Ebf .body-xXf .issueddocuments-t3w .other-document-oth .domicile-certificate-29B .pencil-vtm {
-  width: 1.8002rem;
-  height: 1.8003rem;
-  position: absolute;
-  left: 98.7rem;
-  top: 1.6997rem;
-  object-fit: contain;
-  vertical-align: top;
-}
-.issueddocuments-Ebf .body-xXf .issueddocuments-t3w .other-document-oth .domicile-certificate-29B .delete-fLZ {
-  width: 1.4rem;
-  height: 1.8rem;
-  position: absolute;
-  left: 102.9rem;
-  top: 1.7rem;
-  object-fit: contain;
-  vertical-align: top;
-}
-.issueddocuments-Ebf .body-xXf .issueddocuments-t3w .other-document-oth .castecertificate-ng5 {
-  width: 106rem;
-  height: 4.9rem;
-  position: absolute;
-  left: 0.5rem;
-  top: 18.4rem;
-}
-.issueddocuments-Ebf .body-xXf .issueddocuments-t3w .other-document-oth .castecertificate-ng5 .rectangle-38-Kg1 {
-  width: 106rem;
-  height: 4.7rem;
-  position: absolute;
-  left: 0;
-  top: 0.1rem;
-  background-color: #fffcfc;
-}
-.issueddocuments-Ebf .body-xXf .issueddocuments-t3w .other-document-oth .castecertificate-ng5 .prarup-1-UJ1 {
-  width: 11.5rem;
-  height: 4.9rem;
-  position: absolute;
-  left: 10.3rem;
-  top: 0;
-  font-size: 3rem;
-  font-weight: 400;
-  line-height: 1.6025;
-  color: #000000;
-  font-family: Jomolhari, 'Source Sans Pro';
-  white-space: nowrap;
-}
-.issueddocuments-Ebf .body-xXf .issueddocuments-t3w .other-document-oth .castecertificate-ng5 .rectangle-35-kFX {
-  width: 2.8rem;
-  height: 2.7rem;
-  position: absolute;
-  left: 4.9rem;
-  top: 1.2rem;
-  border: solid 0.2rem #92d79e;
-  box-sizing: border-box;
-  background-color: #ffffff;
-}
-.issueddocuments-Ebf .body-xXf .issueddocuments-t3w .other-document-oth .castecertificate-ng5 .pencil-t6q {
-  width: 1.8002rem;
-  height: 1.8003rem;
-  position: absolute;
-  left: 98.7rem;
-  top: 1.6997rem;
-  object-fit: contain;
-  vertical-align: top;
-}
-.issueddocuments-Ebf .body-xXf .issueddocuments-t3w .other-document-oth .castecertificate-ng5 .delete-ojb {
-  width: 1.4rem;
-  height: 1.8rem;
-  position: absolute;
-  left: 102.9rem;
-  top: 1.7rem;
-  object-fit: contain;
-  vertical-align: top;
-}
-.issueddocuments-Ebf .body-xXf .issueddocuments-t3w .other-document-oth .incomecertificate-9oT {
-  width: 106rem;
-  height: 4.9rem;
-  position: absolute;
-  left: 0.5rem;
-  top: 13.6rem;
-}
-.issueddocuments-Ebf .body-xXf .issueddocuments-t3w .other-document-oth .incomecertificate-9oT .rectangle-38-g2h {
-  width: 106rem;
-  height: 4.7rem;
-  position: absolute;
-  left: 0;
-  top: 0.1rem;
-  background-color: #fffcfc;
-}
-.issueddocuments-Ebf .body-xXf .issueddocuments-t3w .other-document-oth .incomecertificate-9oT .rent-slip-pub {
-  width: 12.6rem;
-  height: 4.9rem;
-  position: absolute;
-  left: 10.3rem;
-  top: 0;
-  font-size: 3rem;
-  font-weight: 400;
-  line-height: 1.6025;
-  color: #000000;
-  font-family: Jomolhari, 'Source Sans Pro';
-  white-space: nowrap;
-}
-.issueddocuments-Ebf .body-xXf .issueddocuments-t3w .other-document-oth .incomecertificate-9oT .rectangle-35-Z6V {
-  width: 2.8rem;
-  height: 2.7rem;
-  position: absolute;
-  left: 4.9rem;
-  top: 1.2rem;
-  border: solid 0.2rem #92d79e;
-  box-sizing: border-box;
-  background-color: #ffffff;
-}
-.issueddocuments-Ebf .body-xXf .issueddocuments-t3w .other-document-oth .incomecertificate-9oT .pencil-54q {
-  width: 1.8002rem;
-  height: 1.8003rem;
-  position: absolute;
-  left: 98.7rem;
-  top: 1.6997rem;
-  object-fit: contain;
-  vertical-align: top;
-}
-.issueddocuments-Ebf .body-xXf .issueddocuments-t3w .other-document-oth .incomecertificate-9oT .delete-oFj {
-  width: 1.4rem;
-  height: 1.8rem;
-  position: absolute;
-  left: 102.9rem;
-  top: 1.7rem;
-  object-fit: contain;
-  vertical-align: top;
-}
-.issueddocuments-Ebf .body-xXf .issueddocuments-t3w .other-document-oth .line-1-XBj {
-  width: 107.6rem;
-  height: 0.5rem;
-  position: absolute;
-  left: 0.1rem;
-  top: 6.8rem;
-  background-color: rgba(0, 0, 0, 0.3799999952);
-}
-.issueddocuments-Ebf .menu-eGM {
-  box-sizing: border-box;
-  padding: 6.3rem 0.27rem 6.3rem 2.23rem;
+  padding: 4.3rem 0.7rem 6.3rem 2.23rem;
   width: 32.5rem;
-  height: 94.1rem;
-  position: absolute;
+  height: 95rem;
+  position: relative;
   left: 0;
   top: 9rem;
   border: solid 0 rgba(0, 0, 0, 0.0900000036);
   box-shadow: 0.1rem -0.1rem 0.78rem rgba(0, 0, 0, 0.349999994);
   background-color: rgba(255, 255, 255, 0.6600000262);
 }
-.issueddocuments-Ebf .menu-eGM .frame-2-ZeD {
+.issueddocuments-Ebf  .menu-Qp5 .frame-2-7iV {
   width: 100%;
-  height: 46.9rem;
+  height: 46.6rem;
+  row-gap: 2rem;
+  align-items: center;
   display: flex;
   flex-direction: column;
 }
-.issueddocuments-Ebf .menu-eGM .frame-2-ZeD .group-7-HKK {
-  margin-bottom: 4.4rem;
-  width: 29.5696rem;
-  height: 6.1rem;
-  cursor: pointer;
+.issueddocuments-Ebf  .menu-Qp5 .frame-2-7iV .group-7-rg5 {
+  width: 100%;
+  height: 5.8rem;
   position: relative;
   flex-shrink: 0;
 }
-.issueddocuments-Ebf .menu-eGM .frame-2-ZeD .group-7-HKK .rectangle-21-2Gu {
+.issueddocuments-Ebf  .menu-Qp5 .frame-2-7iV .group-7-rg5 .rectangle-21-bdf {
   width: 29.5696rem;
   height: 5.4rem;
   position: absolute;
   left: 0;
-  top: 0.7rem;
-  background-color: #fafafa;
-  border-radius: 2.2rem;
+  top: 0.4rem;
+  background-color: transparent;
+  border-radius: 1.1rem;
 }
-.issueddocuments-Ebf .menu-eGM .frame-2-ZeD .group-7-HKK .documents-wuf {
-  width: 18.3rem;
-  height: 5.8rem;
+.issueddocuments-Ebf  .menu-Qp5 .frame-2-7iV .group-7-rg5:hover .rectangle-21-bdf {
+  background-color: rgba(23, 173, 50, 0.4600000083); /* Change background color on hover */
+}
+.issueddocuments-Ebf  .menu-Qp5 .frame-2-7iV .group-7-rg5 .documents-ueM {
+  width: 10.3rem;
+  height: 3.8rem;
   position: absolute;
   left: 6.3589rem;
   top: 0;
+  display: flex;
   font-size: 3.6rem;
   font-weight: 400;
   line-height: 1.6025;
@@ -1520,7 +566,7 @@ body {
   font-family: Jomolhari, 'Source Sans Pro';
   white-space: nowrap;
 }
-.issueddocuments-Ebf .menu-eGM .frame-2-ZeD .group-7-HKK .file-document-Ueh {
+.issueddocuments-Ebf  .menu-Qp5 .frame-2-7iV .group-7-rg5 .file-document-ERj {
   width: 2.7071rem;
   height: 3.3333rem;
   position: absolute;
@@ -1529,164 +575,16 @@ body {
   object-fit: contain;
   vertical-align: top;
 }
-.issueddocuments-Ebf .menu-eGM .frame-2-ZeD .group-8-1uX {
-  box-sizing: border-box;
-  padding: 0rem 2.373rem 0rem 0.803rem;
+
+.issueddocuments-Ebf  .header-7LR {
   width: 100%;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  background-color: #fafafa;
-  border-radius: 2.2rem;
-  flex-shrink: 0;
-}
-.issueddocuments-Ebf .menu-eGM .frame-2-ZeD .group-8-1uX .lightbulb-on-10-xJy {
-  margin: 0.2rem 1.002rem 0rem 0rem;
-  width: 3.7222rem;
-  height: 3.6667rem;
-  object-fit: contain;
-  vertical-align: top;
-  flex-shrink: 0;
-}
-.issueddocuments-Ebf .menu-eGM .frame-2-ZeD .group-8-1uX .oppurtunities-UHK {
-  font-size: 3.6rem;
-  font-weight: 400;
-  line-height: 1.6025;
-  color: #000000;
-  font-family: Jomolhari, 'Source Sans Pro';
-  white-space: nowrap;
-  flex-shrink: 0;
-}
-.issueddocuments-Ebf .menu-eGM .frame-2-ZeD .auto-group-wkgz-CDK {
-  box-sizing: border-box;
-  padding-top: 4.4rem;
-  width: 100%;
-  row-gap: 4.4rem;
-  display: flex;
-  flex-direction: column;
-  flex-shrink: 0;
-}
-.issueddocuments-Ebf .menu-eGM .frame-2-ZeD .auto-group-wkgz-CDK .group-9-6pV {
-  width: 29.5696rem;
-  height: 5.8rem;
-  position: relative;
-  flex-shrink: 0;
-}
-.issueddocuments-Ebf .menu-eGM .frame-2-ZeD .auto-group-wkgz-CDK .group-9-6pV .rectangle-20-TQ9 {
-  width: 29.5696rem;
-  height: 5.4rem;
-  position: absolute;
-  left: 0;
-  top: 0.4rem;
-  background-color: #92d79e;
-  border-radius: 2.2rem;
-}
-.issueddocuments-Ebf .menu-eGM .frame-2-ZeD .auto-group-wkgz-CDK .group-9-6pV .issued-Q4V {
-  width: 10.3rem;
-  height: 5.8rem;
-  position: absolute;
-  left: 5.4304rem;
-  top: 0;
-  font-size: 3.6rem;
-  font-weight: 400;
-  line-height: 1.6025;
-  color: #000000;
-  font-family: Jomolhari, 'Source Sans Pro';
-  white-space: nowrap;
-}
-.issueddocuments-Ebf .menu-eGM .frame-2-ZeD .auto-group-wkgz-CDK .group-9-6pV .file-document-check-Xeu {
-  width: 3.1688rem;
-  height: 3.3333rem;
-  position: absolute;
-  left: 1.2804rem;
-  top: 1.3333rem;
-  object-fit: contain;
-  vertical-align: top;
-}
-.issueddocuments-Ebf .menu-eGM .frame-2-ZeD .auto-group-wkgz-CDK .group-10-qvV {
-  width: 29.5696rem;
-  height: 5.8rem;
-  cursor: pointer;
-  position: relative;
-  flex-shrink: 0;
-}
-.issueddocuments-Ebf .menu-eGM .frame-2-ZeD .auto-group-wkgz-CDK .group-10-qvV .rectangle-21-CFF {
-  width: 29.5696rem;
-  height: 5.4rem;
-  position: absolute;
-  left: 0;
-  top: 0.4rem;
-  background-color: #fafafa;
-  border-radius: 2.2rem;
-}
-.issueddocuments-Ebf .menu-eGM .frame-2-ZeD .auto-group-wkgz-CDK .group-10-qvV .scholarships-LcM {
-  width: 20.6rem;
-  height: 5.8rem;
-  position: absolute;
-  left: 5.4696rem;
-  top: 0;
-  font-size: 3.6rem;
-  font-weight: 400;
-  line-height: 1.6025;
-  color: #000000;
-  font-family: Jomolhari, 'Source Sans Pro';
-  white-space: nowrap;
-}
-.issueddocuments-Ebf .menu-eGM .frame-2-ZeD .auto-group-wkgz-CDK .group-10-qvV .cash-multiple-Tws {
-  width: 3.575rem;
-  height: 2.6667rem;
-  position: absolute;
-  left: 0.7929rem;
-  top: 1.8rem;
-  object-fit: contain;
-  vertical-align: top;
-}
-.issueddocuments-Ebf .menu-eGM .frame-2-ZeD .auto-group-wkgz-CDK .group-11-Now {
-  width: 29.5696rem;
-  height: 5.8rem;
-  position: relative;
-  flex-shrink: 0;
-}
-.issueddocuments-Ebf .menu-eGM .frame-2-ZeD .auto-group-wkgz-CDK .group-11-Now .rectangle-22-uYy {
-  width: 29.5696rem;
-  height: 5.4rem;
-  position: absolute;
-  left: 0;
-  top: 0.2rem;
-  background-color: #fafafa;
-  border-radius: 2.2rem;
-}
-.issueddocuments-Ebf .menu-eGM .frame-2-ZeD .auto-group-wkgz-CDK .group-11-Now .faqs-RGR {
-  width: 10.4rem;
-  height: 5.8rem;
-  position: absolute;
-  left: 7.0696rem;
-  top: 0;
-  font-size: 3.6rem;
-  font-weight: 400;
-  line-height: 1.6025;
-  color: #000000;
-  font-family: Jomolhari, 'Source Sans Pro';
-  white-space: nowrap;
-}
-.issueddocuments-Ebf .menu-eGM .frame-2-ZeD .auto-group-wkgz-CDK .group-11-Now .progress-question-su7 {
-  width: 3.2419rem;
-  height: 3.3167rem;
-  position: absolute;
-  left: 1.1027rem;
-  top: 1.2417rem;
-  object-fit: contain;
-  vertical-align: top;
-}
-.issueddocuments-Ebf .header-uL1 {
-  width: 144rem;
   height: 10.7rem;
   position: absolute;
   left: 0;
-  top: 0;
+  top: 0
 }
-.issueddocuments-Ebf .header-uL1 .rectangle-2-phs {
-  width: 144rem;
+.issueddocuments-Ebf  .header-7LR .rectangle-2-4Ff {
+  width: 100%;
   height: 9.6rem;
   position: absolute;
   left: 0;
@@ -1694,7 +592,7 @@ body {
   box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25), 0 0.8rem 0.4rem rgba(0, 0, 0, 0.4399999976);
   background-color: #ffffff;
 }
-.issueddocuments-Ebf .header-uL1 .bcd3b4b5d471dae27a60bd4b5f07-1-7BB {
+.issueddocuments-Ebf  .header-7LR .bcd3b4b5d471dae27a60bd4b5f07-1-9nu {
   width: 9.1rem;
   height: 9.6rem;
   position: absolute;
@@ -1703,16 +601,16 @@ body {
   object-fit: cover;
   vertical-align: top;
 }
-.issueddocuments-Ebf .header-uL1 .account-circle-cNq {
+.issueddocuments-Ebf  .header-7LR .account-circle-tEh {
   width: 4.9167rem;
   height: 5rem;
   position: absolute;
-  left: 134.3917rem;
+  right: 5rem;
   top: 2.9rem;
   object-fit: contain;
   vertical-align: top;
 }
-.issueddocuments-Ebf .header-uL1 .yourparagraphtext1-removebg-preview-1-MLR {
+.issueddocuments-Ebf  .header-7LR .yourparagraphtext1-removebg-preview-1-BUh {
   width: 11.6rem;
   height: 10.7rem;
   position: relative;
@@ -1720,9 +618,9 @@ body {
   top: 0;
   background-size: 257.143% 284.211%;
   background-position: -8.8381rem -9.8553rem;
-  background-image: url('../assets/yourparagraphtext1-removebg-preview-1-1Vf.png');
+  background-image: url('../assets/yourparagraphtext1-removebg-preview-1-afF.png');
 }
-.issueddocuments-Ebf .header-uL1 .ezfill-SMs {
+.issueddocuments-Ebf  .header-7LR .ezfill-GW9 {
   width: 7.7rem;
   height: 4.5rem;
   position: absolute;
@@ -1735,12 +633,12 @@ body {
   font-family: jsMath-cmbx10, 'Source Sans Pro';
   white-space: nowrap;
 }
-.issueddocuments-Ebf .header-uL1 .bell-xb7 {
+.issueddocuments-Ebf  .header-7LR .bell-ArR {
   width: 4.2rem;
   height: 4.9rem;
   position: absolute;
-  left: 125.2rem;
-  top: 2.9rem;
+  right: 15rem;
+  top: 2.7rem;
   object-fit: contain;
   vertical-align: top;
 }

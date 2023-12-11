@@ -1,0 +1,62 @@
+
+// File: script.js
+
+// Function to toggle the visibility of the document container
+function toggleDocuments() {
+  // Get the document container element
+  var documentContainer = document.getElementById("documentContainer");
+
+  // Toggle the visibility class
+  documentContainer.classList.toggle("documents-visible");
+ 
+}
+
+//For educatiion
+function toggleEducationalDocuments() {
+    // Get the document container element
+    var documentContainer = document.getElementById("educationalDocument");
+  
+    // Toggle the visibility class
+    documentContainer.classList.toggle("educational1Document");
+   
+  }
+
+  function toggleFamilyDocuments() {
+    // Get the document container element
+    var documentContainer = document.getElementById("scholarshipDocument");
+  
+    // Toggle the visibility class
+    documentContainer.classList.toggle("scholarshipDocumentvisible");
+   
+  }
+
+  function toggleOtherDocuments() {
+    // Get the document container element
+    var documentContainer = document.getElementById("otherDocument");
+  
+    // Toggle the visibility class
+    documentContainer.classList.toggle("Otherdocuments-visible");
+   
+  }
+
+
+// Attach click event to the arrow-down-drop-circle-PoK element
+document.addEventListener("DOMContentLoaded", function () {
+  var toggleButton = document.getElementById("personalDocumentToggle");
+  toggleButton.addEventListener("click", toggleDocuments);
+
+  var toggleButton1 = document.getElementById("educationalDocumentToggle");
+  toggleButton1.addEventListener("click", toggleEducationalDocuments);
+  console.log("Clicked")
+
+  var toggleButton2 = document.getElementById("familyDocumentToggle");
+  toggleButton2.addEventListener("click", toggleFamilyDocuments);
+  console.log("Clicked")
+
+  var toggleButton3 = document.getElementById("OtherDocumentToggle");
+  toggleButton3.addEventListener("click", toggleOtherDocuments);
+  console.log("Clicked")
+  
+});
+
+
