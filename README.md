@@ -42,8 +42,8 @@ DATABASE_HOST='' # Database host
 DATABASE_PORT='' # Database port
 
 # Email Setup
-EMAIL_USER='bharitigupta123@gmail.com'
-EMAIL_PASSWORD='rvod gshs royb xunn'
+EMAIL_USER=''
+EMAIL_PASSWORD=''
 
 ```
 at location `./backend/project`
