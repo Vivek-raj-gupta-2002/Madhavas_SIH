@@ -55,7 +55,7 @@ class CustomUser(AbstractUser):
     is_verified = models.BooleanField(default=False)
 
     #image field
-    profile_pic = models.ImageField(upload_to='profile')
+    profile_pic = models.ImageField(upload_to='profile', blank=True, null=True)
 
     # objects = CustomUserManager()
 

@@ -8,5 +8,4 @@ urlpatterns = [
     path("send_mail/<str:aadhar>", views.send_otp, name='otp'),
 
 
-    
 ]
