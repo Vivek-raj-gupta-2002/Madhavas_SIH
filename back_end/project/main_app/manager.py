@@ -3,6 +3,8 @@ from django.contrib.auth.base_user import BaseUserManager
 # Handeling the user creations 
 
 class CustomUserManager(BaseUserManager):
+    use_in_migrations = True
+
     def create_user(self, username, password=None, **extra_fields):
 
         # check if username is not null
@@ -11,12 +13,12 @@ class CustomUserManager(BaseUserManager):
         
         
         # normalise the email
-        if 'email' in extra_fields:
+        if extra_fields['email']:
             extra_fields['email'] = self.normalize_email(extra_fields['email'])
 
-        # create the user
-        user = self.model(self, username=username, **extra_fields)
+        user = self.model(self, username, **extra_fields)
         
+
         # set the password
         user.set_password(password)
 
@@ -31,4 +33,4 @@ class CustomUserManager(BaseUserManager):
         extra_fields.setdefault('is_superuser', True)
         extra_fields.setdefault('is_active', True)
 
-        return self.create_superuser()
+        return self.create_user(username, password, **extra_fields)

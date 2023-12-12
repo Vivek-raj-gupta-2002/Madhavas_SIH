@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     # Apps Created by Developers
     # ...
     'main_app',
+    'user_app'
 ]
 
 MIDDLEWARE = [
@@ -142,3 +143,16 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+# email server setup
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = config('EMAIL_USER')
+EMAIL_HOST_PASSWORD = config('EMAIL_PASSWORD')
+
+
+# otp validation time
+OTP_VALIDITY_PERIOD = 300
