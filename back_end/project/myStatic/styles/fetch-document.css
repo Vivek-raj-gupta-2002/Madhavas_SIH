@@ -1,0 +1,179 @@
+
+html {
+	font-size:62.5%;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+ul, li {
+	list-style: none;
+}
+input {
+	border: none;
+}
+body {
+  width: 106.3rem;
+}.fetch-document-ANH {
+  width: 100%;
+  height: 70.2rem;
+}
+.fetch-document-ANH .card-login-sign-up-KW5 {
+  box-sizing: border-box;
+  padding-bottom: 3.3rem;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0.9rem 0.4rem rgba(0, 0, 0, 0.25);
+  background-color: #ffffff;
+  border-radius: 5.3rem;
+}
+.fetch-document-ANH .card-login-sign-up-KW5 .auto-group-ptc9-s1o {
+  margin-bottom: 5.3rem;
+  width: 100%;
+  height: 9.9rem;
+  font-size: 3.6rem;
+  font-weight: 700;
+  line-height: 1.3625;
+  color: #ffffff;
+  font-family: Open Sans, 'Source Sans Pro';
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #4f33fa;
+  border-radius: 5.3rem 0 0 0;
+  flex-shrink: 0;
+}
+.fetch-document-ANH .card-login-sign-up-KW5 .sign-up-7gq {
+  margin: 0rem 16.9rem 0rem 25.6rem;
+  width: calc(100% - 42.5rem);
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+.fetch-document-ANH .card-login-sign-up-KW5 .sign-up-7gq .auto-group-nudf-2J1 {
+  box-sizing: border-box;
+  padding-bottom: 6.1rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+.fetch-document-ANH .card-login-sign-up-KW5 .sign-up-7gq .auto-group-nudf-2J1 .mobile-number-yj3 {
+  margin: 0rem 0.4rem 6.1rem 0rem;
+  width: calc(100% - 0.4rem);
+  display: flex;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.fetch-document-ANH .card-login-sign-up-KW5 .sign-up-7gq .auto-group-nudf-2J1 .mobile-number-yj3 .document-type-iRj {
+  margin-right: 3.5rem;
+  font-size: 3.3rem;
+  font-weight: 700;
+  line-height: 1.3625;
+  color: #000000;
+  font-family: Open Sans, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.fetch-document-ANH .card-login-sign-up-KW5 .sign-up-7gq .auto-group-nudf-2J1 .mobile-number-yj3 .rectangle-46-CLu {
+  width: 34rem;
+  height: 4.9rem;
+  border: solid 0.3rem #000000;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  flex-shrink: 0;
+}
+.fetch-document-ANH .card-login-sign-up-KW5 .sign-up-7gq .auto-group-nudf-2J1 .name-field-jLq {
+  margin-right: 0.4rem;
+  width: calc(100% - 0.4rem);
+  display: flex;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.fetch-document-ANH .card-login-sign-up-KW5 .sign-up-7gq .auto-group-nudf-2J1 .name-field-jLq .document-no-fEV {
+  margin-right: 5.7rem;
+  font-size: 3.3rem;
+  font-weight: 700;
+  line-height: 1.3625;
+  color: #000000;
+  font-family: Open Sans, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.fetch-document-ANH .card-login-sign-up-KW5 .sign-up-7gq .auto-group-nudf-2J1 .name-field-jLq .rectangle-45-acM {
+  width: 34rem;
+  height: 4.9rem;
+  border: solid 0.3rem #000000;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  flex-shrink: 0;
+}
+.fetch-document-ANH .card-login-sign-up-KW5 .sign-up-7gq .state-7sB {
+  margin-bottom: 6.1rem;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.fetch-document-ANH .card-login-sign-up-KW5 .sign-up-7gq .state-7sB .state-t7F {
+  margin-right: 20.7rem;
+  font-size: 3.3rem;
+  font-weight: 700;
+  line-height: 1.3625;
+  color: #000000;
+  font-family: Open Sans, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.fetch-document-ANH .card-login-sign-up-KW5 .sign-up-7gq .state-7sB .rectangle-45-pFo {
+  width: 34.4rem;
+  height: 4.9rem;
+  border: solid 0.3rem #000000;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  flex-shrink: 0;
+}
+.fetch-document-ANH .card-login-sign-up-KW5 .sign-up-7gq .state-ic5 {
+  margin-bottom: 6.1rem;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.fetch-document-ANH .card-login-sign-up-KW5 .sign-up-7gq .state-ic5 .district-sE5 {
+  margin-right: 16.9rem;
+  font-size: 3.3rem;
+  font-weight: 700;
+  line-height: 1.3625;
+  color: #000000;
+  font-family: Open Sans, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.fetch-document-ANH .card-login-sign-up-KW5 .sign-up-7gq .state-ic5 .rectangle-45-1bB {
+  width: 34.7rem;
+  height: 4.9rem;
+  border: solid 0.3rem #000000;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  flex-shrink: 0;
+}
+.fetch-document-ANH .card-login-sign-up-KW5 .sign-up-7gq .auto-group-jz9p-MQ9 {
+  width: 36.3rem;
+  height: 7.7rem;
+  font-size: 3.3rem;
+  font-weight: 700;
+  line-height: 1.3625;
+  color: #ffffff;
+  font-family: Open Sans, 'Source Sans Pro';
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #4f33fa;
+  flex-shrink: 0;
+}

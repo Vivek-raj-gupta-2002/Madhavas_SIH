@@ -154,5 +154,4 @@ EMAIL_HOST_USER = config('EMAIL_USER')
 EMAIL_HOST_PASSWORD = config('EMAIL_PASSWORD')
 
 
-# otp validation time
-OTP_VALIDITY_PERIOD = 300
+

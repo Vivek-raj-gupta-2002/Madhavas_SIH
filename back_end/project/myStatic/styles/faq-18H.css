@@ -1,0 +1,229 @@
+
+html {
+	font-size:50.5%;
+  width: 100%;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+ul, li {
+	list-style: none;
+}
+input {
+	border: none;
+}
+body {
+  width: 100%;
+    margin: 0;
+    padding: 0;
+}.faq-PbT {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  background-color: #efefef;
+}
+.faq-PbT .frame-22-Yz9 {
+  width: 107.8rem;
+  height: 80vh;
+  position: absolute;
+  left: 33.3rem;
+  top: 15.3rem;
+  overflow: hidden;
+  row-gap: 3.1rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+}.frame-22-Yz9 ::-webkit-scrollbar{
+  display: none;
+  visibility: hidden;
+}
+.faq-PbT .frame-22-Yz9 .personal-documement-eXP {
+  box-sizing: border-box;
+  padding: 0.617rem 1.792rem 2rem 3.5rem;
+  width: 100%;
+  height: 7rem;
+  display: flex;
+  flex-direction: column;
+  border: solid 0.1rem rgba(0, 0, 0, 0.3400000036);
+  box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+  background-color: #ffffff;
+  border-radius: 2.4rem;
+  flex-shrink: 0;
+  overflow: hidden; /* Hide the overflow content */
+  transition: height 0.3s ease
+}
+.faq-PbT .frame-22-Yz9 .personal-documement-eXP.expanded {
+  height: auto; /* Auto height when expanded */
+}
+.faq-PbT .frame-22-Yz9 .personal-documement-eXP .auto-group-egyu-BGR {
+  margin-bottom: 4rem;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.faq-PbT .frame-22-Yz9 .personal-documement-eXP .auto-group-egyu-BGR .how-to-create-pan-card-jYq {
+  margin: 0.083rem 53.892rem 0rem 0rem;
+  font-size: 3.6rem;
+  font-weight: 400;
+  line-height: 1.6025;
+  color: #000000;
+  font-family: Jomolhari, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.faq-PbT .frame-22-Yz9 .personal-documement-eXP .auto-group-egyu-BGR .arrow-down-drop-circle-dPK {
+  margin-top: 0.6rem;
+  width: 4.9167rem;
+  height: 5.1667rem;
+  right: 2rem; /* Adjust this value based on your layout */
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+  position: absolute;
+}
+.faq-PbT .frame-22-Yz9 .personal-documement-eXP .auto-group-egyu-BGR .discription{
+  margin: 0.083rem 53.892rem 0rem 0rem;
+  max-width: 17.4rem;
+  font-size: 2.1rem;
+  font-weight: 400;
+  line-height: 1.6025;
+  color: #000000;
+  font-family: Jomolhari, 'Source Sans Pro';
+  flex-shrink: 0;
+  position: relative;
+}
+
+.faq-PbT .menu-Qp5 {
+  box-sizing: border-box;
+  padding: 4.3rem 0.7rem 6.3rem 2.23rem;
+  width: 32.5rem;
+  height: 75rem;
+  position: relative;
+  left: 0;
+  top: 9rem;
+  border: solid 0 rgba(0, 0, 0, 0.0900000036);
+  box-shadow: 0.1rem -0.1rem 0.78rem rgba(0, 0, 0, 0.349999994);
+  background-color: rgba(255, 255, 255, 0.6600000262);
+}
+.faq-PbT .menu-Qp5 .frame-2-7iV {
+  width: 100%;
+  height: 46.6rem;
+  row-gap: 2rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.faq-PbT .menu-Qp5 .frame-2-7iV .group-7-rg5 {
+  width: 100%;
+  height: 5.8rem;
+  position: relative;
+  flex-shrink: 0;
+}
+.faq-PbT .menu-Qp5 .frame-2-7iV .group-7-rg5 .rectangle-21-bdf {
+  width: 29.5696rem;
+  height: 5.4rem;
+  position: absolute;
+  left: 0;
+  top: 0.4rem;
+  background-color: transparent;
+  border-radius: 1.1rem;
+}
+.faq-PbT .menu-Qp5 .frame-2-7iV .group-7-rg5:hover .rectangle-21-bdf {
+  background-color: rgba(23, 173, 50, 0.4600000083); /* Change background color on hover */
+}
+.faq-PbT .menu-Qp5 .frame-2-7iV .group-7-rg5 .documents-ueM {
+  width: 10.3rem;
+  height: 3.8rem;
+  position: absolute;
+  left: 6.3589rem;
+  top: 0;
+  display: flex;
+  font-size: 3.6rem;
+  font-weight: 400;
+  line-height: 1.6025;
+  color: #000000;
+  font-family: Jomolhari, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.faq-PbT .menu-Qp5 .frame-2-7iV .group-7-rg5 .file-document-ERj {
+  width: 2.7071rem;
+  height: 3.3333rem;
+  position: absolute;
+  left: 1.5174rem;
+  top: 1.7333rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+
+.faq-PbT .header-7LR {
+  width: 100%;
+  height: 10.7rem;
+  position: absolute;
+  left: 0;
+  top: 0
+}
+.faq-PbT .header-7LR .rectangle-2-4Ff {
+  width: 100%;
+  height: 9.6rem;
+  position: absolute;
+  left: 0;
+  top: 0.6rem;
+  box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25), 0 0.8rem 0.4rem rgba(0, 0, 0, 0.4399999976);
+  background-color: #ffffff;
+}
+.faq-PbT .header-7LR .bcd3b4b5d471dae27a60bd4b5f07-1-9nu {
+  width: 9.1rem;
+  height: 9.6rem;
+  position: absolute;
+  left: 0;
+  top: 0.6rem;
+  object-fit: cover;
+  vertical-align: top;
+}
+.faq-PbT .header-7LR .account-circle-tEh {
+  width: 4.9167rem;
+  height: 5rem;
+  position: absolute;
+  right: 5rem;
+  top: 2.9rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.faq-PbT .header-7LR .yourparagraphtext1-removebg-preview-1-BUh {
+  width: 11.6rem;
+  height: 10.7rem;
+  position: relative;
+  left: 8.4rem;
+  top: 0;
+  background-size: 257.143% 284.211%;
+  background-position: -8.8381rem -9.8553rem;
+  background-image: url('../assets/yourparagraphtext1-removebg-preview-1-afF.png');
+}
+.faq-PbT .header-7LR .ezfill-GW9 {
+  width: 7.7rem;
+  height: 4.5rem;
+  position: absolute;
+  left: 18.9rem;
+  top: 4.5rem;
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1.2575;
+  color: #15ab30;
+  font-family: jsMath-cmbx10, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.faq-PbT .header-7LR .bell-ArR {
+  width: 4.2rem;
+  height: 4.9rem;
+  position: absolute;
+  right: 15rem;
+  top: 2.7rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.purchasepage{
+  text-decoration: none;
+}

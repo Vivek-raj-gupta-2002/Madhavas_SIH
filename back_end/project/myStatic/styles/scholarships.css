@@ -1,0 +1,573 @@
+
+html {
+	font-size:62.5%;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+ul, li {
+	list-style: none;
+}
+input {
+	border: none;
+}
+body {
+  width: 144rem;
+}.scholarships-2CV {
+  width: 100%;
+  height: 103.1rem;
+  position: relative;
+  background-color: #efefef;
+}
+.scholarships-2CV .scholarship-form-ApV {
+  width: 100.8rem;
+  height: 87rem;
+  position: absolute;
+  left: 40.2rem;
+  top: 12.6rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.scholarships-2CV .scholarship-form-ApV .scholarships--T2u {
+  margin: 0rem 37.7rem 3.9rem 0rem;
+  font-size: 4.8rem;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #000000;
+  font-family: Jockey One, 'Source Sans Pro';
+  white-space: nowrap;
+  display: flex;
+  align-items: baseline;
+  flex-shrink: 0;
+}
+.scholarships-2CV .scholarship-form-ApV .scholarships--T2u .scholarships--T2u-sub-0 {
+  font-size: 4.8rem;
+  font-weight: 400;
+  line-height: 1.2575;
+  color: #000000;
+  font-family: JejuGothic, 'Source Sans Pro';
+}
+.scholarships-2CV .scholarship-form-ApV .scholarships--T2u .scholarships--T2u-sub-1 {
+}
+.scholarships-2CV .scholarship-form-ApV .form-M1o {
+  margin-bottom: 4.1rem;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+.scholarships-2CV .scholarship-form-ApV .form-M1o .auto-group-e6xm-5Ch {
+  margin-bottom: 2.65rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.scholarships-2CV .scholarship-form-ApV .form-M1o .auto-group-e6xm-5Ch .organization-name--E5b {
+  margin: 0.7rem 10.7rem 0rem 0rem;
+  font-size: 2.8rem;
+  font-weight: 500;
+  line-height: 1;
+  color: #000000;
+  font-family: Josefin Sans, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.scholarships-2CV .scholarship-form-ApV .form-M1o .auto-group-e6xm-5Ch .rectangle-72-9TT {
+  width: 63.9rem;
+  height: 4.3rem;
+  background-color: #d9d9d9;
+  flex-shrink: 0;
+}
+.scholarships-2CV .scholarship-form-ApV .form-M1o .auto-group-rqiz-Tj3 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.scholarships-2CV .scholarship-form-ApV .form-M1o .auto-group-rqiz-Tj3 .date-for-the-test--DCR {
+  margin: 1rem 14.4rem 0rem 0rem;
+  font-size: 2.8rem;
+  font-weight: 500;
+  line-height: 1;
+  color: #000000;
+  font-family: Josefin Sans, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.scholarships-2CV .scholarship-form-ApV .form-M1o .auto-group-rqiz-Tj3 .to--LXw {
+  margin: 0.6rem 1.1rem 0rem 0rem;
+  font-size: 2.8rem;
+  font-weight: 500;
+  line-height: 1;
+  color: #000000;
+  font-family: Josefin Sans, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.scholarships-2CV .scholarship-form-ApV .form-M1o .auto-group-rqiz-Tj3 .auto-group-juvd-qDo {
+  margin: 0rem 3.2rem 0.2rem 0rem;
+  box-sizing: border-box;
+  padding: 1.05rem 2.8rem 0.25rem 2.7rem;
+  font-size: 2.8rem;
+  font-weight: 500;
+  line-height: 1;
+  color: #989898;
+  font-family: Josefin Sans, 'Source Sans Pro';
+  white-space: nowrap;
+  background-color: #fffefe;
+  flex-shrink: 0;
+}
+.scholarships-2CV .scholarship-form-ApV .form-M1o .auto-group-rqiz-Tj3 .from--Hbb {
+  margin: 0.6rem 0.7rem 0rem 0rem;
+  font-size: 2.8rem;
+  font-weight: 500;
+  line-height: 1;
+  color: #000000;
+  font-family: Josefin Sans, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.scholarships-2CV .scholarship-form-ApV .form-M1o .auto-group-rqiz-Tj3 .auto-group-zfup-cds {
+  margin-top: 0.2rem;
+  box-sizing: border-box;
+  padding: 1.05rem 3rem 0.25rem 2.5rem;
+  font-size: 2.8rem;
+  font-weight: 500;
+  line-height: 1;
+  color: #989898;
+  font-family: Josefin Sans, 'Source Sans Pro';
+  white-space: nowrap;
+  background-color: #fffefe;
+  flex-shrink: 0;
+}
+.scholarships-2CV .scholarship-form-ApV .form-M1o .auto-group-33hf-hvD {
+  box-sizing: border-box;
+  padding-top: 4.05rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+.scholarships-2CV .scholarship-form-ApV .form-M1o .auto-group-33hf-hvD .auto-group-czay-2hb {
+  margin: 0rem 1.2rem 4rem 0rem;
+  width: calc(100% - 1.2rem);
+  display: flex;
+  align-items: flex-end;
+  flex-shrink: 0;
+}
+.scholarships-2CV .scholarship-form-ApV .form-M1o .auto-group-33hf-hvD .auto-group-czay-2hb .min-percent-required--9GR {
+  margin: 0rem 7rem 0.1rem 0rem;
+  font-size: 2.8rem;
+  font-weight: 500;
+  line-height: 1;
+  color: #000000;
+  font-family: Josefin Sans, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.scholarships-2CV .scholarship-form-ApV .form-M1o .auto-group-33hf-hvD .auto-group-czay-2hb .rectangle-75-fkZ {
+  width: 63.9rem;
+  height: 4.3rem;
+  background-color: #d9d9d9;
+  flex-shrink: 0;
+}
+.scholarships-2CV .scholarship-form-ApV .form-M1o .auto-group-33hf-hvD .auto-group-c7mp-QCM {
+  margin: 0rem 1.2rem 7.1rem 0rem;
+  width: calc(100% - 1.2rem);
+  display: flex;
+  align-items: flex-end;
+  flex-shrink: 0;
+}
+.scholarships-2CV .scholarship-form-ApV .form-M1o .auto-group-33hf-hvD .auto-group-c7mp-QCM .amount-to-be-given--iyj {
+  margin-right: 9.1rem;
+  font-size: 2.8rem;
+  font-weight: 500;
+  line-height: 1;
+  color: #000000;
+  font-family: Josefin Sans, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.scholarships-2CV .scholarship-form-ApV .form-M1o .auto-group-33hf-hvD .auto-group-c7mp-QCM .rectangle-78-4Xo {
+  width: 63.9rem;
+  height: 4.3rem;
+  background-color: #d9d9d9;
+  flex-shrink: 0;
+}
+.scholarships-2CV .scholarship-form-ApV .form-M1o .auto-group-33hf-hvD .auto-group-t3f3-1hw {
+  margin-bottom: 3.6rem;
+  display: flex;
+  align-items: flex-end;
+  flex-shrink: 0;
+}
+.scholarships-2CV .scholarship-form-ApV .form-M1o .auto-group-33hf-hvD .auto-group-t3f3-1hw .auto-group-gmqw-j89 {
+  margin: 0rem 2.9rem 0.7rem 0rem;
+  box-sizing: border-box;
+  padding: 0rem 0.2rem 0rem 0.3rem;
+  background-color: #fffefe;
+  flex-shrink: 0;
+}
+.scholarships-2CV .scholarship-form-ApV .form-M1o .auto-group-33hf-hvD .auto-group-t3f3-1hw .auto-group-gmqw-j89 .done-TK3 {
+  width: 3.4rem;
+  height: 3.4rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.scholarships-2CV .scholarship-form-ApV .form-M1o .auto-group-33hf-hvD .auto-group-t3f3-1hw .online-mode-PyP {
+  margin: 0rem 20.3rem 0.4rem 0rem;
+  font-size: 2.8rem;
+  font-weight: 500;
+  line-height: 1;
+  color: #000000;
+  font-family: Josefin Sans, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.scholarships-2CV .scholarship-form-ApV .form-M1o .auto-group-33hf-hvD .auto-group-t3f3-1hw .rectangle-77-uB3 {
+  margin: 0rem 5.6rem 0.1rem 0rem;
+  width: 3.9rem;
+  height: 3.4rem;
+  background-color: #fffefe;
+  flex-shrink: 0;
+}
+.scholarships-2CV .scholarship-form-ApV .form-M1o .auto-group-33hf-hvD .auto-group-t3f3-1hw .offilne-mode-EDK {
+  font-size: 2.8rem;
+  font-weight: 500;
+  line-height: 1;
+  color: #000000;
+  font-family: Josefin Sans, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.scholarships-2CV .scholarship-form-ApV .form-M1o .auto-group-33hf-hvD .auto-group-vw2q-95P {
+  width: 99.6rem;
+  height: 21.6rem;
+  font-size: 2.8rem;
+  font-weight: 500;
+  line-height: 1;
+  color: #989898;
+  font-family: Josefin Sans, 'Source Sans Pro';
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  flex-shrink: 0;
+}
+.scholarships-2CV .scholarship-form-ApV .auto-group-yixd-3Am {
+  margin-left: 73.4rem;
+  width: 25rem;
+  height: 7.9rem;
+  font-size: 3.3rem;
+  font-weight: 700;
+  line-height: 1.3625;
+  color: #ffffff;
+  font-family: Open Sans, 'Source Sans Pro';
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #4f33fa;
+  border-radius: 2rem;
+  flex-shrink: 0;
+}
+.scholarships-2CV .menu-sfb {
+  box-sizing: border-box;
+  padding: 7.7rem 1rem 7.7rem 1.6rem;
+  width: 32.5rem;
+  height: 94.1rem;
+  position: absolute;
+  left: 0;
+  top: 9rem;
+  border: solid 0 rgba(0, 0, 0, 0.0900000036);
+  box-shadow: 0.1rem -0.1rem 0.78rem rgba(0, 0, 0, 0.349999994);
+  background-color: rgba(255, 255, 255, 0.6600000262);
+}
+.scholarships-2CV .menu-sfb .frame-2-oJM {
+  width: 100%;
+  height: 46.6rem;
+  display: flex;
+  flex-direction: column;
+}
+.scholarships-2CV .menu-sfb .frame-2-oJM .auto-group-wkuu-kjP {
+  box-sizing: border-box;
+  padding-bottom: 4.4rem;
+  width: 100%;
+  row-gap: 4.4rem;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+.scholarships-2CV .menu-sfb .frame-2-oJM .auto-group-wkuu-kjP .group-7-uMP {
+  width: 29.6rem;
+  height: 5.8rem;
+  position: relative;
+  flex-shrink: 0;
+}
+.scholarships-2CV .menu-sfb .frame-2-oJM .auto-group-wkuu-kjP .group-7-uMP .rectangle-21-rnR {
+  width: 29.5696rem;
+  height: 5.4rem;
+  position: absolute;
+  left: 0.0304rem;
+  top: 0.4rem;
+  background-color: #fafafa;
+  border-radius: 1.1rem;
+}
+.scholarships-2CV .menu-sfb .frame-2-oJM .auto-group-wkuu-kjP .group-7-uMP .get-api-bED {
+  width: 13.3rem;
+  height: 5.8rem;
+  position: absolute;
+  left: 6.3894rem;
+  top: 0;
+  display: flex;
+  font-size: 3.6rem;
+  font-weight: 400;
+  line-height: 1.6025;
+  color: #000000;
+  font-family: Jomolhari, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.scholarships-2CV .menu-sfb .frame-2-oJM .auto-group-wkuu-kjP .group-7-uMP .bookmark-uVo {
+  width: 6.2rem;
+  height: 5.1rem;
+  position: absolute;
+  left: 0;
+  top: 0.4rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.scholarships-2CV .menu-sfb .frame-2-oJM .auto-group-wkuu-kjP .group-8-cQD {
+  width: 29.5696rem;
+  height: 5.8rem;
+  cursor: pointer;
+  position: relative;
+  flex-shrink: 0;
+}
+.scholarships-2CV .menu-sfb .frame-2-oJM .auto-group-wkuu-kjP .group-8-cQD .rectangle-21-xys {
+  width: 29.5696rem;
+  height: 5.4rem;
+  position: absolute;
+  left: 0;
+  top: 0.4rem;
+  background-color: #fafafa;
+  border-radius: 2.2rem;
+}
+.scholarships-2CV .menu-sfb .frame-2-oJM .auto-group-wkuu-kjP .group-8-cQD .hackathons-ueD {
+  width: 19rem;
+  height: 5.8rem;
+  position: absolute;
+  left: 5.4664rem;
+  top: 0;
+  font-size: 3.6rem;
+  font-weight: 400;
+  line-height: 1.6025;
+  color: #000000;
+  font-family: Jomolhari, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.scholarships-2CV .menu-sfb .frame-2-oJM .auto-group-wkuu-kjP .group-8-cQD .book-reading-A4M {
+  width: 4.1rem;
+  height: 4rem;
+  position: absolute;
+  left: 0.9696rem;
+  top: 0.9rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.scholarships-2CV .menu-sfb .frame-2-oJM .auto-group-wkuu-kjP .group-9-VcR {
+  width: 29.8rem;
+  height: 5.8rem;
+  cursor: pointer;
+  position: relative;
+  flex-shrink: 0;
+}
+.scholarships-2CV .menu-sfb .frame-2-oJM .auto-group-wkuu-kjP .group-9-VcR .rectangle-20-FLh {
+  width: 29.5696rem;
+  height: 5.4rem;
+  position: absolute;
+  left: 0.2304rem;
+  top: 0.4rem;
+  background-color: #92d79e;
+  border-radius: 2.2rem;
+}
+.scholarships-2CV .menu-sfb .frame-2-oJM .auto-group-wkuu-kjP .group-9-VcR .scholarships-AiZ {
+  width: 20.6rem;
+  height: 5.8rem;
+  position: absolute;
+  left: 5.6609rem;
+  top: 0;
+  font-size: 3.6rem;
+  font-weight: 400;
+  line-height: 1.6025;
+  color: #000000;
+  font-family: Jomolhari, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.scholarships-2CV .menu-sfb .frame-2-oJM .auto-group-wkuu-kjP .group-9-VcR .ebook-DqF {
+  width: 6.3rem;
+  height: 4.3rem;
+  position: absolute;
+  left: 0;
+  top: 0.7rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.scholarships-2CV .menu-sfb .frame-2-oJM .group-14-kqB {
+  margin-bottom: 4.4rem;
+  width: 100%;
+  height: 5.8rem;
+  cursor: pointer;
+  position: relative;
+  flex-shrink: 0;
+}
+.scholarships-2CV .menu-sfb .frame-2-oJM .group-14-kqB .rectangle-20-6u3 {
+  width: 29.5696rem;
+  height: 5.4rem;
+  position: absolute;
+  left: 0.3304rem;
+  top: 0.2rem;
+  background-color: #fafafa;
+  border-radius: 2.2rem;
+}
+.scholarships-2CV .menu-sfb .frame-2-oJM .group-14-kqB .intern-jobs-ST7 {
+  width: 17.9rem;
+  height: 5.8rem;
+  position: absolute;
+  left: 3rem;
+  top: 0;
+  font-size: 3.6rem;
+  font-weight: 400;
+  line-height: 1.6025;
+  color: #000000;
+  font-family: Jomolhari, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.scholarships-2CV .menu-sfb .frame-2-oJM .group-14-kqB .internship-mVP {
+  width: 6.1rem;
+  height: 4.8rem;
+  position: absolute;
+  left: 0;
+  top: 1rem;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url('../assets/internship-bg-toF.png');
+}
+.scholarships-2CV .menu-sfb .frame-2-oJM .group-14-kqB .internship-5W5 {
+  width: 6.1rem;
+  height: 4.8rem;
+  position: absolute;
+  left: 0;
+  top: 1rem;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url('../assets/internship-bg-MRw.png');
+}
+.scholarships-2CV .menu-sfb .frame-2-oJM .group-11-1uX {
+  width: 29.5696rem;
+  height: 5.8rem;
+  position: relative;
+  flex-shrink: 0;
+}
+.scholarships-2CV .menu-sfb .frame-2-oJM .group-11-1uX .rectangle-22-A1j {
+  width: 29.5696rem;
+  height: 5.4rem;
+  position: absolute;
+  left: 0;
+  top: 0.2rem;
+  background-color: #fafafa;
+  border-radius: 2.2rem;
+}
+.scholarships-2CV .menu-sfb .frame-2-oJM .group-11-1uX .faqs-6g5 {
+  width: 10.4rem;
+  height: 5.8rem;
+  position: absolute;
+  left: 7.0696rem;
+  top: 0;
+  font-size: 3.6rem;
+  font-weight: 400;
+  line-height: 1.6025;
+  color: #000000;
+  font-family: Jomolhari, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.scholarships-2CV .menu-sfb .frame-2-oJM .group-11-1uX .progress-question-ar9 {
+  width: 3.2419rem;
+  height: 3.3167rem;
+  position: absolute;
+  left: 1.1027rem;
+  top: 1.2416rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.scholarships-2CV .header-qGH {
+  width: 144rem;
+  height: 10.7rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.scholarships-2CV .header-qGH .rectangle-2-8FP {
+  width: 144rem;
+  height: 9.6rem;
+  position: absolute;
+  left: 0;
+  top: 0.6rem;
+  box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25), 0 0.8rem 0.4rem rgba(0, 0, 0, 0.4399999976);
+  background-color: #ffffff;
+}
+.scholarships-2CV .header-qGH .bcd3b4b5d471dae27a60bd4b5f07-1-buf {
+  width: 9.1rem;
+  height: 9.6rem;
+  position: absolute;
+  left: 0;
+  top: 0.6rem;
+  object-fit: cover;
+  vertical-align: top;
+}
+.scholarships-2CV .header-qGH .account-circle-WWq {
+  width: 4.9167rem;
+  height: 5rem;
+  position: absolute;
+  left: 134.3917rem;
+  top: 2.9rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.scholarships-2CV .header-qGH .yourparagraphtext1-removebg-preview-1-qp1 {
+  width: 11.6rem;
+  height: 10.7rem;
+  position: relative;
+  left: 8.4rem;
+  top: 0;
+  background-size: 257.143% 284.211%;
+  background-position: -8.8381rem -9.8553rem;
+  background-image: url('../assets/yourparagraphtext1-removebg-preview-1-1SM.png');
+}
+.scholarships-2CV .header-qGH .ezapi-Hvu {
+  width: 8.7rem;
+  height: 4.5rem;
+  position: absolute;
+  left: 18.9rem;
+  top: 4.5rem;
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1.2575;
+  color: #15ab30;
+  font-family: jsMath-cmbx10, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.scholarships-2CV .header-qGH .bell-bAu {
+  width: 4.2rem;
+  height: 4.9rem;
+  position: absolute;
+  left: 126.3rem;
+  top: 2.7rem;
+  object-fit: contain;
+  vertical-align: top;
+}

@@ -1,0 +1,107 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <title>Log In</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=jsMath-cmbx10%3A700"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro%3A700"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans%3A700"/>
+  <link rel="stylesheet" href="{% static '/styles/log-in.css' %}"/>
+
+  <script>
+
+    function sendotp(){
+      let data = document.getElementById('id_aadhar').value;
+  
+      console.log(data)
+  
+      let url = "send_mail/" + data  
+      fetch(url)
+    }
+  
+  
+  </script>
+
+</head>
+<body>
+<div class="log-in-bid">
+  <div class="header-9VF">
+    <div class="header-uDX">
+      <img class="bcd3b4b5d471dae27a60bd4b5f07-1-9df" src="{% static '/assets/bcd3b4b5d471dae27a60bd4b5f07-1-RiV.png' %}"/>
+      <img class="bell-g7o" src="{% static '/assets/bell-5sB.png' %}"/>
+      <img class="account-circle-ysb" src="{% static '/assets/account-circle-Q8m.png' %}"/>
+    </div>
+    <div class="yourparagraphtext1-removebg-preview-1-UJZ">
+    </div>
+    <p class="ezfill-wC9">Ezfill</p>
+  </div>
+  <div class="card-login-sign-up-DfT">
+    <div class="auto-group-nwyf-vpm">
+      <a  class="auto-group-1gfw-4AH" href="{% url 'signup' %}"><div class="auto-group-1gfw-4AH">Sign UP</div></a>
+      <div class="auto-group-v3mp-JKX">
+        <div class="rectangle-45-FkZ">
+        </div>
+        <p class="log-in-zTF">Log In</p>
+      </div>
+    </div>
+
+    <form action="{% url 'login' %}" method="post">
+
+      {% csrf_token %}
+
+      <div class="sign-up-F8H">
+        <div class="mobile-number-BGq">
+          <p class="mobile-no-iXf">Mobile No.</p>
+  
+          {{form.phone_number}}
+          <!-- <input class="rectangle-46-Rws" type="number"/> -->
+        
+        
+        </div>
+        <div class="name-field-xB7">
+          <p class="aadhar-no-sJ5">Aadhar No.</p>
+  
+          {{form.aadhar}}
+          <!-- <input class="auto-group-qstq-DMw" type="number"/> -->
+          
+          
+          <button  class="sendOTP" onclick="sendotp()">Send Otp</button>
+  
+        </div>
+        <div class="mobile-number-Ne9">
+          <p class="otp-Lay">OTP</p>
+  
+          {{form.OTP}}
+          <!-- <input class="rectangle-46-tMb" type="number"/> -->
+        
+        
+        </div>
+        <div class="auto-group-mqez-d4H">
+          <div class="age-BLh">
+            <p class="pin-gHT">Pin</p>
+  
+            {{form.pin}}
+            <!-- <input class="rectangle-45-cgu" type="password"/> -->
+  
+  
+          </div>
+          <button class="auto-group-ftq7-wjB">Sign UP</button>
+        </div>
+      </div>
+    </div>
+    {{form.errors}}
+  </div>
+
+    </form>
+
+    
+    
+
+
+
+</body>

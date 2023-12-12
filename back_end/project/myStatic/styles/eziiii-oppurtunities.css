@@ -1,0 +1,740 @@
+
+html {
+	font-size:50.5%;
+  width: 100%;
+  height: 100%;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+ul, li {
+	list-style: none;
+}
+input {
+	border: none;
+}
+body {
+  width: 100%;
+  height: 100vh
+}.eziiii-oppurtunities-y7B {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  background-color: #efefef;
+  overflow: hidden;
+}
+.eziiii-oppurtunities-y7B .frame-23-6Bo {
+  width: -webkit-fill-available;
+  max-height: 85vh;
+  position: absolute;
+  left: 35.5rem;
+  top: 13.2rem;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+.eziiii-oppurtunities-y7B .frame-23-6Bo .hackathons-cR3 {
+  margin-bottom: 1.3rem;
+  font-size: 3.6rem;
+  font-weight: 400;
+  line-height: 1.6025;
+  color: #000000;
+  font-family: Jomolhari, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.eziiii-oppurtunities-y7B .frame-23-6Bo .frame-15-iU5 {
+  margin-bottom: 1.3rem;
+  box-sizing: border-box;
+  padding: 1.3rem 0rem 1.3rem 1.6rem;
+  width: 100%;
+  height: 39.6rem;
+  overflow: hidden;
+  position: relative;
+  border-radius: 1.9rem;
+  overflow-x: scroll;
+}.frame-15-iU5::-webkit-scrollbar{
+  visibility: hidden;
+}
+.eziiii-oppurtunities-y7B .frame-23-6Bo .frame-15-iU5 .group-13-P4R {
+  width: 192.7rem;
+  height: 100%;
+  display: flex;
+  column-gap: 3.9rem;
+  align-items: center;
+}
+.eziiii-oppurtunities-y7B .frame-23-6Bo .frame-15-iU5 .group-13-P4R .hackathon-card-vKF {
+  box-sizing: border-box;
+  padding: 1.1rem 0.2rem 0.2rem 0.2rem;
+  width: 30.6rem;
+  height: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(180deg, #ffaa01 -0%, rgba(255, 255, 255, 0.4707759619) 52.92%, #42cf32 100%);
+  flex-shrink: 0;
+}
+.eziiii-oppurtunities-y7B .frame-23-6Bo .frame-15-iU5 .group-13-P4R .hackathon-card-vKF .hackathon-img-Dp9 {
+  margin: 0rem 0.1rem 1.9rem 0rem;
+  width: 28.7rem;
+  height: 16.3rem;
+  position: relative;
+  background-size: 100% 98.931%;
+  background-position: -0rem -0.0129rem;
+  background-image: url('../assets/hackathon-img-hnV.png');
+  flex-shrink: 0;
+}
+.eziiii-oppurtunities-y7B .frame-23-6Bo .frame-15-iU5 .group-13-P4R .hackathon-card-vKF .title-dis-W2Z {
+  margin: 0rem 2.8rem 3.5rem 0rem;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+.eziiii-oppurtunities-y7B .frame-23-6Bo .frame-15-iU5 .group-13-P4R .hackathon-card-vKF .title-dis-W2Z .smart-india-hackathon-R9X {
+  margin-bottom: 0.4rem;
+  font-size: 2.2rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #000000;
+  font-family: Josefin Sans, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.eziiii-oppurtunities-y7B .frame-23-6Bo .frame-15-iU5 .group-13-P4R .hackathon-card-vKF .title-dis-W2Z .organized-by-government-kSh {
+  margin: 0rem 0rem 1.3rem 0.3rem;
+  font-size: 0.8rem;
+  font-weight: 400;
+  line-height: 1.6025;
+  color: #000000;
+  font-family: Jomolhari, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.eziiii-oppurtunities-y7B .frame-23-6Bo .frame-15-iU5 .group-13-P4R .hackathon-card-vKF .title-dis-W2Z .problem-statement-and-1-winner-for-every-solution-there-will-be-3-rounds-internal-hackathon-national-hackathon-finalist-hackathon-4iH {
+  max-width: 26rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1;
+  color: rgba(59, 58, 58, 0.5699999928);
+  font-family: Josefin Sans, 'Source Sans Pro';
+  flex-shrink: 0;
+}
+.eziiii-oppurtunities-y7B .frame-23-6Bo .frame-15-iU5 .group-13-P4R .hackathon-card-vKF .auto-group-5sbw-JMj {
+  margin-right: 0.3rem;
+  width: calc(100% - 0.3rem);
+  height: 3.2rem;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.eziiii-oppurtunities-y7B .frame-23-6Bo .frame-15-iU5 .group-13-P4R .hackathon-card-vKF .auto-group-5sbw-JMj .register-now-duo {
+  margin-right: 1.3rem;
+  width: 14.3rem;
+  height: 100%;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #ffffff;
+  font-family: Josefin Sans, 'Source Sans Pro';
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #3e68fe;
+  flex-shrink: 0;
+}
+.eziiii-oppurtunities-y7B .frame-23-6Bo .frame-15-iU5 .group-13-P4R .hackathon-card-vKF .auto-group-5sbw-JMj .register-now-iwF {
+  width: 14.3rem;
+  height: 100%;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #ffffff;
+  font-family: Josefin Sans, 'Source Sans Pro';
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #3e68fe;
+  flex-shrink: 0;
+}
+
+.eziiii-oppurtunities-y7B .frame-23-6Bo .government-internships-hdP {
+  font-size: 3.6rem;
+  font-weight: 400;
+  line-height: 1.6025;
+  color: #000000;
+  font-family: Jomolhari, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.eziiii-oppurtunities-y7B .frame-23-6Bo .auto-group-weqt-qjb {
+  box-sizing: border-box;
+  padding-top: 1.3rem;
+  width: 100%;
+  height: 31.8rem;
+  row-gap: 1.3rem;
+  display: flex;
+  flex-direction: column;
+}
+.eziiii-oppurtunities-y7B .frame-23-6Bo .auto-group-weqt-qjb .frame-16-yau {
+  width: 100%;
+  height: 29.2rem;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  column-gap: 2.7rem;
+  align-items: center;
+  flex-shrink: 0;
+  overflow-x: scroll;
+}.eziiii-oppurtunities-y7B .frame-23-6Bo .auto-group-weqt-qjb .frame-16-yau::-webkit-scrollbar {
+  display: none; /* Hide the scrollbar for webkit browsers */
+}
+.eziiii-oppurtunities-y7B .frame-23-6Bo .auto-group-weqt-qjb .frame-16-yau .internship-card-tC5 {
+  box-sizing: border-box;
+  padding: 0.5rem 0.8rem 1.6rem 1.2rem;
+  width: 40.7rem;
+  height: 100%;
+  background-color: #c7d7ff;
+  border-radius: 2.2rem;
+  flex-shrink: 0;
+}
+.eziiii-oppurtunities-y7B .frame-23-6Bo .auto-group-weqt-qjb .frame-16-yau .internship-card-tC5 .job-tittle-Qw7 {
+  margin: 0rem 0rem 5.5rem 0.2rem;
+  display: flex;
+  font-size: 2.3rem;
+  font-weight: 400;
+  line-height: 1.6025;
+  color: #000000;
+  font-family: Jomolhari, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.eziiii-oppurtunities-y7B .frame-23-6Bo .auto-group-weqt-qjb .frame-16-yau .internship-card-tC5 .auto-group-bstr-jTb {
+  margin-bottom: 1.8rem;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+}
+.eziiii-oppurtunities-y7B .frame-23-6Bo .auto-group-weqt-qjb .frame-16-yau .internship-card-tC5 .auto-group-bstr-jTb .internshiplogo-Hk1 {
+  margin-right: 5.5rem;
+  width: 10.9rem;
+  height: 8.1rem;
+  object-fit: cover;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.eziiii-oppurtunities-y7B .frame-23-6Bo .auto-group-weqt-qjb .frame-16-yau .internship-card-tC5 .auto-group-bstr-jTb .internshiptittle-dYy {
+  max-width: 22.3rem;
+  text-align: right;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.6025;
+  color: #000000;
+  font-family: Jomolhari, 'Source Sans Pro';
+  flex-shrink: 0;
+}
+.eziiii-oppurtunities-y7B .frame-23-6Bo .auto-group-weqt-qjb .frame-16-yau .internship-card-tC5 .auto-group-ccld-8Eq {
+  margin-left: 2.7rem;
+  width: calc(100% - 2.7rem);
+  display: flex;
+  align-items: flex-start;
+}
+.eziiii-oppurtunities-y7B .frame-23-6Bo .auto-group-weqt-qjb .frame-16-yau .internship-card-tC5 .auto-group-ccld-8Eq .intrnshipinfo-eys {
+  margin-right: 1.4rem;
+  box-sizing: border-box;
+  padding: 0.313rem 0rem 0.104rem 0.104rem;
+  height: 6.6rem;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.eziiii-oppurtunities-y7B .frame-23-6Bo .auto-group-weqt-qjb .frame-16-yau .internship-card-tC5 .auto-group-ccld-8Eq .intrnshipinfo-eys .auto-group-sykb-mHo {
+  margin-right: 0.9042rem;
+  height: 100%;
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+.eziiii-oppurtunities-y7B .frame-23-6Bo .auto-group-weqt-qjb .frame-16-yau .internship-card-tC5 .auto-group-ccld-8Eq .intrnshipinfo-eys .auto-group-sykb-mHo .home-clock-outline-6ay {
+  margin: 0rem 0rem 1.808rem 0rem;
+  width: 2.2917rem;
+  height: 2.0833rem;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.eziiii-oppurtunities-y7B .frame-23-6Bo .auto-group-weqt-qjb .frame-16-yau .internship-card-tC5 .auto-group-ccld-8Eq .intrnshipinfo-eys .auto-group-sykb-mHo .calendar-clock-rCm {
+  width: 2.0833rem;
+  height: 2.2917rem;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.eziiii-oppurtunities-y7B .frame-23-6Bo .auto-group-weqt-qjb .frame-16-yau .internship-card-tC5 .auto-group-ccld-8Eq .intrnshipinfo-eys .auto-group-f6eh-aPf {
+  margin: 0.338rem 3.013rem 0.396rem 0rem;
+  height: calc(100% - 0.7334rem);
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+.eziiii-oppurtunities-y7B .frame-23-6Bo .auto-group-weqt-qjb .frame-16-yau .internship-card-tC5 .auto-group-ccld-8Eq .intrnshipinfo-eys .auto-group-f6eh-aPf .part-time-5bK {
+  margin-bottom: 2rem;
+  display: flex;
+  font-size: 0.9rem;
+  font-weight: 700;
+  line-height: 1.3625;
+  color: #000000;
+  font-family: Open Sans, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.eziiii-oppurtunities-y7B .frame-23-6Bo .auto-group-weqt-qjb .frame-16-yau .internship-card-tC5 .auto-group-ccld-8Eq .intrnshipinfo-eys .auto-group-f6eh-aPf .duration-1js {
+  margin: 0rem 0.3rem 0.15rem 0rem;
+  display: flex;
+  font-size: 0.9rem;
+  font-weight: 700;
+  line-height: 1.3625;
+  color: #000000;
+  font-family: Open Sans, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.eziiii-oppurtunities-y7B .frame-23-6Bo .auto-group-weqt-qjb .frame-16-yau .internship-card-tC5 .auto-group-ccld-8Eq .intrnshipinfo-eys .auto-group-f6eh-aPf .months-wdX {
+  margin-right: 0.3rem;
+  display: flex;
+  font-size: 0.6rem;
+  font-weight: 300;
+  line-height: 1.0758349895;
+  color: rgba(0, 0, 0, 0.6700000167);
+  font-family: Open Sans, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.eziiii-oppurtunities-y7B .frame-23-6Bo .auto-group-weqt-qjb .frame-16-yau .internship-card-tC5 .auto-group-ccld-8Eq .intrnshipinfo-eys .hand-coin-outline-UNZ {
+  margin: 0rem 1.325rem 0.423rem 0rem;
+  width: 4.4625rem;
+  height: 3.5021rem;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.eziiii-oppurtunities-y7B .frame-23-6Bo .auto-group-weqt-qjb .frame-16-yau .internship-card-tC5 .auto-group-ccld-8Eq .intrnshipinfo-eys .auto-group-fqfp-17b {
+  margin-bottom: 1.3584rem;
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+.eziiii-oppurtunities-y7B .frame-23-6Bo .auto-group-weqt-qjb .frame-16-yau .internship-card-tC5 .auto-group-ccld-8Eq .intrnshipinfo-eys .auto-group-fqfp-17b .stipend-Mx9 {
+  margin: 0rem 0.5rem 0.35rem 0rem;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.3625;
+  color: #000000;
+  font-family: Open Sans, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.eziiii-oppurtunities-y7B .frame-23-6Bo .auto-group-weqt-qjb .frame-16-yau .internship-card-tC5 .auto-group-ccld-8Eq .intrnshipinfo-eys .auto-group-fqfp-17b .item-5000--3py {
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 1.3625;
+  color: #000000;
+  font-family: Open Sans, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.eziiii-oppurtunities-y7B .frame-23-6Bo .auto-group-weqt-qjb .frame-16-yau .internship-card-tC5 .auto-group-ccld-8Eq .auto-group-gxq5-mW5 {
+  margin-top: 1.1rem;
+  width: 12.2rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+.eziiii-oppurtunities-y7B .frame-23-6Bo .auto-group-weqt-qjb .frame-16-yau .internship-card-tC5 .auto-group-ccld-8Eq .auto-group-gxq5-mW5 .apply-now-KGh {
+  margin-bottom: 1.3rem;
+  width: 100%;
+  height: 2.8rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.3625;
+  color: #ffffff;
+  font-family: Open Sans, 'Source Sans Pro';
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #42cf32;
+  flex-shrink: 0;
+}
+.eziiii-oppurtunities-y7B .frame-23-6Bo .auto-group-weqt-qjb .frame-16-yau .internship-card-tC5 .auto-group-ccld-8Eq .auto-group-gxq5-mW5 .moreinfo-yc9 {
+  width: 100%;
+  height: 2.8rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.3625;
+  color: #ffffff;
+  font-family: Open Sans, 'Source Sans Pro';
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #7292ff;
+  flex-shrink: 0;
+}
+.eziiii-oppurtunities-y7B .frame-23-6Bo .auto-group-weqt-qjb .mncs-internships-1Su {
+  font-size: 3.6rem;
+  font-weight: 400;
+  line-height: 1.6025;
+  color: #000000;
+  font-family: Jomolhari, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.eziiii-oppurtunities-y7B .frame-23-6Bo .auto-group-weqt-qjb .frame-17-tFo {
+  width: 100%;
+  height: 29.2rem;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  column-gap: 2.7rem;
+  align-items: center;
+  flex-shrink: 0;
+  overflow-x: scroll;
+}
+.eziiii-oppurtunities-y7B .frame-23-6Bo .auto-group-weqt-qjb .frame-17-tFo .internship-card-cxV {
+  box-sizing: border-box;
+  padding: 0.5rem 0.8rem 1.6rem 1.2rem;
+  width: 40.7rem;
+  height: 100%;
+  background-color: #c7d7ff;
+  border-radius: 2.2rem;
+  flex-shrink: 0;
+}
+.eziiii-oppurtunities-y7B .frame-23-6Bo .auto-group-weqt-qjb .frame-17-tFo .internship-card-cxV .job-tittle-M9P {
+  margin: 0rem 0rem 5.5rem 0.2rem;
+  display: flex;
+  font-size: 2.3rem;
+  font-weight: 400;
+  line-height: 1.6025;
+  color: #000000;
+  font-family: Jomolhari, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.eziiii-oppurtunities-y7B .frame-23-6Bo .auto-group-weqt-qjb .frame-17-tFo .internship-card-cxV .auto-group-g6hs-UUu {
+  margin-bottom: 1.8rem;
+  width: 100%;
+  height: 8.1rem;
+  position: relative;
+}
+.eziiii-oppurtunities-y7B .frame-23-6Bo .auto-group-weqt-qjb .frame-17-tFo .internship-card-cxV .auto-group-g6hs-UUu .internshiplogo-q4Z {
+  width: 10.9rem;
+  height: 8.1rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  object-fit: cover;
+  vertical-align: top;
+}
+.eziiii-oppurtunities-y7B .frame-23-6Bo .auto-group-weqt-qjb .frame-17-tFo .internship-card-cxV .auto-group-g6hs-UUu .internshiptittle-YzZ {
+  width: 30.2rem;
+  height: 3.9rem;
+  position: absolute;
+  left: 8.5rem;
+  top: 0;
+  text-align: right;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.6025;
+  color: #000000;
+  font-family: Jomolhari, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.eziiii-oppurtunities-y7B .frame-23-6Bo .auto-group-weqt-qjb .frame-17-tFo .internship-card-cxV .auto-group-tf4y-GvZ {
+  margin-left: 2.7rem;
+  width: calc(100% - 2.7rem);
+  display: flex;
+  align-items: flex-start;
+}
+.eziiii-oppurtunities-y7B .frame-23-6Bo .auto-group-weqt-qjb .frame-17-tFo .internship-card-cxV .auto-group-tf4y-GvZ .intrnshipinfo-CpD {
+  margin-right: 1.4rem;
+  box-sizing: border-box;
+  padding: 0.313rem 0rem 0.104rem 0.104rem;
+  height: 6.6rem;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.eziiii-oppurtunities-y7B .frame-23-6Bo .auto-group-weqt-qjb .frame-17-tFo .internship-card-cxV .auto-group-tf4y-GvZ .intrnshipinfo-CpD .auto-group-ic3w-8Sy {
+  margin-right: 0.9042rem;
+  height: 100%;
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+.eziiii-oppurtunities-y7B .frame-23-6Bo .auto-group-weqt-qjb .frame-17-tFo .internship-card-cxV .auto-group-tf4y-GvZ .intrnshipinfo-CpD .auto-group-ic3w-8Sy .home-clock-outline-5t1 {
+  margin: 0rem 0rem 1.808rem 0rem;
+  width: 2.2917rem;
+  height: 2.0833rem;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.eziiii-oppurtunities-y7B .frame-23-6Bo .auto-group-weqt-qjb .frame-17-tFo .internship-card-cxV .auto-group-tf4y-GvZ .intrnshipinfo-CpD .auto-group-ic3w-8Sy .calendar-clock-Q9b {
+  width: 2.0833rem;
+  height: 2.2917rem;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.eziiii-oppurtunities-y7B .frame-23-6Bo .auto-group-weqt-qjb .frame-17-tFo .internship-card-cxV .auto-group-tf4y-GvZ .intrnshipinfo-CpD .auto-group-pytp-xB7 {
+  margin: 0.338rem 3.013rem 0.396rem 0rem;
+  height: calc(100% - 0.7334rem);
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+.eziiii-oppurtunities-y7B .frame-23-6Bo .auto-group-weqt-qjb .frame-17-tFo .internship-card-cxV .auto-group-tf4y-GvZ .intrnshipinfo-CpD .auto-group-pytp-xB7 .part-time-fbK {
+  margin-bottom: 2rem;
+  display: flex;
+  font-size: 0.9rem;
+  font-weight: 700;
+  line-height: 1.3625;
+  color: #000000;
+  font-family: Open Sans, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.eziiii-oppurtunities-y7B .frame-23-6Bo .auto-group-weqt-qjb .frame-17-tFo .internship-card-cxV .auto-group-tf4y-GvZ .intrnshipinfo-CpD .auto-group-pytp-xB7 .duration-aiH {
+  margin: 0rem 0.3rem 0.15rem 0rem;
+  display: flex;
+  font-size: 0.9rem;
+  font-weight: 700;
+  line-height: 1.3625;
+  color: #000000;
+  font-family: Open Sans, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.eziiii-oppurtunities-y7B .frame-23-6Bo .auto-group-weqt-qjb .frame-17-tFo .internship-card-cxV .auto-group-tf4y-GvZ .intrnshipinfo-CpD .auto-group-pytp-xB7 .months-gWR {
+  margin-right: 0.3rem;
+  display: flex;
+  font-size: 0.6rem;
+  font-weight: 300;
+  line-height: 1.0758349895;
+  color: rgba(0, 0, 0, 0.6700000167);
+  font-family: Open Sans, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.eziiii-oppurtunities-y7B .frame-23-6Bo .auto-group-weqt-qjb .frame-17-tFo .internship-card-cxV .auto-group-tf4y-GvZ .intrnshipinfo-CpD .hand-coin-outline-pMj {
+  margin: 0rem 1.325rem 0.423rem 0rem;
+  width: 4.4625rem;
+  height: 3.5021rem;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.eziiii-oppurtunities-y7B .frame-23-6Bo .auto-group-weqt-qjb .frame-17-tFo .internship-card-cxV .auto-group-tf4y-GvZ .intrnshipinfo-CpD .auto-group-ju69-9eu {
+  margin-bottom: 1.3584rem;
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+.eziiii-oppurtunities-y7B .frame-23-6Bo .auto-group-weqt-qjb .frame-17-tFo .internship-card-cxV .auto-group-tf4y-GvZ .intrnshipinfo-CpD .auto-group-ju69-9eu .stipend-ue5 {
+  margin: 0rem 0.5rem 0.35rem 0rem;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.3625;
+  color: #000000;
+  font-family: Open Sans, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.eziiii-oppurtunities-y7B .frame-23-6Bo .auto-group-weqt-qjb .frame-17-tFo .internship-card-cxV .auto-group-tf4y-GvZ .intrnshipinfo-CpD .auto-group-ju69-9eu .item-5000--DPs {
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 1.3625;
+  color: #000000;
+  font-family: Open Sans, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.eziiii-oppurtunities-y7B .frame-23-6Bo .auto-group-weqt-qjb .frame-17-tFo .internship-card-cxV .auto-group-tf4y-GvZ .auto-group-rpgy-Yh3 {
+  margin-top: 1.1rem;
+  width: 12.2rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+.eziiii-oppurtunities-y7B .frame-23-6Bo .auto-group-weqt-qjb .frame-17-tFo .internship-card-cxV .auto-group-tf4y-GvZ .auto-group-rpgy-Yh3 .apply-now-JRK {
+  margin-bottom: 1.3rem;
+  width: 100%;
+  height: 2.8rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.3625;
+  color: #ffffff;
+  font-family: Open Sans, 'Source Sans Pro';
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #42cf32;
+  flex-shrink: 0;
+}
+.eziiii-oppurtunities-y7B .frame-23-6Bo .auto-group-weqt-qjb .frame-17-tFo .internship-card-cxV .auto-group-tf4y-GvZ .auto-group-rpgy-Yh3 .moreinfo-oN5 {
+  width: 100%;
+  height: 2.8rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.3625;
+  color: #ffffff;
+  font-family: Open Sans, 'Source Sans Pro';
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #7292ff;
+  flex-shrink: 0;
+}
+.eziiii-oppurtunities-y7B .menu-Qp5 {
+  box-sizing: border-box;
+  padding: 4.3rem 0.7rem 6.3rem 2.23rem;
+  width: 32.5rem;
+  height: 90vh;
+  position: relative;
+  left: 0;
+  top: 9rem;
+  border: solid 0 rgba(0, 0, 0, 0.0900000036);
+  box-shadow: 0.1rem -0.1rem 0.78rem rgba(0, 0, 0, 0.349999994);
+  background-color: rgba(255, 255, 255, 0.6600000262);
+}
+.eziiii-oppurtunities-y7B .menu-Qp5 .frame-2-7iV {
+  width: 100%;
+  height: 46.6rem;
+  row-gap: 2rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.eziiii-oppurtunities-y7B .menu-Qp5 .frame-2-7iV .group-7-rg5 {
+  width: 100%;
+  height: 5.8rem;
+  position: relative;
+  flex-shrink: 0;
+}
+.eziiii-oppurtunities-y7B .menu-Qp5 .frame-2-7iV .group-7-rg5 .rectangle-21-bdf {
+  width: 29.5696rem;
+  height: 5.4rem;
+  position: absolute;
+  left: 0;
+  top: 0.4rem;
+  background-color: transparent;
+  border-radius: 1.1rem;
+}
+.eziiii-oppurtunities-y7B .menu-Qp5 .frame-2-7iV .group-7-rg5:hover .rectangle-21-bdf {
+  background-color: rgba(23, 173, 50, 0.4600000083); /* Change background color on hover */
+}
+.eziiii-oppurtunities-y7B .menu-Qp5 .frame-2-7iV .group-7-rg5 .documents-ueM {
+  width: 10.3rem;
+  height: 3.8rem;
+  position: absolute;
+  left: 6.3589rem;
+  top: 0;
+  display: flex;
+  font-size: 3.6rem;
+  font-weight: 400;
+  line-height: 1.6025;
+  color: #000000;
+  font-family: Jomolhari, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.eziiii-oppurtunities-y7B .menu-Qp5 .frame-2-7iV .group-7-rg5 .file-document-ERj {
+  width: 2.7071rem;
+  height: 3.3333rem;
+  position: absolute;
+  left: 1.5174rem;
+  top: 1.7333rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+
+.eziiii-oppurtunities-y7B .header-7LR {
+  width: 100%;
+  height: 10.7rem;
+  position: absolute;
+  left: 0;
+  top: 0
+}
+.eziiii-oppurtunities-y7B .header-7LR .rectangle-2-4Ff {
+  width: 100%;
+  height: 9.6rem;
+  position: absolute;
+  left: 0;
+  top: 0.6rem;
+  box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25), 0 0.8rem 0.4rem rgba(0, 0, 0, 0.4399999976);
+  background-color: #ffffff;
+}
+.eziiii-oppurtunities-y7B .header-7LR .bcd3b4b5d471dae27a60bd4b5f07-1-9nu {
+  width: 9.1rem;
+  height: 9.6rem;
+  position: absolute;
+  left: 0;
+  top: 0.6rem;
+  object-fit: cover;
+  vertical-align: top;
+}
+.eziiii-oppurtunities-y7B .header-7LR .account-circle-tEh {
+  width: 4.9167rem;
+  height: 5rem;
+  position: absolute;
+  right: 5rem;
+  top: 2.9rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.eziiii-oppurtunities-y7B .header-7LR .yourparagraphtext1-removebg-preview-1-BUh {
+  width: 11.6rem;
+  height: 10.7rem;
+  position: relative;
+  left: 8.4rem;
+  top: 0;
+  background-size: 257.143% 284.211%;
+  background-position: -8.8381rem -9.8553rem;
+  background-image: url('../assets/yourparagraphtext1-removebg-preview-1-afF.png');
+}
+.eziiii-oppurtunities-y7B .header-7LR .ezfill-GW9 {
+  width: 7.7rem;
+  height: 4.5rem;
+  position: absolute;
+  left: 18.9rem;
+  top: 4.5rem;
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1.2575;
+  color: #15ab30;
+  font-family: jsMath-cmbx10, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.eziiii-oppurtunities-y7B .header-7LR .bell-ArR {
+  width: 4.2rem;
+  height: 4.9rem;
+  position: absolute;
+  right: 15rem;
+  top: 2.7rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.purchasepage{
+  text-decoration: none;
+}
