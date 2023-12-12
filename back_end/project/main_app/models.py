@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import AbstractUser
+from .manager import CustomUserManager
 
 gender_choices = (
     ('M', 'Male'),
@@ -51,9 +52,12 @@ class CustomUser(AbstractUser):
 
     is_institute = models.BooleanField(default=False)
     is_student = models.BooleanField(default=False)
+    is_verified = models.BooleanField(default=False)
 
     #image field
-    profile_pic = models.ImageField(upload_to='profile')
+    profile_pic = models.ImageField(upload_to='profile', blank=True, null=True)
+
+    # objects = CustomUserManager()
 
     USERNAME_FIELD = 'username'
 
@@ -124,3 +128,10 @@ class Marksheet(models.Model):
         unique_together = ('aadhar_no', 'standard')
 
 
+class OneTimePass(models.Model):
+    aadhar_no = models.CharField(max_length=100, primary_key=True)
+    otp = models.CharField(max_length=6)
+    sending_time = models.DateTimeField(auto_now=True)
+
+    def __str__(self) -> str:
+        return str(self.aadhar_no) + str(self.sending_time)

@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import CustomUser, AadharInfo, Income, CasteData, Domicile, Marksheet
+from .models import CustomUser, AadharInfo, Income, CasteData, Domicile, Marksheet, OneTimePass
 from django.urls import path
 from django.shortcuts import render
 from django import forms
@@ -10,6 +10,7 @@ from django.urls import reverse
 
 # Register your models here.
 admin.site.register(CustomUser)
+admin.site.register(OneTimePass)
 
 # https://github.com/veryacademy/YT_Django_Admin_csv_Button_Upload (Refrence for csv upload)
 # handeling csv upload

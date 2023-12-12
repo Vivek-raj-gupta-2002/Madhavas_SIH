@@ -3,6 +3,8 @@ from django.contrib.auth.base_user import BaseUserManager
 # Handeling the user creations 
 
 class CustomUserManager(BaseUserManager):
+    use_in_migrations = True
+
     def create_user(self, username, password=None, **extra_fields):
 
         # check if username is not null
