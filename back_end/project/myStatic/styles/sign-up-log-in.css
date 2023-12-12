@@ -1,0 +1,466 @@
+
+html {
+	font-size:62.5%;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+ul, li {
+	list-style: none;
+}
+input {
+	border: none;
+}
+body {
+  width: 144rem;
+}.sign-up-log-in-rNZ {
+  box-sizing: border-box;
+  padding-bottom: 11.9rem;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background-color: #efefef;
+}
+.sign-up-log-in-rNZ .header-Q9B {
+  margin-bottom: 10.2rem;
+  width: 100%;
+  height: 10.7rem;
+  position: relative;
+  flex-shrink: 0;
+}
+.sign-up-log-in-rNZ .header-Q9B .header-kiq {
+  box-sizing: border-box;
+  padding-right: 4.6917rem;
+  width: 144rem;
+  height: 9.6rem;
+  position: absolute;
+  left: 0;
+  top: 0.6rem;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25), 0 0.8rem 0.4rem rgba(0, 0, 0, 0.4399999976);
+  background-color: #ffffff;
+}
+.sign-up-log-in-rNZ .header-Q9B .header-kiq .bcd3b4b5d471dae27a60bd4b5f07-1-t4M {
+  margin-right: 117.2rem;
+  width: 9.1rem;
+  height: 9.6rem;
+  object-fit: cover;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.sign-up-log-in-rNZ .header-Q9B .header-kiq .bell-bDf {
+  margin: 0rem 3.892rem 0.5rem 0rem;
+  width: 4.2rem;
+  height: 4.9rem;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.sign-up-log-in-rNZ .header-Q9B .header-kiq .account-circle-uEM {
+  width: 4.9167rem;
+  height: 5rem;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.sign-up-log-in-rNZ .header-Q9B .yourparagraphtext1-removebg-preview-1-Qgu {
+  width: 11.6rem;
+  height: 10.7rem;
+  position: relative;
+  left: 8.4rem;
+  top: 0;
+  background-size: 257.143% 284.211%;
+  background-position: -8.8381rem -9.8553rem;
+  background-image: url('../assets/yourparagraphtext1-removebg-preview-1-ygH.png');
+}
+.sign-up-log-in-rNZ .header-Q9B .ezfill-Gj7 {
+  width: 7.7rem;
+  height: 4.5rem;
+  position: absolute;
+  left: 18.9rem;
+  top: 4.5rem;
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1.2575;
+  color: #15ab30;
+  font-family: jsMath-cmbx10, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.sign-up-log-in-rNZ .card-login-sign-up-Nn9 {
+  margin: 0rem 18.5rem 0rem 19.2rem;
+  box-sizing: border-box;
+  padding-bottom: 2.3rem;
+  width: calc(100% - 37.7rem);
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0.9rem 0.4rem rgba(0, 0, 0, 0.25);
+  background-color: #ffffff;
+  border-radius: 5.3rem;
+  flex-shrink: 0;
+}
+.sign-up-log-in-rNZ .card-login-sign-up-Nn9 .auto-group-zwst-u1P {
+  margin-bottom: 6.9837rem;
+  width: 100%;
+  height: 9.9163rem;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.sign-up-log-in-rNZ .card-login-sign-up-Nn9 .auto-group-zwst-u1P .auto-group-dga9-RkR {
+  margin: 0rem 0.9rem 0.016rem 0rem;
+  width: 51.5rem;
+  height: calc(100% - 0.0163rem);
+  font-size: 3.6rem;
+  font-weight: 700;
+  line-height: 1.3625;
+  color: #ffffff;
+  font-family: Open Sans, 'Source Sans Pro';
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #99d1a3;
+  border-radius: 5.3rem 0 0 0;
+  flex-shrink: 0;
+}
+.sign-up-log-in-rNZ .card-login-sign-up-Nn9 .auto-group-zwst-u1P .auto-group-zewy-s6d {
+  width: 53.9rem;
+  height: 100%;
+  left: -1rem;
+  position: relative;
+  border-left: solid 0.9rem #000000;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  border-radius: 0 5.3rem 0 0;
+}
+.sign-up-log-in-rNZ .card-login-sign-up-Nn9 .auto-group-zwst-u1P .auto-group-zewy-s6d .rectangle-45-pGm {
+  width: 53.9rem;
+  height: 9.9rem;
+  position: absolute;
+  left: 10;
+  top: 0;
+  background-color: #4f33fa;
+  border-radius: 0 5.3rem 0 0;
+}
+.sign-up-log-in-rNZ .card-login-sign-up-Nn9 .auto-group-zwst-u1P .auto-group-zewy-s6d .log-in-x85 {
+  width: 10.8rem;
+  height: 5rem;
+  position: absolute;
+  left: 20rem;
+  top: 3rem;
+  font-size: 3.6rem;
+  font-weight: 700;
+  line-height: 1.3625;
+  color: #ffffff;
+  font-family: Open Sans, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.sign-up-log-in-rNZ .card-login-sign-up-Nn9 .sign-up-eFo {
+  margin: 0rem 1.7rem 0rem 1.6rem;
+  width: calc(100% - 3.3rem);
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+.sign-up-log-in-rNZ .card-login-sign-up-Nn9 .sign-up-eFo .auto-group-mppm-Zdf {
+  margin: 0rem 0.1rem 4.2rem 0rem;
+  width: calc(100% - 0.1rem);
+  height: 4.9rem;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.sign-up-log-in-rNZ .card-login-sign-up-Nn9 .sign-up-eFo .auto-group-mppm-Zdf .name-field-Gny {
+  margin-right: 3.3rem;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.sign-up-log-in-rNZ .card-login-sign-up-Nn9 .sign-up-eFo .auto-group-mppm-Zdf .name-field-Gny .name-dNd {
+  margin-right: 2.4rem;
+  font-size: 3.3rem;
+  font-weight: 700;
+  line-height: 1.3625;
+  color: #000000;
+  font-family: Open Sans, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.sign-up-log-in-rNZ .card-login-sign-up-Nn9 .sign-up-eFo .auto-group-mppm-Zdf .name-field-Gny .rectangle-45-KmF {
+  width: 34rem;
+  height: 4.9rem;
+  border: solid 0.3rem #000000;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  flex-shrink: 0;
+}
+.sign-up-log-in-rNZ .card-login-sign-up-Nn9 .sign-up-eFo .auto-group-mppm-Zdf .mobile-number-qUh {
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  flex-shrink: 0;
+}
+.sign-up-log-in-rNZ .card-login-sign-up-Nn9 .sign-up-eFo .auto-group-mppm-Zdf .mobile-number-qUh .mobile-no-QGu {
+  margin-right: 1.5rem;
+  font-size: 3.3rem;
+  font-weight: 700;
+  line-height: 1.3625;
+  color: #000000;
+  font-family: Open Sans, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.sign-up-log-in-rNZ .card-login-sign-up-Nn9 .sign-up-eFo .auto-group-mppm-Zdf .mobile-number-qUh .rectangle-46-LwF {
+  width: 34rem;
+  height: 4.9rem;
+  border: solid 0.3rem #000000;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  flex-shrink: 0;
+}
+.sign-up-log-in-rNZ .card-login-sign-up-Nn9 .sign-up-eFo .auto-group-1iv9-eBF {
+  margin: 0rem 0rem 3.2rem 0.1rem;
+  width: calc(100% - 0.1rem);
+  height: 5.9rem;
+  display: flex;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.sign-up-log-in-rNZ .card-login-sign-up-Nn9 .sign-up-eFo .auto-group-1iv9-eBF .name-field-ww3 {
+  margin-right: 5.8rem;
+  height: 4.9rem;
+  display: flex;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.sign-up-log-in-rNZ .card-login-sign-up-Nn9 .sign-up-eFo .auto-group-1iv9-eBF .name-field-ww3 .aadhar-no-VxZ {
+  margin-right: 2.3rem;
+  font-size: 3.3rem;
+  font-weight: 700;
+  line-height: 1.3625;
+  color: #000000;
+  font-family: Open Sans, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.sign-up-log-in-rNZ .card-login-sign-up-Nn9 .sign-up-eFo .auto-group-1iv9-eBF .name-field-ww3 .auto-group-r3sd-Ev9 {
+  box-sizing: border-box;
+  padding: 1.4rem 1.9rem 1.5rem 4rem;
+  height: 100%;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.3625;
+  color: black;
+  font-family: Open Sans, 'Source Sans Pro';
+  white-space: nowrap;
+  border: solid 0.3rem #000000;
+  background-color: #ffffff;
+  flex-shrink: 0;
+}.sign-up-log-in-rNZ .card-login-sign-up-Nn9 .sign-up-eFo .auto-group-1iv9-eBF .name-field-ww3 .aadharOTP {
+  box-sizing: border-box;
+  padding: 1.4rem 1.9rem 1.5rem 1rem;
+  height: 100%;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.3625;
+  color: black;
+  font-family: Open Sans, 'Source Sans Pro';
+  white-space: nowrap;
+  border: solid 0.3rem #000000;
+  background-color: #45e0e8;
+  flex-shrink: 0;
+}.sign-up-log-in-rNZ .card-login-sign-up-Nn9 .sign-up-eFo .auto-group-1iv9-eBF .name-field-ww3 .auto-group-r3sd-Ev9::placeholder {
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 1.3625;
+    color: #23a2ff;
+    font-family: Open Sans, 'Source Sans Pro';
+}
+.sign-up-log-in-rNZ .card-login-sign-up-Nn9 .sign-up-eFo .auto-group-1iv9-eBF .mobile-number-3ch {
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  flex-shrink: 0;
+}
+.sign-up-log-in-rNZ .card-login-sign-up-Nn9 .sign-up-eFo .auto-group-1iv9-eBF .mobile-number-3ch .otp-D1P {
+  margin-right: 1.5rem;
+  font-size: 3.3rem;
+  font-weight: 700;
+  line-height: 1.3625;
+  color: #000000;
+  font-family: Open Sans, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.sign-up-log-in-rNZ .card-login-sign-up-Nn9 .sign-up-eFo .auto-group-1iv9-eBF .mobile-number-3ch .rectangle-46-vwP {
+  margin-bottom: 1rem;
+  width: 34rem;
+  height: 4.9rem;
+  border: solid 0.3rem #000000;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  flex-shrink: 0;
+}
+.sign-up-log-in-rNZ .card-login-sign-up-Nn9 .sign-up-eFo .auto-group-emdx-Fyf {
+  margin: 0rem 5rem 6.2rem 0.2rem;
+  width: calc(100% - 5.2rem);
+  height: 4.9rem;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.sign-up-log-in-rNZ .card-login-sign-up-Nn9 .sign-up-eFo .auto-group-emdx-Fyf .age-zRT {
+  margin-right: 4rem;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.sign-up-log-in-rNZ .card-login-sign-up-Nn9 .sign-up-eFo .auto-group-emdx-Fyf .age-zRT .dob-9p9 {
+  margin-right: 5rem;
+  font-size: 3.3rem;
+  font-weight: 700;
+  line-height: 1.3625;
+  color: #000000;
+  font-family: Open Sans, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.sign-up-log-in-rNZ .card-login-sign-up-Nn9 .sign-up-eFo .auto-group-emdx-Fyf .age-zRT .rectangle-45-GNy {
+  width: 34rem;
+  height: 4.9rem;
+  border: solid 0.3rem #000000;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  flex-shrink: 0;
+}
+.sign-up-log-in-rNZ .card-login-sign-up-Nn9 .sign-up-eFo .auto-group-emdx-Fyf .age-CnR {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.sign-up-log-in-rNZ .card-login-sign-up-Nn9 .sign-up-eFo .auto-group-emdx-Fyf .age-CnR .gender-8g5 {
+  margin-right: 1.4rem;
+  font-size: 3.3rem;
+  font-weight: 700;
+  line-height: 1.3625;
+  color: #000000;
+  font-family: Open Sans, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.sign-up-log-in-rNZ .card-login-sign-up-Nn9 .sign-up-eFo .auto-group-emdx-Fyf .age-CnR .rectangle-45-5bK {
+  width: 34rem;
+  height: 4.9rem;
+  border: solid 0.3rem #000000;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  flex-shrink: 0;
+}
+.sign-up-log-in-rNZ .card-login-sign-up-Nn9 .sign-up-eFo .auto-group-f58r-DSd {
+  margin: 0rem 1.6rem 3.1rem 0rem;
+  width: calc(100% - 1.6rem);
+  height: 4.9rem;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.sign-up-log-in-rNZ .card-login-sign-up-Nn9 .sign-up-eFo .auto-group-f58r-DSd .age-Yjo {
+  margin-right: 4.2rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.sign-up-log-in-rNZ .card-login-sign-up-Nn9 .sign-up-eFo .auto-group-f58r-DSd .age-Yjo .institute-tHs {
+  margin-right: 10.3rem;
+  font-size: 3.3rem;
+  font-weight: 700;
+  line-height: 1.3625;
+  color: #000000;
+  font-family: Open Sans, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.sign-up-log-in-rNZ .card-login-sign-up-Nn9 .sign-up-eFo .auto-group-f58r-DSd .age-Yjo .rectangle-45-2ey {
+  width: 31.9rem;
+  height: 4.9rem;
+  border: solid 0.3rem #000000;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  flex-shrink: 0;
+}
+.sign-up-log-in-rNZ .card-login-sign-up-Nn9 .sign-up-eFo .auto-group-f58r-DSd .age-msT {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.sign-up-log-in-rNZ .card-login-sign-up-Nn9 .sign-up-eFo .auto-group-f58r-DSd .age-msT .pin-8CD {
+  margin-right: 2.8rem;
+  font-size: 3.3rem;
+  font-weight: 700;
+  line-height: 1.3625;
+  color: #000000;
+  font-family: Open Sans, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.sign-up-log-in-rNZ .card-login-sign-up-Nn9 .sign-up-eFo .auto-group-f58r-DSd .age-msT .rectangle-45-5NM {
+  width: 31.9rem;
+  height: 4.9rem;
+  border: solid 0.3rem #000000;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  flex-shrink: 0;
+}
+.sign-up-log-in-rNZ .card-login-sign-up-Nn9 .sign-up-eFo .age-zkD {
+  margin: 0rem 46.2rem 1.1rem 0.2rem;
+  width: calc(100% - 46.4rem);
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.sign-up-log-in-rNZ .card-login-sign-up-Nn9 .sign-up-eFo .age-zkD .caste-Lp5 {
+  margin-right: 15.5rem;
+  font-size: 3.3rem;
+  font-weight: 700;
+  line-height: 1.3625;
+  color: #000000;
+  font-family: Open Sans, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.sign-up-log-in-rNZ .card-login-sign-up-Nn9 .sign-up-eFo .age-zkD .rectangle-45-5Fs {
+  width: 31.9rem;
+  height: 4.9rem;
+  border: solid 0.3rem #000000;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  flex-shrink: 0;
+}
+.sign-up-log-in-rNZ .card-login-sign-up-Nn9 .sign-up-eFo .auto-group-sntd-zNq {
+  margin-right: 1.6rem;
+  width: 36.3rem;
+  height: 7.7rem;
+  font-size: 3.3rem;
+  font-weight: 700;
+  line-height: 1.3625;
+  color: #ffffff;
+  font-family: Open Sans, 'Source Sans Pro';
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #4f33fa;
+  flex-shrink: 0;
+}.sign-up-log-in-rNZ .card-login-sign-up-Nn9 .sign-up-eFo .auto-group-sntd-zNq :hover{
+  background-color: #c6c3da;
+}

@@ -1,0 +1,256 @@
+
+html {
+	font-size:62.5%;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+ul, li {
+	list-style: none;
+}
+input {
+	border: none;
+}
+body {
+  width: 144rem;
+}.scholarship-form3-u6m {
+  box-sizing: border-box;
+  padding-bottom: 12rem;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+}
+.scholarship-form3-u6m .header-E93 {
+  margin-bottom: 1.9rem;
+  width: 100%;
+  height: 10.5rem;
+  position: relative;
+  flex-shrink: 0;
+}
+.scholarship-form3-u6m .header-E93 .rectangle-2-B4H {
+  width: 144rem;
+  height: 9.6rem;
+  position: absolute;
+  left: 0;
+  top: 0.6rem;
+  box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25), 0 0.8rem 0.4rem rgba(0, 0, 0, 0.4399999976);
+  background-color: #ffffff;
+}
+.scholarship-form3-u6m .header-E93 .bcd3b4b5d471dae27a60bd4b5f07-1-fk9 {
+  width: 9.1rem;
+  height: 10.5rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  object-fit: cover;
+  vertical-align: top;
+}
+.scholarship-form3-u6m .header-E93 .national-scholarship-portal-bth {
+  width: 48rem;
+  height: 4.8rem;
+  position: absolute;
+  left: 12rem;
+  top: 2.3rem;
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1.3625;
+  color: #15ab30;
+  font-family: Open Sans, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.scholarship-form3-u6m .bank-detail-from-HFj {
+  margin: 0rem 22.4rem 0rem 14.2rem;
+  width: calc(100% - 36.6rem);
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+.scholarship-form3-u6m .bank-detail-from-HFj .auto-group-npgd-Bru {
+  margin: 0rem 32.2rem 13.5rem 50rem;
+  width: calc(100% - 82.2rem);
+  height: 8.9rem;
+  position: relative;
+  flex-shrink: 0;
+}
+.scholarship-form3-u6m .bank-detail-from-HFj .auto-group-npgd-Bru .required-fields-WeH {
+  width: 16.2rem;
+  height: 4.1rem;
+  position: absolute;
+  left: 1.3rem;
+  top: 4.8rem;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 2.01;
+  color: #ff0000;
+  font-family: Kadwa, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.scholarship-form3-u6m .bank-detail-from-HFj .auto-group-npgd-Bru .bank-account-details-XpH {
+  width: 25.2rem;
+  height: 4.9rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 2.01;
+  color: #1915f1;
+  font-family: Kadwa, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.scholarship-form3-u6m .bank-detail-from-HFj .account-holder-name-cqj {
+  margin: 0rem 25.3rem 7.3rem 0rem;
+  width: calc(100% - 25.3rem);
+  height: 5.8rem;
+  display: flex;
+  align-items: flex-start;
+  border-radius: 0.4rem;
+  flex-shrink: 0;
+}
+.scholarship-form3-u6m .bank-detail-from-HFj .account-holder-name-cqj .account-holder-name-wt1 {
+  margin-right: 2.6rem;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 2.0078125;
+  color: #000000;
+  font-family: Kadwa, 'Source Sans Pro';
+  white-space: nowrap;
+  display: flex;
+  align-items: baseline;
+  flex-shrink: 0;
+}
+.scholarship-form3-u6m .bank-detail-from-HFj .account-holder-name-cqj .account-holder-name-wt1 .account-holder-name-wt1-sub-0 {
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 2.01;
+  color: #f81e1e;
+  font-family: Kadwa, 'Source Sans Pro';
+}
+.scholarship-form3-u6m .bank-detail-from-HFj .account-holder-name-cqj .account-holder-name-wt1 .account-holder-name-wt1-sub-1 {
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 2.01;
+  color: #000000;
+  font-family: Kadwa, 'Source Sans Pro';
+}
+.scholarship-form3-u6m .bank-detail-from-HFj .account-holder-name-cqj .rectangle-69-ccm {
+  width: 52.9rem;
+  height: 5rem;
+  border: solid 0.1rem #000000;
+  box-sizing: border-box;
+  background-color: rgba(217, 217, 217, 0.4399999976);
+  border-radius: 0.4rem;
+  flex-shrink: 0;
+}
+.scholarship-form3-u6m .bank-detail-from-HFj .account-number-jBb {
+  margin: 0rem 24.952rem 6.9rem 1rem;
+  width: calc(100% - 25.9523rem);
+  height: 5.8rem;
+  display: flex;
+  align-items: flex-start;
+  border-radius: 0.4rem;
+  flex-shrink: 0;
+}
+.scholarship-form3-u6m .bank-detail-from-HFj .account-number-jBb .account-number-Srh {
+  margin-right: 7.6477rem;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 2.01;
+  color: #fd0000;
+  font-family: Kadwa, 'Source Sans Pro';
+  white-space: nowrap;
+  display: flex;
+  align-items: baseline;
+  flex-shrink: 0;
+}
+.scholarship-form3-u6m .bank-detail-from-HFj .account-number-jBb .account-number-Srh .account-number-Srh-sub-0 {
+}
+.scholarship-form3-u6m .bank-detail-from-HFj .account-number-jBb .account-number-Srh .account-number-Srh-sub-1 {
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 2.01;
+  color: #000000;
+  font-family: Kadwa, 'Source Sans Pro';
+}
+.scholarship-form3-u6m .bank-detail-from-HFj .account-number-jBb .rectangle-70-qdw {
+  width: 52.9rem;
+  height: 5rem;
+  border: solid 0.1rem #000000;
+  box-sizing: border-box;
+  background-color: rgba(217, 217, 217, 0.4399999976);
+  border-radius: 0.4rem;
+  flex-shrink: 0;
+}
+.scholarship-form3-u6m .bank-detail-from-HFj .isfc-number-9Pj {
+  margin: 0rem 25.3rem 17.6rem 1.5rem;
+  width: calc(100% - 26.8rem);
+  height: 5.2rem;
+  display: flex;
+  align-items: flex-start;
+  border-radius: 0.4rem;
+  flex-shrink: 0;
+}
+.scholarship-form3-u6m .bank-detail-from-HFj .isfc-number-9Pj .ifsc-number-row {
+  margin-right: 11.2rem;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 2.01;
+  color: #ff0000;
+  font-family: Kadwa, 'Source Sans Pro';
+  white-space: nowrap;
+  display: flex;
+  align-items: baseline;
+  flex-shrink: 0;
+}
+.scholarship-form3-u6m .bank-detail-from-HFj .isfc-number-9Pj .ifsc-number-row .ifsc-number-row-sub-0 {
+}
+.scholarship-form3-u6m .bank-detail-from-HFj .isfc-number-9Pj .ifsc-number-row .ifsc-number-row-sub-1 {
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 2.01;
+  color: #000000;
+  font-family: Kadwa, 'Source Sans Pro';
+}
+.scholarship-form3-u6m .bank-detail-from-HFj .isfc-number-9Pj .rectangle-71-3tR {
+  width: 52.9rem;
+  height: 5rem;
+  border: solid 0.1rem #000000;
+  box-sizing: border-box;
+  background-color: rgba(217, 217, 217, 0.4399999976);
+  border-radius: 0.4rem;
+  flex-shrink: 0;
+}
+.scholarship-form3-u6m .bank-detail-from-HFj .submit-MeD {
+  margin-left: 82.4rem;
+  width: 25rem;
+  height: 7.3rem;
+  position: relative;
+  flex-shrink: 0;
+}
+.scholarship-form3-u6m .bank-detail-from-HFj .submit-MeD .rectangle-68-WGD {
+  width: 25rem;
+  height: 6rem;
+  position: absolute;
+  left: 0;
+  top: 0.6rem;
+  background-color: #25a83a;
+}
+.scholarship-form3-u6m .bank-detail-from-HFj .submit-MeD .submit-r5B {
+  width: 13.3rem;
+  height: 7.3rem;
+  position: absolute;
+  left: 4.8rem;
+  top: 0;
+  font-size: 3.6rem;
+  font-weight: 700;
+  line-height: 2.01;
+  color: #eeeeee;
+  font-family: Kadwa, 'Source Sans Pro';
+  white-space: nowrap;
+}

@@ -2,6 +2,46 @@ from django.db import models
 from django.contrib.auth.models import AbstractUser
 from .manager import CustomUserManager
 
+INDIAN_STATE_CHOICES = (
+    ('Andhra Pradesh', 'Andhra Pradesh'),
+    ('Arunachal Pradesh', 'Arunachal Pradesh'),
+    ('Assam', 'Assam'),
+    ('Bihar', 'Bihar'),
+    ('Chhattisgarh', 'Chhattisgarh'),
+    ('Goa', 'Goa'),
+    ('Gujarat', 'Gujarat'),
+    ('Haryana', 'Haryana'),
+    ('Himachal Pradesh', 'Himachal Pradesh'),
+    ('Jharkhand', 'Jharkhand'),
+    ('Karnataka', 'Karnataka'),
+    ('Kerala', 'Kerala'),
+    ('Madhya Pradesh', 'Madhya Pradesh'),
+    ('Maharashtra', 'Maharashtra'),
+    ('Manipur', 'Manipur'),
+    ('Meghalaya', 'Meghalaya'),
+    ('Mizoram', 'Mizoram'),
+    ('Nagaland', 'Nagaland'),
+    ('Odisha', 'Odisha'),
+    ('Punjab', 'Punjab'),
+    ('Rajasthan', 'Rajasthan'),
+    ('Sikkim', 'Sikkim'),
+    ('Tamil Nadu', 'Tamil Nadu'),
+    ('Telangana', 'Telangana'),
+    ('Tripura', 'Tripura'),
+    ('Uttar Pradesh', 'Uttar Pradesh'),
+    ('Uttarakhand', 'Uttarakhand'),
+    ('West Bengal', 'West Bengal'),
+    ('Andaman and Nicobar Islands', 'Andaman and Nicobar Islands'),
+    ('Chandigarh', 'Chandigarh'),
+    ('Dadra and Nagar Haveli and Daman and Diu', 'Dadra and Nagar Haveli and Daman and Diu'),
+    ('Delhi', 'Delhi'),
+    ('Jammu and Kashmir', 'Jammu and Kashmir'),
+    ('Ladakh', 'Ladakh'),
+    ('Lakshadweep', 'Lakshadweep'),
+    ('Puducherry', 'Puducherry'),
+)
+
+
 gender_choices = (
     ('M', 'Male'),
     ('F', 'Female'),
@@ -33,6 +73,15 @@ is_student = main user
 is_institute = Institutations
 
 """
+
+class College(models.Model):
+    State = models.CharField(choices=INDIAN_STATE_CHOICES, max_length=100)
+    University = models.CharField(max_length=200)
+    name = models.CharField(max_length=200, unique=True)
+
+    def __str__(self) -> str:
+        return self.name
+
 class CustomUser(AbstractUser):
     
     # identifiers
@@ -47,7 +96,7 @@ class CustomUser(AbstractUser):
     dob = models.DateField()
 
     #not null
-    institute = models.CharField(max_length=100, null=True, blank=True)
+    institute = models.ForeignKey(College, max_length=100, null=True, blank=True, on_delete=models.CASCADE)
     caste = models.CharField(max_length=20, null=True, blank=True, choices=cast_choice)
 
     is_institute = models.BooleanField(default=False)
@@ -127,7 +176,7 @@ class Marksheet(models.Model):
         # Specify the unique constraint for a combination of field1 and field2
         unique_together = ('aadhar_no', 'standard')
 
-
+# field for otp
 class OneTimePass(models.Model):
     aadhar_no = models.CharField(max_length=100, primary_key=True)
     otp = models.CharField(max_length=6)

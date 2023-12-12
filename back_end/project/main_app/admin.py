@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import CustomUser, AadharInfo, Income, CasteData, Domicile, Marksheet, OneTimePass
+from .models import CustomUser, AadharInfo, Income, CasteData, Domicile, Marksheet, OneTimePass, College
 from django.urls import path
 from django.shortcuts import render
 from django import forms
@@ -276,3 +276,53 @@ class MarksheetAdmin(admin.ModelAdmin):
         return render(request, "admin/csv_upload.html", data)
 
 admin.site.register(Marksheet, MarksheetAdmin)
+
+# college CSV Upload
+class CollegeAdmin(admin.ModelAdmin):
+    list_display = ('State', 'University', 'name')
+
+    def get_urls(self):
+        urls = super().get_urls()
+        new_urls = [path('upload-csv/', self.upload_csv),]
+        return new_urls + urls
+
+    def upload_csv(self, request):
+
+        if request.method == "POST":
+            csv_file = request.FILES["csv_upload"]
+            
+            if not csv_file.name.endswith('.csv'):
+                messages.warning(request, 'The wrong file type was uploaded')
+                return HttpResponseRedirect(request.path_info)
+            
+            file_data = csv_file.read().decode("utf-8")
+
+            csv_data = file_data.split("\n")
+
+
+            for x in csv_data:
+                fields = x.split(",")
+                if len(fields) != 3:
+                    continue
+                
+                try:
+                    print(fields)
+                    created = College.objects.update_or_create(
+                            State=fields[0].strip(),
+                            University=str(fields[1]).replace('"', ""),
+                            name=str(fields[2]).strip()
+                        )
+
+                except:
+                    messages.warning(request, 'Something went wrong')
+                    return HttpResponseRedirect(request.path_info)
+
+
+            url = reverse('admin:index')
+            return HttpResponseRedirect(url)
+
+        form = CsvImportForm()
+        data = {"form": form}
+        return render(request, "admin/csv_upload.html", data)
+
+admin.site.register(College, CollegeAdmin)
