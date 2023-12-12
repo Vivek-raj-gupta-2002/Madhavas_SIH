@@ -38,6 +38,12 @@ function toggleEducationalDocuments() {
     documentContainer.classList.toggle("Otherdocuments-visible");
    
   }
+  
+  function toggleAnswer() {
+    var answerContainer = document.getElementById('faqItem');
+    answerContainer.classList.toggle('expanded');
+  }
+  
 
 
 // Attach click event to the arrow-down-drop-circle-PoK element
