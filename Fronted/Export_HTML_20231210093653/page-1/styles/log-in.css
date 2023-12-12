@@ -211,8 +211,9 @@ body {
 }
 .log-in-bid .card-login-sign-up-DfT .sign-up-F8H .name-field-xB7 .auto-group-qstq-DMw {
   box-sizing: border-box;
-  padding: 1.4rem 1.9rem 1.5rem 25.5rem;
+  padding: 1.4rem 1.9rem 1.5rem 10.5rem;
   height: 100%;
+  width: 36rem;
   font-size: 1.4rem;
   font-weight: 700;
   line-height: 1.3625;
@@ -222,6 +223,22 @@ body {
   border: solid 0.3rem #000000;
   background-color: #ffffff;
   flex-shrink: 0;
+}.log-in-bid .card-login-sign-up-DfT .sign-up-F8H .name-field-xB7 .sendOTP {
+  padding: 0 0rem 0rem 4rem;
+  right: 15rem;
+  height: 5rem;
+  width: 5rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.3625;
+  color: black;
+  font-family: Open Sans, 'Source Sans Pro';
+  white-space: nowrap;
+  position: relative;
+  flex-shrink: 0;
+  box-sizing: content-box;
+  background: #00000000;
+  border-width: 0;
 }.log-in-bid .card-login-sign-up-DfT .sign-up-F8H .name-field-xB7 .auto-group-qstq-DMw::placeholder {
     font-size: 1.4rem;
     font-weight: 700;
