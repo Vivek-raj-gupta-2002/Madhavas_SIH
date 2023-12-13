@@ -21,6 +21,10 @@ def scholar(request):
     return render(request, "user_app/scholarshipform.html", {'form': my_form})
 
 
+
+    
+
+
 """
 usertype = student
 """
