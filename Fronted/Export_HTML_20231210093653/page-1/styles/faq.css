@@ -1,6 +1,6 @@
 
 html {
-	font-size:62.5%;
+	font-size:59.5%;
 }
 * {
 	margin: 0;
@@ -13,25 +13,23 @@ input {
 	border: none;
 }
 body {
-  width: 144rem;
-}.faq-uzD {
-  width: 100%;
-  height: 103rem;
+  width: 100vw;
+  height: 100vh;
+}
+.faq-uzD {
   position: relative;
   background-color: #efefef;
 }
-.faq-uzD .frame-22-GZs {
-  width: 107.8rem;
-  height: 69.1rem;
+.frame-22-GZs {
   position: absolute;
-  left: 33.3rem;
-  top: 15.3rem;
+  left: 27rem;
+  top: 10rem;
   overflow: hidden;
 }
-.faq-uzD .frame-22-GZs .personal-documement-o41 {
-  margin-bottom: 3.1rem;
+.personal-documement-o41 {
+  margin-bottom: 2rem;
   box-sizing: border-box;
-  padding: 0.38rem 1.792rem 3.434rem 3.5rem;
+  padding: 0.3rem 1.7rem 3.4rem 3.5rem;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -40,16 +38,16 @@ body {
   background-color: #ffffff;
   border-radius: 2.4rem;
 }
-.faq-uzD .frame-22-GZs .personal-documement-o41 .auto-group-jz73-Hzm {
+.auto-group-jz73-Hzm {
   margin-bottom: 0.2658rem;
   width: 100%;
   display: flex;
   align-items: flex-start;
   flex-shrink: 0;
 }
-.faq-uzD .frame-22-GZs .personal-documement-o41 .auto-group-jz73-Hzm .problem-in-fetching-data-from-api-qmP {
-  margin: 0.02rem 39.692rem 0rem 0rem;
-  font-size: 3.6rem;
+.problem-in-fetching-data-from-api-qmP {
+  margin: 0.2rem 39rem 0rem 0rem;
+  font-size: 3rem;
   font-weight: 400;
   line-height: 1.6025;
   color: #000000;
@@ -57,24 +55,24 @@ body {
   white-space: nowrap;
   flex-shrink: 0;
 }
-.faq-uzD .frame-22-GZs .personal-documement-o41 .auto-group-jz73-Hzm .arrow-down-drop-circle-KgZ {
-  width: 4.9167rem;
-  height: 3.1816rem;
+.arrow-down-drop-circle-KgZ {
+  width: 3rem;
+  height: 3.6rem;
   object-fit: contain;
   vertical-align: top;
   flex-shrink: 0;
 }
-.faq-uzD .frame-22-GZs .personal-documement-o41 .wehdofhiwefjd-jefhdowiuaedjola-fkjhw4uerhjklds-yufhedjk-4e9 {
+.wehdofhiwefjd-jefhdowiuaedjola-fkjhw4uerhjklds-yufhedjk-4e9 {
   margin-left: 1rem;
   max-width: 17.4rem;
-  font-size: 2.1rem;
+  font-size: 1.2rem;
   font-weight: 400;
   line-height: 1.6025;
   color: #000000;
   font-family: Jomolhari, 'Source Sans Pro';
   flex-shrink: 0;
 }
-.faq-uzD .frame-22-GZs .personal-documement-Uxm {
+.personal-documement-Uxm {
   margin-bottom: 8.5rem;
   box-sizing: border-box;
   padding: 0.617rem 1.792rem 4.3rem 3.5rem;
@@ -86,14 +84,14 @@ body {
   background-color: #ffffff;
   border-radius: 2.4rem;
 }
-.faq-uzD .frame-22-GZs .personal-documement-Uxm .auto-group-4fa5-Cds {
+.personal-documement-Uxm .auto-group-4fa5-Cds {
   margin-bottom: 4rem;
   width: 100%;
   display: flex;
   align-items: flex-start;
   flex-shrink: 0;
 }
-.faq-uzD .frame-22-GZs .personal-documement-Uxm .auto-group-4fa5-Cds .problem-in-fetching-data-from-api-vpm {
+.personal-documement-Uxm .auto-group-4fa5-Cds .problem-in-fetching-data-from-api-vpm {
   margin: 0.083rem 39.692rem 0rem 0rem;
   font-size: 3.6rem;
   font-weight: 400;
@@ -103,14 +101,14 @@ body {
   white-space: nowrap;
   flex-shrink: 0;
 }
-.faq-uzD .frame-22-GZs .personal-documement-Uxm .auto-group-4fa5-Cds .arrow-down-drop-circle-3eV {
+.personal-documement-Uxm .auto-group-4fa5-Cds .arrow-down-drop-circle-3eV {
   width: 4.9167rem;
   height: 5.1667rem;
   object-fit: contain;
   vertical-align: top;
   flex-shrink: 0;
 }
-.faq-uzD .frame-22-GZs .personal-documement-Uxm .wehdofhiwefjd-jefhdowiuaedjola-fkjhw4uerhjklds-yufhedjk-NAy {
+.personal-documement-Uxm .wehdofhiwefjd-jefhdowiuaedjola-fkjhw4uerhjklds-yufhedjk-NAy {
   margin-left: 1rem;
   max-width: 17.4rem;
   font-size: 2.1rem;
@@ -120,8 +118,8 @@ body {
   font-family: Jomolhari, 'Source Sans Pro';
   flex-shrink: 0;
 }
-.faq-uzD .frame-22-GZs .talk-to-our-experts-for-further-inquiry-call-bpR {
-  font-size: 3.6rem;
+.talk-to-our-experts-for-further-inquiry-call-bpR {
+  font-size: 2rem;
   font-weight: 400;
   line-height: 1.6025;
   color: #000000;
@@ -130,34 +128,32 @@ body {
   display: flex;
   align-items: baseline;
 }
-.faq-uzD .frame-22-GZs .talk-to-our-experts-for-further-inquiry-call-bpR .talk-to-our-experts-for-further-inquiry-call-bpR-sub-0 {
-}
-.faq-uzD .frame-22-GZs .talk-to-our-experts-for-further-inquiry-call-bpR .talk-to-our-experts-for-further-inquiry-call-bpR-sub-1 {
-  font-size: 3.6rem;
+.talk-to-our-experts-for-further-inquiry-call-bpR-sub-1 {
+  font-size: 2rem;
   font-weight: 400;
   line-height: 1.6025;
   color: #0019ff;
   font-family: Jomolhari, 'Source Sans Pro';
 }
-.faq-uzD .menu-22Z {
+.menu-22Z {
   box-sizing: border-box;
   padding: 6.3rem 0.37rem 6.3rem 2.23rem;
-  width: 32.5rem;
-  height: 94.1rem;
+  width: 24rem;
+  height: 100vh;
   position: absolute;
   left: 0;
-  top: 8.5rem;
+  top: 4rem;
   border: solid 0 rgba(0, 0, 0, 0.0900000036);
   box-shadow: 0.1rem -0.1rem 0.78rem rgba(0, 0, 0, 0.349999994);
   background-color: rgba(255, 255, 255, 0.6600000262);
 }
-.faq-uzD .menu-22Z .frame-2-LJ9 {
+.frame-2-LJ9 {
   width: 100%;
   height: 46.6rem;
   display: flex;
   flex-direction: column;
 }
-.faq-uzD .menu-22Z .frame-2-LJ9 .auto-group-u7gy-tKf {
+.frame-2-LJ9 .auto-group-u7gy-tKf {
   box-sizing: border-box;
   padding-bottom: 4.4rem;
   width: 100%;
@@ -166,52 +162,38 @@ body {
   flex-direction: column;
   flex-shrink: 0;
 }
-.faq-uzD .menu-22Z .frame-2-LJ9 .auto-group-u7gy-tKf .group-16-pz1 {
-  width: 29.5696rem;
-  height: 5.8rem;
+.group-16-pz1 {
+  width: 29.6rem;
+  height: 4rem;
   position: relative;
   flex-shrink: 0;
 }
-.faq-uzD .menu-22Z .frame-2-LJ9 .auto-group-u7gy-tKf .group-16-pz1 .rectangle-21-BZf {
-  width: 29.5696rem;
-  height: 5.4rem;
+.get-api-Wbw {
   position: absolute;
-  left: 0;
-  top: 0.4rem;
-  background-color: rgba(255, 255, 255, 0.4600000083);
-  border-radius: 1.1rem;
-}
-.faq-uzD .menu-22Z .frame-2-LJ9 .auto-group-u7gy-tKf .group-16-pz1 .get-api-Wbw {
-  width: 13.3rem;
-  height: 5.8rem;
-  position: absolute;
-  left: 6.3589rem;
+  left: 6rem;
   top: 0;
   display: flex;
-  font-size: 3.6rem;
+  font-size: 2rem;
   font-weight: 400;
   line-height: 1.6025;
   color: #000000;
   font-family: Jomolhari, 'Source Sans Pro';
   white-space: nowrap;
 }
-.faq-uzD .menu-22Z .frame-2-LJ9 .auto-group-u7gy-tKf .group-16-pz1 .book-reading-Bxy {
-  width: 4.1rem;
-  height: 4rem;
+.book-reading-Bxy {
+  width: 3rem;
   position: absolute;
-  left: 1.2696rem;
-  top: 1.1rem;
   object-fit: contain;
   vertical-align: top;
 }
-.faq-uzD .menu-22Z .frame-2-LJ9 .auto-group-u7gy-tKf .group-16-TvV {
+.group-16-TvV {
   width: 29.7rem;
   height: 5.8rem;
   cursor: pointer;
   position: relative;
   flex-shrink: 0;
 }
-.faq-uzD .menu-22Z .frame-2-LJ9 .auto-group-u7gy-tKf .group-16-TvV .rectangle-21-DPs {
+.frame-2-LJ9 .auto-group-u7gy-tKf .group-16-TvV .rectangle-21-DPs {
   width: 29.5696rem;
   height: 5.4rem;
   position: absolute;
@@ -220,7 +202,7 @@ body {
   background-color: #ffffff;
   border-radius: 2.2rem;
 }
-.faq-uzD .menu-22Z .frame-2-LJ9 .auto-group-u7gy-tKf .group-16-TvV .hackathons-Kho {
+.frame-2-LJ9 .auto-group-u7gy-tKf .group-16-TvV .hackathons-Kho {
   width: 19rem;
   height: 5.8rem;
   position: absolute;
@@ -233,7 +215,7 @@ body {
   font-family: Jomolhari, 'Source Sans Pro';
   white-space: nowrap;
 }
-.faq-uzD .menu-22Z .frame-2-LJ9 .auto-group-u7gy-tKf .group-16-TvV .ebook-2cD {
+.frame-2-LJ9 .auto-group-u7gy-tKf .group-16-TvV .ebook-2cD {
   width: 6.3rem;
   height: 4.3rem;
   position: absolute;
@@ -242,14 +224,14 @@ body {
   object-fit: contain;
   vertical-align: top;
 }
-.faq-uzD .menu-22Z .frame-2-LJ9 .auto-group-u7gy-tKf .group-16-BED {
+.frame-2-LJ9 .auto-group-u7gy-tKf .group-16-BED {
   width: 29.5696rem;
   height: 5.8rem;
   cursor: pointer;
   position: relative;
   flex-shrink: 0;
 }
-.faq-uzD .menu-22Z .frame-2-LJ9 .auto-group-u7gy-tKf .group-16-BED .rectangle-20-vxV {
+.frame-2-LJ9 .auto-group-u7gy-tKf .group-16-BED .rectangle-20-vxV {
   width: 29.5696rem;
   height: 5.4rem;
   position: absolute;
@@ -258,7 +240,7 @@ body {
   background-color: #ffffff;
   border-radius: 2.2rem;
 }
-.faq-uzD .menu-22Z .frame-2-LJ9 .auto-group-u7gy-tKf .group-16-BED .scholarships-EyB {
+.frame-2-LJ9 .auto-group-u7gy-tKf .group-16-BED .scholarships-EyB {
   width: 20.6rem;
   height: 5.8rem;
   position: absolute;
@@ -271,7 +253,7 @@ body {
   font-family: Jomolhari, 'Source Sans Pro';
   white-space: nowrap;
 }
-.faq-uzD .menu-22Z .frame-2-LJ9 .auto-group-u7gy-tKf .group-16-BED .scholarship-mCR {
+.frame-2-LJ9 .auto-group-u7gy-tKf .group-16-BED .scholarship-mCR {
   width: 4.1rem;
   height: 4.7rem;
   position: absolute;
@@ -280,7 +262,7 @@ body {
   object-fit: contain;
   vertical-align: top;
 }
-.faq-uzD .menu-22Z .frame-2-LJ9 .group-15-VPK {
+.frame-2-LJ9 .group-15-VPK {
   margin-bottom: 4.4rem;
   width: 100%;
   height: 5.8rem;
@@ -288,7 +270,7 @@ body {
   position: relative;
   flex-shrink: 0;
 }
-.faq-uzD .menu-22Z .frame-2-LJ9 .group-15-VPK .rectangle-20-Erh {
+.frame-2-LJ9 .group-15-VPK .rectangle-20-Erh {
   width: 29.5696rem;
   height: 5.4rem;
   position: absolute;
@@ -297,7 +279,7 @@ body {
   background-color: #fafafa;
   border-radius: 2.2rem;
 }
-.faq-uzD .menu-22Z .frame-2-LJ9 .group-15-VPK .intern-jobs-BG9 {
+.frame-2-LJ9 .group-15-VPK .intern-jobs-BG9 {
   width: 17.9rem;
   height: 5.8rem;
   position: absolute;
@@ -310,7 +292,7 @@ body {
   font-family: Jomolhari, 'Source Sans Pro';
   white-space: nowrap;
 }
-.faq-uzD .menu-22Z .frame-2-LJ9 .group-15-VPK .internship-79o {
+.frame-2-LJ9 .group-15-VPK .internship-79o {
   width: 6.1rem;
   height: 4.8rem;
   position: absolute;
@@ -321,13 +303,13 @@ body {
   background-position: center;
   background-image: url('../assets/internship-bg-wjb.png');
 }
-.faq-uzD .menu-22Z .frame-2-LJ9 .group-11-Ads {
+.frame-2-LJ9 .group-11-Ads {
   width: 29.5696rem;
   height: 5.8rem;
   position: relative;
   flex-shrink: 0;
 }
-.faq-uzD .menu-22Z .frame-2-LJ9 .group-11-Ads .rectangle-22-WSq {
+.frame-2-LJ9 .group-11-Ads .rectangle-22-WSq {
   width: 29.5696rem;
   height: 5.4rem;
   position: absolute;
@@ -336,7 +318,7 @@ body {
   background-color: #92d79e;
   border-radius: 2.2rem;
 }
-.faq-uzD .menu-22Z .frame-2-LJ9 .group-11-Ads .faqs-FfK {
+.frame-2-LJ9 .group-11-Ads .faqs-FfK {
   width: 10.4rem;
   height: 5.8rem;
   position: absolute;
@@ -349,7 +331,7 @@ body {
   font-family: Jomolhari, 'Source Sans Pro';
   white-space: nowrap;
 }
-.faq-uzD .menu-22Z .frame-2-LJ9 .group-11-Ads .progress-question-Nzq {
+.frame-2-LJ9 .group-11-Ads .progress-question-Nzq {
   width: 3.2419rem;
   height: 3.3167rem;
   position: absolute;
@@ -358,69 +340,341 @@ body {
   object-fit: contain;
   vertical-align: top;
 }
-.faq-uzD .header-rf7 {
-  width: 144rem;
-  height: 10.7rem;
+.header-rf7 {
+  width: 100vw;
+  height: 6rem;
   position: absolute;
   left: 0;
   top: 0;
 }
-.faq-uzD .header-rf7 .rectangle-2-Ciy {
-  width: 144rem;
-  height: 9.6rem;
+.rectangle-2-Ciy {
+  width: 100vw;
+  height: 6rem;
   position: absolute;
   left: 0;
   top: 0.6rem;
   box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25), 0 0.8rem 0.4rem rgba(0, 0, 0, 0.4399999976);
   background-color: #ffffff;
 }
-.faq-uzD .header-rf7 .bcd3b4b5d471dae27a60bd4b5f07-1-HVX {
-  width: 9.1rem;
-  height: 9.6rem;
+.bcd3b4b5d471dae27a60bd4b5f07-1-HVX {
+  width: 5.5rem;
   position: absolute;
   left: 0;
   top: 0.6rem;
   object-fit: cover;
   vertical-align: top;
 }
-.faq-uzD .header-rf7 .account-circle-1RX {
-  width: 4.9167rem;
-  height: 5rem;
+.bcd3b4b5d471dae27a60bd4b5f07-1-HVX1 {
+  width: 20rem;
+  margin-top: -6.4rem;
   position: absolute;
-  left: 134.3917rem;
-  top: 2.9rem;
+  top: 0rem;
+}
+.account-circle-1RX {
+  width: 3rem;
+  position: absolute;
+  left: 130rem;
+  top: 2.2rem;
   object-fit: contain;
   vertical-align: top;
 }
-.faq-uzD .header-rf7 .yourparagraphtext1-removebg-preview-1-x5s {
-  width: 11.6rem;
-  height: 10.7rem;
-  position: relative;
-  left: 8.4rem;
-  top: 0;
-  background-size: 257.143% 284.211%;
-  background-position: -8.8381rem -9.8553rem;
-  background-image: url('../assets/yourparagraphtext1-removebg-preview-1-vsX.png');
-}
-.faq-uzD .header-rf7 .ezfill-DnV {
-  width: 7.7rem;
-  height: 4.5rem;
+.ezfill-DnV {
   position: absolute;
-  left: 18.9rem;
-  top: 4.5rem;
-  font-size: 3.5rem;
+  left: 13rem;
+  top: 3rem;
+  font-size: 2.5rem;
   font-weight: 700;
   line-height: 1.2575;
   color: #15ab30;
   font-family: jsMath-cmbx10, 'Source Sans Pro';
   white-space: nowrap;
 }
-.faq-uzD .header-rf7 .bell-VV7 {
-  width: 4.2rem;
-  height: 4.9rem;
+.bell-VV7 {
+  width: 3rem;
   position: absolute;
-  left: 125.2rem;
-  top: 2.9rem;
+  left: 125rem;
+  top: 2.2rem;
   object-fit: contain;
   vertical-align: top;
 }
+.menu-FJD {
+  box-sizing: border-box;
+  padding: 2rem;
+  padding-top: 4rem;
+  width: 24rem;
+  height: 100vh;
+  position: absolute;
+  top: 6rem;
+  border: solid 0 rgba(0, 0, 0, 0.0900000036);
+  box-shadow: 0.1rem -0.1rem 0.78rem rgba(0, 0, 0, 0.349999994);
+  background-color: rgba(255, 255, 255, 0.6600000262);
+}
+.auto-group-in4m-Wzq {
+  box-sizing: border-box;
+  padding-bottom: 2rem;
+  width: 100%;
+  row-gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+.group-7-Tv5 {
+  width: 20rem;
+  height: 4rem;
+  position: relative;
+  flex-shrink: 0;
+}
+.group-7-Tv5:hover{
+  background-color: rgba(23, 173, 50, 0.4600000083);
+  border-radius: 2rem;
+}
+/* .group-7-Tv5 .rectangle-21-2CV {
+  width: 20rem;
+  height: 4rem;
+  position: absolute;
+  background-color: rgba(23, 173, 50, 0.4600000083);
+  border-radius: 1.1rem;
+} */
+.get-api-X9F {
+  width: 5rem;
+  margin-left: 4rem;
+  margin-top: 0.5rem;
+  position: absolute;
+  display: flex;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.6025;
+  color: #000000;
+  font-family: Jomolhari, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.bookmark-CWH {
+  width: 3rem;
+  margin: 0.6rem;
+  position: absolute;
+  object-fit: contain;
+  /* vertical-align: top; */
+}
+.group-8-hT3 {
+  width: 29.5696rem;
+  height: 5.8rem;
+  cursor: pointer;
+  position: relative;
+  flex-shrink: 0;
+}
+.frame-2-ZZo .auto-group-in4m-Wzq .group-8-hT3 .rectangle-21-d5o {
+  width: 29.5696rem;
+  height: 5.4rem;
+  position: absolute;
+  left: 0;
+  top: 0.4rem;
+  background-color: #fafafa;
+  border-radius: 2.2rem;
+}
+.frame-2-ZZo .auto-group-in4m-Wzq .group-8-hT3 .hackathons-N3P {
+  width: 19rem;
+  height: 5.8rem;
+  position: absolute;
+  left: 5.4664rem;
+  top: 0;
+  font-size: 3.6rem;
+  font-weight: 400;
+  line-height: 1.6025;
+  color: #000000;
+  font-family: Jomolhari, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.frame-2-ZZo .auto-group-in4m-Wzq .group-8-hT3 .book-reading-Fcy {
+  width: 4.1rem;
+  height: 4rem;
+  position: absolute;
+  left: 0.9696rem;
+  top: 0.9rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.frame-2-ZZo .auto-group-in4m-Wzq .group-9-AV3 {
+  width: 29.8rem;
+  height: 5.8rem;
+  cursor: pointer;
+  position: relative;
+  flex-shrink: 0;
+}
+.frame-2-ZZo .auto-group-in4m-Wzq .group-9-AV3 .rectangle-20-vDK {
+  width: 29.5696rem;
+  height: 5.4rem;
+  position: absolute;
+  left: 0.2304rem;
+  top: 0.4rem;
+  background-color: #fafafa;
+  border-radius: 2.2rem;
+}
+.frame-2-ZZo .auto-group-in4m-Wzq .group-9-AV3 .scholarships-Rvm {
+  width: 20.6rem;
+  height: 5.8rem;
+  position: absolute;
+  left: 5.6609rem;
+  top: 0;
+  font-size: 3.6rem;
+  font-weight: 400;
+  line-height: 1.6025;
+  color: #000000;
+  font-family: Jomolhari, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.frame-2-ZZo .auto-group-in4m-Wzq .group-9-AV3 .ebook-ZGH {
+  width: 6.3rem;
+  height: 4.3rem;
+  position: absolute;
+  left: 0;
+  top: 0.7rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.frame-2-ZZo .group-14-u5F {
+  margin-bottom: 4.4rem;
+  width: 100%;
+  height: 5.8rem;
+  cursor: pointer;
+  position: relative;
+  flex-shrink: 0;
+}
+.frame-2-ZZo .group-14-u5F .rectangle-20-EtD {
+  width: 29.5696rem;
+  height: 5.4rem;
+  position: absolute;
+  left: 0.3304rem;
+  top: 0.2rem;
+  background-color: #fafafa;
+  border-radius: 2.2rem;
+}
+.frame-2-ZZo .group-14-u5F .intern-jobs-BHf {
+  width: 17.9rem;
+  height: 5.8rem;
+  position: absolute;
+  left: 3rem;
+  top: 0;
+  font-size: 3.6rem;
+  font-weight: 400;
+  line-height: 1.6025;
+  color: #000000;
+  font-family: Jomolhari, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.frame-2-ZZo .group-14-u5F .internship-JdB {
+  width: 3.1rem;
+  height: 2.8rem;
+  position: absolute;
+  left: 0;
+  top: 1rem;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url('../assets/internship-bg-QCM.png');
+}
+.frame-2-ZZo .group-14-u5F .internship-noF {
+  width: 6.1rem;
+  height: 4.8rem;
+  position: absolute;
+  left: 0;
+  top: 1rem;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url('../assets/internship-bg-3ZF.png');
+}
+.frame-2-ZZo .group-11-Hzu {
+  width: 29.5696rem;
+  height: 5.8rem;
+  position: relative;
+  flex-shrink: 0;
+}
+.frame-2-ZZo .group-11-Hzu .rectangle-22-EQM {
+  width: 29.5696rem;
+  height: 5.4rem;
+  position: absolute;
+  left: 0;
+  top: 0.2rem;
+  background-color: #fafafa;
+  border-radius: 2.2rem;
+}
+.frame-2-ZZo .group-11-Hzu .faqs-Yfw {
+  width: 10.4rem;
+  height: 5.8rem;
+  position: absolute;
+  left: 7.0696rem;
+  top: 0;
+  font-size: 3.6rem;
+  font-weight: 400;
+  line-height: 1.6025;
+  color: #000000;
+  font-family: Jomolhari, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.frame-2-ZZo .group-11-Hzu .progress-question-4PP {
+  width: 3.2419rem;
+  height: 3.3167rem;
+  position: absolute;
+  left: 1.1027rem;
+  top: 1.2416rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.rectangle-2-fty {
+  width: 100vw;
+  height: 6rem;
+  position: absolute;
+  left: 0;
+  top: 0.6rem;
+  box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25), 0 0.8rem 0.4rem rgba(0, 0, 0, 0.4399999976);
+  background-color: #ffffff;
+}
+.bcd3b4b5d471dae27a60bd4b5f07-1-x7P {
+  width: 6rem;
+  height: 6rem;
+  position: absolute;
+  left: 0;
+  top: 0.6rem;
+  object-fit: cover;
+  vertical-align: top;
+}
+.account-circle-5ho {
+  width: 3.7rem;
+  position: absolute;
+  left: 134.3917rem;
+  top: 1.7rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+.madhvas {
+  width: 8rem;
+  height: 6rem;
+  position: relative;
+  left: 6rem;
+  top: 0;
+  background-size: 257.143% 284.211%;
+  background-position: -6rem -5rem;
+  background-image: url('../assets/yourparagraphtext1-removebg-preview-1-W2y.png');
+}
+.ezapi {
+  width: 7.7rem;
+  height: 4.5rem;
+  position: absolute;
+  left: 14rem;
+  top: 3rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.2575;
+  color: #15ab30;
+  font-family: jsMath-cmbx10, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.bell {
+  width: 3rem;
+  position: absolute;
+  left: 126.3rem;
+  top: 1.8rem;
+  /* object-fit: contain; */
+  /* vertical-align: top; */
+}
+
