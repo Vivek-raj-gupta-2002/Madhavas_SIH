@@ -1,3 +1,5 @@
+{%load static%}
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -16,7 +18,7 @@
 <body>
 <div class="scholarship-form2-BsB">
   <div class="header-81j">
-    <img class="bcd3b4b5d471dae27a60bd4b5f07-1-FMF" src="./assets/bcd3b4b5d471dae27a60bd4b5f07-1-Z9F.png"/>
+    <img class="bcd3b4b5d471dae27a60bd4b5f07-1-FMF" src="{% static '/assets/bcd3b4b5d471dae27a60bd4b5f07-1-Z9F.png'%}"/>
     <p class="national-scholarship-portal-9hX">National Scholarship Portal</p>
   </div>
   <div class="auto-group-noq9-Cfo">
@@ -24,6 +26,9 @@
       <p class="academic-details-phB">Academic  Details</p>
       <p class="required-fields-iGm">* Required Fields</p>
     </div>
+    <form action="{% url 'scholar' %}" method="post">
+      {% csrf_token %}
+
     <div class="academic-detail-form-nGd">
       <div class="auto-group-95mf-v7w">
       </div>
@@ -32,7 +37,7 @@
           <span class="higher-secondary-percentage-aiH-sub-0">*</span>
           <span class="higher-secondary-percentage-aiH-sub-1">Higher Secondary Percentage</span>
         </p>
-        <input class="rectangle-55-gPw" type="file"/>
+        <!-- <input class="rectangle-55-gPw" type="number"/> -->
         <div class="group-24-tW1">
           <div class="rectangle-55-S1j">
           </div>
@@ -47,7 +52,7 @@
         </p>
         <div class="rectangle-56-DTj">
         </div>
-        <input class="group-25-hdo" type="file"/>
+        <!-- <input class="group-25-hdo" type="number"/> -->
       </div>
       <div class="domicile-certificate-8sX">
         <div class="group-22-3zV">
@@ -59,7 +64,7 @@
           <div class="rectangle-56-LEq">
           </div>
         </div>
-        <input class="group-24-emK" type="file"/>
+        <!-- <input class="group-24-emK" type="number"/> -->
       </div>
       <div class="secondary-class-percentage-khs">
         <p class="secondary-class-percentage-Hho">
@@ -67,7 +72,7 @@
           <span class="secondary-class-percentage-Hho-sub-1">Secondary Class Percentage</span>
           <span class="secondary-class-percentage-Hho-sub-2"> </span>
         </p>
-        <input class="rectangle-55-iAq" type="file"/>
+        <!-- <input class="rectangle-55-iAq" type="number"/> -->
         <div class="group-23-cX7">
           <div class="rectangle-55-8kM">
           </div>
@@ -85,9 +90,10 @@
           <div class="rectangle-61-Rwj">
           </div>
         </div>
-        <input class="group-25-jxR" type="file"/>
+        <!-- <input class="group-25-jxR" type="numbeer"/> -->
       </div>
     </div>
+    </form>
     <div class="next-button-T1F">
       <div class="rectangle-68-m1w">
       </div>

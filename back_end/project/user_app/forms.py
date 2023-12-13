@@ -15,11 +15,51 @@ class ScolarForm(forms.Form):
     )
 
 class ScolarShipForm(forms.Form):
-    caste = forms.IntegerField(
+    highersecondarypercentage = forms.IntegerField(
         widget=forms.NumberInput(attrs={
-            'class': 'rectangle-55-Y7f'
+            'class': 'rectangle-55-gPw'
         })
     )
+    transfercertificate = forms.IntegerField(
+        widget=forms.NumberInput(attrs={
+            'class': 'group-25-hdo'
+        })
+    )
+    gapcertificate = forms.IntegerField(
+        widget=forms.NumberInput(attrs={
+            'class': 'group-24-emK'
+        })
+    )
+    secondaryclasspercentage = forms.IntegerField(
+        widget=forms.NumberInput(attrs={
+            'class': 'rectangle-55-iAq'
+        })
+    )
+    lastyearmarksheet = forms.IntegerField(
+        widget=forms.NumberInput(attrs={
+            'class': 'group-25-jxR'
+        })
+    )
+    accountholdername = forms.CharField(
+        widget=forms.TextInput(attrs={
+            'class': 'rectangle-69-ccm'
+        })
+    )
+    accountnumber = forms.IntegerField(
+        widget=forms.NumberInput(attrs={
+            'class': 'rectangle-70-qdw'
+        })
+    )
+    isfcnumber = forms.CharField(
+        widget=forms.TextInput(attrs={
+            'class': 'rectangle-71-3tR'
+        })
+    )
+    
+
+
+
+
 
 
 class AuthForm(forms.Form):
