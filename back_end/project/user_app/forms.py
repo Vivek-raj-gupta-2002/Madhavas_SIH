@@ -7,14 +7,6 @@ from main_app import models
 User authentication form
 """
 
-class ScolarForm(forms.Form):
-    caste = forms.IntegerField(
-        widget=forms.NumberInput(attrs={
-            'class': 'rectangle-55-Y7f'
-        })
-    )
-
-
 class ScolarShipForm(forms.Form):
     highersecondarypercentage = forms.IntegerField(
         widget=forms.NumberInput(attrs={
@@ -153,6 +145,17 @@ class ScolarShipForm(forms.Form):
             'class': 'rectangle-61-Nyj'
         })
     )      
+
+
+
+
+class ScolarForm(forms.Form):
+    caste = forms.IntegerField(
+        widget=forms.NumberInput(attrs={
+            'class': 'rectangle-55-Y7f'
+        })
+    )
+
 
 
 

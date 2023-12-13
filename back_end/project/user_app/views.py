@@ -26,7 +26,6 @@ def scholar(request):
     return render(request, "main.html", {'form': my_form})
     
 
-#ScholarshipForm
 
 @require_http_methods(["GET", "POST"])
 def scholarShip(request, number):

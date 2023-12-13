@@ -14,6 +14,8 @@ urlpatterns = [
     path("loginUser", views.login_view, name='login'),
     path("", views.dashboard_view, name='dashboard'),
     path("scholar", views.scholar, name='scholar'),
-    path("scholarShip/<int:number>", views.scholarShip, name='scholar'),
+    
+    path("scolarShip/<int:number>", views.scholarShip, name='scolarShip')    
+    
 
 ]

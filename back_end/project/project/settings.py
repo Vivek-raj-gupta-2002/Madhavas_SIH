@@ -45,7 +45,8 @@ INSTALLED_APPS = [
     # Apps Created by Developers
     # ...
     'main_app',
-    'user_app'
+    'user_app',
+    
 ]
 
 MIDDLEWARE = [
