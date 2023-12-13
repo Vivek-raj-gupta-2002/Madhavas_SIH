@@ -53,12 +53,27 @@ def scholarShip(request, number):
         return Http404()
 
 
-    
-
 
 """
 usertype = student
+1. FAQ
+2. logout_view
+3. dashboard_view
+4. login_view
+5. signup
+6. send_otp
+
 """
+
+def oportunity_view(request):
+    return render(request, '')
+
+#FAQ
+def FAQ(request):
+    return render(request, 'user_app/faq-18H.html')
+
+
+# the Logging the user out
 def logout_view(request):
     logout(request)
     
@@ -147,8 +162,6 @@ def dashboard_view(request):
     return render(request, 'user_app/eziiii.html', send_data)
 
 
-
-
 # authenticate user 
 @require_http_methods(["GET", 'POST'])
 def login_view(request):
@@ -202,6 +215,7 @@ def login_view(request):
 
 
     return render(request, 'user_app/log-in.html', {'form': my_form})
+
 
 # creating user
 @require_http_methods(["GET", "POST"])
