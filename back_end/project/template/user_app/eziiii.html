@@ -1,0 +1,294 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <title>Eziiii</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans%3A700"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=jsMath-cmbx10%3A700"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jomolhari%3A400"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro%3A400%2C700"/>
+  <link rel="stylesheet" href="{% static '/styles/eziiii.css' %}"/>
+</head>
+<body>
+<div class="eziiii-a61">
+  <div class="frame-14-hRX">
+    <div class="personaldocument-B5o">
+      <p class="fetched-and-verified-documents-VsB">Fetched And Verified documents</p>
+      <div class="frame-13-NRB">
+        <div class="rectangle-16-XYy">
+        </div>
+        <div class="group-12-H2M">
+          <div class="meraaddhar-DAu">
+            <div class="auto-group-gwnd-kgd">
+              <div class="auto-group-7jrv-6Vb">
+                <div class="rectangle-82-R25">
+                </div>
+                <div class="auto-group-vrpp-W3X">
+                  <img class="img-aadhar-3ZF" src="{% static '/assets/img-aadhar.png' %}"/>
+                  <div class="auto-group-rnsx-9MP">
+                    <div class="aadhar-detail-hdo">
+                      <p class="name-raman-yadav-qED">
+                        <span class="name-raman-yadav-qED-sub-0">Name :     </span>
+                        <span class="name-raman-yadav-qED-sub-1">{{aadhar.holder_name}}</span>
+                      </p>
+                      <p class="dob-15-05-2002-Kx1">
+                        <span class="dob-15-05-2002-Kx1-sub-0">DOB :        </span>
+                        <span class="dob-15-05-2002-Kx1-sub-1">{{aadhar.dob}}</span>
+                      </p>
+                      <p class="gender-male-Vk1">
+                        <span class="gender-male-Vk1-sub-0">Gender :   </span>
+                        <span class="gender-male-Vk1-sub-1">{{aadhar.gender}}</span>
+                      </p>
+                    </div>
+                    <p class="aadharnumber-Urq">{{aadhar.aadhar_no}}</p>
+                  </div>
+                  <div class="rectangle-85-yYh">
+                  </div>
+                </div>
+              </div>
+              <div class="auto-group-u19o-fwK">
+                <div class="rectangle-84-DT3">
+                </div>
+              </div>
+            </div>
+            <p class="aadhar-EN9">Aadhar</p>
+          </div>
+          <div class="pancard-B2V">
+            <div class="auto-group-5diu-Jcu">
+              <p class="raman-yadav-RSd">{{aadhar.holder_name}}</p>
+              <p class="s-o-chaman-yadav-Hjj">S/o Chaman Yadav</p>
+              <p class="item-01-02-2023-zPF">01/02/2023</p>
+              <div class="auto-group-jnrb-iq3">
+                <p class="bopg109434-V57">BOPG109434</p>
+                <img class="img-aadhar-1p9" src="{% static '/assets/img-aadhar-MQZ.png' %}"/>
+              </div>
+              <div class="auto-group-5diu-Jcu-bg">
+              </div>
+            </div>
+            <p class="pan-card-SeZ">Pan Card</p>
+          </div>
+          
+
+        </div>
+      </div>
+    </div>
+    <div class="educational-document--i8D">
+      <p class="educational-documents-UNH">Educational documents</p>
+      <div class="frame-13-QFw">
+        <div class="rectangle-16-xYM">
+        </div>
+
+        <!-- 10th marklsheet -->
+        <div class="group-12-6uT">
+          <div class="x-marksheet-nnH">
+            <div class="auto-group-jtuy-heM">
+              <div class="auto-group-ua3o-EuB">
+                <img class="rectangle-86-MD7" src="{% static '/assets/rectangle-86.png' %}"/>
+                <p class="class-xii-marksheet-Gay">Class X Marksheet</p>
+                <p class="cgpa-xCu">{{10.marks}}</p>
+                <p class="board-of-education-Qqb">{{10.institute}}</p>
+              </div>
+              <div class="auto-group-nwcm-7ED">
+                <div class="upload-original-qR7">Upload Original</div>
+                <div class="upload-original-JpV">Download Fetched</div>
+              </div>
+            </div>
+            <p class="xii-marksheet-Q6q">X Marksheet</p>
+          </div>
+
+
+          <!-- 12th marksheet -->
+          <div class="xii-marksheet-7X3">
+            <div class="auto-group-cald-ErZ">
+              <div class="auto-group-gvtb-Nhs">
+                <img class="rectangle-86-HZw" src="{% static '/assets/rectangle-86-9Tb.png' %}"/>
+                <p class="class-xii-marksheet-Rw3">Class XII Marksheet</p>
+                <p class="cgpa-Whb">{{12.marks}}</p>
+                <p class="board-of-education-ckd">{{12.institute}}</p>
+              </div>
+              <div class="auto-group-ueah-X6u">
+                <div class="upload-original-rQ5">Upload Original</div>
+                <div class="upload-original-PYR">Download Fetched</div>
+              </div>
+            </div>
+            <p class="xii-marksheet-HNu">XII Marksheet</p>
+          </div>
+
+          {% for item in edu %}
+          <div class="migration-certificate-Pwj">
+            <div class="auto-group-ewd7-jVo">
+              <div class="auto-group-s5ad-sc1">
+                <img class="rectangle-86-DQy" src="{% static '/assets/rectangle-86-hBb.png' %}"/>
+                <p class="migration-certificate-Mn5">{{item.document_type}}</p>
+              </div>
+              <div class="auto-group-a2km-skR">
+                <a class="upload-original-44D" href="{{item.document.url}}" download="{{item.document.name}}">Download uploaded</a>
+              </div>
+            </div>
+            <p class="migration-certificate-w81">{{item.document_type}}</p>
+          </div>
+
+          {% endfor %}
+
+          <div class="voterid-eHK">
+            <div class="auto-group-mcdt-PEu">
+              <img class="plus-thick-XM7" src="{% static '/assets/plus-thick.png' %}"/>
+              <p class="upload-now-EFX">Upload now</p>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="scholarship-document--ohw">
+      <p class="scholarship-documents-Zx1">
+      Scholarship Documents
+      <br/>
+      
+      </p>
+
+      
+      <!-- Scholarship docs -->
+      <div class="frame-13-gFw">
+        <div class="rectangle-16-oLZ">
+        </div>
+      
+
+        <div class="frame-26-kWh">
+
+          {% for item in scolar %}
+
+          <div class="domicile-5Yy">
+            
+            <div class="auto-group-4ssh-SPX">
+              <div class="auto-group-oyxr-otH">
+                <img class="rectangle-86-XJV" src="https://cdn.s3waas.gov.in/s31385974ed5904a438616ff7bdb3f7439/uploads/2019/06/2019062152.jpg"/>
+                <p class="domicile-certificate-SwF"> {{item}} certificate</p>
+              </div>
+              <div class="auto-group-d96d-kww">
+                <div class="upload-original-WAR">Upload Original</div>
+                <div class="upload-original-cDT">Download</div>
+            
+              </div>
+            </div>
+            <p class="domicile-certificate-sfB">{{item}} Certificate</p>
+          </div>
+
+          {% endfor %}
+
+
+          {% for item in sco %}
+
+          <div class="domicile-5Yy">
+            
+            <div class="auto-group-4ssh-SPX">
+              <div class="auto-group-oyxr-otH">
+                <img class="rectangle-86-XJV" src="https://cdn.s3waas.gov.in/s31385974ed5904a438616ff7bdb3f7439/uploads/2019/06/2019062152.jpg"/>
+                <p class="domicile-certificate-SwF"> {{item.document_type}}</p>
+              </div>
+              <div class="auto-group-d96d-kww">
+                
+                <a class="upload-original-cDT" href="{{item.document.url}}" download="{{item.document.name}}">Download Original</a>
+            
+              </div>
+            </div>
+            <p class="domicile-certificate-sfB">{{item.document_type}}</p>
+          </div>
+
+          {% endfor %}
+          
+        </div>
+      
+      
+      </div>
+
+
+      <!-- upload documents -->
+
+
+    </div>
+    <div class="scholarship-document--o6D">
+      <p class="certificates-uploaded-document-kXF">Certificates &amp; Uploaded Document</p>
+      <div class="frame-13-TRf">
+        <div class="rectangle-16-R7b">
+        </div>
+        <div class="group-12-xtD">
+          
+          {% for item in upload %}
+          <a class="aadhar-fGq" href="{{item.document.url}}" target="_blank">
+            <img class="rectangle-5-otq" src="{{item.document.url}}"/>
+            <p class="domicile-certificate-Z7K">{{item.document_type}}</p>
+          </a>
+          
+          {% endfor %}
+
+
+          
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="menu-Qp5">
+    <div class="frame-2-7iV">
+      <div class="group-7-rg5">
+        <a href="{% url 'dashboard' %}">
+        <div class="rectangle-21-bdf"></div>
+        <div class="documents-ueM">Documents</div>
+        <img class="file-document-ERj" src="{% static '/assets/file-document-gwf.png' %}"/>
+      </a>
+      </div>
+      <div class="group-7-rg5">
+        <a href="eziiii-oppurtunities.html">
+        <div class="rectangle-21-bdf">
+        </div>
+        <div class="documents-ueM">Oppurtunities</div>
+        <img class="file-document-ERj" src="{% static '/assets/lightbulb-on-10-6v1.png' %}"/>
+      </a>
+      </div>
+      <div class="group-7-rg5">
+        <a href="issueddocuments.html">
+        <div class="rectangle-21-bdf">
+        </div>
+        <div class="documents-ueM">Issued</div>
+        <img class="file-document-ERj" src="{% static '/assets/file-document-check-17j.png' %}"/>
+      </a>
+      </div>
+      <div class="group-7-rg5">
+        <a href="scholarships-AwP.html">
+        <div class="rectangle-21-bdf">
+        </div>
+        <div class="documents-ueM">Scholarships</div>
+        <img class="file-document-ERj" src="{% static '/assets/cash-multiple-pDT.png' %}"/>
+      </a>
+      </div>
+      <div class="group-7-rg5">
+        <a href="faq-18H.html">
+        <div class="rectangle-21-bdf">
+        </div>
+        <div class="documents-ueM">FAQ’s</div>
+        <img class="file-document-ERj" src="{% static '/assets/progress-question-fQ9.png' %}"/>
+      </a>
+      </div>
+
+    </div>
+  </div>
+  <div class="header-7LR">
+    <div class="rectangle-2-4Ff">
+    </div>
+    <img class="bcd3b4b5d471dae27a60bd4b5f07-1-9nu" src="{% static '/assets/bcd3b4b5d471dae27a60bd4b5f07-1-kMs.png' %}"/>
+    <img class="account-circle-tEh" src="{% static '/assets/account-circle-HeV.png' %}"/>
+    <div class="yourparagraphtext1-removebg-preview-1-BUh">
+    </div>
+    <p class="ezfill-GW9">Ezfill</p>
+    <img class="bell-ArR" src="{% static '/assets/bell-PhP.png' %}"/>
+  </div>
+</div>
+
+</body>

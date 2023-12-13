@@ -1,0 +1,65 @@
+{%load static%}
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <title>Scholarship Form3</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kadwa%3A400%2C700"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans%3A700"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro%3A400%2C700"/>
+  <link rel="stylesheet" href="{% static 'styles/scholarship-form3.css'%}"/>
+</head>
+<body>
+<div class="scholarship-form3-u6m">
+  <div class="header-E93">
+    <div class="rectangle-2-B4H">
+    </div>
+    <img class="bcd3b4b5d471dae27a60bd4b5f07-1-fk9" src="{% static '/assets/bcd3b4b5d471dae27a60bd4b5f07-1-Xp9.png '%}"/>
+    <p class="national-scholarship-portal-bth">National Scholarship Portal</p>
+  </div>
+  <form action="{% url 'scholar' %}" method="post">
+    {% csrf_token %}
+  <div class="bank-detail-from-HFj">
+    <div class="auto-group-npgd-Bru">
+      <p class="required-fields-WeH">* Required Fields</p>
+      <p class="bank-account-details-XpH">Bank Account  Details</p>
+    </div>
+    <div class="account-holder-name-cqj">
+      <p class="account-holder-name-wt1">
+        <span class="account-holder-name-wt1-sub-0">*</span>
+        <span class="account-holder-name-wt1-sub-1">Account Holder Name</span>
+      </p>
+      {{form.accountholdername}}
+      <!-- <div class="rectangle-69-ccm"> -->
+      </div>
+    </div>
+    <div class="account-number-jBb">
+      <p class="account-number-Srh">
+        <span class="account-number-Srh-sub-0">*</span>
+        <span class="account-number-Srh-sub-1">Account Number</span>
+      </p>
+      {{form.accountnumber}}
+      <!-- <div class="rectangle-70-qdw"> -->
+      </div>
+    </div>
+    <div class="isfc-number-9Pj">
+      <p class="ifsc-number-row">
+        <span class="ifsc-number-row-sub-0">*</span>
+        <span class="ifsc-number-row-sub-1">IFSC Number</span>
+      </p>
+      {{form.isfcnumber}}
+      <!-- <div class="rectangle-71-3tR"> -->
+      </div>
+    </div>
+    <div class="submit-MeD">
+      <div class="rectangle-68-WGD">
+      </div>
+      <p class="submit-r5B">Submit</p>
+    </div>
+  </div>
+  </form>
+</div>
+</body>
