@@ -13,6 +13,14 @@ from django.contrib.auth import authenticate, login, logout
 
 
 # Create your views here.
+@require_http_methods(["GET", "POST"])
+def scholar(request):
+    my_form = forms.ScolarForm()
+
+    
+    return render(request, "user_app/scholarshipform.html", {'form': my_form})
+
+
 """
 usertype = student
 """
