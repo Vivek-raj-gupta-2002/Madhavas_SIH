@@ -6,7 +6,7 @@ from . import forms
 
 from django.views.decorators.http import require_http_methods
 from utills import mail, dummy_data, valid_otp
-from django.http import HttpResponse
+from django.http import HttpResponse, Http404
 from random import randint
 
 from django.contrib.auth import authenticate, login, logout
@@ -19,7 +19,34 @@ def scholar(request):
 
     
     return render(request, "user_app/scholarshipform.html", {'form': my_form})
+    
 
+#ScholarshipForm
+
+@require_http_methods(["GET", "POST"])
+def scholarShip(request, number):
+    my_form = forms.ScolarShipForm()
+
+    if number == 1:
+    
+        return render(request, "Scholarship\scholarshipform4.html", {'form': my_form})
+
+
+    elif number == 2:
+        
+        return render(request, "Scholarship\scholarshipform4.html", {'form': my_form})
+    
+    elif number == 3:
+        
+        return render(request, "Scholarship\scholarshipform4.html", {'form': my_form})
+    
+    elif number == 4:
+        
+        return render(request, "Scholarship\scholarshipform4.html", {'form': my_form})
+
+    else:
+        
+        return Http404()
 
 
     

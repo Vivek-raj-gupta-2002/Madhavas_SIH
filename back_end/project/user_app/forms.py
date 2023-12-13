@@ -14,6 +14,13 @@ class ScolarForm(forms.Form):
         })
     )
 
+class ScolarShipForm(forms.Form):
+    caste = forms.IntegerField(
+        widget=forms.NumberInput(attrs={
+            'class': 'rectangle-55-Y7f'
+        })
+    )
+
 
 class AuthForm(forms.Form):
     phone_number = forms.IntegerField(
