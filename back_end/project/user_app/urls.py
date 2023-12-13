@@ -14,9 +14,11 @@ urlpatterns = [
     path("loginUser", views.login_view, name='login'),
     path("", views.dashboard_view, name='dashboard'),
     path("faq", views.FAQ, name='faq'),
-    
-    path("scholar", views.scholar, name='scholar'),
-    path("scolarShip/<int:number>", views.scholarShip, name='scolarShip')    
+    path("opportunity", views.oportunity_view, name='opportunities'),
+    path("issued_doc", views.issued_view, name='issuedDocs'),
+    path("scolar", views.scholar_view, name='scolar'),
+
+    path("scolarShip/<int:number>", views.scholarShip, name='scolarShip'),
     
 
 ]
