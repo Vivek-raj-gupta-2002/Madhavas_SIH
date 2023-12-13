@@ -12,12 +12,12 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kadwa%3A400"/>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=JejuGothic%3A400"/>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=K2D%3A400"/>
-  <link rel="stylesheet" href="{ %Static '/styles/scholarshipform.css'%}"/>
+  <link rel="stylesheet" href="{% static '/styles/scholarshipform.css' %}"/>
 </head>
 <body>
 <div class="scholarshipform-Qnq">
   <div class="header-Kuo">
-    <img class="bcd3b4b5d471dae27a60bd4b5f07-1-pLm" src="{% Static '/assets/bcd3b4b5d471dae27a60bd4b5f07-1.png'%}"/>
+    <img class="bcd3b4b5d471dae27a60bd4b5f07-1-pLm" src="{% static '/assets/bcd3b4b5d471dae27a60bd4b5f07-1.png'%}"/>
     <p class="national-scholarship-portal-LK7">National Scholarship Portal</p>
   </div>
   <div class="auto-group-1vbw-h3B">
@@ -34,6 +34,7 @@
             <span class="caste-certificate-no-H3K-sub-0">*</span>
             <span class="caste-certificate-no-H3K-sub-1">Caste Certificate No.</span>
           </p>
+          {{form.CasteCertificate}}
           <!-- <input class="rectangle-55-Y7f" type="text"/> -->
         </div>
         <div class="caste-certificate-Q9s">
@@ -42,8 +43,9 @@
               <span class="caste-certificate-oxh-sub-0">*</span>
               <span class="caste-certificate-oxh-sub-1">Caste Certificate </span>
             </p>
-            <div class="rectangle-55-Fy7">
-            </div>
+            <!-- <div class="rectangle-55-Fy7">
+            </div> -->
+            {{form.CasteCertificateUpload}}
           </div>
           <!-- <input class="group-23-ibo" type="file"/> -->
         </div>
@@ -52,6 +54,7 @@
             <span class="domicile-certificate-no-YjF-sub-0">*</span>
             <span class="domicile-certificate-no-YjF-sub-1">Domicile Certificate No.</span>
           </p>
+          {{form.DomicileCertificate}}
           <!-- <input class="rectangle-56-qrm" type="text"/> -->
         </div>
         <div class="domicile-certificate-jSM">
@@ -60,17 +63,20 @@
               <span class="domicile-certificate-CKw-sub-0">*</span>
               <span class="domicile-certificate-CKw-sub-1">Domicile Certificate </span>
             </p>
-            <div class="rectangle-56-JXP">
-            </div>
+            {{form.DomicileCertificateUpload}}
+            <!-- <div class="rectangle-56-JXP">
+            </div> -->
           </div>
           <!-- <input class="group-24-d3s" type="file"/> -->
         </div>
         <div class="voter-id-number-WG5">
           <p class="voter-id-no-ESy">Voter ID No.</p>
+          {{form.VOterID}}
           <!-- <input class="rectangle-57-aFw" type="text"/> -->
         </div>
         <div class="pan-card-number-5yP">
           <p class="pan-card-no-o8h">PAN Card No.</p>
+          {{form.PanCard}}
           <!-- <input class="rectangle-58-XKb" type="text"/> -->
         </div>
         <div class="sssmid-number-bqF">
@@ -78,6 +84,7 @@
             <span class="ssmid-no-weD-sub-0">*</span>
             <span class="ssmid-no-weD-sub-1">SSMID No.</span>
           </p>
+          {{form.SSmID}}
           <!-- <input class="rectangle-60-3qf" type="text"/> -->
         </div>
         <div class="income-certificate-number-Z3K">
@@ -85,6 +92,7 @@
             <span class="income-certificate-no-tbP-sub-0">*</span>
             <span class="income-certificate-no-tbP-sub-1">Income Certificate No.</span>
           </p>
+          {{form.IncomeCertificate}}
           <!-- <input class="rectangle-59-PwT" type="text"/> -->
         </div>
         <div class="income-certificate-vAh">
@@ -94,6 +102,7 @@
               <span class="income-certificate-XRP-sub-1">Income</span>
               <span class="income-certificate-XRP-sub-2"> Certificate </span>
             </p>
+            {{form.IncomeCertificateUpload}}
             <!-- <input class="rectangle-61-Nyj" type="file"/> -->
           </div>
           

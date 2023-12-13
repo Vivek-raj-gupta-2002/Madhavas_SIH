@@ -14,7 +14,49 @@ class ScolarForm(forms.Form):
         })
     )
 
+
 class ScolarShipForm(forms.Form):
+    highersecondarypercentage = forms.IntegerField(
+        widget=forms.NumberInput(attrs={
+            'class': 'rectangle-55-gPw'
+        })
+    )
+    transfercertificate = forms.IntegerField(
+        widget=forms.NumberInput(attrs={
+            'class': 'group-25-hdo'
+        })
+    )
+    gapcertificate = forms.IntegerField(
+        widget=forms.NumberInput(attrs={
+            'class': 'group-24-emK'
+        })
+    )
+    secondaryclasspercentage = forms.IntegerField(
+        widget=forms.NumberInput(attrs={
+            'class': 'rectangle-55-iAq'
+        })
+    )
+    lastyearmarksheet = forms.IntegerField(
+        widget=forms.NumberInput(attrs={
+            'class': 'group-25-jxR'
+        })
+    )
+    accountholdername = forms.CharField(
+        widget=forms.TextInput(attrs={
+            'class': 'rectangle-69-ccm'
+        })
+    )
+    accountnumber = forms.IntegerField(
+        widget=forms.NumberInput(attrs={
+            'class': 'rectangle-70-qdw'
+        })
+    )
+    isfcnumber = forms.CharField(
+        widget=forms.TextInput(attrs={
+            'class': 'rectangle-71-3tR'
+        })
+    )
+    
     name = forms.CharField(
         widget=forms.TextInput(attrs={
             'class': 'rectangle-55-f49 '
@@ -22,7 +64,7 @@ class ScolarShipForm(forms.Form):
     )
     dateOfBirth = forms.DateField(
         widget=forms.DateInput(attrs={
-            'class': 'rectangle-55-sQR '
+            'class': 'rectangle-55-sQR','type': 'date',
         })
     )
     Fathername = forms.CharField(
@@ -31,7 +73,7 @@ class ScolarShipForm(forms.Form):
         })
     )
     Gender = forms.ChoiceField(
-        choices=models.gender_choices
+        choices=models.gender_choices,
         widget=forms.Select(attrs={
             'class': 'rectangle-56-1iu '
         })
