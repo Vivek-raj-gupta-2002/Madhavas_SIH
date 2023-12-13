@@ -20,6 +20,15 @@ def scholar(request):
     
     return render(request, "user_app/scholarshipform.html", {'form': my_form})
 
+#ScholarshipForm
+
+@require_http_methods(["GET", "POST"])
+def scholarShip(request):
+    my_form = forms.ScolarShipForm()
+
+    
+    return render(request, "Scholarship\scholarshipform4.html", {'form': my_form1})
+
 
 """
 usertype = student
