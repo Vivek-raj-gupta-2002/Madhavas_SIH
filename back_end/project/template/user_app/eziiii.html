@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=jsMath-cmbx10%3A700"/>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jomolhari%3A400"/>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro%3A400%2C700"/>
-  <link rel="stylesheet" href="./styles/eziiii.css"/>
+  <link rel="stylesheet" href="{% static '/styles/eziiii.css' %}"/>
 </head>
 <body>
 <div class="eziiii-a61">
@@ -29,23 +29,23 @@
                 <div class="rectangle-82-R25">
                 </div>
                 <div class="auto-group-vrpp-W3X">
-                  <img class="img-aadhar-3ZF" src="./assets/img-aadhar.png"/>
+                  <img class="img-aadhar-3ZF" src="{% static '/assets/img-aadhar.png' %}"/>
                   <div class="auto-group-rnsx-9MP">
                     <div class="aadhar-detail-hdo">
                       <p class="name-raman-yadav-qED">
                         <span class="name-raman-yadav-qED-sub-0">Name :     </span>
-                        <span class="name-raman-yadav-qED-sub-1">Raman Yadav</span>
+                        <span class="name-raman-yadav-qED-sub-1">{{aadhar.holder_name}}</span>
                       </p>
                       <p class="dob-15-05-2002-Kx1">
                         <span class="dob-15-05-2002-Kx1-sub-0">DOB :        </span>
-                        <span class="dob-15-05-2002-Kx1-sub-1">15-05-2002</span>
+                        <span class="dob-15-05-2002-Kx1-sub-1">{{aadhar.dob}}</span>
                       </p>
                       <p class="gender-male-Vk1">
                         <span class="gender-male-Vk1-sub-0">Gender :   </span>
-                        <span class="gender-male-Vk1-sub-1">Male</span>
+                        <span class="gender-male-Vk1-sub-1">{{aadhar.gender}}</span>
                       </p>
                     </div>
-                    <p class="aadharnumber-Urq">0000 3214 4565</p>
+                    <p class="aadharnumber-Urq">{{aadhar.aadhar_no}}</p>
                   </div>
                   <div class="rectangle-85-yYh">
                   </div>
@@ -60,26 +60,19 @@
           </div>
           <div class="pancard-B2V">
             <div class="auto-group-5diu-Jcu">
-              <p class="raman-yadav-RSd">Raman Yadav</p>
+              <p class="raman-yadav-RSd">{{aadhar.holder_name}}</p>
               <p class="s-o-chaman-yadav-Hjj">S/o Chaman Yadav</p>
               <p class="item-01-02-2023-zPF">01/02/2023</p>
               <div class="auto-group-jnrb-iq3">
                 <p class="bopg109434-V57">BOPG109434</p>
-                <img class="img-aadhar-1p9" src="./assets/img-aadhar-MQZ.png"/>
+                <img class="img-aadhar-1p9" src="{% static '/assets/img-aadhar-MQZ.png' %}"/>
               </div>
               <div class="auto-group-5diu-Jcu-bg">
               </div>
             </div>
             <p class="pan-card-SeZ">Pan Card</p>
           </div>
-          <div class="driving-license-N2R">
-            <img class="rectangle-18-uY9" src="./assets/rectangle-18-Vzd.png"/>
-            <p class="driving-license-rCV">Driving License</p>
-          </div>
-          <div class="voterid-9xH">
-            <img class="rectangle-19-hU1" src="./assets/rectangle-19.png"/>
-            <p class="voter-id-oG9">Voter ID</p>
-          </div>
+          
 
         </div>
       </div>
@@ -89,29 +82,34 @@
       <div class="frame-13-QFw">
         <div class="rectangle-16-xYM">
         </div>
+
+        <!-- 10th marklsheet -->
         <div class="group-12-6uT">
           <div class="x-marksheet-nnH">
             <div class="auto-group-jtuy-heM">
               <div class="auto-group-ua3o-EuB">
-                <img class="rectangle-86-MD7" src="./assets/rectangle-86.png"/>
-                <p class="class-xii-marksheet-Gay">Class XII Marksheet</p>
-                <p class="cgpa-xCu">7.9 CGPA</p>
-                <p class="board-of-education-Qqb">Board Of Education</p>
+                <img class="rectangle-86-MD7" src="{% static '/assets/rectangle-86.png' %}"/>
+                <p class="class-xii-marksheet-Gay">Class X Marksheet</p>
+                <p class="cgpa-xCu">{{10.marks}}</p>
+                <p class="board-of-education-Qqb">{{10.institute}}</p>
               </div>
               <div class="auto-group-nwcm-7ED">
                 <div class="upload-original-qR7">Upload Original</div>
                 <div class="upload-original-JpV">Download Fetched</div>
               </div>
             </div>
-            <p class="xii-marksheet-Q6q">XII Marksheet</p>
+            <p class="xii-marksheet-Q6q">X Marksheet</p>
           </div>
+
+
+          <!-- 12th marksheet -->
           <div class="xii-marksheet-7X3">
             <div class="auto-group-cald-ErZ">
               <div class="auto-group-gvtb-Nhs">
-                <img class="rectangle-86-HZw" src="./assets/rectangle-86-9Tb.png"/>
+                <img class="rectangle-86-HZw" src="{% static '/assets/rectangle-86-9Tb.png' %}"/>
                 <p class="class-xii-marksheet-Rw3">Class XII Marksheet</p>
-                <p class="cgpa-Whb">7.9 CGPA</p>
-                <p class="board-of-education-ckd">Board Of Education</p>
+                <p class="cgpa-Whb">{{12.marks}}</p>
+                <p class="board-of-education-ckd">{{12.institute}}</p>
               </div>
               <div class="auto-group-ueah-X6u">
                 <div class="upload-original-rQ5">Upload Original</div>
@@ -120,27 +118,30 @@
             </div>
             <p class="xii-marksheet-HNu">XII Marksheet</p>
           </div>
+
+          {% for item in edu %}
           <div class="migration-certificate-Pwj">
             <div class="auto-group-ewd7-jVo">
               <div class="auto-group-s5ad-sc1">
-                <img class="rectangle-86-DQy" src="./assets/rectangle-86-hBb.png"/>
-                <p class="migration-certificate-Mn5">Migration Certificate</p>
+                <img class="rectangle-86-DQy" src="{% static '/assets/rectangle-86-hBb.png' %}"/>
+                <p class="migration-certificate-Mn5">{{item.document_type}}</p>
               </div>
               <div class="auto-group-a2km-skR">
-                <div class="upload-original-xG5">Upload Original</div>
-                <div class="upload-original-44D">Download Fetched</div>
+                <a class="upload-original-44D" href="{{item.document.url}}" download="{{item.document.name}}">Download uploaded</a>
               </div>
             </div>
-            <p class="migration-certificate-w81">Migration Certificate</p>
+            <p class="migration-certificate-w81">{{item.document_type}}</p>
           </div>
+
+          {% endfor %}
+
           <div class="voterid-eHK">
             <div class="auto-group-mcdt-PEu">
-              <img class="plus-thick-XM7" src="./assets/plus-thick.png"/>
+              <img class="plus-thick-XM7" src="{% static '/assets/plus-thick.png' %}"/>
               <p class="upload-now-EFX">Upload now</p>
             </div>
-            <p class="college-marksheet-Y1K">College Marksheet</p>
           </div>
-          <p class="view-more-5X3">View More</p>
+          
         </div>
       </div>
     </div>
@@ -150,62 +151,66 @@
       <br/>
       
       </p>
+
+      
+      <!-- Scholarship docs -->
       <div class="frame-13-gFw">
         <div class="rectangle-16-oLZ">
         </div>
+      
+
         <div class="frame-26-kWh">
+
+          {% for item in scolar %}
+
           <div class="domicile-5Yy">
+            
             <div class="auto-group-4ssh-SPX">
               <div class="auto-group-oyxr-otH">
-                <img class="rectangle-86-XJV" src="./assets/rectangle-86-QiH.png"/>
-                <p class="domicile-certificate-SwF">Domicile certificate</p>
+                <img class="rectangle-86-XJV" src="https://cdn.s3waas.gov.in/s31385974ed5904a438616ff7bdb3f7439/uploads/2019/06/2019062152.jpg"/>
+                <p class="domicile-certificate-SwF"> {{item}} certificate</p>
               </div>
               <div class="auto-group-d96d-kww">
                 <div class="upload-original-WAR">Upload Original</div>
-                <div class="upload-original-cDT">View Original</div>
+                <div class="upload-original-cDT">Download</div>
+            
               </div>
             </div>
-            <p class="domicile-certificate-sfB">Domicile Certificate</p>
+            <p class="domicile-certificate-sfB">{{item}} Certificate</p>
           </div>
-          <div class="domicile-CSZ">
-            <div class="auto-group-hehb-kys">
-              <div class="auto-group-gnop-sob">
-                <img class="rectangle-86-S61" src="./assets/rectangle-86-WPw.png"/>
-                <p class="domicile-certificate-ZRX">Domicile certificate</p>
+
+          {% endfor %}
+
+
+          {% for item in sco %}
+
+          <div class="domicile-5Yy">
+            
+            <div class="auto-group-4ssh-SPX">
+              <div class="auto-group-oyxr-otH">
+                <img class="rectangle-86-XJV" src="https://cdn.s3waas.gov.in/s31385974ed5904a438616ff7bdb3f7439/uploads/2019/06/2019062152.jpg"/>
+                <p class="domicile-certificate-SwF"> {{item.document_type}}</p>
               </div>
-              <div class="auto-group-kyxf-TG1">
-                <div class="upload-original-PQZ">Upload Original</div>
-                <div class="upload-original-EAH">View Original</div>
+              <div class="auto-group-d96d-kww">
+                
+                <a class="upload-original-cDT" href="{{item.document.url}}" download="{{item.document.name}}">Download Original</a>
+            
               </div>
             </div>
-            <p class="domicile-certificate-hpZ">Domicile Certificate</p>
+            <p class="domicile-certificate-sfB">{{item.document_type}}</p>
           </div>
-          <div class="domicile-Sn9">
-            <div class="auto-group-nujq-yXB">
-              <div class="auto-group-nmnd-ufj">
-                <img class="rectangle-86-3G9" src="./assets/rectangle-86-p1K.png"/>
-                <p class="domicile-certificate-PL1">Domicile certificate</p>
-              </div>
-              <div class="auto-group-9uf3-Vtq">
-                <div class="upload-original-Dpq">Upload Original</div>
-                <div class="upload-original-vUM">View Original</div>
-              </div>
-            </div>
-            <p class="domicile-certificate-d7s">Domicile Certificate</p>
-          </div>
-          <div class="domicile-ZXK">
-            <div class="auto-group-lfg9-hNd">
-              <div class="rectangle-5-rFX">
-              </div>
-              <div class="upload-original-xJZ">Upload Original</div>
-              <div class="upload-original-opy">View Original</div>
-              <img class="rectangle-86-51o" src="./assets/rectangle-86-1sB.png"/>
-              <p class="domicile-certificate-nwo">Domicile certificate</p>
-            </div>
-            <p class="domicile-certificate-7DP">Domicile Certificate</p>
-          </div>
+
+          {% endfor %}
+          
         </div>
+      
+      
       </div>
+
+
+      <!-- upload documents -->
+
+
     </div>
     <div class="scholarship-document--o6D">
       <p class="certificates-uploaded-document-kXF">Certificates &amp; Uploaded Document</p>
@@ -213,22 +218,19 @@
         <div class="rectangle-16-R7b">
         </div>
         <div class="group-12-xtD">
-          <div class="aadhar-fGq">
-            <img class="rectangle-5-otq" src="./assets/rectangle-5.png"/>
-            <p class="domicile-certificate-Z7K">Domicile Certificate</p>
-          </div>
-          <div class="pancard-rs7">
-            <img class="rectangle-17-N4m" src="./assets/rectangle-17.png"/>
-            <p class="xii-marksheet-uaV">XII Marksheet</p>
-          </div>
-          <div class="driving-license-eHB">
-            <img class="rectangle-18-YtM" src="./assets/rectangle-18.png"/>
-            <p class="migration-certificate-uD7">Migration Certificate</p>
-          </div>
-          <div class="voterid-1mw">
-            <img class="rectangle-19-xBP" src="./assets/rectangle-19-3g9.png"/>
-            <p class="college-marksheet-6oP">College Marksheet</p>
-          </div>
+          
+          {% for item in upload %}
+          <a class="aadhar-fGq" href="{{item.document.url}}" target="_blank">
+            <img class="rectangle-5-otq" src="{{item.document.url}}"/>
+            <p class="domicile-certificate-Z7K">{{item.document_type}}</p>
+          </a>
+          
+          {% endfor %}
+
+
+          
+
+
         </div>
       </div>
     </div>
@@ -236,10 +238,10 @@
   <div class="menu-Qp5">
     <div class="frame-2-7iV">
       <div class="group-7-rg5">
-        <a href="eziiii.html">
+        <a href="{% url 'dashboard' %}">
         <div class="rectangle-21-bdf"></div>
         <div class="documents-ueM">Documents</div>
-        <img class="file-document-ERj" src="./assets/file-document-gwf.png"/>
+        <img class="file-document-ERj" src="{% static '/assets/file-document-gwf.png' %}"/>
       </a>
       </div>
       <div class="group-7-rg5">
@@ -247,7 +249,7 @@
         <div class="rectangle-21-bdf">
         </div>
         <div class="documents-ueM">Oppurtunities</div>
-        <img class="file-document-ERj" src="./assets/lightbulb-on-10-6v1.png"/>
+        <img class="file-document-ERj" src="{% static '/assets/lightbulb-on-10-6v1.png' %}"/>
       </a>
       </div>
       <div class="group-7-rg5">
@@ -255,7 +257,7 @@
         <div class="rectangle-21-bdf">
         </div>
         <div class="documents-ueM">Issued</div>
-        <img class="file-document-ERj" src="./assets/file-document-check-17j.png"/>
+        <img class="file-document-ERj" src="{% static '/assets/file-document-check-17j.png' %}"/>
       </a>
       </div>
       <div class="group-7-rg5">
@@ -263,7 +265,7 @@
         <div class="rectangle-21-bdf">
         </div>
         <div class="documents-ueM">Scholarships</div>
-        <img class="file-document-ERj" src="./assets/cash-multiple-pDT.png"/>
+        <img class="file-document-ERj" src="{% static '/assets/cash-multiple-pDT.png' %}"/>
       </a>
       </div>
       <div class="group-7-rg5">
@@ -271,7 +273,7 @@
         <div class="rectangle-21-bdf">
         </div>
         <div class="documents-ueM">FAQ’s</div>
-        <img class="file-document-ERj" src="./assets/progress-question-fQ9.png"/>
+        <img class="file-document-ERj" src="{% static '/assets/progress-question-fQ9.png' %}"/>
       </a>
       </div>
 
@@ -280,12 +282,12 @@
   <div class="header-7LR">
     <div class="rectangle-2-4Ff">
     </div>
-    <img class="bcd3b4b5d471dae27a60bd4b5f07-1-9nu" src="./assets/bcd3b4b5d471dae27a60bd4b5f07-1-kMs.png"/>
-    <img class="account-circle-tEh" src="./assets/account-circle-HeV.png"/>
+    <img class="bcd3b4b5d471dae27a60bd4b5f07-1-9nu" src="{% static '/assets/bcd3b4b5d471dae27a60bd4b5f07-1-kMs.png' %}"/>
+    <img class="account-circle-tEh" src="{% static '/assets/account-circle-HeV.png' %}"/>
     <div class="yourparagraphtext1-removebg-preview-1-BUh">
     </div>
     <p class="ezfill-GW9">Ezfill</p>
-    <img class="bell-ArR" src="./assets/bell-PhP.png"/>
+    <img class="bell-ArR" src="{% static '/assets/bell-PhP.png' %}"/>
   </div>
 </div>
 
