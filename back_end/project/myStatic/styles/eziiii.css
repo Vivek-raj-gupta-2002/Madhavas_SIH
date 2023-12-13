@@ -1279,6 +1279,8 @@ body {
   border-radius: 2.8rem;
   flex-shrink: 0;
 }
+
+
 .eziiii-a61 .frame-14-hRX .scholarship-document--o6D .frame-13-TRf .group-12-xtD .aadhar-fGq .rectangle-5-otq {
   width: 31.8rem;
   height: 17.5rem;
@@ -1295,6 +1297,14 @@ body {
   color: #000000;
   font-family: Jomolhari, 'Source Sans Pro';
   white-space: nowrap;
+  flex-shrink: 0;
+}
+.eziiii-a61 .frame-14-hRX .educational-document--i8D .frame-13-QFw .group-12-xtD .aadhar-fGq.plus-thick-XM7 {
+  margin: 0rem 0rem 2.633rem 2.218rem;
+  width: 5.5014rem;
+  height: 4.9333rem;
+  object-fit: contain;
+  vertical-align: top;
   flex-shrink: 0;
 }
 .eziiii-a61 .frame-14-hRX .scholarship-document--o6D .frame-13-TRf .group-12-xtD .pancard-rs7 {
