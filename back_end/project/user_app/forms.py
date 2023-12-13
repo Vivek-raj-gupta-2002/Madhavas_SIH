@@ -7,6 +7,8 @@ from main_app import models
 User authentication form
 """
 
+
+
 class ScolarShipForm(forms.Form):
     highersecondarypercentage = forms.IntegerField(
         widget=forms.NumberInput(attrs={
