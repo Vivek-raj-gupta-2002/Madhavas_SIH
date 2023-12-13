@@ -202,10 +202,14 @@ body {
   flex-shrink: 0;
 }
 .group-7-Tv5 {
-  width: 29.6rem;
-  height: 5.8rem;
+  width: 20rem;
+  height: 4rem;
   position: relative;
   flex-shrink: 0;
+}
+.group-7-Tv5:hover{
+  background-color: rgba(23, 173, 50, 0.4600000083);
+  border-radius: 2rem;
 }
 /* .group-7-Tv5 .rectangle-21-2CV {
   width: 20rem;
@@ -214,7 +218,7 @@ body {
   background-color: rgba(23, 173, 50, 0.4600000083);
   border-radius: 1.1rem;
 } */
-.group-7-Tv5 .get-api-X9F {
+.get-api-X9F {
   width: 5rem;
   margin-left: 4rem;
   margin-top: 0.5rem;
@@ -227,7 +231,7 @@ body {
   font-family: Jomolhari, 'Source Sans Pro';
   white-space: nowrap;
 }
-.group-7-Tv5 .bookmark-CWH {
+.bookmark-CWH {
   width: 3rem;
   margin: 0.6rem;
   position: absolute;
