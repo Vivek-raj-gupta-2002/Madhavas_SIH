@@ -53,12 +53,56 @@ def scholarShip(request, number):
         return Http404()
 
 
-    
-
 
 """
 usertype = student
+
+issued_view
+oportunity_view
+FAQ
+logout_view
+dashboard_view
+login_view
+signup
+send_otp
+
 """
+
+@require_http_methods(["GET"])
+def issued_view(request):
+    # if not authenticated
+    if not(request.user.is_authenticated):
+        return redirect('login')
+
+    return render(request, 'user_app/issueddocuments.html')
+
+
+
+@require_http_methods(["GET"])
+def scholar_view(request):
+    # if not authenticated
+    if not(request.user.is_authenticated):
+        return redirect('login')
+
+    return render(request, 'user_app/scholarships-AwP.html')
+
+
+@require_http_methods(["GET"])
+def oportunity_view(request):
+    # if not authenticated
+    if not(request.user.is_authenticated):
+        return redirect('login')
+
+    return render(request, 'user_app/eziiii-oppurtunities.html')
+
+#FAQ
+@require_http_methods(["GET"])
+def FAQ(request):
+    return render(request, 'user_app/faq-18H.html')
+
+
+# the Logging the user out
+@require_http_methods(["GET"])
 def logout_view(request):
     logout(request)
     
@@ -102,7 +146,7 @@ def dashboard_view(request):
     # alligned them correctly
     
     if data:
-        send_data['aadhar']: data
+        send_data['aadhar']= data
     
     for i in marks:
         if i.standard == '1':
@@ -145,8 +189,6 @@ def dashboard_view(request):
     send_data['upload'] = upload_docs
     
     return render(request, 'user_app/eziiii.html', send_data)
-
-
 
 
 # authenticate user 
@@ -202,6 +244,7 @@ def login_view(request):
 
 
     return render(request, 'user_app/log-in.html', {'form': my_form})
+
 
 # creating user
 @require_http_methods(["GET", "POST"])
