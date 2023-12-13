@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,12 +12,12 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro%3A400%2C700"/>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kadwa%3A400"/>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=JejuGothic%3A400"/>
-  <link rel="stylesheet" href="./styles/scholarshipform4.css"/>
+  <link rel="stylesheet" href="{% static '/styles/scholarshipform4.css'%}"/>
 </head>
 <body>
 <div class="scholarshipform4-iPF">
   <div class="header-Q9b">
-    <img class="bcd3b4b5d471dae27a60bd4b5f07-1-x6Z" src="./assets/bcd3b4b5d471dae27a60bd4b5f07-1-ywT.png"/>
+    <img class="bcd3b4b5d471dae27a60bd4b5f07-1-x6Z" src="{% static '/assets/bcd3b4b5d471dae27a60bd4b5f07-1-ywT.png' %}"/>
     <p class="national-scholarship-portal-mZo">National Scholarship Portal</p>
   </div>
   <div class="starting-form-Pjb">
@@ -23,13 +25,20 @@
       <p class="basic-details-of-applicant-HyP">Basic Details of Applicant</p>
       <p class="required-fields-7xR">* Required Fields</p>
     </div>
+    <form action="{% url 'scholar' %}" method="post">
+
+
+      {% csrf_token %}
     <div class="frame-25-3jb">
       <div class="caste-certificate-number-sCq">
         <p class="name-iz9">
           <span class="name-iz9-sub-0">*</span>
           <span class="name-iz9-sub-1">Name </span>
         </p>
-        <input class="rectangle-55-f49" type="text"/>
+
+        {{form.name}}
+
+        <!-- <input class="rectangle-55-f49" type="text"/> -->
       </div>
       <div class="caste-certificate-FY9">
         <div class="group-21-9tR">
@@ -38,7 +47,8 @@
             <span class="dob-Eus-sub-1">DOB</span>
             <span class="dob-Eus-sub-2"> </span>
           </p>
-          <input class="rectangle-55-sQR" type="text"/>
+          {{form.dateOfBirth}}
+          <!-- <input class="rectangle-55-sQR" type="text"/> -->
         </div>
       </div>
       <div class="domicile-certificate-M4h">
@@ -46,7 +56,8 @@
           <span class="father-name-Vwb-sub-0">*</span>
           <span class="father-name-Vwb-sub-1">Father  Name</span>
         </p>
-        <input class="rectangle-56-24M" type="text"/>
+        {{form.Fathername}}
+        <!-- <input class="rectangle-56-24M" type="text"/> -->
       </div>
       <div class="domicile-certificate-ixm">
         <div class="group-22-5HX">
@@ -55,7 +66,8 @@
             <span class="gender-2yT-sub-1">Gender</span>
             <span class="gender-2yT-sub-2"> </span>
           </p>
-          <input class="rectangle-56-1iu" type="text"/>
+          {{form.Gender}}
+          <!-- <input class="rectangle-56-1iu" type="text"/> -->
         </div>
       </div>
       <div class="voter-id-number-7mw">
@@ -63,25 +75,29 @@
           <span class="address-HAd-sub-0">*</span>
           <span class="address-HAd-sub-1">Address</span>
         </p>
-        <input class="rectangle-57-suX" type="text"/>
+        {{form.Address}}
+        <!-- <input class="rectangle-57-suX" type="text"/> -->
       </div>
       <div class="pan-card-number-xvy">
         <p class="pin-code-iv9">
           <span class="pin-code-iv9-sub-0">*</span>
           <span class="pin-code-iv9-sub-1">PIN Code </span>
         </p>
-        <input class="rectangle-58-Wb7" type="text"/>
+        {{form.PinCode}}
+        <!-- <input class="rectangle-58-Wb7" type="text"/> -->
       </div>
       <div class="sssmid-number-dQq">
         <p class="mobile-number-Bx9">
           <span class="mobile-number-Bx9-sub-0">*</span>
           <span class="mobile-number-Bx9-sub-1"> Mobile Number</span>
         </p>
-        <input class="rectangle-60-umf" type="text"/>
+        {{form.MobileNUmber}}
+        <!-- <input class="rectangle-60-umf" type="text"/> -->
       </div>
       <div class="income-certificate-number-1ph">
         <p class="e-mail-address-yFj">E-mail Address</p>
-        <input class="rectangle-59-gR3" type="text"/>
+        {{form.EmailAddress}}
+        <!-- <input class="rectangle-59-gR3" type="text"/> -->
       </div>
       <div class="income-certificate-nDB">
         <div class="group-20-wLy">
@@ -90,7 +106,8 @@
             <span class="marital-status-VtH-sub-1">Marital Status</span>
             <span class="marital-status-VtH-sub-2"> </span>
           </p>
-          <input class="rectangle-61-x9b" type="text"/>
+          {{form.MaritalStatus}}
+          <!-- <input class="rectangle-61-x9b" type="text"/> -->
         </div>
       </div>
     </div>
@@ -100,5 +117,7 @@
       <p class="next-i2H">Next</p>
     </div>
   </div>
+
+</form>
 </div>
 </body>
