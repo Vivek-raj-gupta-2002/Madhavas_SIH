@@ -17,7 +17,7 @@
   <div class="header-E93">
     <div class="rectangle-2-B4H">
     </div>
-    <img class="bcd3b4b5d471dae27a60bd4b5f07-1-fk9" src="{% static /assets/bcd3b4b5d471dae27a60bd4b5f07-1-Xp9.png'%}"/>
+    <img class="bcd3b4b5d471dae27a60bd4b5f07-1-fk9" src="{% static '/assets/bcd3b4b5d471dae27a60bd4b5f07-1-Xp9.png '%}"/>
     <p class="national-scholarship-portal-bth">National Scholarship Portal</p>
   </div>
   <form action="{% url 'scholar' %}" method="post">
@@ -32,6 +32,7 @@
         <span class="account-holder-name-wt1-sub-0">*</span>
         <span class="account-holder-name-wt1-sub-1">Account Holder Name</span>
       </p>
+      {{form.accountholdername}}
       <!-- <div class="rectangle-69-ccm"> -->
       </div>
     </div>
@@ -40,6 +41,7 @@
         <span class="account-number-Srh-sub-0">*</span>
         <span class="account-number-Srh-sub-1">Account Number</span>
       </p>
+      {{form.accountnumber}}
       <!-- <div class="rectangle-70-qdw"> -->
       </div>
     </div>
@@ -48,6 +50,7 @@
         <span class="ifsc-number-row-sub-0">*</span>
         <span class="ifsc-number-row-sub-1">IFSC Number</span>
       </p>
+      {{form.isfcnumber}}
       <!-- <div class="rectangle-71-3tR"> -->
       </div>
     </div>

@@ -14,6 +14,7 @@ class ScolarForm(forms.Form):
         })
     )
 
+
 class ScolarShipForm(forms.Form):
     highersecondarypercentage = forms.IntegerField(
         widget=forms.NumberInput(attrs={
@@ -56,9 +57,102 @@ class ScolarShipForm(forms.Form):
         })
     )
     
-
-
-
+    name = forms.CharField(
+        widget=forms.TextInput(attrs={
+            'class': 'rectangle-55-f49 '
+        })
+    )
+    dateOfBirth = forms.DateField(
+        widget=forms.DateInput(attrs={
+            'class': 'rectangle-55-sQR','type': 'date',
+        })
+    )
+    Fathername = forms.CharField(
+        widget=forms.TextInput(attrs={
+            'class': 'rectangle-56-24M '
+        })
+    )
+    Gender = forms.ChoiceField(
+        choices=models.gender_choices,
+        widget=forms.Select(attrs={
+            'class': 'rectangle-56-1iu '
+        })
+    )
+    Address = forms.CharField(
+        widget=forms.TextInput(attrs={
+            'class': 'rectangle-57-suX'
+        })
+    )
+    PinCode = forms.IntegerField(
+        widget=forms.NumberInput(attrs={
+            'class': 'rectangle-58-Wb7'
+        })
+    )
+    MobileNUmber = forms.IntegerField(
+        widget=forms.NumberInput(attrs={
+            'class': 'rectangle-60-umf '
+        })
+    )
+    EmailAddress = forms.EmailField(
+        widget=forms.EmailInput(attrs={
+            'class': 'rectangle-59-gR3 '
+        })
+    )   
+    MaritalStatus = forms.CharField(
+        widget=forms.TextInput(attrs={
+            'class': 'rectangle-61-x9b'
+        })
+    )
+    EmailAddress = forms.EmailField(
+        widget=forms.EmailInput(attrs={
+            'class': 'rectangle-59-gR3 '
+        })
+    )   
+    CasteCertificate = forms.CharField(
+        widget=forms.TextInput(attrs={
+            'class': 'rectangle-55-Y7f'
+        })
+    )
+    CasteCertificateUpload = forms.FileField(
+        widget=forms.FileInput(attrs={
+            'class': 'rectangle-55-Fy7'
+        })
+    )
+    DomicileCertificate = forms.CharField(
+        widget=forms.TextInput(attrs={
+            'class': 'rectangle-56-qrm'
+        })
+    )
+    DomicileCertificateUpload = forms.FileField(
+        widget=forms.FileInput(attrs={
+            'class': 'rectangle-56-JXP'
+        })
+    ) 
+    VOterID = forms.CharField(
+        widget=forms.TextInput(attrs={
+            'class': 'rectangle-57-aFw'
+        })
+    )
+    PanCard = forms.CharField(
+        widget=forms.TextInput(attrs={
+            'class': 'rectangle-58-XKb'
+        })
+    )
+    SSmID = forms.CharField(
+        widget=forms.TextInput(attrs={
+            'class': 'rectangle-60-3qf'
+        })
+    )
+    IncomeCertificate = forms.CharField(
+        widget=forms.TextInput(attrs={
+            'class': 'rectangle-59-PwT'
+        })
+    )
+    IncomeCertificateUpload = forms.FileField(
+        widget=forms.FileInput(attrs={
+            'class': 'rectangle-61-Nyj'
+        })
+    )      
 
 
 

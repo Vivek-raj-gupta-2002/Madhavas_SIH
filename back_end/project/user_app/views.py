@@ -15,10 +15,10 @@ from django.contrib.auth import authenticate, login, logout
 # Create your views here.
 @require_http_methods(["GET", "POST"])
 def scholar(request):
-    my_form = forms.ScolarForm()
+    my_form = forms.ScolarShipForm()
 
     
-    return render(request, "user_app/scholarshipform.html", {'form': my_form})
+    return render(request, "main.html", {'form': my_form})
     
 
 #ScholarshipForm
@@ -29,20 +29,20 @@ def scholarShip(request, number):
 
     if number == 1:
     
-        return render(request, "Scholarship\scholarshipform4.html", {'form': my_form})
+        return render(request, "Scholarship/scholarshipform4.html", {'form': my_form})
 
 
     elif number == 2:
         
-        return render(request, "Scholarship\scholarshipform4.html", {'form': my_form})
+        return render(request, "Scholarship/scholarshipform.html", {'form': my_form})
     
     elif number == 3:
         
-        return render(request, "Scholarship\scholarshipform4.html", {'form': my_form})
+        return render(request, "Scholarship/scholarship-form2.html", {'form': my_form})
     
     elif number == 4:
         
-        return render(request, "Scholarship\scholarshipform4.html", {'form': my_form})
+        return render(request, "Scholarship/scholarship-form3.html", {'form': my_form})
 
     else:
         
