@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
 <head>
@@ -16,7 +17,7 @@
 <body>
 <div class="scholarshipform-Qnq">
   <div class="header-Kuo">
-    <img class="bcd3b4b5d471dae27a60bd4b5f07-1-pLm" src="./assets/bcd3b4b5d471dae27a60bd4b5f07-1.png"/>
+    <img class="bcd3b4b5d471dae27a60bd4b5f07-1-pLm" src="{% Static '/assets/bcd3b4b5d471dae27a60bd4b5f07-1.png'%}"/>
     <p class="national-scholarship-portal-LK7">National Scholarship Portal</p>
   </div>
   <div class="auto-group-1vbw-h3B">
@@ -24,6 +25,8 @@
       <p class="following-certificate-must-be-uploaded-in-image-form-8eH">Following Certificate must be uploaded in image form</p>
       <p class="required-fields-RtH">* Required Fields</p>
     </div>
+    <form action="{% url 'scholar' %}" method="post">
+      {% csrf_token %}
     <div class="frame-25-tms">
       <div class="auto-group-2xbj-R17">
         <div class="caste-certificate-number-9ho">
@@ -31,7 +34,7 @@
             <span class="caste-certificate-no-H3K-sub-0">*</span>
             <span class="caste-certificate-no-H3K-sub-1">Caste Certificate No.</span>
           </p>
-          <input class="rectangle-55-Y7f" type="text"/>
+          <!-- <input class="rectangle-55-Y7f" type="text"/> -->
         </div>
         <div class="caste-certificate-Q9s">
           <div class="group-21-K1w">
@@ -42,14 +45,14 @@
             <div class="rectangle-55-Fy7">
             </div>
           </div>
-          <input class="group-23-ibo" type="file"/>
+          <!-- <input class="group-23-ibo" type="file"/> -->
         </div>
         <div class="domicile-certificate-R8q">
           <p class="domicile-certificate-no-YjF">
             <span class="domicile-certificate-no-YjF-sub-0">*</span>
             <span class="domicile-certificate-no-YjF-sub-1">Domicile Certificate No.</span>
           </p>
-          <input class="rectangle-56-qrm" type="text"/>
+          <!-- <input class="rectangle-56-qrm" type="text"/> -->
         </div>
         <div class="domicile-certificate-jSM">
           <div class="group-22-3hw">
@@ -60,29 +63,29 @@
             <div class="rectangle-56-JXP">
             </div>
           </div>
-          <input class="group-24-d3s" type="file"/>
+          <!-- <input class="group-24-d3s" type="file"/> -->
         </div>
         <div class="voter-id-number-WG5">
           <p class="voter-id-no-ESy">Voter ID No.</p>
-          <input class="rectangle-57-aFw" type="text"/>
+          <!-- <input class="rectangle-57-aFw" type="text"/> -->
         </div>
         <div class="pan-card-number-5yP">
           <p class="pan-card-no-o8h">PAN Card No.</p>
-          <input class="rectangle-58-XKb" type="text"/>
+          <!-- <input class="rectangle-58-XKb" type="text"/> -->
         </div>
         <div class="sssmid-number-bqF">
           <p class="ssmid-no-weD">
             <span class="ssmid-no-weD-sub-0">*</span>
             <span class="ssmid-no-weD-sub-1">SSMID No.</span>
           </p>
-          <input class="rectangle-60-3qf" type="text"/>
+          <!-- <input class="rectangle-60-3qf" type="text"/> -->
         </div>
         <div class="income-certificate-number-Z3K">
           <p class="income-certificate-no-tbP">
             <span class="income-certificate-no-tbP-sub-0">*</span>
             <span class="income-certificate-no-tbP-sub-1">Income Certificate No.</span>
           </p>
-          <input class="rectangle-59-PwT" type="text"/>
+          <!-- <input class="rectangle-59-PwT" type="text"/> -->
         </div>
         <div class="income-certificate-vAh">
           <div class="group-20-okH">
@@ -91,12 +94,13 @@
               <span class="income-certificate-XRP-sub-1">Income</span>
               <span class="income-certificate-XRP-sub-2"> Certificate </span>
             </p>
-            <input class="rectangle-61-Nyj" type="file"/>
+            <!-- <input class="rectangle-61-Nyj" type="file"/> -->
           </div>
-          <input class="group-25-gjX" type="file"/>
+          
         </div>
       </div>
     </div>
+    </form>
     <div class="button-ys3">
       <div class="rectangle-68-LSh">
       </div>
