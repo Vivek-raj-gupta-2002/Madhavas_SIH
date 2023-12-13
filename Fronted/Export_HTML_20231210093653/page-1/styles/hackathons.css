@@ -26,7 +26,7 @@ body {
 }
 .form-NXX {
   position: absolute;
-  left: 27rem;
+  left: 30rem;
   top: 10rem;
   align-items: center;
   display: flex;
@@ -204,112 +204,11 @@ body {
   font-family: Open Sans, 'Source Sans Pro';
   white-space: nowrap;
 }
-.menu-QJR {
-  box-sizing: border-box;
-  padding: 6.3rem 0.37rem 6.3rem 2.23rem;
-  width: 24rem;
-  height: 100vh;
-  position: absolute;
-  left: 0;
-  top: 4rem;
-  border: solid 0 rgba(0, 0, 0, 0.0900000036);
-  box-shadow: 0.1rem -0.1rem 0.78rem rgba(0, 0, 0, 0.349999994);
-  background-color: rgba(255, 255, 255, 0.6600000262);
-}
-.auto-group-qifp-24u {
-  box-sizing: border-box;
-  padding-bottom: 1rem;
-  row-gap: 2rem;
-  display: flex;
-  flex-direction: column;
-  flex-shrink: 0;
-}
-.group-7-xz9 {
-  width: 20rem;
-  height: 4rem;
-  position: relative;
-  flex-shrink: 0;
-}
-.group-7-xz9:hover{
-  background-color: rgba(23, 173, 50, 0.4600000083);
-  border-radius: 2rem;
-}
-.get-api-FCZ {
-  position: absolute;
-  left: 6rem;
-  top: 0;
-  display: flex;
-  font-size: 2rem;
-  font-weight: 400;
-  line-height: 1.6025;
-  color: #000000;
-  font-family: Jomolhari, 'Source Sans Pro';
-  white-space: nowrap;
-}
-.bookmark-AKX {
-  width: 4rem;
-  position: absolute;
-  object-fit: contain;
-  vertical-align: top;
-}
-.rectangle-2-DH7 {
-  width: 100%;
-  height: 6rem;
-  position: absolute;
-  left: 0;
-  top: 0.6rem;
-  box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25), 0 0.8rem 0.4rem rgba(0, 0, 0, 0.4399999976);
-  background-color: #ffffff;
-}
-.bcd3b4b5d471dae27a60bd4b5f07-1-WX7 {
-  width: 5.5rem;
-  position: absolute;
-  left: 0;
-  top: 0.6rem;
-  object-fit: cover;
-  vertical-align: top;
-}
-.bcd3b4b5d471dae27a60bd4b5f07-1-WX71 {
-  width: 20rem;
-  margin-top: -6.4rem;
-  position: absolute;
-  object-fit: cover;
-  vertical-align: top;
-}
-.account-circle-Re5 {
-  width: 4rem;
-  position: absolute;
-  left: 130rem;
-  top: 1.7rem;
-  object-fit: contain;
-  vertical-align: top;
-}
-.ezapi-QF7 {
-  width: 8.7rem;
-  height: 4.5rem;
-  position: absolute;
-  left: 14rem;
-  top: 3rem;
-  font-size: 2.5rem;
-  font-weight: 700;
-  line-height: 1.2575;
-  color: #15ab30;
-  font-family: jsMath-cmbx10, 'Source Sans Pro';
-  white-space: nowrap;
-}
-.bell-fwj {
-  width: 3rem;
-  position: absolute;
-  left: 125rem;
-  top: 2rem;
-  object-fit: contain;
-  vertical-align: top;
-}
 .menu-FJD {
   box-sizing: border-box;
   padding: 2rem;
   padding-top: 4rem;
-  width: 24rem;
+  width: 27rem;
   height: 100%;
   position: absolute;
   top: 6rem;
@@ -327,7 +226,7 @@ body {
   flex-shrink: 0;
 }
 .group-7-Tv5 {
-  width: 20rem;
+  width: 23rem;
   height: 4rem;
   position: relative;
   flex-shrink: 0;
@@ -335,6 +234,7 @@ body {
 .group-7-Tv5:hover{
   background-color: rgba(23, 173, 50, 0.4600000083);
   border-radius: 2rem;
+  padding: 0.5rem;
 }
 /* .group-7-Tv5 .rectangle-21-2CV {
   width: 20rem;
