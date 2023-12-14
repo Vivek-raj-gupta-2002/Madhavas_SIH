@@ -1,4 +1,5 @@
 from django import forms
+from . import models
 
 class InternForm(forms.Form):
     organizationname = forms.CharField(
@@ -27,6 +28,11 @@ class InternForm(forms.Form):
     shortdiscription = forms.CharField(
         widget=forms.TextInput(attrs={'class': 'shortdiscription-dKj'})
     )
+    class Meta:
+        model = models.InternJob
+        fields = ['orga_name','da_to' , 'da_from' , 'skill_req' , 'no_openning', 'max_pay',' min_pay','short_desc']
+    
+
 
 
 class ScholarForm(forms.Form):
@@ -58,3 +64,6 @@ class ScholarForm(forms.Form):
     shortdescription = forms.CharField(
         widget=forms.TextInput(attrs={'class': 'auto-group-vw2q-95P'})
     )
+    class Meta: 
+        model = models.Scholarship
+        fields = ['orga_name','da_to' , 'da_from' , 'min_percent' , 'amount_given', 'on_mode','off_mode','short_desc']
