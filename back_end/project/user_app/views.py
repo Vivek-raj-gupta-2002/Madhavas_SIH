@@ -5,7 +5,7 @@ from main_app.models import OneTimePass, CustomUser, College
 from . import models
 from . import forms
 
-from institute.models import Scholarship_model
+from institute.models import Oppertunities_model
 
 from django.views.decorators.http import require_http_methods
 from utills import mail, dummy_data, valid_otp
@@ -143,8 +143,14 @@ def scholar_view(request):
         send_data['aadhar'] = data
 
     
+    req_data = Oppertunities_model.objects.all()
     
-    send_data['scholarship'] = Scholarship_model.objects.all()
+    send_data['scholarship'] = []
+
+    for i in req_data:
+        if i.is_scholarship:
+            send_data['scholarship'].append(i)
+    
 
 
     return render(request, 'user_app/scholarships-AwP.html', send_data)
@@ -173,6 +179,20 @@ def oportunity_view(request):
     
     if data:
         send_data['aadhar'] = data
+
+
+    reqData = Oppertunities_model.objects.all()
+
+    send_data['hack'] = []
+    send_data['intern'] = []
+
+    for i in reqData:
+        if i.is_hack:
+            send_data['hack'].append(i)
+            # continue
+        if i.is_intern:
+            send_data['intern'].append(i)
+            # continue
 
     return render(request, 'user_app/eziiii-oppurtunities.html', send_data)
 

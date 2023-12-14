@@ -2,56 +2,21 @@ from django.db import models
 
 # Create your models here.
 
-class InternJob_model(models.Model):
-    org_name = models.CharField(max_length=255, unique=True)
+class Oppertunities_model(models.Model):
+    logo = models.ImageField(upload_to='intern')
+    title = models.CharField(max_length=100)
+    description = models.TextField()
+    organiser = models.CharField(max_length=100)
+    apply = models.URLField()
+    amount = models.DecimalField(decimal_places=3, max_digits=10)
+    Start_date = models.DateField()
+    End_date = models.DateField()
+    is_online = models.BooleanField(default=False)
+    is_offline = models.BooleanField(default=False)
+    openings = models.IntegerField(null=True, blank=True)
 
-    du_to = models.DateField()
-
-    du_from = models.DateField()
-
-    skill_req = models.CharField(max_length=255) 
-
-    no_openning = models.IntegerField()
-
-    max_pay = models.IntegerField()
-
-    min_pay = models.IntegerField()
-
-    short_des = models.TextField()
-
-
-class Hackathon_model(models.Model):
-    orga_name = models.CharField(max_length=255, unique=True)
-
-    da_to = models.DateField()
-
-    da_from = models.DateField()
-
-    max_members = models.IntegerField() 
-
-    link_to = models.URLField()
-
-    on_mode = models.BooleanField(default=False)
-
-    off_mode = models.BooleanField(default=False)
-
-    short_desc = models.TextField()
-
-class Scholarship_model(models.Model):
-    orga_name = models.CharField(max_length=255, unique=True)
-
-    da_to = models.DateField()
-
-    da_from = models.DateField()
-
-    min_percent = models.IntegerField() 
-
-    amount_given = models.IntegerField()
-
-    on_mode = models.BooleanField(default=False)
-
-    off_mode = models.BooleanField(default=False)
-
-    short_desc = models.TextField()
+    is_scholarship = models.BooleanField(default=False)
+    is_hack = models.BooleanField(default=False)
+    is_intern = models.BooleanField(default=False)
 
 

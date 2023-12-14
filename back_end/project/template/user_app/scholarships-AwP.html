@@ -141,24 +141,24 @@
           <div class="auto-group-ubs5-85T">
             <div class="tag-E8V">Fresh</div>
             <div class="auto-group-xjwm-tiq">
-              <img class="mptaaslogo-1-CjX" src="{% static '/assets/mptaaslogo-1-Asf.png' %}"/>
+              <img class="mptaaslogo-1-CjX" src="{{item.logo.url}}"/>
               <div class="auto-group-c54r-98y">
                 <p class="apply-date-T9f">Apply Date</p>
-                <p class="item-01-01-2023-8mb">{{item.da_to}}</p>
+                <p class="item-01-01-2023-8mb">{{item.Start_date}}</p>
               </div>
             </div>
             <p class="post-metric-scholarship-sc-st-obc-G77">{{item.orga_name}}</p>
-            <p class="last-updated-20-01-2023-ynD">Last Date :-{{item.da_to}}</p>
+            <p class="last-updated-20-01-2023-ynD">Last Date :-{{item.End_date}}</p>
             <div class="auto-group-wbdf-W1T">
               <p class="granted-scholarship-e7f">Granted Scholarship</p>
               <p class="eligiblity-mTB">Eligiblity</p>
             </div>
             <div class="auto-group-q7mo-Rnd">
-              <p class="item-101000--YsF">{{item.amount_given}} /-</p>
+              <p class="item-101000--YsF">{{item.amount}} /-</p>
               <p class="eligible-s8q">100% Eligible</p>
             </div>
           </div>
-          <div class="auto-group-m4h3-zUM">View Scholarship</div>
+          <a class="auto-group-m4h3-zUM" href="{{item.apply}}">View Scholarship</a>
         </div>   
       </div> 
       {% endfor %}
