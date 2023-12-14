@@ -24,6 +24,7 @@ body {
   background-color: #efefef;
 }
 .scholarship-form-ApV {
+  margin-left: 5rem;
   position: absolute;
   left: 10rem;
   top: 10rem;
@@ -271,129 +272,11 @@ body {
   border-radius: 2rem;
   flex-shrink: 0;
 }
-.menu-sfb {
-  width: 24rem;
-  height: 100vh;
-  padding-top: 10rem;
-  padding-left: 2rem;
-  box-sizing: border-box;
-  position: absolute;
-  border: solid 0 rgba(0, 0, 0, 0.0900000036);
-  box-shadow: 0.1rem -0.1rem 0.78rem rgba(0, 0, 0, 0.349999994);
-  background-color: rgba(255, 255, 255, 0.6600000262);
-}
-.auto-group-wkuu-kjP {
-  box-sizing: border-box;
-  width: 100%;
-  row-gap: 2rem;
-  display: flex;
-  flex-direction: column;
-  flex-shrink: 0;
-}
-.group-7-uMP {
-  width: 29.6rem;
-  height: 5.8rem;
-  position: relative;
-  flex-shrink: 0;
-}
-.get-api-bED {
-  position: absolute;
-  left: 6.3894rem;
-  top: 0;
-  display: flex;
-  font-size: 2rem;
-  font-weight: 400;
-  line-height: 1.6025;
-  color: #000000;
-  font-family: Jomolhari, 'Source Sans Pro';
-  white-space: nowrap;
-}
-.bookmark-uVo {
-  width: 4rem;
-  position: absolute;
-  object-fit: contain;
-  vertical-align: top;
-}
-.group-8-cQD {
-  width: 29.5696rem;
-  height: 5.8rem;
-  cursor: pointer;
-  position: relative;
-  flex-shrink: 0;
-}
-.hackathons-ueD {
-  position: absolute;
-  left: 5.4664rem;
-  font-size: 2rem;
-  font-weight: 400;
-  line-height: 1.6025;
-  color: #000000;
-  font-family: Jomolhari, 'Source Sans Pro';
-  white-space: nowrap;
-}
-
-.group-11-1uX {
-  width: 29.5696rem;
-  height: 5.8rem;
-  position: relative;
-  flex-shrink: 0;
-}
-.rectangle-2-8FP {
-  width: 100%;
-  height: 6rem;
-  position: absolute;
-  left: 0;
-  top: 0.6rem;
-  box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25), 0 0.8rem 0.4rem rgba(0, 0, 0, 0.4399999976);
-  background-color: #ffffff;
-}
-.bcd3b4b5d471dae27a60bd4b5f07-1-buf {
-  width: 5.5rem;
-  position: absolute;
-  left: 0;
-  top: 0.6rem;
-  object-fit: cover;
-  vertical-align: top;
-}
-.bcd3b4b5d471dae27a60bd4b5f07-1-buf1 {
-  margin-left: -3rem;
-  margin-top: -5.5rem;
-  width: 18rem;
-  position: absolute;
-  left: 3rem;
-}
-.account-circle-WWq {
-  width: 3.5rem;
-  position: absolute;
-  left: 130rem;
-  top: 2.1rem;
-  object-fit: contain;
-  vertical-align: top;
-}
-.ezapi-Hvu {
-  position: absolute;
-  left: 12rem;
-  top: 3rem;
-  font-size: 2.5rem;
-  font-weight: 700;
-  line-height: 1.2575;
-  color: #15ab30;
-  font-family: jsMath-cmbx10, 'Source Sans Pro';
-  white-space: nowrap;
-}
-.bell-bAu {
-  width: 3rem;
-  position: absolute;
-  left: 124rem;
-  top: 2.2rem;
-  object-fit: contain;
-  vertical-align: top;
-}
 .menu-FJD {
   box-sizing: border-box;
   padding: 2rem;
   padding-top: 4rem;
-  width: 24rem;
+  width: 27rem;
   height: 100%;
   position: absolute;
   top: 6rem;
@@ -411,7 +294,7 @@ body {
   flex-shrink: 0;
 }
 .group-7-Tv5 {
-  width: 20rem;
+  width: 23rem;
   height: 4rem;
   position: relative;
   flex-shrink: 0;
@@ -419,6 +302,7 @@ body {
 .group-7-Tv5:hover{
   background-color: rgba(23, 173, 50, 0.4600000083);
   border-radius: 2rem;
+  padding: 0.5rem;
 }
 /* .group-7-Tv5 .rectangle-21-2CV {
   width: 20rem;
