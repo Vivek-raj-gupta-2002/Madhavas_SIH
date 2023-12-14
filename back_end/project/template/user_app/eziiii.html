@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro%3A400%2C700"/>
   <link rel="stylesheet" href="{% static '/styles/eziiii.css' %}"/>
   <link rel="stylesheet" href="{% static '/styles/frame-21.css' %}"/>
+  <link rel="stylesheet" href="{% static '/styles/fetch-document.css' %}"/>
 </head>
 <body>
 <div class="eziiii-a61">
@@ -229,13 +230,48 @@
           {% endfor %}
 
           <div class="aadhar-fGq">
-            <img class="rectangle-5-otq" src="{% static '/assets/rectangle-5.png'%}"/>
+            <img id="fchmyBtn" class="rectangle-5-otq" src="{% static '/assets/rectangle-5.png'%}"/>
             <p class="domicile-certificate-Z7K">Upload Document</p>
             
           </div>          
 
 
         </div>
+      </div>
+    </div>
+    <!-- FetchDocumentPopup -->
+    <div id="fchmyModal" class=" fchmodal">
+      <div class=" fchmodal-content">
+        <span class="fchclose">&times;</span>
+    <div class="fetch-document-ANH">
+      <div class="card-login-sign-up-KW5">
+        <div class="auto-group-ptc9-s1o">Fetch Your Document</div>
+        <div class="sign-up-7gq">
+          <div class="auto-group-nudf-2J1">
+            <div class="mobile-number-yj3">
+              <p class="document-type-iRj">Document Type</p>
+              <select class="rectangle-46-CLu">
+              </select>
+            </div>
+            <div class="name-field-jLq">
+              <p class="document-no-fEV">Document No.</p>
+              <input class="rectangle-45-acM" type="text"/>
+            </div>
+          </div>
+          <div class="state-7sB">
+            <p class="state-t7F">State</p>
+            <select class="rectangle-45-pFo">
+            </select>
+          </div>
+          <div class="state-ic5">
+            <p class="district-sE5">District</p>
+            <select class="rectangle-45-1bB">
+            </select>
+          </div>
+          <div class="auto-group-jz9p-MQ9">Submit</div>
+        </div>
+      </div>
+    </div>
       </div>
     </div>
   </div>
@@ -303,7 +339,9 @@
           <p class="raman-yadav-76u">Raman Yadav</p>
           <p class="ramanya-CPF">@ramanya</p>
         </div>
-        <div class="auto-group-xbzf-6zR">Manage Your Account</div>
+        <div class="auto-group-xbzf-6zR">Manage Your Account
+          .
+        </div>
       </div>
       <div class="yourfrofile-kp5">
         <img class="account-fg9" src="{% static '/assets/account.png' %}"/>
@@ -319,4 +357,5 @@
   </div>
 </div>
 <script src="{% static '/JS/AccountPopUP.js' %}"></script>
+<script src="{% static '/JS/UploadDocument.js' %}"></script>
 </body>
