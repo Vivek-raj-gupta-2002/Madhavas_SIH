@@ -1,0 +1,323 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <title>IssuedDocuments</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jomolhari%3A400"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro%3A400%2C700"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=jsMath-cmbx10%3A700"/>
+  <link rel="stylesheet" href="{% static '/styles/issueddocuments.css' %}"/>
+</head>
+<body>
+<div class="issueddocuments-Ebf">
+  <div class="body-xXf">
+    <div class="create-pdf-4Ko">Create Pdf</div>
+    <div class="issueddocuments-t3w">
+      <div class="personal-documement-bDF" id="personalDocumentToggle">
+        <div class="auto-group-8ieh-tTF">
+          <input class="rectangle-34-Bx9" type="checkbox"/>
+          <p class="personal-document-uNM">Personal Document</p>
+          <img  class="arrow-down-drop-circle-PoK" src="{% static '/assets/arrow-down-drop-circle-uvV.png' %}" />
+        </div>
+        <div class="line-1-JfP"></div>
+        <div class="auto-group-acaz-rB7" id="documentContainer">
+          <div class="aadhar-mos">
+            <div class="rectangle-38-7cq">
+            </div>
+            <p class="aadhar-card-qoj">Aadhar Card</p>
+            <input class="rectangle-35-mBb" type="checkbox"/>
+            <img class="pencil-4gV" src="{% static '/assets/pencil-efw.png' %}"/>
+            <img class="delete-cCD" src="{% static '/assets/delete-Ery.png' %}"/>
+          </div>
+          <div class="pancard-M9o">
+            <div class="rectangle-38-4pu">
+            </div>
+            <p class="pan-card-yws">Pan Card</p>
+            <input class="rectangle-35-phb" type="checkbox"/>
+            <img class="pencil-9js" src="{% static '/assets/pencil-qty.png' %}"/>
+            <img class="delete-txM" src="{% static '/assets/delete-Nbo.png' %}"/>
+          </div>
+          <div class="voterid-heu">
+            <div class="rectangle-38-DdF">
+            </div>
+            <p class="voter-id-Zh7">Voter ID</p>
+            <input class="rectangle-35-g13" type="checkbox"/>
+            <img class="pencil-obT" src="{% static '/assets/pencil-HFT.png' %}"/>
+            <img class="delete-Yow" src="{% static '/assets/delete-mCh.png' %}"/>
+          </div>
+          <div class="voterid-Tg1">
+            <div class="rectangle-38-c37">
+            </div>
+            <p class="abc-card-kv1">ABC Card</p>
+            <input class="rectangle-35-Hf3" type="checkbox"/>
+            <img class="pencil-kYd" src="{% static '/assets/pencil-XX3.png' %}"/>
+            <img class="delete-gBP" src="{% static '/assets/delete-g9K.png' %}"/>
+          </div>
+          <div class="voterid-1zM">
+            <div class="rectangle-38-mTj">
+            </div>
+            <p class="health-card-ids">Health Card</p>
+            <input class="rectangle-35-rVB" type="checkbox"/>
+            <img class="pencil-ZeV" src="{% static '/assets/pencil-evR.png' %}"/>
+            <img class="delete-UFf" src="{% static '/assets/delete.png' %}"/>
+          </div>
+          <div class="voterid-CBf">
+            <div class="rectangle-38-K1P">
+            </div>
+            <p class="driving-license-s2u">Driving License</p>
+            <input class="rectangle-35-AXo" type="checkbox"/>
+            <img class="pencil-hXj" src="{% static '/assets/pencil-6Tw.png' %}"/>
+            <img class="delete-T17" src="{% static '/assets/delete-77T.png' %}"/>
+          </div>
+        </div>
+      </div>
+
+      <!-- Educational Document -->
+
+      <div class="personal-documement-bDF" id="educationalDocumentToggle" >
+        <div class="auto-group-8ieh-tTF">
+          <input class="rectangle-34-Bx9" type="checkbox"/>
+          <p class="personal-document-uNM">Educational Document</p>
+          <img  class="arrow-down-drop-circle-PoK" src="{% static '/assets/arrow-down-drop-circle-uvV.png' %}" />
+        </div>
+        <div class="line-1-JfP"></div>
+        <div class="auto-group-acaz-rB7" id="educationalDocument">
+          <div class="aadhar-mos">
+            <div class="rectangle-38-7cq">
+            </div>
+            <p class="aadhar-card-qoj">Aadhar Card</p>
+            <input class="rectangle-35-mBb" type="checkbox"/>
+            <img class="pencil-4gV" src="{% static '/assets/pencil-efw.png' %}"/>
+            <img class="delete-cCD" src="{% static '/assets/delete-Ery.png' %}"/>
+          </div>
+          <div class="pancard-M9o">
+            <div class="rectangle-38-4pu">
+            </div>
+            <p class="pan-card-yws">Pan Card</p>
+            <input class="rectangle-35-phb" type="checkbox"/>
+            <img class="pencil-9js" src="{% static '/assets/pencil-qty.png' %}"/>
+            <img class="delete-txM" src="{% static '/assets/delete-Nbo.png' %}"/>
+          </div>
+          <div class="voterid-heu">
+            <div class="rectangle-38-DdF">
+            </div>
+            <p class="voter-id-Zh7">Voter ID</p>
+            <input class="rectangle-35-g13" type="checkbox"/>
+            <img class="pencil-obT" src="{% static '/assets/pencil-HFT.png' %}"/>
+            <img class="delete-Yow" src="{% static '/assets/delete-mCh.png' %}"/>
+          </div>
+          <div class="voterid-Tg1">
+            <div class="rectangle-38-c37">
+            </div>
+            <p class="abc-card-kv1">ABC Card</p>
+            <input class="rectangle-35-Hf3" type="checkbox"/>
+            <img class="pencil-kYd" src="{% static '/assets/pencil-XX3.png' %}"/>
+            <img class="delete-gBP" src="{% static '/assets/delete-g9K.png' %}"/>
+          </div>
+          <div class="voterid-1zM">
+            <div class="rectangle-38-mTj">
+            </div>
+            <p class="health-card-ids">Health Card</p>
+            <input class="rectangle-35-rVB" type="checkbox"/>
+            <img class="pencil-ZeV" src="{% static '/assets/pencil-evR.png' %}"/>
+            <img class="delete-UFf" src="{% static '/assets/delete.png' %}"/>
+          </div>
+          <div class="voterid-CBf">
+            <div class="rectangle-38-K1P">
+            </div>
+            <p class="driving-license-s2u">Driving License</p>
+            <input class="rectangle-35-AXo" type="checkbox"/>
+            <img class="pencil-hXj" src="{% static '/assets/pencil-6Tw.png' %}"/>
+            <img class="delete-T17" src="{% static '/assets/delete-77T.png' %}"/>
+          </div>
+        </div>
+      </div> 
+      <!-- end Educational -->
+
+      <!-- Family Scholarship Document -->
+
+      <div class="personal-documement-bDF" id="familyDocumentToggle" >
+        <div class="auto-group-8ieh-tTF">
+          <input class="rectangle-34-Bx9" type="checkbox"/>
+          <p class="personal-document-uNM">Scholarship Document</p>
+          <img  class="arrow-down-drop-circle-PoK" src="{% static '/assets/arrow-down-drop-circle-uvV.png' %}" />
+        </div>
+        <div class="line-1-JfP"></div>
+        <div class="auto-group-acaz-rB7"  id="scholarshipDocument">
+          <div class="aadhar-mos">
+            <div class="rectangle-38-7cq">
+            </div>
+            <p class="aadhar-card-qoj">Aadhar Card</p>
+            <input class="rectangle-35-mBb" type="checkbox"/>
+            <img class="pencil-4gV" src="{% static '/assets/pencil-efw.png' %}"/>
+            <img class="delete-cCD" src="{% static '/assets/delete-Ery.png' %}"/>
+          </div>
+          <div class="pancard-M9o">
+            <div class="rectangle-38-4pu">
+            </div>
+            <p class="pan-card-yws">Pan Card</p>
+            <input class="rectangle-35-phb" type="checkbox"/>
+            <img class="pencil-9js" src="{% static '/assets/pencil-qty.png' %}"/>
+            <img class="delete-txM" src="{% static '/assets/delete-Nbo.png' %}"/>
+          </div>
+          <div class="voterid-heu">
+            <div class="rectangle-38-DdF">
+            </div>
+            <p class="voter-id-Zh7">Voter ID</p>
+            <input class="rectangle-35-g13" type="checkbox"/>
+            <img class="pencil-obT" src="{% static '/assets/pencil-HFT.png' %}"/>
+            <img class="delete-Yow" src="{% static '/assets/delete-mCh.png' %}"/>
+          </div>
+          <div class="voterid-Tg1">
+            <div class="rectangle-38-c37">
+            </div>
+            <p class="abc-card-kv1">ABC Card</p>
+            <input class="rectangle-35-Hf3" type="checkbox"/>
+            <img class="pencil-kYd" src="{% static '/assets/pencil-XX3.png' %}"/>
+            <img class="delete-gBP" src="{% static '/assets/delete-g9K.png' %}"/>
+          </div>
+          <div class="voterid-1zM">
+            <div class="rectangle-38-mTj">
+            </div>
+            <p class="health-card-ids">Health Card</p>
+            <input class="rectangle-35-rVB" type="checkbox"/>
+            <img class="pencil-ZeV" src="{% static '/assets/pencil-evR.png' %}"/>
+            <img class="delete-UFf" src="{% static '/assets/delete.png' %}"/>
+          </div>
+          <div class="voterid-CBf">
+            <div class="rectangle-38-K1P">
+            </div>
+            <p class="driving-license-s2u">Driving License</p>
+            <input class="rectangle-35-AXo" type="checkbox"/>
+            <img class="pencil-hXj" src="{% static '/assets/pencil-6Tw.png' %}"/>
+            <img class="delete-T17" src="{% static '/assets/delete-77T.png' %}"/>
+          </div>
+        </div>
+      </div> 
+
+      <!-- Family Scholaeship Document -->
+      
+      <div class="personal-documement-bDF" id="OtherDocumentToggle">
+        <div class="auto-group-8ieh-tTF">
+          <input class="rectangle-34-Bx9" type="checkbox"/>
+          <p class="personal-document-uNM">Other Document</p>
+          <img  class="arrow-down-drop-circle-PoK" src="{% static '/assets/arrow-down-drop-circle-uvV.png' %}" />
+        </div>
+        <div class="line-1-JfP"></div>
+        <div class="auto-group-acaz-rB7" id="otherDocument">
+          <div class="aadhar-mos">
+            <div class="rectangle-38-7cq">
+            </div>
+            <p class="aadhar-card-qoj">Electricity Bill</p>
+            <input class="rectangle-35-mBb" type="checkbox"/>
+            <img class="pencil-4gV" src="{% static '/assets/pencil-efw.png' %}"/>
+            <img class="delete-cCD" src="{% static '/assets/delete-Ery.png' %}"/>
+          </div>
+          <div class="pancard-M9o">
+            <div class="rectangle-38-4pu">
+            </div>
+            <p class="pan-card-yws">Rent</p>
+            <input class="rectangle-35-phb" type="checkbox"/>
+            <img class="pencil-9js" src="{% static '/assets/pencil-qty.png' %}"/>
+            <img class="delete-txM" src="{% static '/assets/delete-Nbo.png' %}"/>
+          </div>
+          <div class="voterid-heu">
+            <div class="rectangle-38-DdF">
+            </div>
+            <p class="voter-id-Zh7">Prarup 1</p>
+            <input class="rectangle-35-g13" type="checkbox"/>
+            <img class="pencil-obT" src="{% static '/assets/pencil-HFT.png' %}"/>
+            <img class="delete-Yow" src="{% static '/assets/delete-mCh.png' %}"/>
+          </div>
+          <div class="voterid-Tg1">
+            <div class="rectangle-38-c37">
+            </div>
+            <p class="abc-card-kv1">ABC Card</p>
+            <input class="rectangle-35-Hf3" type="checkbox"/>
+            <img class="pencil-kYd" src="{% static '/assets/pencil-XX3.png' %}"/>
+            <img class="delete-gBP" src="{% static '/assets/delete-g9K.png' %}"/>
+          </div>
+          <div class="voterid-1zM">
+            <div class="rectangle-38-mTj">
+            </div>
+            <p class="health-card-ids">Health Card</p>
+            <input class="rectangle-35-rVB" type="checkbox"/>
+            <img class="pencil-ZeV" src="{% static '/assets/pencil-evR.png' %}"/>
+            <img class="delete-UFf" src="{% static '/assets/delete.png' %}"/>
+          </div>
+          <div class="voterid-CBf">
+            <div class="rectangle-38-K1P">
+            </div>
+            <p class="driving-license-s2u">Driving License</p>
+            <input class="rectangle-35-AXo" type="checkbox"/>
+            <img class="pencil-hXj" src="{% static '/assets/pencil-6Tw.png' %}"/>
+            <img class="delete-T17" src="{% static '/assets/delete-77T.png' %}"/>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <div class="menu-Qp5">
+    <div class="frame-2-7iV">
+      <div class="group-7-rg5">
+        <a href="{% url 'dashboard' %}">
+        <div class="rectangle-21-bdf"></div>
+        <div class="documents-ueM">Documents</div>
+        <img class="file-document-ERj" src="{% static '/assets/file-document-gwf.png' %}"/>
+      </a>
+      </div>
+      <div class="group-7-rg5">
+        <a href="{% url 'opportunities' %}">
+        <div class="rectangle-21-bdf">
+        </div>
+        <div class="documents-ueM">Oppurtunities</div>
+        <img class="file-document-ERj" src="{% static '/assets/lightbulb-on-10-6v1.png' %}"/>
+      </a>
+      </div>
+      <div class="group-7-rg5">
+        <a href="{% url 'issuedDocs' %}">
+        <div class="rectangle-21-bdf">
+        </div>
+        <div class="documents-ueM">Issued</div>
+        <img class="file-document-ERj" src="{% static '/assets/file-document-check-17j.png' %}"/>
+      </a>
+      </div>
+      <div class="group-7-rg5">
+        <a href="{% url 'scolar' %}">
+        <div class="rectangle-21-bdf">
+        </div>
+        <div class="documents-ueM">Scholarships</div>
+        <img class="file-document-ERj" src="{% static '/assets/cash-multiple-pDT.png' %}"/>
+      </a>
+      </div>
+      <div class="group-7-rg5">
+        <a href="{% url 'faq' %}">
+        <div class="rectangle-21-bdf">
+        </div>
+        <div class="documents-ueM">FAQ’s</div>
+        <img class="file-document-ERj" src="{% static '/assets/progress-question-fQ9.png' %}"/>
+      </a>
+      </div>
+
+    </div>
+  </div>
+  <div class="header-7LR">
+    <div class="rectangle-2-4Ff">
+    </div>
+    <img class="bcd3b4b5d471dae27a60bd4b5f07-1-9nu" src="{% static '/assets/bcd3b4b5d471dae27a60bd4b5f07-1-kMs.png' %}"/>
+    <img class="account-circle-tEh" src="{% static '/assets/account-circle-HeV.png' %}"/>
+    <div class="yourparagraphtext1-removebg-preview-1-BUh">
+    </div>
+    <p class="ezfill-GW9">Ezfill</p>
+    <img class="bell-ArR" src="{% static '/assets/bell-PhP.png' %}"/>
+  </div>
+
+</div>
+<script src="{% static 'JS/DropdownJS' %}"></script>
+</body>
