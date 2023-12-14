@@ -1,11 +1,43 @@
 from django import forms
 from django.contrib.auth.forms import UserCreationForm
 from main_app import models
+from user_app.models import UploadForm,document_choice
 
 
 """
 User authentication form
 """
+
+class UploadFormDoc(forms.ModelForm):
+
+    document_type = forms.ChoiceField(
+        choices=document_choice,
+        widget=forms.Select(attrs={
+
+            'class': "rectangle-46-CLu"
+
+        })
+    )
+
+
+    document_number = forms.IntegerField(
+        widget=forms.NumberInput(attrs={
+            'class': "rectangle-45-acM"
+        })
+    )
+
+    document = forms.FileField(
+        widget=forms.FileInput(attrs={
+            'class': "rectangle-45-1bB",
+            'type': 'file'
+        })
+    )
+
+    class Meta:
+        model = UploadForm
+        fields = ('document_type', 'document_number', 'document')
+
+
 
 
 
@@ -150,13 +182,6 @@ class ScolarShipForm(forms.Form):
 
 
 
-
-class ScolarForm(forms.Form):
-    caste = forms.IntegerField(
-        widget=forms.NumberInput(attrs={
-            'class': 'rectangle-55-Y7f'
-        })
-    )
 
 
 

@@ -17,6 +17,8 @@ urlpatterns = [
     path("opportunity", views.oportunity_view, name='opportunities'),
     path("issued_doc", views.issued_view, name='issuedDocs'),
     path("scolar", views.scholar_view, name='scolar'),
+    path("uploadDoc", views.upload_doc, name='uploadDoc'),
+    path('userAccount', views.userView, name='profile'),
 
     path("scolarShip/<int:number>", views.scholarShip, name='scolarShip'),
     

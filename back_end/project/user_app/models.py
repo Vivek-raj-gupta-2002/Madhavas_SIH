@@ -31,7 +31,7 @@ class UploadForm(models.Model):
 
     document_type = models.CharField(max_length=100, choices=document_choice)
 
-    documnet_number = models.BigIntegerField()
+    document_number = models.BigIntegerField()
 
     document = models.FileField(upload_to='documents')
 

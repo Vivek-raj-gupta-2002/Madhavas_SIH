@@ -61,6 +61,7 @@ issued_view
 oportunity_view
 FAQ
 logout_view
+upload_doc
 dashboard_view
 login_view
 signup
@@ -69,10 +70,49 @@ send_otp
 """
 
 @require_http_methods(["GET"])
-def issued_view(request):
-    # if not authenticated
+def userView(request):
     if not(request.user.is_authenticated):
+        # redirecte the user to login page
         return redirect('login')
+
+    my_user = CustomUser.objects.filter(username = request.user.username).first()
+
+    if not my_user:
+        # if user not found
+        return Http404()
+
+    #if not student
+    if not(my_user.is_student):
+        return redirect('dashboard')
+    
+    send_data = {
+        'user_data': my_user
+    }
+    send_data['gender'] = my_user.get_gender_display()
+
+    return render(request, 'user_app/account.html', send_data)
+
+
+
+
+@require_http_methods(["GET"])
+def issued_view(request):
+
+    if not(request.user.is_authenticated):
+        # redirecte the user to login page
+        return redirect('login')
+
+    my_user = CustomUser.objects.filter(username = request.user.username).first()
+
+    if not my_user:
+        # if user not found
+        return Http404()
+
+    #if not student
+    if not(my_user.is_student):
+        return redirect('dashboard')
+
+    
 
     return render(request, 'user_app/issueddocuments.html')
 
@@ -80,18 +120,44 @@ def issued_view(request):
 
 @require_http_methods(["GET"])
 def scholar_view(request):
-    # if not authenticated
+
     if not(request.user.is_authenticated):
+        # redirecte the user to login page
         return redirect('login')
+
+    my_user = CustomUser.objects.filter(username = request.user.username).first()
+
+    if not my_user:
+        # if user not found
+        return Http404()
+
+    #if not student
+    if not(my_user.is_student):
+        return redirect('dashboard')
+
+    
 
     return render(request, 'user_app/scholarships-AwP.html')
 
 
 @require_http_methods(["GET"])
 def oportunity_view(request):
-    # if not authenticated
+
     if not(request.user.is_authenticated):
+        # redirecte the user to login page
         return redirect('login')
+
+    my_user = CustomUser.objects.filter(username = request.user.username).first()
+
+    if not my_user:
+        # if user not found
+        return Http404()
+
+    #if not student
+    if not(my_user.is_student):
+        return redirect('dashboard')
+
+    
 
     return render(request, 'user_app/eziiii-oppurtunities.html')
 
@@ -108,10 +174,44 @@ def logout_view(request):
     
     return redirect('login')
 
-# the dashboard
 
+
+# upload document in dashboard
+@require_http_methods(["POST"])
+def upload_doc(request):
+    if not(request.user.is_authenticated):
+        # redirecte the user to login page
+        return redirect('login')
+
+    my_user = CustomUser.objects.filter(username = request.user.username).first()
+
+    if not my_user:
+        # if user not found
+        return Http404()
+
+    #if not student
+    if not(my_user.is_student):
+        return redirect('dashboard')
+
+    my_form = forms.UploadFormDoc(request.POST, request.FILES)
+
+    # print(my_form)
+
+    # print(my_form['document_number'].value(), my_form['document_type'].value(), my_form['document'].value(), sep='\n')
+
+    # validated the form 
+    if my_form.is_valid():
+        # saved the data
+        instance = my_form.save(commit=False)
+        instance.user = my_user
+        instance.save()
+
+    return redirect('dashboard')
+
+
+# the dashboard
 # to show up all the data
-@require_http_methods(["GET"])
+@require_http_methods(["GET", 'POST'])
 def dashboard_view(request):
     
     #if user is not authenticated
@@ -132,6 +232,8 @@ def dashboard_view(request):
     if not(my_user.is_student):
         return HttpResponse("institute user")
     
+    my_form = forms.UploadFormDoc()
+    
     # the correct user:
 
     # aadhar data and marks data
@@ -143,7 +245,11 @@ def dashboard_view(request):
     
     send_data = {}
 
+
     # alligned them correctly
+
+    
+    send_data['form'] = my_form
     
     if data:
         send_data['aadhar']= data
@@ -185,7 +291,7 @@ def dashboard_view(request):
             continue
 
     
-
+        print(send_data)
     send_data['upload'] = upload_docs
     
     return render(request, 'user_app/eziiii.html', send_data)

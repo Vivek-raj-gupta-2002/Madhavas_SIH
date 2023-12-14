@@ -117,6 +117,9 @@ class CustomUser(AbstractUser):
         'gender',
         'email'
     ]
+
+    def get_gender_display(self):
+        return dict(gender_choices)[self.gender]
     
 # all dummy database defination
 class AadharInfo(models.Model):
