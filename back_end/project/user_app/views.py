@@ -5,6 +5,8 @@ from main_app.models import OneTimePass, CustomUser, College
 from . import models
 from . import forms
 
+from institute.models import Scholarship_model
+
 from django.views.decorators.http import require_http_methods
 from utills import mail, dummy_data, valid_otp
 from django.http import HttpResponse, Http404
@@ -16,15 +18,6 @@ from django.contrib.auth import authenticate, login, logout
 links = {
     'scholar': 'https://cdn.s3waas.gov.in/s31385974ed5904a438616ff7bdb3f7439/uploads/2019/06/2019062152.jpg'
 }
-
-# Create your views here.
-@require_http_methods(["GET", "POST"])
-def scholar(request):
-    my_form = forms.ScolarShipForm()
-
-    
-    return render(request, "main.html", {'form': my_form})
-    
 
 
 @require_http_methods(["GET", "POST"])
@@ -112,9 +105,14 @@ def issued_view(request):
     if not(my_user.is_student):
         return redirect('dashboard')
 
-    
+    send_data = {}
 
-    return render(request, 'user_app/issueddocuments.html')
+    data = dummy_data.get_aadhar(aadhar_no=my_user.aadhar_number)
+    
+    if data:
+        send_data['aadhar'] = data
+
+    return render(request, 'user_app/issueddocuments.html', send_data)
 
 
 
@@ -124,6 +122,8 @@ def scholar_view(request):
     if not(request.user.is_authenticated):
         # redirecte the user to login page
         return redirect('login')
+    
+    
 
     my_user = CustomUser.objects.filter(username = request.user.username).first()
 
@@ -135,9 +135,19 @@ def scholar_view(request):
     if not(my_user.is_student):
         return redirect('dashboard')
 
-    
+    send_data = {}
 
-    return render(request, 'user_app/scholarships-AwP.html')
+    data = dummy_data.get_aadhar(aadhar_no=my_user.aadhar_number)
+    
+    if data:
+        send_data['aadhar'] = data
+
+    
+    
+    send_data['scholarship'] = Scholarship_model.objects.all()
+
+
+    return render(request, 'user_app/scholarships-AwP.html', send_data)
 
 
 @require_http_methods(["GET"])
@@ -157,14 +167,32 @@ def oportunity_view(request):
     if not(my_user.is_student):
         return redirect('dashboard')
 
-    
+    send_data = {}
 
-    return render(request, 'user_app/eziiii-oppurtunities.html')
+    data = dummy_data.get_aadhar(aadhar_no=my_user.aadhar_number)
+    
+    if data:
+        send_data['aadhar'] = data
+
+    return render(request, 'user_app/eziiii-oppurtunities.html', send_data)
 
 #FAQ
 @require_http_methods(["GET"])
 def FAQ(request):
-    return render(request, 'user_app/faq-18H.html')
+    if not(request.user.is_authenticated):
+        # redirecte the user to login page
+        return redirect('login')
+
+    my_user = CustomUser.objects.filter(username = request.user.username).first()
+
+
+    send_data = {}
+
+    data = dummy_data.get_aadhar(aadhar_no=my_user.aadhar_number)
+    
+    if data:
+        send_data['aadhar'] = data
+    return render(request, 'user_app/faq-18H.html', send_data)
 
 
 # the Logging the user out

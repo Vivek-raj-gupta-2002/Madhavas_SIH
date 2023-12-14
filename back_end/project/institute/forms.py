@@ -29,7 +29,7 @@ class InternForm(forms.Form):
         widget=forms.TextInput(attrs={'class': 'shortdiscription-dKj'})
     )
     class Meta:
-        model = models.InternJob
+        model = models.InternJob_model
         fields = ['orga_name','da_to' , 'da_from' , 'skill_req' , 'no_openning', 'max_pay',' min_pay','short_desc']
     
 
@@ -65,5 +65,5 @@ class ScholarForm(forms.Form):
         widget=forms.TextInput(attrs={'class': 'auto-group-vw2q-95P'})
     )
     class Meta: 
-        model = models.Scholarship
+        model = models.Scholarship_model
         fields = ['orga_name','da_to' , 'da_from' , 'min_percent' , 'amount_given', 'on_mode','off_mode','short_desc']
