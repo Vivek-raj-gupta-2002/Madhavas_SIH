@@ -1,6 +1,8 @@
 
 html {
-	font-size:62.5%;
+	font-size:59.5%;
+  width: 100vw;
+  height: 100vh;
 }
 * {
 	margin: 0;
@@ -13,11 +15,13 @@ input {
 	border: none;
 }
 body {
-  width: 144rem;
-}.scholarshipform4-iPF {
+  width: 100vw;
+  height: 100vh;
+}
+.scholarshipform4-iPF {
+  width: 100vw;
   box-sizing: border-box;
   padding: 0.6rem 0rem 3.8rem 0rem;
-  width: 100%;
   overflow: hidden;
   position: relative;
   align-items: center;
@@ -29,7 +33,6 @@ body {
   margin-bottom: 0.6rem;
   box-sizing: border-box;
   padding-right: 84rem;
-  width: 100%;
   display: flex;
   align-items: center;
   box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25), 0 0.8rem 0.4rem rgba(0, 0, 0, 0.4399999976);

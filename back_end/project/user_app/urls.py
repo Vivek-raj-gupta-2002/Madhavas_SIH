@@ -13,9 +13,12 @@ urlpatterns = [
     path("createUser", views.signup, name='signup'),
     path("loginUser", views.login_view, name='login'),
     path("", views.dashboard_view, name='dashboard'),
-    path("scholar", views.scholar, name='scholar'),
-    
-    path("scolarShip/<int:number>", views.scholarShip, name='scolarShip')    
+    path("faq", views.FAQ, name='faq'),
+    path("opportunity", views.oportunity_view, name='opportunities'),
+    path("issued_doc", views.issued_view, name='issuedDocs'),
+    path("scolar", views.scholar_view, name='scolar'),
+
+    path("scolarShip/<int:number>", views.scholarShip, name='scolarShip'),
     
 
 ]

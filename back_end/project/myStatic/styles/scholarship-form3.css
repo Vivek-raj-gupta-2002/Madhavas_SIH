@@ -1,6 +1,7 @@
 
 html {
-	font-size:62.5%;
+	font-size:59.5%;
+  width: 100vw;
 }
 * {
 	margin: 0;
@@ -13,11 +14,12 @@ input {
 	border: none;
 }
 body {
-  width: 144rem;
-}.scholarship-form3-u6m {
+  width: 100vw;
+}
+.scholarship-form3-u6m {
+  width: 100vw;
   box-sizing: border-box;
   padding-bottom: 12rem;
-  width: 100%;
   overflow: hidden;
   position: relative;
   align-items: center;
@@ -169,8 +171,7 @@ body {
   align-items: baseline;
   flex-shrink: 0;
 }
-.scholarship-form3-u6m .bank-detail-from-HFj .account-number-jBb .account-number-Srh .account-number-Srh-sub-0 {
-}
+
 .scholarship-form3-u6m .bank-detail-from-HFj .account-number-jBb .account-number-Srh .account-number-Srh-sub-1 {
   font-size: 2.4rem;
   font-weight: 400;
@@ -207,8 +208,6 @@ body {
   display: flex;
   align-items: baseline;
   flex-shrink: 0;
-}
-.scholarship-form3-u6m .bank-detail-from-HFj .isfc-number-9Pj .ifsc-number-row .ifsc-number-row-sub-0 {
 }
 .scholarship-form3-u6m .bank-detail-from-HFj .isfc-number-9Pj .ifsc-number-row .ifsc-number-row-sub-1 {
   font-size: 2.4rem;

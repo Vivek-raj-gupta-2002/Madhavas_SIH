@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jomolhari%3A400"/>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro%3A400%2C700"/>
   <link rel="stylesheet" href="{% static '/styles/eziiii.css' %}"/>
+  <link rel="stylesheet" href="{% static '/styles/frame-21.css' %}"/>
 </head>
 <body>
 <div class="eziiii-a61">
@@ -227,8 +228,11 @@
           
           {% endfor %}
 
-
-          
+          <div class="aadhar-fGq">
+            <img class="rectangle-5-otq" src="{% static '/assets/rectangle-5.png'%}"/>
+            <p class="domicile-certificate-Z7K">Upload Document</p>
+            
+          </div>          
 
 
         </div>
@@ -245,7 +249,7 @@
       </a>
       </div>
       <div class="group-7-rg5">
-        <a href="eziiii-oppurtunities.html">
+        <a href="{% url 'opportunities' %}">
         <div class="rectangle-21-bdf">
         </div>
         <div class="documents-ueM">Oppurtunities</div>
@@ -253,7 +257,7 @@
       </a>
       </div>
       <div class="group-7-rg5">
-        <a href="issueddocuments.html">
+        <a href="{% url 'issuedDocs' %}">
         <div class="rectangle-21-bdf">
         </div>
         <div class="documents-ueM">Issued</div>
@@ -261,7 +265,7 @@
       </a>
       </div>
       <div class="group-7-rg5">
-        <a href="scholarships-AwP.html">
+        <a href="{% url 'scolar' %}">
         <div class="rectangle-21-bdf">
         </div>
         <div class="documents-ueM">Scholarships</div>
@@ -269,7 +273,7 @@
       </a>
       </div>
       <div class="group-7-rg5">
-        <a href="faq-18H.html">
+        <a href="{% url 'faq' %}">
         <div class="rectangle-21-bdf">
         </div>
         <div class="documents-ueM">FAQ’s</div>
@@ -283,12 +287,36 @@
     <div class="rectangle-2-4Ff">
     </div>
     <img class="bcd3b4b5d471dae27a60bd4b5f07-1-9nu" src="{% static '/assets/bcd3b4b5d471dae27a60bd4b5f07-1-kMs.png' %}"/>
-    <img class="account-circle-tEh" src="{% static '/assets/account-circle-HeV.png' %}"/>
-    <div class="yourparagraphtext1-removebg-preview-1-BUh">
-    </div>
+    <img id="myBtn" class="account-circle-tEh" src="{% static '/assets/account-circle-HeV.png' %}"/>
+    <div class="yourparagraphtext1-removebg-preview-1-BUh"></div>
     <p class="ezfill-GW9">Ezfill</p>
     <img class="bell-ArR" src="{% static '/assets/bell-PhP.png' %}"/>
+    <!-- PopUpBox -->
+    <div id="myModal" class=" modal">
+      <div class=" modal-content">
+        <span class="close">&times;</span>
+        <div class="frame-21-6ZB">
+         <div class="auto-group-gydb-QJy">
+        <div class="ellipse-46-To3">
+        </div>
+        <div class="auto-group-msgm-ymP">
+          <p class="raman-yadav-76u">Raman Yadav</p>
+          <p class="ramanya-CPF">@ramanya</p>
+        </div>
+        <div class="auto-group-xbzf-6zR">Manage Your Account</div>
+      </div>
+      <div class="yourfrofile-kp5">
+        <img class="account-fg9" src="{% static '/assets/account.png' %}"/>
+        <p class="your-profile-mjB">Your Profile</p>
+      </div>
+      <div class="activities-SqK">
+        <img class="bell-badge-PEm" src="{% static '/assets/bell-badge.png' %}"/>
+        <p class="activities-w1P">Activities</p>
+      </div>
+      </div>
+    </div>
+   </div>
   </div>
 </div>
-
+<script src="{% static '/JS/AccountPopUP.js' %}"></script>
 </body>
