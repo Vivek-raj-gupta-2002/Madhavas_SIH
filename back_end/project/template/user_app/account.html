@@ -1,0 +1,62 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <title>Account</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=jsMath-cmbx10%3A700"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro%3A700"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans%3A700"/>
+  <link rel="stylesheet" href="{% static '/styles/account.css' %}"/>
+</head>
+<body>
+<div class="account-sjB">
+  <div class="header-cRs">
+    <div class="header-vhT">
+      <img class="bcd3b4b5d471dae27a60bd4b5f07-1-3n5" src="{% static '/assets/bcd3b4b5d471dae27a60bd4b5f07-1-WX7.png' %}"/>
+      <img class="bell-a1K" src="{% static '/assets/bell-Gkd.png' %}"/>
+      <img class="account-circle-6kM" src="{% static '/assets/account-circle-Vf3.png' %}"/>
+    </div>
+    <div class="yourparagraphtext1-removebg-preview-1-yZF">
+    </div>
+    <p class="ezfill-fS5">Ezfill</p>
+  </div>
+  <div class="card-login-sign-up-mV7">
+    <div class="usercard-3Sd">
+      <div class="auto-group-klc5-zcm">
+        <p class="user-detail-Kuw">User Detail</p>
+        <img class="pencil-rQ5" src="{% static '/assets/pencil.png' %}"/>
+      </div>
+      <div class="auto-group-utdb-BBT">
+        <img class="ellipse-45-Kws" src="{% static '/assets/ellipse-45.png' %}"/>
+        <div class="user-details-4eZ">
+          <div class="frame-19-oc9">
+            <p class="name-gR3">Name</p>
+            <p class="dob-p1T">DOB</p>
+            <p class="mobile-Zjj">Mobile </p>
+            <p class="gender-VtH">Gender</p>
+            <p class="caste-SHj">Caste</p>
+            <p class="email-Bm7">Email</p>
+          </div>
+          <div class="frame-20-k3X">
+            <p class="raman-tQd">{{user_data.Name}}</p>
+            <p class="item-2-05-2004-Nah">{{user_data.dob}}</p>
+            <p class="item-46523465556-g5b">{{user_data.phone_number}}</p>
+            <p class="male-iY5">{{gender}}</p>
+            <p class="general-Qfo">{{user_data.caste}}</p>
+            <p class="sih2023gmailcom-Yn1">{{user_data.email}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="add-nominee-button-A2h">
+      <p class="nominee-detail-rw7">Nominee Detail</p>
+      <div class="auto-group-opdj-HmX">+Add Nominee Detail</div>
+    </div>
+  </div>
+</div>
+</body>

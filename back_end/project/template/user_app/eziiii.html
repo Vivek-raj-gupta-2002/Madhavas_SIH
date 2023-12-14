@@ -137,12 +137,7 @@
 
           {% endfor %}
 
-          <div class="voterid-eHK">
-            <div class="auto-group-mcdt-PEu">
-              <img class="plus-thick-XM7" src="{% static '/assets/plus-thick.png' %}"/>
-              <p class="upload-now-EFX">Upload now</p>
-            </div>
-          </div>
+          
           
         </div>
       </div>
@@ -239,41 +234,51 @@
         </div>
       </div>
     </div>
+
+
+
     <!-- FetchDocumentPopup -->
+
+    <form action="{% url 'uploadDoc' %}" method="post" enctype="multipart/form-data">
+      {% csrf_token %}
     <div id="fchmyModal" class=" fchmodal">
       <div class=" fchmodal-content">
         <span class="fchclose">&times;</span>
     <div class="fetch-document-ANH">
       <div class="card-login-sign-up-KW5">
-        <div class="auto-group-ptc9-s1o">Fetch Your Document</div>
+        <div class="auto-group-ptc9-s1o">Upload Your Document</div>
         <div class="sign-up-7gq">
           <div class="auto-group-nudf-2J1">
             <div class="mobile-number-yj3">
               <p class="document-type-iRj">Document Type</p>
-              <select class="rectangle-46-CLu">
-              </select>
+
+              {{form.document_type}}
+              <!-- <select class="rectangle-46-CLu"> -->
+              <!-- </select> -->
             </div>
             <div class="name-field-jLq">
               <p class="document-no-fEV">Document No.</p>
-              <input class="rectangle-45-acM" type="text"/>
+
+              {{form.document_number}}
+
+              <!-- <input class="rectangle-45-acM" type="text"/> -->
             </div>
           </div>
-          <div class="state-7sB">
-            <p class="state-t7F">State</p>
-            <select class="rectangle-45-pFo">
-            </select>
-          </div>
+          
           <div class="state-ic5">
-            <p class="district-sE5">District</p>
-            <select class="rectangle-45-1bB">
-            </select>
+            <p class="district-sE5">Upload</p>
+
+            {{form.document}}
+            
           </div>
-          <div class="auto-group-jz9p-MQ9">Submit</div>
+          <button class="auto-group-jz9p-MQ9" type="submit">Submit</button>
         </div>
       </div>
     </div>
       </div>
     </div>
+
+  </form>
   </div>
   <div class="menu-Qp5">
     <div class="frame-2-7iV">
@@ -336,17 +341,17 @@
         <div class="ellipse-46-To3">
         </div>
         <div class="auto-group-msgm-ymP">
-          <p class="raman-yadav-76u">Raman Yadav</p>
-          <p class="ramanya-CPF">@ramanya</p>
+          <p class="raman-yadav-76u">{{aadhar.holder_name}}</p>
+          <p class="ramanya-CPF">{{aadhar.aadhar_no}}</p>
         </div>
-        <div class="auto-group-xbzf-6zR">Manage Your Account
+        <a class="auto-group-xbzf-6zR"  href="{% url 'profile' %}">Manage Your Account
           .
-        </div>
+        </a>
       </div>
-      <div class="yourfrofile-kp5">
+      <a class="yourfrofile-kp5", href="{% url 'profile' %}">
         <img class="account-fg9" src="{% static '/assets/account.png' %}"/>
         <p class="your-profile-mjB">Your Profile</p>
-      </div>
+      </a>
       <div class="activities-SqK">
         <img class="bell-badge-PEm" src="{% static '/assets/bell-badge.png' %}"/>
         <p class="activities-w1P">Activities</p>
