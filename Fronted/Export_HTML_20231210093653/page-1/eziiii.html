@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro%3A400%2C700"/>
   <link rel="stylesheet" href="./styles/eziiii.css"/>
   <link rel="stylesheet" href="./styles/frame-21.css"/>
+  <link rel="stylesheet" href="./styles/fetch-document.css"/>
 </head>
 <body>
 <div class="eziiii-a61">
@@ -213,7 +214,7 @@
         </div>
         <div class="group-12-xtD">
           <div class="aadhar-fGq">
-            <img class="rectangle-5-otq" src="./assets/rectangle-5.png"/>
+            <img id="fchmyBtn" class="rectangle-5-otq" src="./assets/rectangle-5.png"/>
             <p class="domicile-certificate-Z7K">Domicile Certificate</p>
           </div>
           <div class="pancard-rs7">
@@ -229,6 +230,41 @@
             <p class="college-marksheet-6oP">College Marksheet</p>
           </div>
         </div>
+      </div>
+    </div>
+    <!-- FetchDocumentPopup -->
+    <div id="fchmyModal" class=" fchmodal">
+      <div class=" fchmodal-content">
+        <span class="fchclose">&times;</span>
+    <div class="fetch-document-ANH">
+      <div class="card-login-sign-up-KW5">
+        <div class="auto-group-ptc9-s1o">Fetch Your Document</div>
+        <div class="sign-up-7gq">
+          <div class="auto-group-nudf-2J1">
+            <div class="mobile-number-yj3">
+              <p class="document-type-iRj">Document Type</p>
+              <select class="rectangle-46-CLu">
+              </select>
+            </div>
+            <div class="name-field-jLq">
+              <p class="document-no-fEV">Document No.</p>
+              <input class="rectangle-45-acM" type="text"/>
+            </div>
+          </div>
+          <div class="state-7sB">
+            <p class="state-t7F">State</p>
+            <select class="rectangle-45-pFo">
+            </select>
+          </div>
+          <div class="state-ic5">
+            <p class="district-sE5">District</p>
+            <select class="rectangle-45-1bB">
+            </select>
+          </div>
+          <div class="auto-group-jz9p-MQ9">Submit</div>
+        </div>
+      </div>
+    </div>
       </div>
     </div>
   </div>
@@ -311,5 +347,6 @@
    </div>
   </div>
 </div>
+<script src="./JS/UploadDocument.js"></script>
 <script src="./JS/AccountPopUP.js"></script>
 </body>
