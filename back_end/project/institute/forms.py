@@ -40,7 +40,9 @@
 #         widget=forms.TextInput(attrs={'class': 'rectangle-72-9TT'})
 #     )
 
-#     dateforthetest = forms.DateField(
+#     dateforthetest = forms.DateFiel
+
+
 #         widget=forms.DateInput(attrs={'class': 'auto-group-juvd-qDo', 'type': 'date', })
 #     )
 #     dateforthetest1 = forms.DateField(

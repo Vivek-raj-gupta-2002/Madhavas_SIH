@@ -78,14 +78,10 @@
         <button class="generate-apui-uGy">Generate API</button>
       </div>
       <div class="code-ae1">
-        <p class="fetchhttps-fakestoreapicom-products-1-thenresresjson-thenjsonconsolelogjson-uRP">
+        <p id="textToCopy" class="fetchhttps-fakestoreapicom-products-1-thenresresjson-thenjsonconsolelogjson-uRP">
         fetch(&#39;https://fakestoreapi.com/products/1&#39;)
-        <br/>
-                    .then(res=&gt;res.json())
-        <br/>
-                    .then(json=&gt;console.log(json))
         </p>
-        <button class="auto-group-dh2u-MHP">Copy Code</button>
+        <button id="copyButton" onclick="copyText()" class="auto-group-dh2u-MHP">Copy Code</button>
       </div>
     </div>
     <div class="iframe-1sj">
@@ -168,4 +164,9 @@
     <img class="bell" src="./assets/bell-8j7.png"/>
   </div>
 </div>
+<script>
+  document.getElementById('copyButton').addEventListener('click', copyText);
+</script>
+<script src="./JS/CopyCode.js"></script>
 </body>
+</html>
