@@ -14,7 +14,7 @@ class Oppertunities_model(models.Model):
     is_online = models.BooleanField(default=False)
     is_offline = models.BooleanField(default=False)
     openings = models.IntegerField(null=True, blank=True)
-
+#    skills required,max pay,min pay
     is_scholarship = models.BooleanField(default=False)
     is_hack = models.BooleanField(default=False)
     is_intern = models.BooleanField(default=False)

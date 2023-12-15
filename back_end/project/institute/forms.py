@@ -1,22 +1,47 @@
 from django import forms
 from . import models
+from django import forms
+from . import models
+
+class ApiLoginForm(forms.Form):
+    username = forms.CharField(
+        widget=forms.TextInput(attrs={'class': 'rectangle-45-pdb'})
+    )
+
+    password = forms.CharField(
+        widget=forms.PasswordInput(attrs={'class': 'rectangle-45-pdb'}),  # this makes the input field for password to be hidden by default
+
+    )
+    
+    phone_number = forms.IntegerField(
+        widget=forms.NumberInput(attrs={'class': 'rectangle-45-pdb'})
+    )
+
+
 
 class InternForm(forms.Form):
-    organizationname = forms.CharField(
+    organiser = forms.CharField(
         widget=forms.TextInput(attrs={'class': 'rectangle-72-Mdo'})
     )
-    duration = forms.DateField(
+    title = forms.CharField(
+        widget=forms.TextInput(attrs={'class': 'rectangle-72-Mdo'})
+    )
+    logo = forms.FileField(
+        widget=forms.FileInput(attrs={'class': 'logo-input'})
+    )
+
+    Start_date = forms.DateField(
         widget=forms.DateInput(attrs={
             'class': 'auto-group-y15p-GPP', 'type': 'date',
         })
     )
-    duration1 = forms.DateField(
+    End_date = forms.DateField(
         widget=forms.DateInput(attrs={'class': 'auto-group-yzch-fgR', 'type': 'date', })
     )
     skillsrequired = forms.CharField(
         widget=forms.TextInput(attrs={'class': 'rectangle-75-hWd'})
     )
-    noofopening = forms.IntegerField(
+    openings = forms.IntegerField(
         widget=forms.NumberInput(attrs={'class': 'rectangle-81-XEm'})
     )
     maxpay = forms.IntegerField(
@@ -25,10 +50,14 @@ class InternForm(forms.Form):
     minpay = forms.IntegerField(
         widget=forms.NumberInput(attrs={'class': 'rectangle-80-wC1'})
     )
-    shortdiscription = forms.CharField(
+    apply = forms.URLField(
+        widget=forms.URLInput(attrs={'class':'rectangle-72-Mdo'})
+    ) 
+    description = forms.CharField(
         widget=forms.TextInput(attrs={'class': 'shortdiscription-dKj'})
     )
     class Meta:
+        
         fields = ['orga_name','da_to' , 'da_from' , 'skill_req' , 'no_openning', 'max_pay',' min_pay','short_desc']
     
 
