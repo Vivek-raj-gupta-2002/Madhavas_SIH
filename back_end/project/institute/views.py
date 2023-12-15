@@ -10,21 +10,36 @@ from utills import institute_data
 
 # Create your views here.
 @require_http_methods(["GET"])
-def state_name_view(request, type: str):
-    
-    if type.lower() == 'school':
-        data = institute_data.SchoolData()
-    elif type.lower() == 'college':
-        data = institute_data.CollegeData()
+def college_data_api(request, type: str):
 
+    data = None
+    if type == 'all':
+        data = institute_data.req_data_clg.to_json(orient='records')
+
+    get_data = institute_data.CollegeData()
+
+    for i in get_data.get_unique_state():
+        if str(i).lower() == type.lower():
+            data = get_data.get_state_data(str(i)).to_json(orient='records')
+            break
+    
+    if not data:
+        return Http404()
+
+    return JsonResponse({'responce': 'success', 'data': data})
+
+@require_http_methods(["GET"])
+def school_data_api(request, type: str):
+    data = ''
+    if type == 'all':
+        data = institute_data.req_data_school.to_json(orient='records')
+
+    elif type in institute_data.SchoolData().get_unique_state():
+        data = institute_data.SchoolData().get_state_data(type).to_json(orient='records') 
+    
     else:
         return Http404
-    
-    state = data.get_unique_state()
-
-
-
-    return JsonResponse({'res': ''})
+    return JsonResponse({'res': 'success', 'data': data})
 
 
 def api_dashboard_api(request):
@@ -40,11 +55,24 @@ def api_dashboard_api(request):
     
     send_data = {}
 
-    clg_data = institute_data.CollegeData()
     scl_data = institute_data.SchoolData()
 
-    send_data['col_state'] = clg_data.get_unique_state()
-    send_data['scl_state'] = scl_data.get_unique_state()
+    send_data['state'] = scl_data.get_unique_state()
+
+    
+
+    if request.GET['type'] == 'school':
+        # check for state
+        
+        formState = request.GET['state']
+
+        send_data['api'] = f'127.0.0.1:8000/institute/api/getScl/{formState}'
+
+    if request.GET['type'] == 'college':
+        formState = request.GET['state']
+
+        send_data['api'] = f'127.0.0.1:8000/institute/api/getClg/{formState}'
+
 
 
     return render(request, 'institute/eziiii-api.html', send_data)

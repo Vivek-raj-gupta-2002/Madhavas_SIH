@@ -19,38 +19,49 @@
 <div class="eziiii-api-32V">
   <div class="body-nVs">
     <div class="database-api-VfB">
+
+      <form action="{% url 'api_dashboard' %}" method="get">
+
       <div class="auto-group-ddv7-F8Z">
         <p class="centralised-data-for-institute-api-bCR">Centralised Data for Institute API</p>
         <div class="auto-group-rn8u-thK">
 
-          <select name="state" class="state-ctD">
+          <select name="type" class="state-ctD">
             <option value="">Clg/Scl</option>          
-            <option value="Clg">College</option>
-            <option value="Clg">School</option>
+            <option value="college">College</option>
+            <option value="school">School</option>
           </select>
 
-          <select class="type-Xdo" placeholder="State  ">
-            <option>Type</option>
-            <option>Private</option>
-            <option>overment</option>
+          <select class="type-Xdo" placeholder="State", name="state">
+            <option value="all">All</option>
+
+            {% for item in state %}
+            <option value="{{item}}">{{item}}</option>
+            {% endfor %}
+            
           </select>
 
-          <select class="type-Xdo" placeholder="scl/clg">
-            <option>Scl / Clg</option>
-            <option>....</option>
-            <option>....</option>
-          </select>
+          
 
         </div>
-        <button class="generate-apui-uGy">Generate API</button>
+        <button class="generate-apui-uGy" type="submit">Generate API</button>
       </div>
+
+    </form>
+
       <div class="code-ae1">
         <p class="fetchhttps-fakestoreapicom-products-1-thenresresjson-thenjsonconsolelogjson-uRP">
-        fetch(&#39;https://fakestoreapi.com/products/1&#39;)
-        <br/>
-                    .then(res=&gt;res.json())
-        <br/>
-                    .then(json=&gt;console.log(json))
+          import requests
+          <br>
+          url = "{{api}}"
+          <br>
+          payload = {}<br>
+          headers = {}<br>
+          <br>
+          response = requests.request("GET", url, headers=headers, data=payload)
+          <br>
+          print(response.text)
+          
         </p>
         <button class="auto-group-dh2u-MHP">Copy Code</button>
       </div>
