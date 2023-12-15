@@ -1,6 +1,13 @@
 # remember their are multiple types of user while authenticating
 from django.shortcuts import render, redirect
 
+from reportlab.lib.pagesizes import letter
+from reportlab.pdfgen import canvas
+from PIL import Image
+from io import BytesIO
+from django.conf import settings
+import os
+
 from main_app.models import OneTimePass, CustomUser, College
 from . import models
 from . import forms
@@ -86,6 +93,94 @@ def userView(request):
     return render(request, 'user_app/account.html', send_data)
 
 
+@require_http_methods(["GET"])
+def downloadDocpdf(request):
+
+    if not(request.user.is_authenticated):
+        # redirecte the user to login page
+        return redirect('login')
+
+    my_user = CustomUser.objects.filter(username = request.user.username).first()
+
+    if not my_user:
+        # if user not found
+        return Http404()
+
+    data = request.GET
+
+    dataPrint = models.UploadForm.objects.filter(user=my_user)
+
+    print_url = []
+    for item in data:
+        
+        if item not in ('all_personal', 'all_scholar', 'all_edu', 'allother'):
+            
+            req_data = dataPrint.filter(document_type=item).first()
+            if req_data:
+                print_url.append(req_data.document.url)
+
+            continue
+
+        if item == 'all_personal':
+            per_doc = (
+                'Pan Card', 'Voter Id', 'Health Card', 'ABC', 'Driving Licience', 'Aadhar Card',
+            )
+            for just in per_doc:
+                req_data = dataPrint.filter(document_type=just).first()
+                if req_data:
+                    print_url.append(req_data.document.url)
+
+
+        if item == 'all_edu':
+            per_doc = (
+           '10th Marksheet', '12th Marksheet', 'Migration', 'Trancerfer Certificate', 
+           'Marksheet', 'GAP Certificate', 'Admission Slip',
+        )
+            for just in per_doc:
+                req_data = dataPrint.filter(document_type=just).first()
+                if req_data:
+                    print_url.append(req_data.document.url)
+
+        if item == 'all_scholar':
+            per_doc = (
+            'Domacile', 'Income', 'Caste', 'Samagra', 'Bank Passbook'
+        )
+            for just in per_doc:
+                req_data = dataPrint.filter(document_type=just).first()
+                if req_data:
+                    print_url.append(req_data.document.url)
+        
+
+            if item == 'all_edu':
+                per_doc = ()
+                for just in per_doc:
+                    req_data = dataPrint.filter(document_type=just).first()
+                    if req_data:
+                        print_url.append(req_data.document.url)
+    
+    buffer = BytesIO()
+    pdf = canvas.Canvas(buffer, pagesize=letter)
+    
+    for i in print_url:
+        image_full_path = str(settings.BASE_DIR)+i
+
+        if os.path.exists(image_full_path):
+            # print("OHK")
+            # Open the image using PIL
+            img = Image.open(image_full_path)
+            # Create a PDF document using ReportLab
+            
+            pdf.drawInlineImage(img, 0, 0, width=letter[0], height=letter[1])
+            pdf.showPage()
+    pdf.save()
+
+    buffer.seek(0)
+
+    response = HttpResponse(content_type='application/pdf')
+    response['Content-Disposition'] = 'attachment; filename="images_to_pdf.pdf"'
+    response.write(buffer.read())
+    
+    return response 
 
 
 @require_http_methods(["GET"])
@@ -112,6 +207,53 @@ def issued_view(request):
     if data:
         send_data['aadhar'] = data
 
+    get_avaliable_doc = models.UploadForm.objects.filter(user=my_user)
+    
+
+    send_data['personal_doc'] = []
+    send_data['edu_doc'] = []
+    send_data['scholar_doc'] = []
+    send_data['other_doc'] = []
+    for i in get_avaliable_doc:
+        document_type = i.document_type
+
+        
+        
+        # personal Documents
+        if document_type in (
+            'Pan Card', 'Voter Id', 'Health Card', 'ABC', 'Driving Licience', 'Aadhar Card',
+        ):
+            
+           
+
+            
+            send_data['personal_doc'].append(document_type)
+            continue
+
+
+        # Educational Documents
+    
+        if document_type in (
+           '10th Marksheet', '12th Marksheet', 'Migration', 'Trancerfer Certificate', 
+           'Marksheet', 'GAP Certificate', 'Admission Slip',
+        ):
+            
+            
+            
+            send_data['edu_doc'].append(document_type)
+            continue
+
+        # Scholarship
+
+        if document_type in (
+            'Domacile', 'Income', 'Caste', 'Samagra', 'Bank Passbook'
+        ):
+            
+           
+            
+            send_data['scholar_doc'].append(document_type)
+            continue
+
     return render(request, 'user_app/issueddocuments.html', send_data)
 
 
@@ -122,8 +264,6 @@ def scholar_view(request):
     if not(request.user.is_authenticated):
         # redirecte the user to login page
         return redirect('login')
-    
-    
 
     my_user = CustomUser.objects.filter(username = request.user.username).first()
 
@@ -150,10 +290,9 @@ def scholar_view(request):
     for i in req_data:
         if i.is_scholarship:
             send_data['scholarship'].append(i)
-    
-
 
     return render(request, 'user_app/scholarships-AwP.html', send_data)
+
 
 
 @require_http_methods(["GET"])
@@ -240,22 +379,35 @@ def upload_doc(request):
     #if not student
     if not(my_user.is_student):
         return redirect('dashboard')
-
+    
     my_form = forms.UploadFormDoc(request.POST, request.FILES)
 
-    # print(my_form)
-
-    # print(my_form['document_number'].value(), my_form['document_type'].value(), my_form['document'].value(), sep='\n')
-
-    # validated the form 
     if my_form.is_valid():
-        # saved the data
-        instance = my_form.save(commit=False)
-        instance.user = my_user
-        instance.save()
+        # Get or create an instance based on user and document_type
+
+        exists = models.UploadForm.objects.filter(user=my_user, document_type=my_form.cleaned_data['document_type']).first()
+
+
+        if exists:
+
+            instance, created = models.UploadForm.objects.get_or_create(
+            user=my_user,
+            document_type=my_form.cleaned_data['document_type']
+        )
+
+            # If the instance already exists, check if the document has changed
+            if 'document' in my_form.changed_data:
+                # Update the existing instance with the new document
+                instance.document = my_form.cleaned_data['document']
+                instance.save()
+        
+        else:
+            
+            insta = my_form.save(commit=False)
+            insta.user = my_user
+            insta.save()
 
     return redirect('dashboard')
-
 
 # the dashboard
 # to show up all the data
@@ -339,7 +491,7 @@ def dashboard_view(request):
             continue
 
     
-        print(send_data)
+        
     send_data['upload'] = upload_docs
     
     return render(request, 'user_app/eziiii.html', send_data)
