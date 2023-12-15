@@ -91,17 +91,17 @@
         <div class="ellipse-46-To3">
         </div>
         <div class="auto-group-msgm-ymP">
-          <p class="raman-yadav-76u">Raman Yadav</p>
-          <p class="ramanya-CPF">@ramanya</p>
+          <p class="raman-yadav-76u">{{aadhar.holder_name}}</p>
+          <p class="ramanya-CPF">{{aadhar.aadhar_no}}</p>
         </div>
-        <div class="auto-group-xbzf-6zR">Manage Your Account
+        <a class="auto-group-xbzf-6zR"  href="{% url 'profile' %}">Manage Your Account
           .
-        </div>
+        </a>
       </div>
-      <div class="yourfrofile-kp5">
+      <a class="yourfrofile-kp5", href="{% url 'logout' %}">
         <img class="account-fg9" src="{% static '/assets/account.png' %}"/>
-        <p class="your-profile-mjB">Your Profile</p>
-      </div>
+        <p class="your-profile-mjB">Logout</p>
+      </a>
       <div class="activities-SqK">
         <img class="bell-badge-PEm" src="{% static '/assets/bell-badge.png' %}"/>
         <p class="activities-w1P">Activities</p>

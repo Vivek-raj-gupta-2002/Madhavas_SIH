@@ -22,43 +22,34 @@
     <p class="hackathons-cR3">Hackathons</p>
     <div class="frame-15-iU5">
       <div class="group-13-P4R">
+        {% for item in hack %}
         <div class="hackathon-card-vKF">
-          <div class="hackathon-img-Dp9">
-          </div>
+          <img src="{{item.logo.url}}" class="hackathon-img-Dp9">
+          
           <div class="title-dis-W2Z">
-            <p class="smart-india-hackathon-R9X">Smart India Hackathon</p>
-            <p class="organized-by-government-kSh">Organized by :- Government</p>
+            <p class="smart-india-hackathon-R9X">{{item.title}}</p>
+            <p class="organized-by-government-kSh">Organized by :- {{item.organiser}}</p>
             <p class="problem-statement-and-1-winner-for-every-solution-there-will-be-3-rounds-internal-hackathon-national-hackathon-finalist-hackathon-4iH">256 problem statement and 1 winner for every solution , there will be 3 rounds, internal Hackathon, national Hackathon, finalist Hackathon</p>
           </div>
           <div class="auto-group-5sbw-JMj">
-            <div class="register-now-duo">Register Now</div>
-            <div class="register-now-iwF"> More Detail</div>
+            <a class="register-now-duo" href="{{item.apply}}">Register Now</a>
+            <a class="register-now-iwF" href="{{item.apply}}"> More Detail</a>
           </div>
         </div>
-        <div class="hackathon-card-vKF">
-          <div class="hackathon-img-Dp9">
-          </div>
-          <div class="title-dis-W2Z">
-            <p class="smart-india-hackathon-R9X">Smart India Hackathon</p>
-            <p class="organized-by-government-kSh">Organized by :- Government</p>
-            <p class="problem-statement-and-1-winner-for-every-solution-there-will-be-3-rounds-internal-hackathon-national-hackathon-finalist-hackathon-4iH">256 problem statement and 1 winner for every solution , there will be 3 rounds, internal Hackathon, national Hackathon, finalist Hackathon</p>
-          </div>
-          <div class="auto-group-5sbw-JMj">
-            <div class="register-now-duo">Register Now</div>
-            <div class="register-now-iwF"> More Detail</div>
-          </div>
-        </div>
+        {% endfor %}
         
       </div>
     </div>
-    <p class="government-internships-hdP">Government Internships</p>
+    <p class="government-internships-hdP">Internships</p>
     <div class="auto-group-weqt-qjb">
       <div class="frame-16-yau">
+        
+        {% for item in intern %}
         <div class="internship-card-tC5">
-          <div class="job-tittle-Qw7">Business Analyst</div>
+          <div class="job-tittle-Qw7">{{item.title}}</div>
           <div class="auto-group-bstr-jTb">
-            <img class="internshiplogo-Hk1" src="{% static '/assets/internshiplogo.png' %}"/>
-            <p class="internshiptittle-dYy">National Informatics Center</p>
+            <img class="internshiplogo-Hk1" src="{{item.logo.url}}"/>
+            <p class="internshiptittle-dYy">{{item.organiser}}</p>
           </div>
           <div class="auto-group-ccld-8Eq">
             <div class="intrnshipinfo-eys">
@@ -68,202 +59,26 @@
               </div>
               <div class="auto-group-f6eh-aPf">
                 <div class="part-time-5bK">Part Time</div>
-                <div class="duration-1js">Duration</div>
-                <div class="months-wdX">3Months</div>
+                <div class="duration-1js">End Date</div>
+                <div class="months-wdX">{{item.End_date}}</div>
               </div>
               <img class="hand-coin-outline-UNZ" src="{% static '/assets/hand-coin-outline-nuB.png' %}"/>
               <div class="auto-group-fqfp-17b">
                 <div class="stipend-Mx9">Stipend</div>
-                <div class="item-5000--3py">₹5000/-</div>
+                <div class="item-5000--3py">{{item.amount}}/-</div>
               </div>
             </div>
             <div class="auto-group-gxq5-mW5">
-              <div class="apply-now-KGh">Apply Now</div>
-              <div class="moreinfo-yc9">More Info</div>
+              <a class="apply-now-KGh" href="{{item.apply}}">Apply Now</a>
+              <a class="moreinfo-yc9" href="{{item.apply}}">More Info</a>
             </div>
           </div>
         </div>
-        <div class="internship-card-tC5">
-          <div class="job-tittle-Qw7">Business Analyst</div>
-          <div class="auto-group-bstr-jTb">
-            <img class="internshiplogo-Hk1" src="{% static '/assets/internshiplogo.png' %}"/>
-            <p class="internshiptittle-dYy">National Informatics Center</p>
-          </div>
-          <div class="auto-group-ccld-8Eq">
-            <div class="intrnshipinfo-eys">
-              <div class="auto-group-sykb-mHo">
-                <img class="home-clock-outline-6ay" src="{% static '/assets/home-clock-outline.png' %}"/>
-                <img class="calendar-clock-rCm" src="{% static '/assets/calendar-clock-cFf.png' %}"/>
-              </div>
-              <div class="auto-group-f6eh-aPf">
-                <div class="part-time-5bK">Part Time</div>
-                <div class="duration-1js">Duration</div>
-                <div class="months-wdX">3Months</div>
-              </div>
-              <img class="hand-coin-outline-UNZ" src="{% static '/assets/hand-coin-outline-nuB.png' %}"/>
-              <div class="auto-group-fqfp-17b">
-                <div class="stipend-Mx9">Stipend</div>
-                <div class="item-5000--3py">₹5000/-</div>
-              </div>
-            </div>
-            <div class="auto-group-gxq5-mW5">
-              <div class="apply-now-KGh">Apply Now</div>
-              <div class="moreinfo-yc9">More Info</div>
-            </div>
-          </div>
-        </div>
-        <div class="internship-card-tC5">
-          <div class="job-tittle-Qw7">Business Analyst</div>
-          <div class="auto-group-bstr-jTb">
-            <img class="internshiplogo-Hk1" src="{% static '/assets/internshiplogo.png' %}"/>
-            <p class="internshiptittle-dYy">National Informatics Center</p>
-          </div>
-          <div class="auto-group-ccld-8Eq">
-            <div class="intrnshipinfo-eys">
-              <div class="auto-group-sykb-mHo">
-                <img class="home-clock-outline-6ay" src="{% static '/assets/home-clock-outline.png' %}"/>
-                <img class="calendar-clock-rCm" src="{% static '/assets/calendar-clock-cFf.png' %}"/>
-              </div>
-              <div class="auto-group-f6eh-aPf">
-                <div class="part-time-5bK">Part Time</div>
-                <div class="duration-1js">Duration</div>
-                <div class="months-wdX">3Months</div>
-              </div>
-              <img class="hand-coin-outline-UNZ" src="{% static '/assets/hand-coin-outline-nuB.png' %}"/>
-              <div class="auto-group-fqfp-17b">
-                <div class="stipend-Mx9">Stipend</div>
-                <div class="item-5000--3py">₹5000/-</div>
-              </div>
-            </div>
-            <div class="auto-group-gxq5-mW5">
-              <div class="apply-now-KGh">Apply Now</div>
-              <div class="moreinfo-yc9">More Info</div>
-            </div>
-          </div>
-        </div>
-        <div class="internship-card-tC5">
-          <div class="job-tittle-Qw7">Business Analyst</div>
-          <div class="auto-group-bstr-jTb">
-            <img class="internshiplogo-Hk1" src="{% static '/assets/internshiplogo.png' %}"/>
-            <p class="internshiptittle-dYy">National Informatics Center</p>
-          </div>
-          <div class="auto-group-ccld-8Eq">
-            <div class="intrnshipinfo-eys">
-              <div class="auto-group-sykb-mHo">
-                <img class="home-clock-outline-6ay" src="{% static '/assets/home-clock-outline.png' %}"/>
-                <img class="calendar-clock-rCm" src="{% static '/assets/calendar-clock-cFf.png' %}"/>
-              </div>
-              <div class="auto-group-f6eh-aPf">
-                <div class="part-time-5bK">Part Time</div>
-                <div class="duration-1js">Duration</div>
-                <div class="months-wdX">3Months</div>
-              </div>
-              <img class="hand-coin-outline-UNZ" src="{% static '/assets/hand-coin-outline-nuB.png' %}"/>
-              <div class="auto-group-fqfp-17b">
-                <div class="stipend-Mx9">Stipend</div>
-                <div class="item-5000--3py">₹5000/-</div>
-              </div>
-            </div>
-            <div class="auto-group-gxq5-mW5">
-              <div class="apply-now-KGh">Apply Now</div>
-              <div class="moreinfo-yc9">More Info</div>
-            </div>
-          </div>
-        </div>
+        {% endfor %}
         
         
       </div>
-      <p class="mncs-internships-1Su">MNC’s Internships</p>
-      <div class="frame-17-tFo">
-        <div class="internship-card-cxV">
-          <div class="job-tittle-M9P">Business Analyst</div>
-          <div class="auto-group-g6hs-UUu">
-            <img class="internshiplogo-q4Z" src="{% static '/assets/internshiplogo-q3s.png' %}"/>
-            <p class="internshiptittle-YzZ">National Informatics Center</p>
-          </div>
-          <div class="auto-group-tf4y-GvZ">
-            <div class="intrnshipinfo-CpD">
-              <div class="auto-group-ic3w-8Sy">
-                <img class="home-clock-outline-5t1" src="{% static '/assets/home-clock-outline-PGR.png' %}"/>
-                <img class="calendar-clock-Q9b" src="{% static '/assets/calendar-clock-2Uu.png' %}"/>
-              </div>
-              <div class="auto-group-pytp-xB7">
-                <div class="part-time-fbK">Part Time</div>
-                <div class="duration-aiH">Duration</div>
-                <div class="months-gWR">3Months</div>
-              </div>
-              <img class="hand-coin-outline-pMj" src="{% static '/assets/hand-coin-outline-cU5.png' %}"/>
-              <div class="auto-group-ju69-9eu">
-                <div class="stipend-ue5">Stipend</div>
-                <div class="item-5000--DPs">₹5000/-</div>
-              </div>
-            </div>
-            <div class="auto-group-rpgy-Yh3">
-              <div class="apply-now-JRK">Apply Now</div>
-              <div class="moreinfo-oN5">More Info</div>
-            </div>
-          </div>
-        </div>
-        <div class="internship-card-cxV">
-          <div class="job-tittle-M9P">Business Analyst</div>
-          <div class="auto-group-g6hs-UUu">
-            <img class="internshiplogo-q4Z" src="{% static '/assets/internshiplogo-q3s.png' %}"/>
-            <p class="internshiptittle-YzZ">National Informatics Center</p>
-          </div>
-          <div class="auto-group-tf4y-GvZ">
-            <div class="intrnshipinfo-CpD">
-              <div class="auto-group-ic3w-8Sy">
-                <img class="home-clock-outline-5t1" src="{% static '/assets/home-clock-outline-PGR.png' %}"/>
-                <img class="calendar-clock-Q9b" src="{% static '/assets/calendar-clock-2Uu.png' %}"/>
-              </div>
-              <div class="auto-group-pytp-xB7">
-                <div class="part-time-fbK">Part Time</div>
-                <div class="duration-aiH">Duration</div>
-                <div class="months-gWR">3Months</div>
-              </div>
-              <img class="hand-coin-outline-pMj" src="{% static '/assets/hand-coin-outline-cU5.png' %}"/>
-              <div class="auto-group-ju69-9eu">
-                <div class="stipend-ue5">Stipend</div>
-                <div class="item-5000--DPs">₹5000/-</div>
-              </div>
-            </div>
-            <div class="auto-group-rpgy-Yh3">
-              <div class="apply-now-JRK">Apply Now</div>
-              <div class="moreinfo-oN5">More Info</div>
-            </div>
-          </div>
-        </div>
-        <div class="internship-card-cxV">
-          <div class="job-tittle-M9P">Business Analyst</div>
-          <div class="auto-group-g6hs-UUu">
-            <img class="internshiplogo-q4Z" src="{% static '/assets/internshiplogo-q3s.png' %}"/>
-            <p class="internshiptittle-YzZ">National Informatics Center</p>
-          </div>
-          <div class="auto-group-tf4y-GvZ">
-            <div class="intrnshipinfo-CpD">
-              <div class="auto-group-ic3w-8Sy">
-                <img class="home-clock-outline-5t1" src="{% static '/assets/home-clock-outline-PGR.png' %}"/>
-                <img class="calendar-clock-Q9b" src="{% static '/assets/calendar-clock-2Uu.png' %}"/>
-              </div>
-              <div class="auto-group-pytp-xB7">
-                <div class="part-time-fbK">Part Time</div>
-                <div class="duration-aiH">Duration</div>
-                <div class="months-gWR">3Months</div>
-              </div>
-              <img class="hand-coin-outline-pMj" src="{% static '/assets/hand-coin-outline-cU5.png' %}"/>
-              <div class="auto-group-ju69-9eu">
-                <div class="stipend-ue5">Stipend</div>
-                <div class="item-5000--DPs">₹5000/-</div>
-              </div>
-            </div>
-            <div class="auto-group-rpgy-Yh3">
-              <div class="apply-now-JRK">Apply Now</div>
-              <div class="moreinfo-oN5">More Info</div>
-            </div>
-          </div>
-        </div>
-        
-      </div>
+      
     </div>
   </div>
   <div class="menu-Qp5">
@@ -327,17 +142,17 @@
         <div class="ellipse-46-To3">
         </div>
         <div class="auto-group-msgm-ymP">
-          <p class="raman-yadav-76u">Raman Yadav</p>
-          <p class="ramanya-CPF">@ramanya</p>
+          <p class="raman-yadav-76u">{{aadhar.holder_name}}</p>
+          <p class="ramanya-CPF">{{aadhar.aadhar_no}}</p>
         </div>
-        <div class="auto-group-xbzf-6zR">Manage Your Account
+        <a class="auto-group-xbzf-6zR"  href="{% url 'profile' %}">Manage Your Account
           .
-        </div>
+        </a>
       </div>
-      <div class="yourfrofile-kp5">
+      <a class="yourfrofile-kp5", href="{% url 'logout' %}">
         <img class="account-fg9" src="{% static '/assets/account.png' %}"/>
-        <p class="your-profile-mjB">Your Profile</p>
-      </div>
+        <p class="your-profile-mjB">Logout</p>
+      </a>
       <div class="activities-SqK">
         <img class="bell-badge-PEm" src="{% static '/assets/bell-badge.png' %}"/>
         <p class="activities-w1P">Activities</p>
