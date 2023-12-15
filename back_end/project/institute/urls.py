@@ -8,5 +8,7 @@ urlpatterns = [
     path("api-logout", views.logout_api_view, name='api_logout'),
     path("", views.api_dashboard_api, name='api_dashboard'),
 
+    path("getState/<str:type>", views.state_name_view, name='getState'),
+
 
 ]

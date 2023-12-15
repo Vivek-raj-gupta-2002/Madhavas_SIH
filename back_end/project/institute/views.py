@@ -4,10 +4,28 @@ from . import forms
 from main_app.models import CustomUser
 from django.views.decorators.http import require_http_methods
 from django.contrib.auth import authenticate, login, logout
-from django.http import HttpResponse
+from django.http import HttpResponse, JsonResponse, Http404
+from utills import institute_data
 
 
 # Create your views here.
+@require_http_methods(["GET"])
+def state_name_view(request, type: str):
+    
+    if type.lower() == 'school':
+        data = institute_data.SchoolData()
+    elif type.lower() == 'college':
+        data = institute_data.CollegeData()
+
+    else:
+        return Http404
+    
+    state = data.get_unique_state()
+
+
+
+    return JsonResponse({'res': ''})
+
 
 def api_dashboard_api(request):
     
@@ -20,8 +38,16 @@ def api_dashboard_api(request):
     if not(my_user.is_institute):
         return redirect('login')
     
+    send_data = {}
 
-    return render(request, 'institute/eziiii-api.html')
+    clg_data = institute_data.CollegeData()
+    scl_data = institute_data.SchoolData()
+
+    send_data['col_state'] = clg_data.get_unique_state()
+    send_data['scl_state'] = scl_data.get_unique_state()
+
+
+    return render(request, 'institute/eziiii-api.html', send_data)
 
 # login view for apis
 @require_http_methods(['GET', 'POST'])
