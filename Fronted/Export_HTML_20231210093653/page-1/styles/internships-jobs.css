@@ -56,6 +56,7 @@ body {
   flex-shrink: 0;
 }
 .organization-name--rww {
+  width: 20%;
   margin: 0.1rem 9.5rem 0rem 0rem;
   font-size: 2rem;
   font-weight: 500;
@@ -66,7 +67,7 @@ body {
   flex-shrink: 0;
 }
 .rectangle-72-Mdo {
-  width: 60rem;
+  width: 60%;
   height: 3rem;
   background-color: #d9d9d9;
   flex-shrink: 0;
@@ -134,7 +135,7 @@ body {
 }
 .auto-group-cegm-VfT {
   box-sizing: border-box;
-  padding-top: 4.05rem;
+  padding-top: 1rem;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -245,7 +246,7 @@ body {
 }
 .submit-button-Jgm {
   margin-top: -10rem;
-  margin-right: 4rem;
+  margin-right: 1rem;
   position: relative;
   border-radius: 2rem;
   flex-shrink: 0;
@@ -274,7 +275,7 @@ body {
   padding: 2rem;
   padding-top: 4rem;
   width: 27rem;
-  height: 100%;
+  height: 93vh;
   position: absolute;
   top: 6rem;
   border: solid 0 rgba(0, 0, 0, 0.0900000036);
