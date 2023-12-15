@@ -37,3 +37,5 @@ class UploadForm(models.Model):
 
     user = models.ForeignKey(CustomUser, on_delete=models.CASCADE)
 
+    class Meta:
+        unique_together = ('document_type', 'user')
