@@ -2,7 +2,6 @@
 html {
 	font-size:59.5%;
   width: 100%;
-  height: 100vh;
 }
 * {
 	margin: 0;
@@ -16,8 +15,8 @@ input {
 }
 body {
   width: 100%;
-  height: 100vh;
-}.internships-jobs-4sf {
+}
+.internships-jobs-4sf {
   width: 100%;
   height: 100vh;
   position: relative;
