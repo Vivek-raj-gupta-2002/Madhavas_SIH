@@ -42,27 +42,18 @@ body {
   flex-shrink: 0;
 }
 .form-M1o {
-  padding-left: 17rem;
+  margin-top: 2rem;
 }
 .auto-group-e6xm-5Ch {
+  width: 100%;
   margin-bottom: 2rem;
   display: flex;
   align-items: center;
   flex-shrink: 0;
 }
 .organization-name--E5b {
-  margin: 0.7rem 10.7rem 0rem 0rem;
-  font-size: 2rem;
-  font-weight: 500;
-  line-height: 1;
-  color: #000000;
-  font-family: Josefin Sans, 'Source Sans Pro';
-  white-space: nowrap;
-  flex-shrink: 0;
-}
-.organization-name--E5b1 {
-  padding-right: 20rem;
-  /* margin: 0.7rem 10.7rem 0rem 0rem; */
+  width: 30%;
+  margin-bottom: 2rem;
   font-size: 2rem;
   font-weight: 500;
   line-height: 1;
@@ -72,8 +63,9 @@ body {
   flex-shrink: 0;
 }
 .rectangle-72-9TT {
-  width: 63.9rem;
-  height: 4.3rem;
+  width: 60%;
+  height: 3rem;
+  margin-bottom: 2rem;
   background-color: #d9d9d9;
   flex-shrink: 0;
 }
@@ -141,7 +133,6 @@ body {
 }
 .auto-group-33hf-hvD {
   box-sizing: border-box;
-  padding-top: 4.05rem;
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
@@ -241,7 +232,7 @@ body {
   flex-shrink: 0;
 }
 .auto-group-vw2q-95P {
-  width: 90rem;
+  width: 70rem;
   height: 15rem;
   font-size: 2.8rem;
   font-weight: 500;
@@ -255,8 +246,9 @@ body {
   background-color: #ffffff;
   flex-shrink: 0;
 }
-.auto-group-yixd-3Am {margin-top: 2rem;
-  margin-left: 80rem;
+.auto-group-yixd-3Am {
+  margin-top: -5rem;
+  margin-left: 100rem;
   width: 20rem;
   height: 5rem;
   font-size: 3rem;
