@@ -1,0 +1,62 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <title>LOgin API</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans%3A700"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=jsMath-cmbx10%3A700"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro%3A700"/>
+  <link rel="stylesheet" href="{% static '/styles/login-api.css' %}"/>
+</head>
+<body>
+<div class="login-api-wD7">
+  <div class="header-GmB">
+    <div class="header-boT">
+      <img class="bcd3b4b5d471dae27a60bd4b5f07-1-iNH" src="{% static '/assets/bcd3b4b5d471dae27a60bd4b5f07-1-6NH.png' %}"/>
+      <img class="bcd3b4b5d471dae27a60bd4b5f07-1-iNH1" src="{% static '/assets/yourparagraphtext1-removebg-preview-1-K9w.png' %}"/>
+      <img class="bell-qho" src="{% static '/assets/bell-Ved.png' %}"/>
+      <img class="account-circle-Ak5" src="{% static '/assets/account-circle.png' %}"/>c
+    </div>
+    <p class="ezapi-i9K">EzApi</p>
+  </div>
+  <div class="card-login-sign-up-ckV">
+    <div class="auto-group-dlum-XsT">
+      <!-- <div class="rectangle-44-tCD">
+      </div> -->
+      <div class="rectangle-45-RT3">
+      </div>
+      <p class="log-in-uND">Log In</p>
+    </div>
+    <form action="{% url 'api_login' %}" method="post">
+      {% csrf_token %}
+    <div class="sign-up-az9">
+      <div class="name-field-js3">
+        <p class="name-H7s">Name</p>
+
+        {{form.username}}
+        <!-- <input class="rectangle-45-pdb" type="text"/> -->
+      </div>
+      <div class="name-field-js3">
+        <p class="name-H7s">Mobile No.</p>
+
+        {{form.phone_number}}
+        <!-- <input class="rectangle-45-pdb" type="number"/> -->
+      </div>
+      <div class="name-field-js3">
+        <p class="name-H7s">PIN</p>
+    
+        {{form.password}}
+        <!-- <input class="rectangle-45-pdb" type="password"/> -->
+    
+      </div>
+    </div>
+    <button type="submit" class="auto-group-qdo3-TCh">Log In</button>
+  </form>
+  </div>
+</div>
+</body>
