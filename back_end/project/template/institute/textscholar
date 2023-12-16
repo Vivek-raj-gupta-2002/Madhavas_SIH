@@ -1,0 +1,63 @@
+ <form action="{% url 'institScholarForm' %}" method="post">
+      {% csrf_token %}
+    <div class="form-M1o">
+      <div class="auto-group-e6xm-5Ch">
+        <p class="organization-name--E5b">Organization Name:</p>
+        <!-- <input class="rectangle-72-9TT" type="text"/> -->
+        {{form.organiser}}
+      </div>
+     
+       
+      <div class="auto-group-e6xm-5Ch">
+        <p class="organization-name--E5b">Title:</p>
+        <!-- <div class="rectangle-72-9TT">
+        </div> -->
+        {{form.title}}
+      </div>
+     
+      <div class="auto-group-e6xm-5Ch">
+        <label for="logoInput" class="organization-name--E5b">Upload Logo:</label>
+        <!-- <input type="file" id="logoInput" class="logo-input" accept="image/*" /> -->
+        {{form.logo}}
+      </div>
+     
+      <div class="auto-group-e6xm-5Ch">
+        <p class="organization-name--E5b">Duration:</p>
+        <p class="to--LXw">To:</p>
+        <!-- <input class="auto-group-juvd-qDo" type="text"placeholder="DD|MM|YYYY"/> -->
+        
+        {{form.Start_date}}
+        <p class="from--Hbb">From:</p>
+        <!-- <input class="auto-group-zfup-cds" type="text"placeholder="DD|MM|YYYY"/> -->
+        {{form.End_date}}
+      </div>
+     
+      <div class="auto-group-e6xm-5Ch">
+        <p class="organization-name--E5b">Openings:</p>
+        <!-- <div class="rectangle-72-9TT">
+        </div> -->
+        {{form.openings}}
+      </div>
+
+      
+
+        <div class="auto-group-c7mp-QCM">
+          <p class="amount-to-be-given--iyj">Amount To Be Given:</p>
+          <!-- <div class="rectangle-78-4Xo">
+          </div> -->
+          {{form.amount}}
+        </div>
+       
+        
+        <div class="auto-group-e6xm-5Ch">
+          <p class="organization-name--E5b">Apply(URL):</p>
+          <!-- <div class="rectangle-72-9TT">
+          </div> -->
+          {{form.apply}}
+        </div>
+
+        <!-- <div class="auto-group-vw2q-95P">Short Description</div> -->
+        {{form.description}}
+      </div>
+    </div>
+    </form>
