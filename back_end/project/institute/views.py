@@ -8,7 +8,9 @@ from django.http import HttpResponse, JsonResponse, Http404
 from utills import institute_data
 
 
+
 # Create your views here.
+
 @require_http_methods(["GET"])
 def college_data_api(request, type: str):
 
@@ -25,8 +27,10 @@ def college_data_api(request, type: str):
     
     if not data:
         return Http404()
+    
+    return JsonResponse(data)
 
-    return JsonResponse({'responce': 'success', 'data': data})
+
 
 @require_http_methods(["GET"])
 def school_data_api(request, type: str):
@@ -60,18 +64,20 @@ def api_dashboard_api(request):
     send_data['state'] = scl_data.get_unique_state()
 
     
+    if 'type' in request.GET:
 
-    if request.GET['type'] == 'school':
-        # check for state
-        
-        formState = request.GET['state']
 
-        send_data['api'] = f'127.0.0.1:8000/institute/api/getScl/{formState}'
+        if request.GET['type'] == 'school':
+            # check for state
+            
+            formState = request.GET['state']
 
-    if request.GET['type'] == 'college':
-        formState = request.GET['state']
+            send_data['api'] = f'127.0.0.1:8000/institute/api/getScl/{formState}'
 
-        send_data['api'] = f'127.0.0.1:8000/institute/api/getClg/{formState}'
+        if request.GET['type'] == 'college':
+            formState = request.GET['state']
+
+            send_data['api'] = f'127.0.0.1:8000/institute/api/getClg/{formState}'
 
 
 

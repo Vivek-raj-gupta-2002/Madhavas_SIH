@@ -65,16 +65,6 @@ class CollegeData:
         return distrct_data['District'].unique()
 
 
-import requests
-
-url = "http://127.0.0.1:8000/institute/api/getClg/Bihar"
-
-payload = {}
-headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"}
-
-response = requests.request("GET", url, headers=headers, data=payload)
-
-print(response.text)
 
 
 
