@@ -17,6 +17,8 @@ body {
   height: 100vh;
 }
 .faq-uzD {
+  width: 100%;
+  height: 100vh;
   position: relative;
   background-color: #efefef;
 
@@ -403,7 +405,7 @@ body {
   padding: 2rem;
   padding-top: 4rem;
   width: 27rem;
-  height: 100vh;
+  height: 100%;
   position: absolute;
   top: 6rem;
   border: solid 0 rgba(0, 0, 0, 0.0900000036);
@@ -420,7 +422,7 @@ body {
   flex-shrink: 0;
 }
 .group-7-Tv5 {
-  width: 20rem;
+  width: 23rem;
   height: 4rem;
   position: relative;
   flex-shrink: 0;
@@ -428,6 +430,7 @@ body {
 .group-7-Tv5:hover{
   background-color: rgba(23, 173, 50, 0.4600000083);
   border-radius: 2rem;
+  padding: 0.5rem;
 }
 /* .group-7-Tv5 .rectangle-21-2CV {
   width: 20rem;
