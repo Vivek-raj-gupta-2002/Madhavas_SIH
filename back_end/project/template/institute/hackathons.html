@@ -1,0 +1,169 @@
+{%load static%}
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <title>Hackathons</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans%3A500"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans%3A700"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jomolhari%3A400"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=jsMath-cmbx10%3A700"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jockey+One%3A400"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro%3A400%2C500%2C700"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=JejuGothic%3A400"/>
+  <link rel="stylesheet" href="{% static 'styles/hackathons.css'%}"/>
+</head>
+<body>
+<div class="hackathons-2Cm">
+  <div class="form-NXX">
+    <p class="hackathons--hZo">
+      <span>Hackathons</span>
+      <span>:</span>
+    </p>
+    <form action="{% url 'instithackathonForm' %}" method="post"  enctype="multipart/form-data">
+      {% csrf_token %}
+    <div class="form-details-Yiq">
+
+      <div class="auto-group-bdru-VPB">
+
+        <div class="auto-group-9xkx-1cR">
+          <p class="organization-name--wky">Organization Name:</p>
+          <!-- <input class="rectangle-72-GHT" type="text"/> -->
+          {{form.organiser}}
+        </div>
+
+        <div class="auto-group-9xkx-1cR">
+          <p class="organization-name--wky">Title:</p>
+          <!-- <div class="rectangle-72-GHT">
+          </div> -->
+          {{form.title}}
+        </div>
+  
+        <div class="auto-group-9xkx-1cR">
+          <label for="logoInput" class="organization-name--wky">Upload Logo:</label>
+          <!-- <input type="file" id="logoInput" class="logo-input" accept="image/*" /> -->
+          {{form.logo}}
+        </div>
+
+        <div class="auto-group-9xkx-1cR">
+          <p class="organization-name--wky">Date for the Competition:</p>
+          <p class="to--2R3">To:</p>
+          <!-- <input class="auto-group-n997-ZQy" type="text"placeholder="DD|MM|YYYY"/> -->
+          {{form.Start_date}}
+          <p class="from--N7X">From:</p>
+          <!-- <input class="auto-group-bjgu-4m3" type="text"placeholder="DD|MM|YYYY"/> -->
+          {{form.End_date}}
+        </div>
+
+        <div class="auto-group-9xkx-1cR">
+          <p class="organization-name--wky">
+          Max. Team Members Allowed:
+          </p>
+          <!-- <input class="rectangle-72-GHT" type="number"/> -->\
+          {{form.maxteammember}}
+        </div>
+
+        <div class="auto-group-9xkx-1cR">
+          <p class="organization-name--wky">Apply(URL):</p>
+          <!-- <input class="rectangle-72-GHT" type="url"/> -->
+          {{form.apply}}
+        </div>
+
+        <div class="auto-group-9xkx-1cR">
+          <!-- <input class="rectangle-77-gbP" type="checkbox"/> -->
+          {{form.onlinemode}}
+          <p class="organization-name--wky">Online Mode</p>
+          <!-- <input class="rectangle-77-gbP" type="checkbox"/> -->
+          <p class="organization-name--wky">Offilne Mode</p>
+          {{form.offlinemode}}
+        </div>
+        <div>
+          <!-- <input class="auto-group-auvu-YtV" placeholder="Short Description"></input> -->
+          {{form.description}}
+        </div>
+        
+      </div>
+    </div>
+    </form>
+
+    <div class="button-dQ9">
+      <button class="rectangle-66-aKP">Submit
+      </button>
+      <!-- <p class="submit-KXs">
+      Submit
+      <br/>
+      
+      </p> -->
+    </div>
+
+  </div>
+  <div class="menu-FJD">
+    <div class="frame-2-ZZo">
+      <div class="auto-group-in4m-Wzq">
+        <div class="group-7-Tv5">
+          <a href="eziiii-api.html">
+          <div class="rectangle-21-2CV">
+          </div>
+          <div class="get-api-X9F">Get API</div>
+          <img class="bookmark-CWH" src="{% static '/assets/bookmark-pRj.png'%}"/>
+          </a>
+        </div>
+        <div class="group-7-Tv5">
+          <a href="hackathons.html">
+          <div class="rectangle-21-2CV">
+          </div>
+          <p class="get-api-X9F">Hackathons</p>
+          <img class="bookmark-CWH" src="{% static '/assets/book-reading-XBT.png'%}"/>
+          </a>
+        </div>
+        <div class="group-7-Tv5">
+          <a href="scholarships.html">
+          <div class="rectangle-21-2CV">
+          </div>
+          <p class="get-api-X9F">Scholarships</p>
+          <img class="bookmark-CWH" src="{% static '/assets/ebook-GRT.png'%}"/>
+          </a>
+        </div>
+      
+      <div class="group-7-Tv5">
+        <a href="internships-jobs.html">
+        <div class="rectangle-21-2CV"> 
+        </div>
+        <p class="get-api-X9F">Intern/Jobs</p>
+        <img class="bookmark-CWH" src="{% static '/assets/internship-bg-QCM.png'%}"/>
+        </a>
+      </div>
+      <div class="group-7-Tv5">
+        <a href="institutelvlverification.html">
+        <div class="rectangle-21-2CV"> 
+        </div>
+        <p class="get-api-X9F">Student Verification</p>
+        <img class="bookmark-CWH" src="{% static '/assets/file-document-check-17j.png'%}"/>
+        </a>
+      </div>
+      <div class="group-7-Tv5">
+        <a href="faq.html">
+        <div class="rectangle-21-2CV">
+        </div>
+        <p class="get-api-X9F">FAQ’s</p>
+        <img class="bookmark-CWH" src="{% static '/assets/progress-question-2sf.png'%}"/>
+        </a>
+      </div>
+    </div>
+    </div>
+  </div>
+  <div class="header-XXs">
+    <div class="rectangle-2-fty">
+    </div>
+    <img class="bcd3b4b5d471dae27a60bd4b5f07-1-x7P" src="{% static '/assets/bcd3b4b5d471dae27a60bd4b5f07-1-Skm.png'%}"/>
+    <img class="account-circle-5ho" src="{% static '/assets/account-circle-PED.png'%}"/>
+    <div class="madhvas">
+    </div>
+    <p class="ezapi">EzAPI</p>
+    <img class="bell" src="{% static '/assets/bell-8j7.png'%}"/>
+  </div>
+</div>
+</body>

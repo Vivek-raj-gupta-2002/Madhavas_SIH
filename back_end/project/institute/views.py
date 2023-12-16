@@ -106,6 +106,7 @@ def scholarView(requests):
 
     return render(requests, 'institute/scholarships.html', {'form': my_form})
 
+
 def api_dashboard_api(request):
     
     if not(request.user.is_authenticated):
@@ -145,3 +146,78 @@ def api_dashboard_api(request):
 
 
 
+
+def hackView(requests):
+    my_form = forms.Hackathon()
+
+    return render(requests, 'institute/hackathons.html', {'form': my_form})
+
+
+# Scholarship Form
+@require_http_methods(['GET', 'POST'])
+def form_Scholarship(request):
+    
+    if not(request.user.is_authenticated):
+        return redirect('api_login')  # Redirect to the login page if user is not logged in
+
+    my_user = CustomUser.objects.filter(username=request.user).first()
+
+
+    if not(my_user.is_institute):
+        return redirect('login')
+    
+    send_data = {}
+
+    if request.method == 'POST':
+        my_form = forms.ScholarForm(request.POST)
+
+        # checking if the form follows all the validation
+        if my_form.is_valid():
+
+            my_form.save()
+
+# Internship Form
+@require_http_methods(['GET', 'POST'])    
+def form_Internship(request):
+    
+    if not(request.user.is_authenticated):
+        return redirect('api_login')  # Redirect to the login page if user is not logged in
+
+    my_user = CustomUser.objects.filter(username=request.user).first()
+
+
+    if not(my_user.is_institute):
+        return redirect('login')
+    
+    send_data = {}   
+
+    if request.method == 'POST':
+        my_form = forms.InternForm(request.POST)
+
+        # checking if the form follows all the validation
+        if my_form.is_valid():
+
+            my_form.save() 
+
+# Hackathon Form
+@require_http_methods(['GET', 'POST'])
+def form_Hackathon(request):
+    
+    if not(request.user.is_authenticated):
+        return redirect('api_login')  # Redirect to the login page if user is not logged in
+
+    my_user = CustomUser.objects.filter(username=request.user).first()
+
+
+    if not(my_user.is_institute):
+        return redirect('login')
+    
+    send_data = {}   
+
+    if request.method == 'POST':
+        my_form = forms.Hackathon(request.POST)
+
+        # checking if the form follows all the validation
+        if my_form.is_valid():
+
+            my_form.save()     

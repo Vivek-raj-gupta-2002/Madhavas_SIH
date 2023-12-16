@@ -20,23 +20,39 @@
   
   <div class="body-pM3">
     <p class="internships-jobs--J1K">Internships/ Jobs:</p>
-    <form action="{% url 'scholar' %}" method="post">
+    <form action="{% url 'institinternForm' %}" method="post"  enctype="multipart/form-data">
       {% csrf_token %}
      <div class="document-form-oTs">
       <div class="auto-group-lpju-xLm">
         <p class="organization-name--rww">Organization Name:</p>
         <!-- <div class="rectangle-72-Mdo"> -->
-          {{form.organizationname}}
+          {{form.organiser}}
         <!-- </div> -->
       </div>
+      
+      <div class="auto-group-lpju-xLm">
+        <p class="organization-name--rww">Title:</p>
+        <!-- <div class="rectangle-72-Mdo">
+        </div> -->
+        {{form.title}}
+      </div>
+
+      <div class="auto-group-lpju-xLm">
+        <label for="logoInput" class="organization-name--rww">Upload Logo:</label>
+        <!-- <input type="file" id="logoInput" class="logo-input" accept="image/*" /> -->
+        {{form.logo}}
+      </div>
+
+
+
       <div class="auto-group-khkb-JZ3">
         <p class="duration--EBo">Duration:</p>
         <p class="to--Xgh">To:</p>
-        {{form.duration}}
+        {{form.Start_date}}
         <!-- <input class="auto-group-y15p-GPP" type="text"placeholder="DD|MM|YYYY"/> -->
         <p class="from--8Rb">From:</p>
         <!-- <input class="auto-group-yzch-fgR" type="text"placeholder="DD|MM|YYYY"/> -->
-        {{form.duration1}}
+        {{form.End_date}}
       </div>
       <div class="auto-group-cegm-VfT">
         <div class="auto-group-puzz-Sah">
@@ -48,7 +64,7 @@
         <div class="auto-group-bcqs-3qP">
           <p class="no-of-openings--BRo">No. Of Openings:</p>
           <!-- <div class="rectangle-81-XEm"> -->
-        {{form.noofopening}}
+        {{form.openings}}
           <!-- </div> -->
         </div>
         <div class="auto-group-nkhb-GTF">
@@ -58,16 +74,27 @@
           <!-- </div> -->
           <p class="min-pay--Dmo">Min. Pay:</p>
           <!-- <div class="rectangle-80-wC1"> -->
-            {{form.minpay}}
+        {{form.minpay}}
           <!-- </div> -->
         </div>
-        <div class="shortdiscription-dKj">Short Description</div>
-        {{form.shortdescription}}
+
+        <div class="auto-group-lpju-xLm">
+          <p class="organization-name--rww">Apply(URL):</p>
+          <!-- <div class="rectangle-72-Mdo">
+          </div> -->
+          {{form.apply}}
+        </div>
+        
+        <!-- <div class="shortdiscription-dKj">Short Description</div> -->
+        {{form.description}}
+
+        
       </div>
       <div class="submit-button-Jgm">
-      <button class="rectangle-66-3uF">Submit
-      </button>
-      </div>
+        <button class="rectangle-66-3uF">Submit
+        </button>
+        </div>
+      
      </div>
     </form>
   </div>
