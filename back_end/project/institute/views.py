@@ -8,7 +8,6 @@ from django.http import HttpResponse, JsonResponse, Http404
 from utills import institute_data
 
 
-
 # Create your views here.
 
 @require_http_methods(["GET"])
@@ -28,8 +27,7 @@ def college_data_api(request, type: str):
     if not data:
         return Http404()
     
-    return JsonResponse(data)
-
+    return JsonResponse({'res': 'success', 'data': data})
 
 
 @require_http_methods(["GET"])
@@ -49,7 +47,7 @@ def school_data_api(request, type: str):
 def api_dashboard_api(request):
     
     if not(request.user.is_authenticated):
-        return redirect('api-login')  # Redirect to the login page if user is not logged in
+        return redirect('api_login')  # Redirect to the login page if user is not logged in
 
     my_user = CustomUser.objects.filter(username=request.user).first()
 
@@ -82,6 +80,7 @@ def api_dashboard_api(request):
 
 
     return render(request, 'institute/eziiii-api.html', send_data)
+
 
 # login view for apis
 @require_http_methods(['GET', 'POST'])
@@ -134,12 +133,10 @@ def logout_api_view(request):
     return redirect('api_login')
 
 
-
 def internshipView(requests):
     my_form = forms.InternForm()
 
     return render(requests, 'institute/internships-jobs.html', {'form': my_form})
-
 
 
 def scholarView(requests):

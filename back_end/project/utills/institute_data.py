@@ -1,6 +1,7 @@
 import pandas as pd
 from django.conf import settings
 import os
+from . import enc
 
 """
 College And School Data with sorting applied
