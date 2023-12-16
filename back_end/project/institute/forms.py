@@ -82,4 +82,6 @@ class ScholarForm(forms.Form):
     )
     class Meta: 
         
+
         fields = ['orga_name','da_to' , 'da_from' , 'min_percent' , 'amount_given', 'on_mode','off_mode','short_desc']
+
