@@ -139,6 +139,7 @@ class Hackathon(forms.Form):
         widget=forms.TextInput(attrs={'class': 'auto-group-auvu-YtV'})
     )
     class Meta:
-        
+
         fields = ['orga_name','da_to' , 'da_from' , 'skill_req' , 'no_openning', 'max_pay',' min_pay','short_desc']
     
+

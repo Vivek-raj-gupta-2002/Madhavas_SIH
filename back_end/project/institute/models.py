@@ -20,3 +20,4 @@ class Oppertunities_model(models.Model):
     is_intern = models.BooleanField(default=False)
 
 
+3

@@ -19,10 +19,16 @@ from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
 
+
+
+
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('user_app.urls')),
     path('institute/', include('institute.urls')),
+    path('api/', include('api_app.urls')),
+
 ]
 
 # urls for static and media files if debug is 'True'

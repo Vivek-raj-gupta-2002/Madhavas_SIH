@@ -9,5 +9,8 @@ urlpatterns = [
     path("", views.api_dashboard_api, name='api_dashboard'),
     path("hackathonForm", views.hackView, name='instithackathonForm'), 
 
+    path("api/getClg/<str:type>", views.college_data_api, name='college_data'),
+    path("api/getScl/<str:type>", views.school_data_api, name='school_data'),
+
 
 ]
