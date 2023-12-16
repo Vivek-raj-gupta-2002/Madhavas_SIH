@@ -50,7 +50,7 @@
     </form>
 
       <div class="code-ae1">
-        <p class="fetchhttps-fakestoreapicom-products-1-thenresresjson-thenjsonconsolelogjson-uRP">
+        <p  id="textToCopy" class="fetchhttps-fakestoreapicom-products-1-thenresresjson-thenjsonconsolelogjson-uRP">
           import requests
           <br>
           url = "{{api}}"
@@ -63,15 +63,15 @@
           print(response.text)
           
         </p>
-        <button class="auto-group-dh2u-MHP">Copy Code</button>
+        <button class="auto-group-dh2u-MHP" id="copyButton" onclick="copyText()">Copy Code</button>
       </div>
     </div>
     <div class="iframe-1sj">
       <p class="iframe-for-one-click-form-fill-kqK">Iframe For one Click form Fill</p>
       <div class="auto-group-7xvz-tRj">
         <p class="fetchhttps-fakestoreapicom-products-1-thenresresjson-thenjsonconsolelogjson-zzZ">
-        fetch(&#39;https://fakestoreapi.com/products/1&#39;)
-        <br/>
+        {{tag}}
+          <br/>
                     .then(res=&gt;res.json())
         <br/>
                     .then(json=&gt;console.log(json))
@@ -84,7 +84,7 @@
     <div class="frame-2-ZZo">
       <div class="auto-group-in4m-Wzq">
         <div class="group-7-Tv5">
-          <a href="eziiii-api.html">
+          <a href="{% url 'api_dashboard' %}">
           <div class="rectangle-21-2CV">
           </div>
           <div class="get-api-X9F">Get API</div>
@@ -146,4 +146,9 @@
     <img class="bell" src="{% static '/assets/bell-8j7.png' %}"/>
   </div>
 </div>
+<script>
+  document.getElementById('copyButton').addEventListener('click', copyText);
+</script>
+<script src="{% static '/JS/CopyCode.js' %}"></script>
 </body>
+
