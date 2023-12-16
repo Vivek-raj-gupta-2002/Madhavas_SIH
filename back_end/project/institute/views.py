@@ -6,10 +6,10 @@ from django.views.decorators.http import require_http_methods
 from django.contrib.auth import authenticate, login, logout
 from django.http import HttpResponse, JsonResponse, Http404
 from utills import institute_data
-
+from django.views.decorators.csrf import csrf_exempt
 
 # Create your views here.
-
+csrf_exempt
 @require_http_methods(["GET"])
 def college_data_api(request, type: str):
 
@@ -29,7 +29,7 @@ def college_data_api(request, type: str):
     
     return JsonResponse({'res': 'success', 'data': data})
 
-
+csrf_exempt
 @require_http_methods(["GET"])
 def school_data_api(request, type: str):
     data = ''
@@ -42,44 +42,6 @@ def school_data_api(request, type: str):
     else:
         return Http404
     return JsonResponse({'res': 'success', 'data': data})
-
-
-def api_dashboard_api(request):
-    
-    if not(request.user.is_authenticated):
-        return redirect('api_login')  # Redirect to the login page if user is not logged in
-
-    my_user = CustomUser.objects.filter(username=request.user).first()
-
-
-    if not(my_user.is_institute):
-        return redirect('login')
-    
-    send_data = {}
-
-    scl_data = institute_data.SchoolData()
-
-    send_data['state'] = scl_data.get_unique_state()
-
-    
-    if 'type' in request.GET:
-
-
-        if request.GET['type'] == 'school':
-            # check for state
-            
-            formState = request.GET['state']
-
-            send_data['api'] = f'127.0.0.1:8000/institute/api/getScl/{formState}'
-
-        if request.GET['type'] == 'college':
-            formState = request.GET['state']
-
-            send_data['api'] = f'127.0.0.1:8000/institute/api/getClg/{formState}'
-
-
-
-    return render(request, 'institute/eziiii-api.html', send_data)
 
 
 # login view for apis
@@ -143,6 +105,47 @@ def scholarView(requests):
     my_form = forms.ScholarForm()
 
     return render(requests, 'institute/scholarships.html', {'form': my_form})
+
+
+def api_dashboard_api(request):
+    
+    if not(request.user.is_authenticated):
+        return redirect('api_login')  # Redirect to the login page if user is not logged in
+
+    my_user = CustomUser.objects.filter(username=request.user).first()
+
+
+    if not(my_user.is_institute):
+        return redirect('login')
+    
+    send_data = {}
+
+    scl_data = institute_data.SchoolData()
+
+    send_data['state'] = scl_data.get_unique_state()
+
+    
+    if 'type' in request.GET:
+
+
+        if request.GET['type'] == 'school':
+            # check for state
+            
+            formState = request.GET['state']
+
+            send_data['api'] = f'127.0.0.1:8000/institute/api/getScl/{formState}'
+
+        if request.GET['type'] == 'college':
+            formState = request.GET['state']
+
+            send_data['api'] = f'127.0.0.1:8000/institute/api/getClg/{formState}'
+
+
+
+    return render(request, 'institute/eziiii-api.html', send_data)
+
+
+
 
 def hackView(requests):
     my_form = forms.Hackathon()
