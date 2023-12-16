@@ -95,16 +95,7 @@ def logout_api_view(request):
     return redirect('api_login')
 
 
-def internshipView(requests):
-    my_form = forms.InternForm()
 
-    return render(requests, 'institute/internships-jobs.html', {'form': my_form})
-
-
-def scholarView(requests):
-    my_form = forms.ScholarForm()
-
-    return render(requests, 'institute/scholarships.html', {'form': my_form})
 
 
 def api_dashboard_api(request):
@@ -146,16 +137,9 @@ def api_dashboard_api(request):
 
 
 
-
-def hackView(requests):
-    my_form = forms.Hackathon()
-
-    return render(requests, 'institute/hackathons.html', {'form': my_form})
-
-
 # Scholarship Form
 @require_http_methods(['GET', 'POST'])
-def form_Scholarship(request):
+def scholarView(request):
     
     if not(request.user.is_authenticated):
         return redirect('api_login')  # Redirect to the login page if user is not logged in
@@ -168,13 +152,20 @@ def form_Scholarship(request):
     
     send_data = {}
 
+    my_form = forms.ScholarForm()
+
     if request.method == 'POST':
-        my_form = forms.ScholarForm(request.POST)
+        my_form = forms.ScholarForm(request.POST, request.FILES)
 
         # checking if the form follows all the validation
         if my_form.is_valid():
+            instance = my_form.save(commit=False)
+            instance.user = my_user
+            instance.is_scholarship = True
+            instance.save()
+            return redirect('institScholarForm')
 
-            my_form.save()
+    return render(request, 'institute/scholarships.html', {'form': my_form})
 
 # Internship Form
 @require_http_methods(['GET', 'POST'])    
@@ -190,14 +181,24 @@ def form_Internship(request):
         return redirect('login')
     
     send_data = {}   
+    
+    my_form = forms.InternForm()
 
     if request.method == 'POST':
-        my_form = forms.InternForm(request.POST)
+        my_form = forms.InternForm(request.POST, request.FILES)
 
         # checking if the form follows all the validation
         if my_form.is_valid():
+            instance = my_form.save(commit=False)
+            
+            instance.user = my_user
+            instance.is_intern = True
+            instance.save()
+            return redirect('institinternForm')
 
-            my_form.save() 
+
+    return render(request, 'institute/internships-jobs.html', {'form': my_form})
+
 
 # Hackathon Form
 @require_http_methods(['GET', 'POST'])
@@ -208,16 +209,23 @@ def form_Hackathon(request):
 
     my_user = CustomUser.objects.filter(username=request.user).first()
 
-
     if not(my_user.is_institute):
         return redirect('login')
     
-    send_data = {}   
+    my_form = forms.Hackathon()
 
     if request.method == 'POST':
-        my_form = forms.Hackathon(request.POST)
+        my_form = forms.Hackathon(request.POST, request.FILES)
 
         # checking if the form follows all the validation
-        if my_form.is_valid():
+        print("Atleast running")
+        print(my_form.is_valid())
 
-            my_form.save()     
+        if my_form.is_valid():
+            instance = my_form.save(commit=False)
+            instance.user = my_user
+            instance.is_hack = True
+            instance.save()
+            return redirect('institinternForm')
+
+    return render(request, 'institute/hackathons.html', {'form': my_form})
