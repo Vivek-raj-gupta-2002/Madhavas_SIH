@@ -129,11 +129,7 @@ class ScolarShipForm(forms.Form):
             'class': 'rectangle-61-x9b'
         })
     )
-    EmailAddress = forms.EmailField(
-        widget=forms.EmailInput(attrs={
-            'class': 'rectangle-59-gR3 '
-        })
-    )   
+      
     CasteCertificate = forms.CharField(
         widget=forms.TextInput(attrs={
             'class': 'rectangle-55-Y7f'
