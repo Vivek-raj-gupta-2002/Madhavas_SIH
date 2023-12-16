@@ -106,6 +106,7 @@ def scholarView(requests):
 
     return render(requests, 'institute/scholarships.html', {'form': my_form})
 
+
 def api_dashboard_api(request):
     
     if not(request.user.is_authenticated):
@@ -144,4 +145,10 @@ def api_dashboard_api(request):
     return render(request, 'institute/eziiii-api.html', send_data)
 
 
+
+
+def hackView(requests):
+    my_form = forms.Hackathon()
+
+    return render(requests, 'institute/hackathons.html', {'form': my_form})
 

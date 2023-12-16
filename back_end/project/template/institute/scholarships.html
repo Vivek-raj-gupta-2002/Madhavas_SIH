@@ -14,87 +14,101 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jomolhari%3A400"/>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=jsMath-cmbx10%3A700"/>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jockey+One%3A400"/>
-  <link rel="stylesheet" href="{% static 'styles/scholarships.css'%}"/>
+  <link rel="stylesheet" href="./styles/scholarships.css"/>
 </head>
 <body>
 <div class="scholarships-2CV">
   <div class="scholarship-form-ApV">
+
     <p class="scholarships--T2u">
-     
       <span class="scholarships--T2u-sub-0">Scholarships</span>
       <span class="scholarships--T2u-sub-0">:</span>
     </p>
-    <form action="{% url 'scholar' %}" method="post">
+
+    <form action="{% url 'institScholarForm' %}" method="post">
       {% csrf_token %}
     <div class="form-M1o">
       <div class="auto-group-e6xm-5Ch">
         <p class="organization-name--E5b">Organization Name:</p>
         <!-- <input class="rectangle-72-9TT" type="text"/> -->
-        {{form.organizationname}}
+        {{form.organiser}}
       </div>
+     
+       
       <div class="auto-group-e6xm-5Ch">
-        <p class="organization-name--E5b1">Date for the Test:</p>
+        <p class="organization-name--E5b">Title:</p>
+        <!-- <div class="rectangle-72-9TT">
+        </div> -->
+        {{form.title}}
+      </div>
+     
+      <div class="auto-group-e6xm-5Ch">
+        <label for="logoInput" class="organization-name--E5b">Upload Logo:</label>
+        <!-- <input type="file" id="logoInput" class="logo-input" accept="image/*" /> -->
+        {{form.logo}}
+      </div>
+     
+      <div class="auto-group-e6xm-5Ch">
+        <p class="organization-name--E5b">Duration:</p>
         <p class="to--LXw">To:</p>
         <!-- <input class="auto-group-juvd-qDo" type="text"placeholder="DD|MM|YYYY"/> -->
-      
-        {{form.dateforthetest}}
+        
+        {{form.Start_date}}
         <p class="from--Hbb">From:</p>
         <!-- <input class="auto-group-zfup-cds" type="text"placeholder="DD|MM|YYYY"/> -->
-        {{form.dateforthetest1}}
+        {{form.End_date}}
       </div>
-      <div class="auto-group-33hf-hvD">
-        <div class="auto-group-czay-2hb">
-          <p class="min-percent-required--9GR">Min. Percent Required:</p>
-          <!-- <div class="rectangle-75-fkZ">
-          </div> -->
-          {{form.minpercentagerequired}}
-        </div>
+     
+      <div class="auto-group-e6xm-5Ch">
+        <p class="organization-name--E5b">Openings:</p>
+        <!-- <div class="rectangle-72-9TT">
+        </div> -->
+        {{form.openings}}
+      </div>
+
+      
+
         <div class="auto-group-c7mp-QCM">
           <p class="amount-to-be-given--iyj">Amount To Be Given:</p>
           <!-- <div class="rectangle-78-4Xo">
           </div> -->
-          {{form.amounttobegiven}}
+          {{form.amount}}
         </div>
-        <div class="auto-group-t3f3-1hw">
-          <!-- <div class="auto-group-gmqw-j89">
-            <img class="done-TK3" src="{% static 'assets/done-Csf.png'%}"/>
+       
+        
+        <div class="auto-group-e6xm-5Ch">
+          <p class="organization-name--E5b">Apply(URL):</p>
+          <!-- <div class="rectangle-72-9TT">
           </div> -->
-          <!-- <input class="auto-group-gmqw-j89" type="checkbox"/> -->
-          <p class="online-mode-PyP">Online Mode</p>
-          {{form. onlinemode}}
-          <!-- <div class="rectangle-77-uB3">
-          </div> -->
-          <!-- <input class="rectangle-77-uB3" type="checkbox"/> -->
-          <p class="offilne-mode-EDK">Offilne Mode</p>
-          {{form.offlinemode}}
+          {{form.apply}}
         </div>
-        <div class="auto-group-vw2q-95P">Short Description</div>
-        {{form.shortdescription}}
+
+        <!-- <div class="auto-group-vw2q-95P">Short Description</div> -->
+        {{form.description}}
       </div>
     </div>
     </form>
     <button class="auto-group-yixd-3Am">
     Submit
-    <br/>
-    
     </button>
-     
   </div>
   <div class="menu-FJD">
     <div class="frame-2-ZZo">
       <div class="auto-group-in4m-Wzq">
         <div class="group-7-Tv5">
+          <a href="eziiii-api.html">
           <div class="rectangle-21-2CV">
           </div>
           <div class="get-api-X9F">Get API</div>
-          <img class="bookmark-CWH" src="{% static 'assets/bookmark-pRj.png'%}"/>
+          <img class="bookmark-CWH" src="./assets/bookmark-pRj.png"/>
+          </a>
         </div>
         <div class="group-7-Tv5">
           <a href="hackathons.html">
           <div class="rectangle-21-2CV">
           </div>
           <p class="get-api-X9F">Hackathons</p>
-          <img class="bookmark-CWH" src="{% static 'assets/book-reading-XBT.png'%}"/>
+          <img class="bookmark-CWH" src="./assets/book-reading-XBT.png"/>
           </a>
         </div>
         <div class="group-7-Tv5">
@@ -102,16 +116,24 @@
           <div class="rectangle-21-2CV">
           </div>
           <p class="get-api-X9F">Scholarships</p>
-          <img class="bookmark-CWH" src="{% static 'assets/ebook-GRT.png'%}"/>
+          <img class="bookmark-CWH" src="./assets/ebook-GRT.png"/>
           </a>
         </div>
-      </div>
+      
       <div class="group-7-Tv5">
         <a href="internships-jobs.html">
         <div class="rectangle-21-2CV"> 
         </div>
         <p class="get-api-X9F">Intern/Jobs</p>
-        <img class="bookmark-CWH" src="{% static 'assets/internship-bg-QCM.png'%}"/>
+        <img class="bookmark-CWH" src="./assets/internship-bg-QCM.png"/>
+        </a>
+      </div>
+      <div class="group-7-Tv5">
+        <a href="institutelvlverification.html">
+        <div class="rectangle-21-2CV"> 
+        </div>
+        <p class="get-api-X9F">Student Verification</p>
+        <img class="bookmark-CWH" src="./assets/file-document-check-17j.png"/>
         </a>
       </div>
       <div class="group-7-Tv5">
@@ -119,21 +141,21 @@
         <div class="rectangle-21-2CV">
         </div>
         <p class="get-api-X9F">FAQ’s</p>
-        <img class="bookmark-CWH" src="{% static 'assets/progress-question-2sf.png'%}"/>
+        <img class="bookmark-CWH" src="./assets/progress-question-2sf.png"/>
         </a>
       </div>
+    </div>
     </div>
   </div>
   <div class="header-XXs">
     <div class="rectangle-2-fty">
     </div>
-    <img class="bcd3b4b5d471dae27a60bd4b5f07-1-x7P" src="{% static 'assets/bcd3b4b5d471dae27a60bd4b5f07-1-Skm.png'%}"/>
-    <img class="account-circle-5ho" src="{% static 'assets/account-circle-PED.png'%}"/>
+    <img class="bcd3b4b5d471dae27a60bd4b5f07-1-x7P" src="./assets/bcd3b4b5d471dae27a60bd4b5f07-1-Skm.png"/>
+    <img class="account-circle-5ho" src="./assets/account-circle-PED.png"/>
     <div class="madhvas">
     </div>
     <p class="ezapi">EzAPI</p>
-    <img class="bell" src="{% static 'assets/bell-8j7.png'%}"/>
-    
+    <img class="bell" src="./assets/bell-8j7.png"/>
   </div>
 </div>
 </body>
