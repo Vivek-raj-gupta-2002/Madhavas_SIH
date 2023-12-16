@@ -23,7 +23,7 @@
       <span>Hackathons</span>
       <span>:</span>
     </p>
-    <form action="{% url 'instithackathonForm' %}" method="post">
+    <form action="{% url 'instithackathonForm' %}" method="post"  enctype="multipart/form-data">
       {% csrf_token %}
     <div class="form-details-Yiq">
 

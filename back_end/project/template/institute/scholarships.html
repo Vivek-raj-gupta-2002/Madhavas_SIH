@@ -25,7 +25,7 @@
       <span class="scholarships--T2u-sub-0">:</span>
     </p>
 
-    <form action="{% url 'institScholarForm' %}" method="post">
+    <form action="{% url 'institScholarForm' %}" method="post"  enctype="multipart/form-data">
       {% csrf_token %}
     <div class="form-M1o">
       <div class="auto-group-e6xm-5Ch">
