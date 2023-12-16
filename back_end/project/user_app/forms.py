@@ -39,8 +39,6 @@ class UploadFormDoc(forms.ModelForm):
 
 
 
-
-
 class ScolarShipForm(forms.Form):
     highersecondarypercentage = forms.IntegerField(
         widget=forms.NumberInput(attrs={
@@ -175,10 +173,6 @@ class ScolarShipForm(forms.Form):
             'class': 'rectangle-61-Nyj'
         })
     )      
-
-
-
-
 
 
 

@@ -23,7 +23,7 @@
       <span>Hackathons</span>
       <span>:</span>
     </p>
-    <form action="{% url 'instithackathonForm' %}" method="post">
+    <form action="{% url 'instithackathonForm' %}" method="post" enctype="multipart/form-data">
       {% csrf_token %}
     <div class="form-details-Yiq">
 
@@ -63,7 +63,7 @@
           Max. Team Members Allowed:
           </p>
           <!-- <input class="rectangle-72-GHT" type="number"/> -->\
-          {{form.maxteammember}}
+          {{form.openings}}
         </div>
 
         <div class="auto-group-9xkx-1cR">
@@ -87,17 +87,17 @@
         
       </div>
     </div>
-    </form>
+    
 
     <div class="button-dQ9">
-      <button class="rectangle-66-aKP">Submit
-      </button>
+      <button class="rectangle-66-aKP" type="submit">Submit</button>
       <!-- <p class="submit-KXs">
       Submit
       <br/>
       
       </p> -->
     </div>
+  </form>
 
   </div>
   <div class="menu-FJD">

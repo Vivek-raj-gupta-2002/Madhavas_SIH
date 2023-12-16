@@ -1,7 +1,5 @@
 from django import forms
 from . import models
-from django import forms
-from . import models
 
 class ApiLoginForm(forms.Form):
     username = forms.CharField(
@@ -19,7 +17,7 @@ class ApiLoginForm(forms.Form):
 
 
 
-class InternForm(forms.Form):
+class InternForm(forms.ModelForm): 
     organiser = forms.CharField(
         widget=forms.TextInput(attrs={'class': 'rectangle-72-Mdo'})
     )
@@ -57,13 +55,16 @@ class InternForm(forms.Form):
         widget=forms.TextInput(attrs={'class': 'shortdiscription-dKj'})
     )
     class Meta:
-        
-        fields = ['orga_name','da_to' , 'da_from' , 'skill_req' , 'no_openning', 'max_pay',' min_pay','short_desc']
-    
+        model = models.Oppertunities_model
+        fields = (
+            'organiser', 'title', 'logo', 'Start_date', 'End_date', 'openings',
+            'description','apply', 'skillsrequired',
+            'maxpay', 'minpay',
+        )
 
 
 
-class ScholarForm(forms.Form):
+class ScholarForm(forms.ModelForm):
     organiser = forms.CharField(
         widget=forms.TextInput(attrs={'class': 'rectangle-72-9TT'})
     )
@@ -100,10 +101,13 @@ class ScholarForm(forms.Form):
         widget=forms.TextInput(attrs={'class': 'auto-group-vw2q-95P'})
     )
     class Meta: 
-        
-        fields = ['orga_name','da_to' , 'da_from' , 'min_percent' , 'amount_given', 'on_mode','off_mode','short_desc']
+        model = models.Oppertunities_model
+        fields = (
+            'organiser', 'title', 'logo', 'Start_date', 'End_date', 'openings',
+            'description','apply', 'amount'
+        )
 
-class Hackathon(forms.Form):
+class Hackathon(forms.ModelForm):
     organiser = forms.CharField(
         widget=forms.TextInput(attrs={'class': 'rectangle-72-GHT'})
     )
@@ -122,15 +126,17 @@ class Hackathon(forms.Form):
     End_date = forms.DateField(
         widget=forms.DateInput(attrs={'class': 'auto-group-bjgu-4m3', 'type': 'date', })
     )
-    maxteammember = forms.IntegerField(
+    openings = forms.IntegerField(
         widget=forms.NumberInput(attrs={'class': 'rectangle-72-GHT'})
     )
     
     onlinemode = forms.BooleanField(
-        widget=forms.CheckboxInput(attrs={'class': 'rectangle-77-gbP'})
+        widget=forms.CheckboxInput(attrs={'class': 'rectangle-77-gbP'}),
+        required=False
     )
     offlinemode = forms.BooleanField(
-        widget=forms.CheckboxInput(attrs={'class': 'rectangle-77-gbP'})
+        widget=forms.CheckboxInput(attrs={'class': 'rectangle-77-gbP'}),
+        required=False
     )
     apply = forms.URLField(
         widget=forms.URLInput(attrs={'class':'rectangle-72-GHT'})
@@ -138,8 +144,12 @@ class Hackathon(forms.Form):
     description = forms.CharField(
         widget=forms.TextInput(attrs={'class': 'auto-group-auvu-YtV'})
     )
-    class Meta:
 
-        fields = ['orga_name','da_to' , 'da_from' , 'skill_req' , 'no_openning', 'max_pay',' min_pay','short_desc']
-    
+
+    class Meta:
+        model = models.Oppertunities_model
+        fields = (
+            'organiser', 'title', 'logo', 'Start_date', 'End_date', 'openings',
+            'description','apply', 'onlinemode', 'offlinemode',
+        )
 

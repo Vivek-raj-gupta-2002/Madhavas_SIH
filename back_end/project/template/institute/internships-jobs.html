@@ -20,7 +20,7 @@
   
   <div class="body-pM3">
     <p class="internships-jobs--J1K">Internships/ Jobs:</p>
-    <form action="{% url 'institinternForm' %}" method="post">
+    <form action="{% url 'institinternForm' %}" method="post"  enctype="multipart/form-data">
       {% csrf_token %}
      <div class="document-form-oTs">
       <div class="auto-group-lpju-xLm">
