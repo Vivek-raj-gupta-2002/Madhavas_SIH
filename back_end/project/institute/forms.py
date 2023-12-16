@@ -102,3 +102,43 @@ class ScholarForm(forms.Form):
     class Meta: 
         
         fields = ['orga_name','da_to' , 'da_from' , 'min_percent' , 'amount_given', 'on_mode','off_mode','short_desc']
+
+class Hackathon(forms.Form):
+    organiser = forms.CharField(
+        widget=forms.TextInput(attrs={'class': 'rectangle-72-GHT'})
+    )
+    title = forms.CharField(
+        widget=forms.TextInput(attrs={'class': 'rectangle-72-GHT'})
+    )
+    logo = forms.FileField(
+        widget=forms.FileInput(attrs={'class': 'logo-input'})
+    )
+
+    Start_date = forms.DateField(
+        widget=forms.DateInput(attrs={
+            'class': 'auto-group-n997-ZQy', 'type': 'date',
+        })
+    )
+    End_date = forms.DateField(
+        widget=forms.DateInput(attrs={'class': 'auto-group-bjgu-4m3', 'type': 'date', })
+    )
+    maxteammember = forms.IntegerField(
+        widget=forms.NumberInput(attrs={'class': 'rectangle-72-GHT'})
+    )
+    
+    onlinemode = forms.BooleanField(
+        widget=forms.CheckboxInput(attrs={'class': 'rectangle-77-gbP'})
+    )
+    offlinemode = forms.BooleanField(
+        widget=forms.CheckboxInput(attrs={'class': 'rectangle-77-gbP'})
+    )
+    apply = forms.URLField(
+        widget=forms.URLInput(attrs={'class':'rectangle-72-GHT'})
+    ) 
+    description = forms.CharField(
+        widget=forms.TextInput(attrs={'class': 'auto-group-auvu-YtV'})
+    )
+    class Meta:
+        
+        fields = ['orga_name','da_to' , 'da_from' , 'skill_req' , 'no_openning', 'max_pay',' min_pay','short_desc']
+    

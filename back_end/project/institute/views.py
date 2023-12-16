@@ -86,3 +86,8 @@ def scholarView(requests):
     my_form = forms.ScholarForm()
 
     return render(requests, 'institute/scholarships.html', {'form': my_form})
+
+def hackView(requests):
+    my_form = forms.Hackathon()
+
+    return render(requests, 'institute/hackathons.html', {'form': my_form})
