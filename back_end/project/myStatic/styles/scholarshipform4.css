@@ -15,11 +15,11 @@ input {
 	border: none;
 }
 body {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
 }
 .scholarshipform4-iPF {
-  width: 100vw;
+  width: 100%;
   box-sizing: border-box;
   padding: 0.6rem 0rem 3.8rem 0rem;
   overflow: hidden;
@@ -28,6 +28,7 @@ body {
   display: flex;
   flex-direction: column;
   background-color: #ffffff;
+  /* margin-left: 10rem; */
 }
 .scholarshipform4-iPF .header-Q9b {
   margin-bottom: 0.6rem;
@@ -57,6 +58,8 @@ body {
   white-space: nowrap;
   flex-shrink: 0;
 }
+
+/* header ends */
 .scholarshipform4-iPF .starting-form-Pjb {
   margin: 0rem 12.4rem 0rem 18.9rem;
   width: calc(100% - 31.3rem);
@@ -125,8 +128,6 @@ body {
   display: flex;
   align-items: baseline;
   flex-shrink: 0;
-}
-.scholarshipform4-iPF .starting-form-Pjb .frame-25-3jb .caste-certificate-number-sCq .name-iz9 .name-iz9-sub-0 {
 }
 .scholarshipform4-iPF .starting-form-Pjb .frame-25-3jb .caste-certificate-number-sCq .name-iz9 .name-iz9-sub-1 {
   font-size: 2rem;

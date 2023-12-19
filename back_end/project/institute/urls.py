@@ -12,5 +12,6 @@ urlpatterns = [
     path("api/getClg/<str:type>", views.college_data_api, name='college_data'),
     path("api/getScl/<str:type>", views.school_data_api, name='school_data'),
     path("faq", views.faq_view, name='institute_faq'),
+    path("Institute_Level_Verify", views.institute_lvl_verification, name='Institute_level_verify'),
 
 ]
