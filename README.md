@@ -1,69 +1,44 @@
 # Project Setup Guide
-This document provides instructions on how to set up and run the project.
+This documentation provides instructions on how to set up and run the project.
 
-## Prerequisites
-1. Python 3.8 or later
-2. virtualenv
-3. Installation
+## Create a Virtual Environment with its file name .env.
 
-### Create a virtual environment:
-at location `./backend`
+### Create an API of data with the help of "AISHE" and "UDISE"
+1. [Aishe link](https://aishe.gov.in/aishe/instituteDirectoryIndex?hasReportLink=index)
 
-```
-python -m venv env
-```
+2. [Udise link](https://src.udiseplus.gov.in/)
 
-### Activate the virtual environment:
-at location `./backend`
-```
-source env/bin/activate
-```
+### The following steps should be followed in a sequenced manner
+1. Set up an environment file using Dockerfile and Docker-Compose file.
+   Command: 
+   ```
+   docker-compose build
+   ```
+2. Make a migrations.
+   Command:
+   ```
+   docker-compose run web python3 project/manage.py makemigrations
+   ```
+3. With the help of Migration, we create a Database.
+   Command: 
+   ```
+   docker-compose run web python3 project/manage.py migrate
+   ```
+4. Collectstatic.
+   Command:
+   ```
+   docker-compose run web python3 project/manage.py collect static
+   ```
+5. Create a superuser.
+   Command: 
+   ```
+   docker-compose run web python3 project/manage.py createsuperuser
+   ```
+6. Run the server on Django Developer.
+   Command: 
+   ```
+   docker-compose run web python3 project/manage.py run server
+   ```
 
-### Install the required dependencies:
-at location `./backend`
-``` 
-pip install -r requriments.txt 
-```
-
-### Create a .env file in the project directory with the following configuration:
-at location `./backend/project`
-`.env`
-
-```
-# Django setup
-DEBUG=True/False
-SECRET_KEY='<Your Key>'
-
-# database setup
-DATABASE='' # Database URL
-DATABASE_USER='' # Database username
-DATABASE_PASSWORD='' # Database password
-DATABASE_HOST='' # Database host
-DATABASE_PORT='' # Database port
-
-# Email Setup
-EMAIL_USER=''
-EMAIL_PASSWORD=''
-
-```
-at location `./backend/project`
-
-### Run the following commands:
-```
-$ python manage.py migrate
-
-$ python manage.py collectstatic
-
-$ python manage.py createsuperuser
-
-$ python manage.py runserver
-
-```
-
-
-### Additional Notes
-1. Replace <Your Key> with a strong secret key.
-2. You cannot use direct password in `EMAIL_PASSWORD` in case of gmail use: [APP Password guide](https://support.google.com/accounts/answer/185833?visit_id=638378288407547944-1516551644&p=InvalidSecondFactor&rd=1
-).
-3. Update the database configuration with your own database details.
-4. The project is now running on http://localhost:8000.
+### Additional notes
+The project is now running on [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
