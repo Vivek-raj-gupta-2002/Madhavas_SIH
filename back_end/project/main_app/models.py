@@ -102,6 +102,7 @@ class CustomUser(AbstractUser):
     is_institute = models.BooleanField(default=False)
     is_student = models.BooleanField(default=False)
     is_verified = models.BooleanField(default=False)
+    is_state = models.BooleanField(default=False)
 
     #image field
     profile_pic = models.ImageField(upload_to='profile', blank=True, null=True)

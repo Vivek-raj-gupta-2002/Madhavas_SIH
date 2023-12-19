@@ -48,7 +48,8 @@ INSTALLED_APPS = [
     # ...
     'main_app',
     'user_app',
-    'institute', 
+    'institute',
+    'state_app',
 
 ]
 

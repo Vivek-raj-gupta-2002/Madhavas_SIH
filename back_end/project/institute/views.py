@@ -128,43 +128,6 @@ def logout_api_view(request):
 
 
 
-def api_dashboard_api(request):
-    
-    if not(request.user.is_authenticated):
-        return redirect('api_login')  # Redirect to the login page if user is not logged in
-
-    my_user = CustomUser.objects.filter(username=request.user).first()
-
-
-    if not(my_user.is_institute):
-        return redirect('login')
-    
-    send_data = {}
-
-    scl_data = institute_data.SchoolData()
-
-    send_data['state'] = scl_data.get_unique_state()
-
-    
-    if 'type' in request.GET:
-
-
-        if request.GET['type'] == 'school':
-            # check for state
-            
-            formState = request.GET['state']
-
-            send_data['api'] = f'127.0.0.1:8000/institute/api/getScl/{formState}'
-
-        if request.GET['type'] == 'college':
-            formState = request.GET['state']
-
-            send_data['api'] = f'127.0.0.1:8000/institute/api/getClg/{formState}'
-
-
-
-    return render(request, 'institute/eziiii-api.html', send_data)
-
 
 
 # Scholarship Form
