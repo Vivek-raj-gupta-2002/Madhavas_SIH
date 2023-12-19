@@ -5,6 +5,38 @@ from main_app.models import CustomUser
 from institute import forms
 from django.http import HttpResponse
 from utills import institute_data
+from django.views.decorators.http import require_http_methods
+
+
+# Scholarship Form
+@require_http_methods(['GET', 'POST'])
+def scholarView(request):
+    
+    if not(request.user.is_authenticated):
+        return redirect('api_login')  # Redirect to the login page if user is not logged in
+
+    my_user = CustomUser.objects.filter(username=request.user).first()
+
+
+    if not(my_user.is_state):
+        return redirect('login')
+    
+    send_data = {}
+
+    my_form = forms.ScholarForm()
+
+    if request.method == 'POST':
+        my_form = forms.ScholarForm(request.POST, request.FILES)
+
+        # checking if the form follows all the validation
+        if my_form.is_valid():
+            instance = my_form.save(commit=False)
+            instance.user = my_user
+            instance.is_scholarship = True
+            instance.save()
+            return redirect('institScholarForm')
+
+    return render(request, 'state/scholarships.html', {'form': my_form})
 
 
 
