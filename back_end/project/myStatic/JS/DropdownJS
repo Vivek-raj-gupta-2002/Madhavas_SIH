@@ -1,68 +1,44 @@
+// JS code
+document.addEventListener("DOMContentLoaded", function() {
+  // Get the arrow-down-drop-circle-PoK image element
+  var arrowDownImage = document.querySelector(".arrow-down-drop-circle-PoK");
+  var arrowDownImage2 = document.getElementById("educational12");
+  var arrowDownImage3 = document.getElementById("scholarship12");
+  var arrowDownImage4 = document.getElementById("other12");
 
-// File: script.js
+  // Add a click event listener to the arrow-down-drop-circle-PoK image
+  arrowDownImage.addEventListener("click", function() {
+    // Get the document container element
+    var documentContainer = document.getElementById("documentContainer");
 
-// Function to toggle the visibility of the document container
-function toggleDocuments() {
-  // Get the document container element
-  var documentContainer = document.getElementById("documentContainer");
+    // Toggle the visibility class of the auto-group-acaz-rB7 div
+    documentContainer.classList.toggle("documents-visible");
+  });
 
-  // Toggle the visibility class
-  documentContainer.classList.toggle("documents-visible");
- 
-}
-
-//For educatiion
-function toggleEducationalDocuments() {
+  arrowDownImage2.addEventListener("click", function() {
     // Get the document container element
     var documentContainer = document.getElementById("educationalDocument");
-  
-    // Toggle the visibility class
-    documentContainer.classList.toggle("educational1Document");
-   
-  }
 
-  function toggleFamilyDocuments() {
+    // Toggle the visibility class of the auto-group-acaz-rB7 div
+    documentContainer.classList.toggle("educational1Document");
+  });
+
+  arrowDownImage3.addEventListener("click", function() {
     // Get the document container element
     var documentContainer = document.getElementById("scholarshipDocument");
-  
-    // Toggle the visibility class
-    documentContainer.classList.toggle("scholarshipDocumentvisible");
-   
-  }
 
-  function toggleOtherDocuments() {
+    // Toggle the visibility class of the auto-group-acaz-rB7 div
+    documentContainer.classList.toggle("scholarshipDocumentvisible");
+  });
+
+  arrowDownImage4.addEventListener("click", function() {
     // Get the document container element
     var documentContainer = document.getElementById("otherDocument");
-  
-    // Toggle the visibility class
+
+    // Toggle the visibility class of the auto-group-acaz-rB7 div
     documentContainer.classList.toggle("Otherdocuments-visible");
-   
-  }
-  
-  function toggleAnswer() {
-    var answerContainer = document.getElementById('faqItem');
-    answerContainer.classList.toggle('expanded');
-  }
+  });
   
 
 
-// Attach click event to the arrow-down-drop-circle-PoK element
-document.addEventListener("DOMContentLoaded", function () {
-  var toggleButton = document.getElementById("personalDocumentToggle");
-  toggleButton.addEventListener("click", toggleDocuments);
-
-  var toggleButton1 = document.getElementById("educationalDocumentToggle");
-  toggleButton1.addEventListener("click", toggleEducationalDocuments);
-  console.log("Clicked")
-
-  var toggleButton2 = document.getElementById("familyDocumentToggle");
-  toggleButton2.addEventListener("click", toggleFamilyDocuments);
-  console.log("Clicked")
-
-  var toggleButton3 = document.getElementById("OtherDocumentToggle");
-  toggleButton3.addEventListener("click", toggleOtherDocuments);
-  console.log("Clicked")
-  
 });
-
-

@@ -117,6 +117,9 @@ body {
   vertical-align: top;
   flex-shrink: 0;
 }
+
+
+
 .issueddocuments-Ebf .body-xXf .issueddocuments-t3w .personal-documement-bDF .line-1-JfP {
   margin-bottom: 0.4rem;
   width: 100%;
@@ -511,7 +514,16 @@ body {
   object-fit: contain;
   vertical-align: top;
 }
-
+.issueddocuments-Ebf .body-xXf .issueddocuments-t3w .personal-documement-bDF .auto-group-8ieh-tTF .arrow-down-drop-circle-PoK {
+  margin-top: 0.6rem;
+  width: 4.9167rem;
+  height: 5.1667rem;
+  position: absolute;
+  right: 1rem; /* Adjust this value based on your layout */
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
 
 
 .issueddocuments-Ebf  .menu-Qp5 {
