@@ -188,3 +188,5 @@ class OneTimePass(models.Model):
 
     def __str__(self) -> str:
         return str(self.aadhar_no) + str(self.sending_time)
+    
+    
