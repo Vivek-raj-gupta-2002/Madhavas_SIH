@@ -9,6 +9,21 @@ from utills import institute_data
 from django.views.decorators.csrf import csrf_exempt
 
 # Create your views here.
+
+def faq_view(request):
+
+    if not(request.user.is_authenticated):
+        return redirect('api_login')  # Redirect to the login page if user is not logged in
+
+    my_user = CustomUser.objects.filter(username=request.user).first()
+
+
+    if not(my_user.is_institute):
+        return redirect('login')
+
+    return render(request, 'institute/faq.html')
+    pass
+
 csrf_exempt
 @require_http_methods(["GET"])
 def college_data_api(request, type: str):
