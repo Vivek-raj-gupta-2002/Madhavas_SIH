@@ -41,7 +41,6 @@ def scholarView(request):
 
 
 
-
 def login_view(request):
     
     if(request.user.is_authenticated):
