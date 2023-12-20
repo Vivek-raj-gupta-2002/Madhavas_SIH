@@ -100,7 +100,7 @@ def new_scholar_view(request):
             instance.save()
             return redirect('institScholarForm')
 
-    return render(request, 'state/Newscholarships.html', {'form': my_form})
+    return render(request, 'state/ScholarShipGen.html', {'form': my_form})
 
 
 
