@@ -38,6 +38,37 @@ def scholarView(request):
 
     return render(request, 'state/scholarships.html', {'form': my_form})
 
+#New Register Form
+# Scholarship Form
+@require_http_methods(['GET', 'POST'])
+def scholarRegisterView(request):
+    
+    if not(request.user.is_authenticated):
+        return redirect('api_login')  # Redirect to the login page if user is not logged in
+
+    my_user = CustomUser.objects.filter(username=request.user).first()
+
+
+    if not(my_user.is_state):
+        return redirect('login')
+    
+    send_data = {}
+
+    my_form = forms.ScholarForm()
+
+    if request.method == 'POST':
+        my_form = forms.StateForm(request.POST, request.FILES)
+
+        # checking if the form follows all the validation
+        if my_form.is_valid():
+            instance = my_form.save(commit=False)
+            instance.user = my_user
+            instance.is_scholarship = True
+            instance.save()
+            return redirect('institScholarForm')
+
+    return render(request, 'state/scholarships.html', {'form': my_form})
+
 
 
 # Create your views here.

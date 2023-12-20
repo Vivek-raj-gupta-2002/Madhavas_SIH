@@ -263,10 +263,10 @@ class SignupForm(UserCreationForm):
 
 
 class StateForm(forms.ModelForm):
-    caste=forms.CharField (
+    caste=forms.CharField(
         widget=forms.TextInput(
             attrs={'class':''}
-        )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          z
+        )
     )
 
     income=forms.CharField(
@@ -294,6 +294,6 @@ class StateForm(forms.ModelForm):
     )
 
     class Meta:
-        model = models.StateForm
+        
         fields = ['caste', 'income', 'percentage', 'state', 'attandence',]
         exclude=('password2',)

@@ -1,0 +1,161 @@
+{%load static%}
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <title>Register New Scholarships</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro%3A400%2C500%2C700"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=JejuGothic%3A400"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans%3A500"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans%3A700"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jomolhari%3A400"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=jsMath-cmbx10%3A700"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jockey+One%3A400"/>
+  <link rel="stylesheet" href="{% static '/styles/scholarships.css' %}"/>
+</head>
+<body>
+<div class="scholarships-2CV">
+  <div class="scholarship-form-ApV">
+
+    <p class="scholarships--T2u">
+      <span class="scholarships--T2u-sub-0"> Register Scholarships</span>
+      <span class="scholarships--T2u-sub-0">:</span>
+    </p>
+
+    <form action="{% url 'stateScholarForm' %}" method="post"  enctype="multipart/form-data">
+      {% csrf_token %}
+    <div class="form-M1o">
+      <div class="auto-group-e6xm-5Ch">
+        <p class="organization-name--E5b">Organization Name:</p>
+        <!-- <input class="rectangle-72-9TT" type="text"/> -->
+        {{form.organiser}}
+      </div>
+     
+       
+      <div class="auto-group-e6xm-5Ch">
+        <p class="organization-name--E5b">Title:</p>
+        <!-- <div class="rectangle-72-9TT">
+        </div> -->
+        {{form.title}}
+      </div>
+     
+      <div class="auto-group-e6xm-5Ch">
+        <label for="logoInput" class="organization-name--E5b">Upload Logo:</label>
+        <!-- <input type="file" id="logoInput" class="logo-input" accept="image/*" /> -->
+        {{form.logo}}
+      </div>
+     
+      <div class="auto-group-e6xm-5Ch">
+        <p class="organization-name--E5b">Duration:</p>
+        <p class="to--LXw">To:</p>
+        <!-- <input class="auto-group-juvd-qDo" type="text"placeholder="DD|MM|YYYY"/> -->
+        
+        {{form.Start_date}}
+        <p class="from--Hbb">From:</p>
+        <!-- <input class="auto-group-zfup-cds" type="text"placeholder="DD|MM|YYYY"/> -->
+        {{form.End_date}}
+      </div>
+     
+      <div class="auto-group-e6xm-5Ch">
+        <p class="organization-name--E5b">Openings:</p>
+        <!-- <div class="rectangle-72-9TT">
+        </div> -->
+        {{form.openings}}
+      </div>
+
+      
+
+        <div class="auto-group-c7mp-QCM">
+          <p class="amount-to-be-given--iyj">Amount To Be Given:</p>
+          <!-- <div class="rectangle-78-4Xo">
+          </div> -->
+          {{form.amount}}
+        </div>
+       
+        
+        <div class="auto-group-e6xm-5Ch">
+          <p class="organization-name--E5b">Apply(URL):</p>
+          <!-- <div class="rectangle-72-9TT">
+          </div> -->
+          {{form.apply}}
+        </div>
+
+        <!-- <div class="auto-group-vw2q-95P">Short Description</div> -->
+        {{form.description}}
+      </div>
+    </div>
+    <button class="auto-group-yixd-3Am">
+      Submit
+    </button>
+  </form>
+  </div>
+  <div class="menu-FJD">
+    <div class="frame-2-ZZo">
+      <div class="auto-group-in4m-Wzq">
+        <div class="group-7-Tv5">
+          <a href="eziiii-api.html">
+          <div class="rectangle-21-2CV">
+          </div>
+          <div class="get-api-X9F">Get API</div>
+          <img class="bookmark-CWH" src="./assets/bookmark-pRj.png"/>
+          </a>
+        </div>
+        <div class="group-7-Tv5">
+          <a href="hackathons.html">
+          <div class="rectangle-21-2CV">
+          </div>
+          <p class="get-api-X9F">Hackathons</p>
+          <img class="bookmark-CWH" src="./assets/book-reading-XBT.png"/>
+          </a>
+        </div>
+        <div class="group-7-Tv5">
+          <a href="scholarships.html">
+          <div class="rectangle-21-2CV">
+          </div>
+          <p class="get-api-X9F">Scholarships</p>
+          <img class="bookmark-CWH" src="./assets/ebook-GRT.png"/>
+          </a>
+        </div>
+      
+      <div class="group-7-Tv5">
+        <a href="internships-jobs.html">
+        <div class="rectangle-21-2CV"> 
+        </div>
+        <p class="get-api-X9F">Intern/Jobs</p>
+        <img class="bookmark-CWH" src="./assets/internship-bg-QCM.png"/>
+        </a>
+      </div>
+      <div class="group-7-Tv5">
+        <a href="institutelvlverification.html">
+        <div class="rectangle-21-2CV"> 
+        </div>
+        <p class="get-api-X9F">Student Verification</p>
+        <img class="bookmark-CWH" src="./assets/file-document-check-17j.png"/>
+        </a>
+      </div>
+      <div class="group-7-Tv5">
+        <a href="faq.html">
+        <div class="rectangle-21-2CV">
+        </div>
+        <p class="get-api-X9F">FAQ’s</p>
+        <img class="bookmark-CWH" src="./assets/progress-question-2sf.png"/>
+        </a>
+      </div>
+    </div>
+    </div>
+  </div>
+  <div class="header-XXs">
+    <div class="rectangle-2-fty">
+    </div>
+    <img class="bcd3b4b5d471dae27a60bd4b5f07-1-x7P" src="./assets/bcd3b4b5d471dae27a60bd4b5f07-1-Skm.png"/>
+    <img class="account-circle-5ho" src="./assets/account-circle-PED.png"/>
+    <div class="madhvas">
+    </div>
+    <p class="ezapi">EzAPI</p>
+    <img class="bell" src="./assets/bell-8j7.png"/>
+  </div>
+</div>
+</body>
