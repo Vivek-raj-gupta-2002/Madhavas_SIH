@@ -177,6 +177,7 @@ class ScolarShipForm(forms.ModelForm):
     class Meta:
         model = ScholarShipFormModel 
         fields = '__all__'
+        exclude = ('filed_by', ) 
 
 
 

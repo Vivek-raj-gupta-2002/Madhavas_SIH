@@ -32,69 +32,30 @@ links = {
 
 @login_required
 @require_http_methods(["GET", "POST"])
-def scholarShip(request, number):
+def scholarShip(request):
 
-    my_user = request.user
-
-    user_data = CustomUser.objects.filter(username = my_user.username).first() 
-
+    my_user = CustomUser.objects.filter(username=request.user).first()
 
     my_form = forms.ScolarShipForm()
+    
+    if request.method == 'POST':
 
-    if request.method == 'GET':
-        template = 'scholarshipform4.html'
+        my_form = forms.ScolarShipForm(request.POST, request.FILES)
 
-    else:
-        if number == 2:
-            our_data = ScholarShipFormModel.objects.get_or_create(EmailAddress=request.POST['EmailAddress'])
-            print(our_data)
-            template = 'scholarshipform.html'
-
-            if request.method == 'POST':
-
-                
-
-                my_form = forms.ScolarShipForm(request.POST, request.FILES) 
-            
+        print(my_form)
+        my_form.filed_by = my_user
+        print(my_form.is_valid())
         
-        elif number == 3:
+        if my_form.is_valid():
+            instance = my_form.save(commit=False)
+            instance.filed_by = my_user
+            instance.save()
 
-            template = 'scholarship-form2.html'
+            return redirect('login')
 
-            if request.method == 'POST':
-                my_form = forms.ScolarShipForm(request.POST, request.FILES)
+    send_data = {'form': my_form}
 
-        
-        elif number == 4:
-
-            template = 'scholarship-form3.html'
-
-            if request.method == 'POST':
-                my_form = forms.ScolarShipForm(request.POST, request.FILES)
-
-        elif number == 5:
-
-            if request.method == 'POST':
-                my_form = forms.ScolarShipForm(request.POST, request.FILES)
-                
-                print(my_form)
-                
-                instance = my_form.save(commit=False)
-                instance.filed_by = my_user
-                instance.save()
-
-
-
-                return redirect('dashboard')
-            
-            else:
-                return redirect('dashboard')
-        
-        else:
-            
-            return Http404()
-        
-    return render(request, f'Scholarship/{template}', {'form': my_form})
+    return render(request, 'Scholarship/allscolar.html', send_data)
 
 
 
