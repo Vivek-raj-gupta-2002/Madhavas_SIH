@@ -40,30 +40,56 @@ def scholarShip(request, number):
 
     my_form = forms.ScolarShipForm()
 
-
-    if number == 1:
-
-        
-
-        
-        return render(request, "Scholarship/scholarshipform4.html", {'form': my_form})
-
-
-    elif number == 2:
-        
-        return render(request, "Scholarship/scholarshipform.html", {'form': my_form})
-    
-    elif number == 3:
-        
-        return render(request, "Scholarship/scholarship-form2.html", {'form': my_form})
-    
-    elif number == 4:
-        
-        return render(request, "Scholarship/scholarship-form3.html", {'form': my_form})
+    if request.method == 'GET':
+        template = 'scholarshipform4.html'
 
     else:
+        if number == 2:
+
+            template = 'scholarshipform.html'
+
+            if request.method == 'POST':
+                my_form = forms.ScolarShipForm(request.POST, request.FILES) 
+            
         
-        return Http404()
+        elif number == 3:
+
+            template = 'scholarship-form2.html'
+
+            if request.method == 'POST':
+                my_form = forms.ScolarShipForm(request.POST, request.FILES)
+
+        
+        elif number == 4:
+
+            template = 'scholarship-form3.html'
+
+            if request.method == 'POST':
+                my_form = forms.ScolarShipForm(request.POST, request.FILES)
+
+        elif number == 5:
+
+            if request.method == 'POST':
+                my_form = forms.ScolarShipForm(request.POST, request.FILES)
+                
+                print(my_form)
+                
+                instance = my_form.save(commit=False)
+                instance.filed_by = my_user
+                instance.save()
+
+
+
+                return redirect('dashboard')
+            
+            else:
+                return redirect('dashboard')
+        
+        else:
+            
+            return Http404()
+        
+    return render(request, f'Scholarship/{template}', {'form': my_form})
 
 
 
