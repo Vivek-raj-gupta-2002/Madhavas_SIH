@@ -31,7 +31,7 @@ links = {
 
 @login_required
 @require_http_methods(["GET", "POST"])
-def scholarShip(request, number, auto=False):
+def scholarShip(request, number):
 
     my_user = request.user
 
@@ -42,53 +42,11 @@ def scholarShip(request, number, auto=False):
 
 
     if number == 1:
-
-        if auto:
-
-            data = {
-                'name': user_data.Name,
-                'dateOfBirth': user_data.dob,
-                'Fathername': '',
-                'Gender': user_data.gender,
-                'Address': '',
-                'PinCode': '',
-                'MobileNUmber': user_data.phone_number,
-                'EmailAddress': user_data.email,
-                'MaritalStatus': ''
-
-            }
-
-            my_form = forms.ScolarShipForm(initial=data)
-            
-    
+        
         return render(request, "Scholarship/scholarshipform4.html", {'form': my_form})
 
 
     elif number == 2:
-
-        if auto:
-            data = {}
-            up_data = models.UploadForm.objects.filter(user=my_user)
-
-            caste = up_data.filter(document_type='Caste').first()
-
-
-            if caste:
-
-                print("ohk", caste.document_number)
-
-                data = {
-                    'CasteCertificate': caste.document_number,
-                    'CasteCertificateUpload': {'url': caste.document.url}
-                }
-
-            my_form = forms.ScolarShipForm(request.POST, initial=data)
-
-
-            if request.method == 'POST':
-                my_form = forms.ScolarShipForm(request.POST, request.FILES)
-
-                print(my_form)
         
         return render(request, "Scholarship/scholarshipform.html", {'form': my_form})
     

@@ -71,9 +71,6 @@ def scholarRegisterView(request):
 
 
 
-# Create your views here.
-def state_scolar_form(requests):
-    pass
 
 def login_view(request):
     

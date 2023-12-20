@@ -1,6 +1,7 @@
 from django.db import models
 from main_app.models import CustomUser
 
+
 # Create your models here.
 
 gender_choices = (
@@ -46,32 +47,34 @@ class UploadForm(models.Model):
         unique_together = ('document_type', 'user')
 
 
-class ScholarShipForm(models.Model):
-
+class ScholarShipFormModel(models.Model):
+    filed_by = models.ForeignKey(CustomUser, on_delete=models.CASCADE)
     name = models.CharField(max_length=100)
     dateOfBirth = models.DateField()
     Fathername = models.CharField(max_length=100)
     Gender = models.CharField(max_length=1, choices=gender_choices)
     Address = models.CharField(max_length=100)
     PinCode =  models.IntegerField()
-    MobileNUmber = models.IntegerField()
+    MobileNUmber = models.CharField(max_length=20)
     EmailAddress = models.EmailField()
-    MaritalStatus = models.CharField(max_length=100)
+    institute = models.CharField(max_length=100)
     CasteCertificate = models.CharField(max_length=100)
-    CasteCertificateUpload = models.FileField()
+    CasteCertificateUpload = models.FileField() 
     DomicileCertificate = models.CharField(max_length=100)
     DomicileCertificateUpload = models.FileField()
     VOterID = models.CharField(max_length=100)
     PanCard = models.FileField()
+    # inst
     SSmID = models.CharField(max_length=100)
     IncomeCertificate= models.CharField(max_length=100)
     IncomeCertificateUpload = models.FileField()
 
+    is_institute_verify = models.BooleanField(default=False)
+    is_state_verify = models.BooleanField(default=False)
+    approved = models.BooleanField(default=False)
+    is_money_depo = models.BooleanField(default=False)
+ 
 
 
 
-
-
-
-    class Meta:
-        unique_together = ('document_type', 'user')
+    

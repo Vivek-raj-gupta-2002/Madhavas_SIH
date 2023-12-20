@@ -52,7 +52,7 @@
       </div> -->
 
       <div class="group-7-Tv5">
-        <a href="institutelvlverification.html">
+        <a href="{% url 'Institute_level_verify' %}">
         <div class="rectangle-21-2CV"> 
         </div>
         <p class="get-api-X9F">Student Verification</p>
@@ -61,7 +61,7 @@
       </div>
       
       <div class="group-7-Tv5">
-        <a href="faq.html">
+        <a href="{% url 'institute_faq' %}">
         <div class="rectangle-21-2CV">
         </div>
         <p class="get-api-X9F">FAQ’s</p>
@@ -112,10 +112,10 @@
   <div>
     <table  class="ks">
         <tr class="header">
-            <th rowspan="2">Studemts</th>
             <th rowspan="2">Name</th>
-            <th rowspan="2">Enrollement No.</th>
-            <th rowspan="2">Payment Slip</th>
+            <th rowspan="2">Student</th>
+            <th rowspan="2">PAN Card</th>
+            <th rowspan="2">Domacile</th>
             <th colspan="2">Verification</th>
         </tr>
 
@@ -123,15 +123,13 @@
             <th>Automate Verification</th>
             <th>Manual Verification</th>
         </tr>
-
+        <form action="" method="get">
+        {% for item in data %}
         <tr class="header1">
-            <th>1</th>
-            <th>kapil</th>
-            <th>0808</th>
-            <th>Document
-              <br>
-              <input type="file" id="logoInput" class="logo-input" accept="image/*" />
-            </th>
+            <th>{{item.name}}</th>
+            <th>{{item.dateOfBirth}}</th>
+            <th>{{item.PanCard}}</th>
+            <th>{{item.CasteCertificate}}</th>
             <th>Verified</th>
             <th class="radio">
                 <input type="radio">
@@ -140,24 +138,10 @@
                 <p>Reject</p>
             </th>
         </tr>
+      </form>
+        {% endfor %}
 
-        <tr class="header1">
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-        </tr>
-
-        <tr class="header1">
-          <th></th>
-          <th></th>
-          <th></th>
-          <th></th>
-          <th></th>
-          <th></th>
-      </tr>
+        
 
     </table>
   </div>
