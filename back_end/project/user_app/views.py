@@ -31,7 +31,7 @@ links = {
 
 @login_required
 @require_http_methods(["GET", "POST"])
-def scholarShip(request, number, auto=False):
+def scholarShip(request, number):
 
     my_user = request.user
 
@@ -40,69 +40,56 @@ def scholarShip(request, number, auto=False):
 
     my_form = forms.ScolarShipForm()
 
+    if request.method == 'GET':
+        template = 'scholarshipform4.html'
 
-    if number == 1:
+    else:
+        if number == 2:
 
-        if auto:
+            template = 'scholarshipform.html'
 
-            data = {
-                'name': user_data.Name,
-                'dateOfBirth': user_data.dob,
-                'Fathername': '',
-                'Gender': user_data.gender,
-                'Address': '',
-                'PinCode': '',
-                'MobileNUmber': user_data.phone_number,
-                'EmailAddress': user_data.email,
-                'MaritalStatus': ''
-
-            }
-
-            my_form = forms.ScolarShipForm(initial=data)
+            if request.method == 'POST':
+                my_form = forms.ScolarShipForm(request.POST, request.FILES) 
             
-    
-        return render(request, "Scholarship/scholarshipform4.html", {'form': my_form})
+        
+        elif number == 3:
 
-
-    elif number == 2:
-
-        if auto:
-            data = {}
-            up_data = models.UploadForm.objects.filter(user=my_user)
-
-            caste = up_data.filter(document_type='Caste').first()
-
-
-            if caste:
-
-                print("ohk", caste.document_number)
-
-                data = {
-                    'CasteCertificate': caste.document_number,
-                    'CasteCertificateUpload': {'url': caste.document.url}
-                }
-
-            my_form = forms.ScolarShipForm(request.POST, initial=data)
-
+            template = 'scholarship-form2.html'
 
             if request.method == 'POST':
                 my_form = forms.ScolarShipForm(request.POST, request.FILES)
 
-                print(my_form)
         
-        return render(request, "Scholarship/scholarshipform.html", {'form': my_form})
-    
-    elif number == 3:
-        
-        return render(request, "Scholarship/scholarship-form2.html", {'form': my_form})
-    
-    elif number == 4:
-        
-        return render(request, "Scholarship/scholarship-form3.html", {'form': my_form})
+        elif number == 4:
 
-    else:
+            template = 'scholarship-form3.html'
+
+            if request.method == 'POST':
+                my_form = forms.ScolarShipForm(request.POST, request.FILES)
+
+        elif number == 5:
+
+            if request.method == 'POST':
+                my_form = forms.ScolarShipForm(request.POST, request.FILES)
+                
+                print(my_form)
+                
+                instance = my_form.save(commit=False)
+                instance.filed_by = my_user
+                instance.save()
+
+
+
+                return redirect('dashboard')
+            
+            else:
+                return redirect('dashboard')
         
-        return Http404()
+        else:
+            
+            return Http404()
+        
+    return render(request, f'Scholarship/{template}', {'form': my_form})
 
 
 
