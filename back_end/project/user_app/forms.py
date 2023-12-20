@@ -39,7 +39,7 @@ class UploadFormDoc(forms.ModelForm):
 
 
 
-class ScolarShipForm(forms.Form):
+class ScolarShipForm(forms.ModelForm):
     highersecondarypercentage = forms.IntegerField(
         widget=forms.NumberInput(attrs={
             'class': 'rectangle-55-gPw'
@@ -176,6 +176,7 @@ class ScolarShipForm(forms.Form):
 
     class Meta:
         model = ScholarShipFormModel 
+        fields = '__all__'
 
 
 
@@ -265,3 +266,38 @@ class SignupForm(UserCreationForm):
         
 
 
+class StateForm(forms.ModelForm):
+    caste=forms.CharField(
+        widget=forms.TextInput(
+            attrs={'class':''}
+        )
+    )
+
+    income=forms.CharField(
+        widget=forms.TextInput(
+            attrs={'class':''}
+        )
+    )
+
+    percentage=forms.IntegerField(
+        widget=forms.NumberInput(
+            attrs={'class':''}
+        )
+    )
+
+    state=forms.CharField(
+        widget=forms.Textarea(
+            attrs={'class':''}
+        )
+    )
+
+    attandence=forms.IntegerField(
+        widget=forms.NumberInput(
+            attrs={'class':''}
+        )
+    )
+
+    class Meta:
+        
+        fields = ['caste', 'income', 'percentage', 'state', 'attandence',]
+        exclude=('password2',)

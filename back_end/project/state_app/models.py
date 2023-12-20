@@ -9,9 +9,9 @@ class StateScholarForm(models.Model):
     
     caste=models.CharField(max_length=100)
     income=models.CharField(max_length=100)
-    percentage=models.IntegerField(max_length=100)
+    percentage=models.IntegerField()
     state=models.CharField(max_length=100)
-    attandence=models.IntegerField(max_length=100)
+    attandence=models.IntegerField()
 
     user = models.ForeignKey(CustomUser,on_delete=models.CASCADE)
     logo = models.ImageField(upload_to='intern')
