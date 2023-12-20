@@ -176,6 +176,7 @@ class ScolarShipForm(forms.ModelForm):
 
     class Meta:
         model = ScholarShipFormModel 
+        fields = '__all__'
 
 
 

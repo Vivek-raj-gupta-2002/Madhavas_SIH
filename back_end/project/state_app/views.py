@@ -7,6 +7,8 @@ from django.http import HttpResponse
 from utills import institute_data
 from django.views.decorators.http import require_http_methods
 
+from . import forms
+
 
 # Scholarship Form
 @require_http_methods(['GET', 'POST'])
@@ -23,10 +25,10 @@ def scholarView(request):
     
     send_data = {}
 
-    my_form = forms.ScholarForm()
+    my_form = forms.StateForm()
 
     if request.method == 'POST':
-        my_form = forms.ScholarForm(request.POST, request.FILES)
+        my_form = forms.StateForm(request.POST, request.FILES)
 
         # checking if the form follows all the validation
         if my_form.is_valid():
@@ -36,7 +38,7 @@ def scholarView(request):
             instance.save()
             return redirect('institScholarForm')
 
-    return render(request, 'state/scholarships.html', {'form': my_form})
+    return render(request, 'state/ScholarShipGen.html', {'form': my_form})
 
 #New Register Form
 # Scholarship Form
