@@ -26,7 +26,7 @@
       <p class="academic-details-phB">Academic  Details</p>
       <p class="required-fields-iGm">* Required Fields</p>
     </div>
-    <form action="" method="post">
+    <form action="{% url 'scolarShip' number=4 %}" method="post" enctype="multipart/form-data">
       {% csrf_token %}
 
     <div class="academic-detail-form-nGd">
@@ -98,12 +98,15 @@
         <!-- <input class="group-25-jxR" type="numbeer"/> -->
       </div>
     </div>
-    </form>
-    <div class="next-button-T1F">
+    
+    <button type="submit" class="next-button-T1F">
       <div class="rectangle-68-m1w">
       </div>
       <p class="next-7Lh">Next</p>
-    </div>
+    </button>
+
+  </form>
+
   </div>
 </div>
 

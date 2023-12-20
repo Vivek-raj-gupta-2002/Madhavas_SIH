@@ -25,7 +25,8 @@
       <p class="following-certificate-must-be-uploaded-in-image-form-8eH">Following Certificate must be uploaded in image form</p>
       <p class="required-fields-RtH">* Required Fields</p>
     </div>
-    <form action="" method="post">
+    <form action="{% url 'scolarShip' number=3 %}" enctype="multipart/form-data" method="post">
+
       {% csrf_token %}
     <div class="frame-25-tms">
       <div class="auto-group-2xbj-R17">
@@ -109,12 +110,13 @@
         </div>
       </div>
     </div>
-    </form>
-    <div class="button-ys3">
+    
+    <button class="button-ys3">
       <div class="rectangle-68-LSh">
       </div>
       <p class="next-Uoo">Next</p>
-    </div>
+    </button>
+  </form>
   </div>
 </div>
 </body>

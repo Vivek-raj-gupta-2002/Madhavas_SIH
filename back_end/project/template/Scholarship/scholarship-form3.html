@@ -18,7 +18,7 @@
     <img class="bcd3b4b5d471dae27a60bd4b5f07-1-FMF" src="{% static '/assets/bcd3b4b5d471dae27a60bd4b5f07-1-Z9F.png'%}"/>
     <p class="national-scholarship-portal-9hX">National Scholarship Portal</p>
   </div>
-  <form action="" method="post">
+  <form action="{% url 'scolarShip' number=5 %}" method="post">
     {% csrf_token %}
    <div class="bank-detail-from-HFj">
     <div class="auto-group-npgd-Bru">
