@@ -21,6 +21,6 @@ urlpatterns = [
     path('userAccount', views.userView, name='profile'),
     path('downloadPDF', views.downloadDocpdf, name='downPDF'),
 
-    path("scolarShip/<int:number>", views.scholarShip, name='scolarShip'),
+    path("scolarShip/", views.scholarShip, name='scolarShip'),
 
 ]
