@@ -1,5 +1,6 @@
 # remember their are multiple types of user while authenticating
 from django.shortcuts import render, redirect
+from .models import ScholarShipFormModel
 
 from reportlab.lib.pagesizes import letter
 from reportlab.pdfgen import canvas
@@ -45,10 +46,14 @@ def scholarShip(request, number):
 
     else:
         if number == 2:
-
+            our_data = ScholarShipFormModel.objects.get_or_create(EmailAddress=request.POST['EmailAddress'])
+            print(our_data)
             template = 'scholarshipform.html'
 
             if request.method == 'POST':
+
+                
+
                 my_form = forms.ScolarShipForm(request.POST, request.FILES) 
             
         
