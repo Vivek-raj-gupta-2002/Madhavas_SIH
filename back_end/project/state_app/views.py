@@ -3,6 +3,7 @@ from django.contrib.auth.decorators import login_required
 from django.contrib.auth import authenticate, login, logout
 from main_app.models import CustomUser
 from institute import forms
+from .forms import StateForm
 from django.http import HttpResponse
 from utills import institute_data
 from django.views.decorators.http import require_http_methods
@@ -71,6 +72,35 @@ def scholarRegisterView(request):
 
     return render(request, 'state/scholarships.html', {'form': my_form})
 
+
+@require_http_methods(['GET', 'POST'])
+def new_scholar_view(request):
+    
+    if not(request.user.is_authenticated):
+        return redirect('api_login')  # Redirect to the login page if user is not logged in
+
+    my_user = CustomUser.objects.filter(username=request.user).first()
+
+
+    if not(my_user.is_state):
+        return redirect('login')
+    
+    send_data = {}
+
+    my_form = StateForm()
+
+    if request.method == 'POST':
+        my_form = StateForm(request.POST, request.FILES)
+
+        # checking if the form follows all the validation
+        if my_form.is_valid():
+            instance = my_form.save(commit=False)
+            instance.user = my_user
+            instance.is_scholarship = True
+            instance.save()
+            return redirect('institScholarForm')
+
+    return render(request, 'state/Newscholarships.html', {'form': my_form})
 
 
 

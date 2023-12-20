@@ -1,5 +1,5 @@
 from django import forms
-from . import models
+from .models import StateScholarForm
 
 
 class StateForm(forms.ModelForm):
@@ -71,7 +71,7 @@ class StateForm(forms.ModelForm):
     )
 
     class Meta:
-        model = models.StateScholarForm
+        model = StateScholarForm
         fields = '__all__'
 
 
