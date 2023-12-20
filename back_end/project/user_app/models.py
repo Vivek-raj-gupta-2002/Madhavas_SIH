@@ -67,11 +67,3 @@ class ScholarShipForm(models.Model):
     IncomeCertificate= models.CharField(max_length=100)
     IncomeCertificateUpload = models.FileField()
 
-
-
-
-
-
-
-    class Meta:
-        unique_together = ('document_type', 'user')
