@@ -189,4 +189,11 @@ class OneTimePass(models.Model):
     def __str__(self) -> str:
         return str(self.aadhar_no) + str(self.sending_time)
     
+class StateScholarForm(models.Model):
+    
+    caste=models.CharField(max_length=100)
+    income=models.CharField(max_length=100)
+    percentage=models.IntegerField(max_length=100)
+    state=models.CharField(max_length=100)
+    attandence=models.IntegerField(max_length=100)
     
