@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect
 from . import models
 from . import forms
+from user_app.models import ScholarShipFormModel
 from main_app.models import CustomUser
 from django.views.decorators.http import require_http_methods
 from django.contrib.auth import authenticate, login, logout
@@ -29,15 +30,20 @@ def institute_lvl_verification(request):
 
     if not(request.user.is_authenticated):
         return redirect('api_login')  # Redirect to the login page if user is not logged in
+    
 
     my_user = CustomUser.objects.filter(username=request.user).first()
+
+    data = ScholarShipFormModel.objects.filter(institute=my_user.institute).all()
 
 
     if not(my_user.is_institute):
         return redirect('login')
 
-    return render(request, 'institute/institutelvlverification.html')
-    pass
+
+
+    return render(request, 'institute/institutelvlverification.html', {'data': data})
+
 
 csrf_exempt
 @require_http_methods(["GET"])

@@ -1,7 +1,7 @@
 from django import forms
 from django.contrib.auth.forms import UserCreationForm
 from main_app import models
-from user_app.models import UploadForm,document_choice
+from user_app.models import UploadForm,document_choice, ScholarShipFormModel
 
 
 """
@@ -122,7 +122,7 @@ class ScolarShipForm(forms.ModelForm):
             'class': 'rectangle-59-gR3 '
         })
     )   
-    MaritalStatus = forms.CharField(
+    institute = forms.CharField(
         widget=forms.TextInput(attrs={
             'class': 'rectangle-61-x9b'
         })
@@ -172,7 +172,10 @@ class ScolarShipForm(forms.ModelForm):
         widget=forms.FileInput(attrs={
             'class': 'rectangle-61-Nyj'
         })
-    )      
+    )     
+
+    class Meta:
+        model = ScholarShipFormModel 
 
 
 
