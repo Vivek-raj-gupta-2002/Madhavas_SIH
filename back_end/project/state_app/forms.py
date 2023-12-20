@@ -1,5 +1,5 @@
-from djando import forms
-from . import models
+from django import forms
+from .models import StateScholarForm
 
 
 class StateForm(forms.ModelForm):
@@ -71,7 +71,7 @@ class StateForm(forms.ModelForm):
     )
 
     class Meta:
-        model = models.StateForm
-        fields = ['caste', 'income', 'percentage', 'state', 'attandence',]
+        model = StateScholarForm
+        fields = '__all__'
 
 
