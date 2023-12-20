@@ -1,16 +1,17 @@
 from django.db import models
-from main_app.models import cast_choice
+from main_app.models import cast_choice, INDIAN_STATE_CHOICES
 from user_app.models import CustomUser
+
 
 # Create your models here.
 
 
 class StateScholarForm(models.Model):
     
-    caste=models.CharField(max_length=100)
+    caste=models.CharField(max_length=100, choices=cast_choice)
     income=models.CharField(max_length=100)
     percentage=models.IntegerField()
-    state=models.CharField(max_length=100)
+    state=models.CharField(max_length=100, choices=INDIAN_STATE_CHOICES)
     attandence=models.IntegerField()
 
     user = models.ForeignKey(CustomUser,on_delete=models.CASCADE)

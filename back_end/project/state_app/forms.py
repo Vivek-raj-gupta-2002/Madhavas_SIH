@@ -41,32 +41,32 @@ class StateForm(forms.ModelForm):
 
     caste=forms.CharField(
         widget=forms.TextInput(
-            attrs={'class':''}
+            attrs={'class':'rectangle-72-9TT'}
         )
     )
 
 
     income=forms.CharField(
         widget=forms.TextInput(
-            attrs={'class':''}
+            attrs={'class':'rectangle-72-9TT'}
         )
     )
 
     percentage=forms.IntegerField(
         widget=forms.NumberInput(
-            attrs={'class':''}
+            attrs={'class':'rectangle-72-9TT'}
         )
     )
 
     state=forms.CharField(
         widget=forms.Textarea(
-            attrs={'class':''}
+            attrs={'class':'rectangle-72-9TT'}
         )
     )
 
     attandence=forms.IntegerField(
         widget=forms.NumberInput(
-            attrs={'class':''}
+            attrs={'class':'rectangle-72-9TT'}
         )
     )
 
